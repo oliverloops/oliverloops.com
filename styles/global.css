@@ -7,6 +7,26 @@
 /* Stop purging. */
 
 /* Write all custom component styles here */
+html {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.sticky-nav {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  backdrop-filter: saturate(180%) blur(20px);
+  transition: background-color 0.1 ease-in-out;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+button {
+  outline: none;
+}
 
 /* Start purging... */
 @tailwind utilities;

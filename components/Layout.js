@@ -10,9 +10,12 @@ export default function Layout({ children, pageTitle, description }) {
         <meta name="Description" content={description}></meta>
         <title>{pageTitle}</title>
       </Head>
+
       <main>
         <Header />
-        <div className="content">{children}</div>
+        <div className="flex flex-col justify-center items-start max-w-2xl p-8">
+          {children}
+        </div>
       </main>
     </>
   );

@@ -8,7 +8,7 @@ export const Post = ({ post }) => {
   } = post;
 
   return (
-    <article>
+    <article className="w-full flex flex-col justify-center items-start h-32">
       <HeadPost meta={meta} />
       <Link href={"/blog" + link}>
         <a>Read more →</a>
