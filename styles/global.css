@@ -1,0 +1,17 @@
+@tailwind base;
+
+/* Write base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write all custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Custom utilities */
+@layer components {
+}
