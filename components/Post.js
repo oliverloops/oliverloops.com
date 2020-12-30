@@ -8,10 +8,10 @@ export const Post = ({ post }) => {
   } = post;
 
   return (
-    <article className="w-full flex flex-col justify-center items-start h-32">
+    <article className="w-full flex flex-col justify-center items-start h-36">
       <HeadPost meta={meta} />
       <Link href={"/blog" + link}>
-        <a>Read more →</a>
+        <a className="text-blue-700 hover:text-blue-500">Read more →</a>
       </Link>
     </article>
   );

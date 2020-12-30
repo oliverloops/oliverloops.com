@@ -4,8 +4,8 @@ export default function HeadPost({ meta }) {
       <div className="text-2xl font-extrabold">{meta.title}</div>
       <div className="text-xl font-semibold">{meta.description}</div>
       <div className="flex justify-between row">
-        <div className="">{meta.date}</div>
-        <div>
+        <div className="text-gray-500">{meta.date}</div>
+        <div className="text-gray-500">
           <span role="img" aria-label="coffee">
             ☕️
           </span>{" "}

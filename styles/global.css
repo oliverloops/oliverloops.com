@@ -20,6 +20,10 @@ html {
   transition: background-color 0.1 ease-in-out;
 }
 
+.blog-content {
+  width: 80%;
+}
+
 .icon {
   font-size: 18px;
 }

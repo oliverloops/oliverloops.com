@@ -13,7 +13,7 @@ export default function Layout({ children, pageTitle, description }) {
 
       <main>
         <Header />
-        <div className="flex flex-col justify-center items-start max-w-2xl p-8">
+        <div className="flex flex-col justify-center items-start max-w-xl  mx-auto  px-8 py-8">
           {children}
         </div>
       </main>

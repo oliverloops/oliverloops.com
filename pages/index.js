@@ -1,12 +1,11 @@
-import { Post } from "../components/Post";
-import { posts } from "../getAllPosts";
-
 export default function Home() {
   return (
     <>
-      {posts.map((post) => (
-        <Post key={post.link} post={post} />
-      ))}
+      <h1 className="font-bold text-3xl">Hi, I'm Oliver Lopez</h1>
+      <h3 className="text-gray-500">
+        I'm a software developer, rookie barista, chef amateur, writer and
+        poetry lover.
+      </h3>
     </>
   );
 }
