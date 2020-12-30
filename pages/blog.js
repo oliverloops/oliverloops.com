@@ -1,3 +1,4 @@
+//UI components
 import { Post } from "../components/Post";
 import { posts } from "../getAllPosts";
 
