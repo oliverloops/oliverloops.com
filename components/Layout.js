@@ -1,5 +1,8 @@
+import { createContext } from "react";
 import Head from "next/head";
 import Header from "./Header";
+
+export const darkMode = createContext();
 
 export default function Layout({ children, pageTitle, description }) {
   return (
@@ -11,12 +14,14 @@ export default function Layout({ children, pageTitle, description }) {
         <title>{pageTitle}</title>
       </Head>
 
-      <main>
-        <Header />
-        <div className="flex flex-col justify-center items-start max-w-xl  mx-auto  px-8 py-8">
-          {children}
-        </div>
-      </main>
+      <darkMode.Provider value={{ dark: "dark" }}>
+        <main className="dark">
+          <Header />
+          <div className="flex flex-col  justify-center items-start max-w-3xl  mx-auto  px-8 py-8 dark:bg-black">
+            {children}
+          </div>
+        </main>
+      </darkMode.Provider>
     </>
   );
 }
