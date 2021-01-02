@@ -56,7 +56,7 @@ export default function Home() {
         }}
       >
         <h1 className="font-extrabold text-4xl dark:text-white">
-          Some Cool Blogs
+          Some Cool Blogs!
         </h1>
         {posts.map((post) => (
           <Post key={post.link} post={post} />
