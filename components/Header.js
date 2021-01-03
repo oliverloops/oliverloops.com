@@ -35,7 +35,9 @@ export default function Header() {
       className="flex justify-around flex-row fixed sticky sticky-nav top-0 h-18 py-16 bg-white dark:bg-black bg-opacity-60"
     >
       <div>
-        <button
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
           onClick={() => isDarkModeOn()}
           className="flex justify-center items-center rounded-md bg-gray-200 dark:bg-gray-700 h-10 w-10 "
         >
@@ -44,7 +46,7 @@ export default function Header() {
           ) : (
             <HiMoon className="icon" />
           )}
-        </button>
+        </motion.button>
       </div>
       <div className="flex justify-around flex-row w-64">
         <div className="p-1">

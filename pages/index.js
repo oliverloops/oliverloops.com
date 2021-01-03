@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 //UI components
 import { Post } from "../components/Post";
-import Image from "next/image";
+import ProjectCard from "../components/ProjectCard";
 import { posts } from "../getAllPosts";
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
       >
         <div className="rounded-full border-2 border-blue-400">
           <img
-            style={{ width: "80px", height: "80px" }}
+            style={{ width: "82px", height: "82px" }}
             className="rounded-full"
             src="/me_cross.jpg"
             alt="Oliver Lopez"
@@ -63,6 +63,25 @@ export default function Home() {
         {posts.map((post) => (
           <Post key={post.link} post={post} />
         ))}
+      </motion.div>
+      <motion.div
+        initial="pageInitial"
+        animate="pageAnimate"
+        variants={{
+          pageInitial: {
+            opacity: 0,
+            translateX: -800,
+          },
+          pageAnimate: {
+            opacity: 1,
+            translateX: 0,
+          },
+        }}
+      >
+        <h1 className="py-4 font-extrabold text-4xl dark:text-white">
+          Projects
+        </h1>
+        <ProjectCard href={"/"} />
       </motion.div>
     </div>
   );
