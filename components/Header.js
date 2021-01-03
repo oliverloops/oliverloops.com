@@ -1,9 +1,23 @@
+import { useContext } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { HiMoon } from "react-icons/hi";
 import { HiSun } from "react-icons/hi";
+//Context
+import { darkMode } from "./Layout";
 
 export default function Header() {
+  const darkContext = useContext(darkMode);
+
+  //Check if dark mode is active and change the status
+  const isDarkModeOn = () => {
+    if (!darkContext.dark) {
+      darkContext.activeDark(true);
+    } else {
+      darkContext.activeDark(false);
+    }
+  };
+
   return (
     <motion.nav
       initial="pageInitial"
@@ -21,8 +35,15 @@ export default function Header() {
       className="flex justify-around flex-row fixed sticky sticky-nav top-0 h-18 py-16 bg-white dark:bg-black bg-opacity-60"
     >
       <div>
-        <button className="flex justify-center items-center rounded-md bg-gray-200 dark:bg-gray-700 h-10 w-10 ">
-          <HiMoon className="icon dark:text-white" />
+        <button
+          onClick={() => isDarkModeOn()}
+          className="flex justify-center items-center rounded-md bg-gray-200 dark:bg-gray-700 h-10 w-10 "
+        >
+          {darkContext.dark ? (
+            <HiSun className="icon dark:text-white" />
+          ) : (
+            <HiMoon className="icon" />
+          )}
         </button>
       </div>
       <div className="flex justify-around flex-row w-64">

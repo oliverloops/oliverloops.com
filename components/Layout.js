@@ -16,7 +16,7 @@ export default function Layout({ children, pageTitle, description }) {
         <title>{pageTitle}</title>
       </Head>
 
-      <darkMode.Provider value={{ dark: dark }}>
+      <darkMode.Provider value={{ dark: dark, activeDark: setDark }}>
         <main className={dark ? "dark" : "white"}>
           <Header />
           <div className="flex flex-col  justify-center items-start w-full mx-auto px-8 py-8 dark:bg-black">
