@@ -10,7 +10,7 @@ export const Post = ({ post }) => {
   } = post;
 
   return (
-    <motion.article
+    <article
       whileHover={{ scale: 1.1 }}
       className="w-full flex flex-col 
       justify-center items-start h-36"
@@ -19,6 +19,6 @@ export const Post = ({ post }) => {
       <Link href={"/blog" + link}>
         <a className="text-blue-700 hover:text-blue-500">Read more →</a>
       </Link>
-    </motion.article>
+    </article>
   );
 };

@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="mx-auto">
       <motion.div
-        className="flex flex-row items-center"
+        className="flex flex-row items-center px-2"
         initial="pageInitial"
         animate="pageAnimate"
         variants={{
@@ -22,7 +22,7 @@ export default function Home() {
           },
         }}
       >
-        <div className="rounded-full border-2 border-blue-400">
+        <div className="rounded-full border-2  border-blue-400">
           <img
             style={{ width: "82px", height: "82px" }}
             className="rounded-full"
@@ -31,11 +31,11 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex flex-col px-8">
-          <h1 className="font-extrabold sm:text-2xl  text-5xl dark:text-white">
+        <div className="flex flex-col px-4 sm:px-8">
+          <h1 className="font-extrabold text-2xl sm:text-5xl dark:text-white">
             Hi, I'm Oliver Lopez
           </h1>
-          <h3 className="text-base text-gray-400 py-2">
+          <h3 className="text-sm text-gray-400 py-2">
             I'm a software developer, React/Node enthusiast rookie barista,{" "}
             <br />
             chef amateur, writer and poetry lover and sometimes writer.
@@ -57,7 +57,7 @@ export default function Home() {
           },
         }}
       >
-        <h1 className="font-extrabold text-4xl dark:text-white">
+        <h1 className="font-extrabold text-2xl sm:text-4xl dark:text-white">
           Some Cool Blogs!
         </h1>
         {posts.map((post) => (
@@ -78,7 +78,7 @@ export default function Home() {
           },
         }}
       >
-        <h1 className="py-4 font-extrabold text-4xl dark:text-white">
+        <h1 className="py-4 font-extrabold text-2xl sm:text-4xl dark:text-white">
           Projects
         </h1>
         <ProjectCard
