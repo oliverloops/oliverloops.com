@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="mx-auto">
       <motion.div
-        className="flex flex-row"
+        className="flex flex-row items-center"
         initial="pageInitial"
         animate="pageAnimate"
         variants={{
@@ -22,21 +22,23 @@ export default function Home() {
           },
         }}
       >
-        <Image
-          className="rounded-full"
-          src="/me_cross.jpg"
-          alt="Oliver Lopez"
-          width="85"
-          height="35"
-        />
+        <div className="rounded-full border-2 border-blue-400">
+          <img
+            style={{ width: "80px", height: "80px" }}
+            className="rounded-full"
+            src="/me_cross.jpg"
+            alt="Oliver Lopez"
+          />
+        </div>
 
         <div className="flex flex-col px-8">
           <h1 className="font-extrabold sm:text-2xl  text-5xl dark:text-white">
             Hi, I'm Oliver Lopez
           </h1>
           <h3 className="text-base text-gray-400 py-2">
-            I'm a software developer, rookie barista, chef amateur, writer and
-            poetry lover.
+            I'm a software developer, React/Node enthusiast rookie barista,{" "}
+            <br />
+            chef amateur, writer and poetry lover and sometimes writer.
           </h3>
         </div>
       </motion.div>
