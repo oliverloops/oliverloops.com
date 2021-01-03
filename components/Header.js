@@ -32,7 +32,7 @@ export default function Header() {
           translateY: 0,
         },
       }}
-      className="flex justify-around flex-row fixed sticky sticky-nav top-0 h-18 py-16 bg-white dark:bg-black bg-opacity-60"
+      className="flex justify-around flex-row fixed sticky sticky-nav top-0 h-12 py-16 bg-white dark:bg-black bg-opacity-60"
     >
       <div>
         <motion.button

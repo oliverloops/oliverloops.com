@@ -81,7 +81,21 @@ export default function Home() {
         <h1 className="py-4 font-extrabold text-4xl dark:text-white">
           Projects
         </h1>
-        <ProjectCard href={"/"} />
+        <ProjectCard
+          title={"Random One"}
+          description={"A random custom description"}
+          href={"/"}
+        />
+        <ProjectCard
+          title={"Random Two"}
+          description={"A random custom description"}
+          href={"/"}
+        />
+        <ProjectCard
+          title={"Random Three"}
+          description={"A random custom description"}
+          href={"/"}
+        />
       </motion.div>
     </div>
   );
