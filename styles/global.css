@@ -32,6 +32,10 @@ button {
   outline: none;
 }
 
+button:focus {
+  outline: none;
+}
+
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
