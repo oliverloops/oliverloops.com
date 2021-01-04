@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+//UI components
+import NowPlaying from "./NowPlaying";
 
 export default function Footer() {
   return (
@@ -19,6 +21,9 @@ export default function Footer() {
       }}
       className="flex flex-col justify-center dark:bg-black"
     >
+      <div className="flex justify-center mt-8">
+        <NowPlaying />
+      </div>
       <div className="flex justify-center mb-4 pt-4">
         <a href="#">
           <FaTwitter className="mr-4 text-2xl hover:text-blue-400 dark:text-white" />
