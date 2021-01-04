@@ -1,6 +1,8 @@
 import { useState, createContext } from "react";
 import Head from "next/head";
+//UI components
 import Header from "./Header";
+import Footer from "../components/Footer";
 
 export const darkMode = createContext();
 
@@ -22,6 +24,7 @@ export default function Layout({ children, pageTitle, description }) {
           <div className="flex flex-col  justify-center items-start w-full mx-auto px-8 py-8 dark:bg-black">
             {children}
           </div>
+          <Footer />
         </main>
       </darkMode.Provider>
     </>

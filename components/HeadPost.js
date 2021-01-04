@@ -1,8 +1,10 @@
 export default function HeadPost({ meta }) {
   return (
     <div className="flex justify-center flex-col">
-      <div className="text-2xl font-bold dark:text-white">{meta.title}</div>
-      <div className="text-xl font-semibold dark:text-white">
+      <div className="text-2xl font-bold text-blue-500 dark:text-blue-300">
+        {meta.title}
+      </div>
+      <div className="text-xl font-semibold   dark:text-white">
         {meta.description}
       </div>
       <div className="flex justify-between row">

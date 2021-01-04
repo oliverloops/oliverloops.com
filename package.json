@@ -1,7 +1,16 @@
 {
-  "name": "my_blog",
+  "name": "oliverloops.com",
   "version": "0.1.0",
-  "private": true,
+  "author": {
+    "name": "Oliver Lopez",
+    "email": "me@oliverloops.com",
+    "url": "https://oliverloops.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliverloops/oliverloops.com.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

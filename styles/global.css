@@ -1,12 +1,11 @@
 @tailwind base;
-
 /* Write base styles here */
 
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */
 
-/* Write all custom component styles here */
+/* Custom component styles */
 html {
   margin: 0;
   overflow-x: hidden;

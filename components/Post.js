@@ -11,7 +11,6 @@ export const Post = ({ post }) => {
 
   return (
     <article
-      whileHover={{ scale: 1.1 }}
       className="w-full flex flex-col 
       justify-center items-start h-36"
     >

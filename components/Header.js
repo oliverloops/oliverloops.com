@@ -32,14 +32,14 @@ export default function Header() {
           translateY: 0,
         },
       }}
-      className="flex justify-around flex-row fixed sticky sticky-nav top-0 h-12 py-16 bg-white dark:bg-black bg-opacity-60"
+      className="flex justify-evenly flex-row fixed sticky sticky-nav top-0 h-18 py-8 bg-white dark:bg-black bg-opacity-60"
     >
-      <div>
+      <div className="px-8">
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => isDarkModeOn()}
-          className="flex justify-center items-center rounded-md bg-gray-200 dark:bg-gray-700 h-10 w-10 "
+          className="flex justify-center items-center rounded-md bg-gray-200 dark:bg-gray-700 h-10 w-10"
         >
           {darkContext.dark ? (
             <HiSun className="icon dark:text-white" />
@@ -48,25 +48,25 @@ export default function Header() {
           )}
         </motion.button>
       </div>
-      <div className="flex justify-around flex-row w-64">
+      <div className="flex justify-evenly flex-row w-42 px-8">
+        <div className="p-1">
+          <Link href="/">
+            <a className="text-md dark:text-white">Portfolio</a>
+          </Link>
+        </div>
         <div className="p-1">
           <Link href="/blog">
-            <a className="dark:text-white">Blog</a>
+            <a className="text-md dark:text-white">Blog</a>
           </Link>
         </div>
         <div className="p-1">
           <Link href="/">
-            <a className="dark:text-white">Portfolio</a>
+            <a className="text-md dark:text-white">About</a>
           </Link>
         </div>
         <div className="p-1">
           <Link href="/">
-            <a className="dark:text-white">About</a>
-          </Link>
-        </div>
-        <div className="p-1">
-          <Link href="/">
-            <a className="dark:text-white">Home</a>
+            <a className="text-md dark:text-white">Home</a>
           </Link>
         </div>
       </div>

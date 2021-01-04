@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 //UI components
 import { Post } from "../components/Post";
-import ProjectCard from "../components/ProjectCard";
 import { posts } from "../getAllPosts";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
   return (
     <div className="mx-auto">
       <motion.div
-        className="flex flex-row items-center px-2"
+        className="flex flex-col items-center"
         initial="pageInitial"
         animate="pageAnimate"
         variants={{
@@ -22,28 +22,34 @@ export default function Home() {
           },
         }}
       >
-        <div className="rounded-full border-2  border-blue-400">
+        <div className="rounded-full border-2 border-blue-400">
           <img
-            style={{ width: "82px", height: "82px" }}
+            style={{ width: "64px", height: "64px" }}
             className="rounded-full"
             src="/me_cross.jpg"
             alt="Oliver Lopez"
           />
         </div>
 
-        <div className="flex flex-col px-4 sm:px-8">
-          <h1 className="font-extrabold text-2xl sm:text-5xl dark:text-white">
-            Hi, I'm Oliver Lopez
+        <div className="flex flex-col py-4">
+          <h1 className="font-extrabold text-2xl lg:text-5xl dark:text-white">
+            Hi there!, I'm Oliver Lopez{" "}
+            <span role="img" aria-label="waving hand">
+              👋
+            </span>
           </h1>
-          <h3 className="text-sm text-gray-400 py-2">
-            I'm a software developer, React/Node enthusiast rookie barista,{" "}
-            <br />
-            chef amateur, writer and poetry lover and sometimes writer.
+          <h3 className="font-medium text-md text-gray-500 dark:text-gray-400  max-w-xl py-2">
+            I'm a software developer, rookie barista, and writer. Welcome to my
+            personal space on the internet where you can find{" "}
+            <span style={{ color: "#F7E01E" }}>JavaScript</span>,{" "}
+            <span style={{ color: "#52D8FF" }}>React</span> and my{" "}
+            <span style={{ color: "#32C119" }}>entrepreneurial adventures</span>{" "}
+            related blog posts.
           </h3>
         </div>
       </motion.div>
       <motion.div
-        className="py-16"
+        className="py-8"
         initial="pageInitial"
         animate="pageAnimate"
         variants={{
