@@ -88,16 +88,19 @@ export default function Home() {
           Projects
         </h1>
         <ProjectCard
-          title={"Random One"}
-          description={"A random custom description"}
-          href={"/"}
+          icon={"hat"}
+          title={"React Hider"}
+          description={"Conditional Rendering Made Easy"}
+          href={"https://github.com/oliverloops/react-hider"}
         />
         <ProjectCard
+          icon={"fire"}
           title={"Random Two"}
           description={"A random custom description"}
           href={"/"}
         />
         <ProjectCard
+          icon={"fire"}
           title={"Random Three"}
           description={"A random custom description"}
           href={"/"}

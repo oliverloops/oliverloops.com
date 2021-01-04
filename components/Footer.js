@@ -34,7 +34,7 @@ export default function Footer() {
         </a>
       </div>
       <small className="mb-4 flex justify-center dark:text-white">
-        Deployed on&nbsp;
+        Hosted on&nbsp;
         <span role="img" aria-label="triangule">
           ▲
         </span>

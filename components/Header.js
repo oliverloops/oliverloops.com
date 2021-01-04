@@ -34,7 +34,7 @@ export default function Header() {
       }}
       className="flex justify-evenly flex-row fixed sticky sticky-nav top-0 h-18 py-8 bg-white dark:bg-black bg-opacity-60"
     >
-      <div className="px-8">
+      <div className="pr-8 pl-4">
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
