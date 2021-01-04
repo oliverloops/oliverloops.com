@@ -35,6 +35,10 @@ button:focus {
   outline: none;
 }
 
+footer {
+  border: none;
+}
+
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
