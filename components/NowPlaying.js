@@ -6,6 +6,8 @@ import fetcher from "../lib/fetcher";
 export default function NowPlaying() {
   const { data } = useSWR("/api/now-playing", fetcher);
 
+  console.log(data);
+
   return (
     <div className="flex items-start border border-gray-300 dark:border-gray-700 rounded-lg w-72 p-2 mb-4">
       <Image
