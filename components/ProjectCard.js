@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { GiMagicHat } from "react-icons/gi";
-import { AiTwotoneFire } from "react-icons/ai";
+import { FaCloud } from "react-icons/fa";
+import { IoIosWarning } from "react-icons/io";
 
 export default function ProjectCard({ icon, title, description, href }) {
   return (
@@ -16,8 +17,13 @@ export default function ProjectCard({ icon, title, description, href }) {
               className="dark:text-gray-100"
               style={{ fontSize: "1.6em" }}
             />
+          ) : icon === "cloud" ? (
+            <FaCloud
+              className="dark:text-gray-100"
+              style={{ fontSize: "1.6em" }}
+            />
           ) : (
-            <AiTwotoneFire
+            <IoIosWarning
               className="dark:text-gray-100"
               style={{ fontSize: "1.6em" }}
             />

@@ -49,7 +49,7 @@ export default function Home() {
         </div>
       </motion.div>
       <motion.div
-        className="py-8"
+        className="pt-6 pb-4"
         initial="pageInitial"
         animate="pageAnimate"
         variants={{
@@ -94,16 +94,16 @@ export default function Home() {
           href={"https://github.com/oliverloops/react-hider"}
         />
         <ProjectCard
-          icon={"fire"}
-          title={"Random Two"}
-          description={"A random custom description"}
-          href={"/"}
+          icon={"cloud"}
+          title={"Fitcloud.mx"}
+          description={"Fitness sessions on demand"}
+          href={"https://fitcloud.mx/"}
         />
         <ProjectCard
           icon={"fire"}
-          title={"Random Three"}
-          description={"A random custom description"}
-          href={"/"}
+          title={"Comming Soon"}
+          description={"This project is under construction"}
+          href={"https://oliverloops.com/portfolio"}
         />
       </motion.div>
     </div>
