@@ -46,7 +46,6 @@ footer {
   display: flex;
   justify-content: center;
   border-radius: 8px;
-  border: solid 1px rgb(223, 225, 229);
 
   @media (min-width: 300px) and (max-width: 768px) {
     width: 100%;

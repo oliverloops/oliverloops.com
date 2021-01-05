@@ -24,11 +24,9 @@ export default function Header() {
       animate="pageAnimate"
       variants={{
         pageInitial: {
-          opacity: 0,
-          translateY: -200,
+          translateY: -800,
         },
         pageAnimate: {
-          opacity: 1,
           translateY: 0,
         },
       }}

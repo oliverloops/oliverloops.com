@@ -11,7 +11,7 @@ export const Post = ({ post }) => {
 
   return (
     <article
-      className="w-full flex flex-col 
+      className="flex flex-col 
       justify-center items-start h-32"
     >
       <HeadPost meta={meta} link={link} />
