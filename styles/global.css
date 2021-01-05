@@ -42,15 +42,11 @@ footer {
 /* Search Component */
 .search-container {
   width: 95%;
-  height: 3em;
+  height: 2.5em;
   display: flex;
   justify-content: center;
-  border-radius: 30px;
+  border-radius: 8px;
   border: solid 1px rgb(223, 225, 229);
-
-  -webkit-box-shadow: -1px 9px 37px -9px rgba(0, 0, 0, 0.225);
-  -moz-box-shadow: -1px 9px 37px -9px rgba(0, 0, 0, 0.225);
-  box-shadow: -1px 9px 37px -9px rgba(0, 0, 0, 0.225);
 
   @media (min-width: 300px) and (max-width: 768px) {
     width: 100%;
@@ -59,9 +55,8 @@ footer {
 
 .search-container > input {
   border: none;
-  width: 90%;
-  border-radius: 30px;
-  background-color: rgba(253, 253, 253);
+  width: 100%;
+  border-radius: 8px;
   outline: none;
   align-items: center;
   margin-left: 1em;
@@ -75,14 +70,14 @@ footer {
 }
 
 ::placeholder {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 400;
-  color: rgb(188, 188, 188);
+  color: rgba(188, 188, 188, 0.75);
 }
 
 .search {
-  margin-right: 1.15em;
-  transform: translateY(0.4em) rotateY(-180deg);
+  margin-right: 0.65em;
+  transform: translateY(0.2em) rotateY(-180deg);
   color: rgb(188, 188, 188);
 }
 
