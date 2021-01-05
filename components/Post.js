@@ -12,12 +12,9 @@ export const Post = ({ post }) => {
   return (
     <article
       className="w-full flex flex-col 
-      justify-center items-start h-36"
+      justify-center items-start h-32"
     >
-      <HeadPost meta={meta} />
-      <Link href={"/blog" + link}>
-        <a className="text-blue-700 hover:text-blue-500">Read more →</a>
-      </Link>
+      <HeadPost meta={meta} link={link} />
     </article>
   );
 };

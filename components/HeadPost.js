@@ -1,9 +1,13 @@
-export default function HeadPost({ meta }) {
+import Link from "next/link";
+
+export default function HeadPost({ meta, link }) {
   return (
     <div className="flex justify-center flex-col">
-      <div className="text-2xl font-bold text-blue-500 dark:text-blue-300">
-        {meta.title}
-      </div>
+      <Link href={"/blog" + link}>
+        <a className="text-2xl font-bold text-blue-500 dark:text-blue-300">
+          {meta.title}
+        </a>
+      </Link>
       <div className="text-xl font-semibold   dark:text-white">
         {meta.description}
       </div>
