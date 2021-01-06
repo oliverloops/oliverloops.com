@@ -1,10 +1,9 @@
-import Head from "next/head";
-import HeadPost from "./HeadPost";
+import AuthorHeadPost from "./AuthorHeadPost";
 
 export default function BlogPost({ children, meta }) {
   return (
     <>
-      <HeadPost meta={meta} isBlogPost />
+      <AuthorHeadPost meta={meta} isBlogPost />
       <article>{children}</article>
     </>
   );
