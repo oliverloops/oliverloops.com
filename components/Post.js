@@ -10,11 +10,11 @@ export const Post = ({ post }) => {
   } = post;
 
   return (
-    <article
+    <div
       className="flex flex-col 
       justify-center items-start h-32"
     >
       <HeadPost meta={meta} link={link} />
-    </article>
+    </div>
   );
 };

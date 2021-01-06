@@ -1,16 +1,12 @@
-import Link from "next/link";
 import Image from "next/image";
 
 export default function AuthorHeadPost({ meta, link }) {
   return (
-    <div className="flex justify-center flex-col">
-      <Link href={"/blog" + link}>
-        <a className="text-4xl font-extrabold  dark:text-white">{meta.title}</a>
-      </Link>
-      <div className="text-xl font-semibold   dark:text-white">
-        {meta.description}
-      </div>
-      <div className="flex justify-between space-x-2 row">
+    <div className="flex justify-center flex-col space-y-2 mb-6">
+      <h1 className="mb-2 text-4xl font-extrabold  dark:text-white">
+        {meta.title}
+      </h1>
+      <div className="flex space-x-2 row">
         <Image
           className="rounded-full"
           src={"/me_cross.jpg"}
@@ -18,12 +14,19 @@ export default function AuthorHeadPost({ meta, link }) {
           width={25}
           height={25}
         />
-        <p className="text-gray-700 dark:text-gray-300">{meta.author}</p>
-        <span>-</span>
-        <div className="text-gray-700 dark:text-gray-300">{meta.date}</div>
+        <p
+          className="text-sm
+         text-gray-700 dark:text-gray-300"
+        >
+          {meta.author}
+        </p>
+        <span className="text-sm text-gray-700 dark:text-gray-300">-</span>
+        <div className="text-sm text-gray-700 dark:text-gray-300">
+          {meta.date}
+        </div>
       </div>
       <div className="flex justify-between row">
-        <div className="text-gray-400">
+        <div className="text-sm text-gray-400 dark:text-gray-500">
           <span role="img" aria-label="book">
             📖
           </span>{" "}

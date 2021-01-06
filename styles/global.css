@@ -27,7 +27,13 @@ html {
   font-size: 18px;
 }
 
-button {
+/* Default article's layout styling */
+article > p {
+  margin-top: 1.275rem;
+  margin-bottom: 1.275rem;
+}
+
+articl button {
   outline: none;
 }
 

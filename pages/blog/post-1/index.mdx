@@ -1,4 +1,5 @@
 import BlogPost from "../../../components/BlogPost";
+import Image from "next/image";
 
 export const meta = {
   author: "Oliver Lopez",
@@ -10,9 +11,22 @@ export const meta = {
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
-## Title
+<Image
+  src={"/static/images/intro-to-react/react-banner.png"}
+  alt={"React Banner"}
+  layout="responsive"
+  width={500}
+  height={280}
+/>
 
-<p className="text-md leading-relaxed text-gray-700 dark:text-white">
+<p className="text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus
+  pellentesque dolor non egestas. In sed tristique elit. Cras vehicula, nisl vel
+  ultricies gravida, augue nibh laoreet arcu, et tincidunt augue dui non elit.
+  Vestibulum semper posuere magna, quis molestie mauris faucibus ut.
+</p>
+
+<p className="text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus
   pellentesque dolor non egestas. In sed tristique elit. Cras vehicula, nisl vel
   ultricies gravida, augue nibh laoreet arcu, et tincidunt augue dui non elit.
