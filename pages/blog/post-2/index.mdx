@@ -1,16 +1,36 @@
 import BlogPost from "../../../components/BlogPost";
+import Image from "next/image";
 
 export const meta = {
+  author: "Oliver Lopez",
   title: "Intro to Next.js",
   description: "An Introduction to Next.js",
-  date: "Dec 28, 2020",
+  date: "December 28, 2020",
   readTime: 2,
 };
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
-## Title 2
+<Image
+  src={"/static/images/post-2/city_night.jpg"}
+  alt={"City Banner"}
+  layout="responsive"
+  width={400}
+  height={250}
+/>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus pellentesque dolor non egestas.
-In sed tristique elit. Cras vehicula, nisl vel ultricies gravida, augue nibh laoreet arcu, et tincidunt
-augue dui non elit. Vestibulum semper posuere magna, quis molestie mauris faucibus ut.
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  For the better part of the last year, I've been investing heavily in front-end
+  development and design. When I started my new role at Hy-Vee, I identified a
+  need for a component library and created it. Since then, I've learned a lot
+  about style guides, design systems, component libraries, and their best
+  practices. This post will be a deep-dive on everything I've learned in the
+  past year.
+</p>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus
+  pellentesque dolor non egestas. In sed tristique elit. Cras vehicula, nisl vel
+  ultricies gravida, augue nibh laoreet arcu, et tincidunt augue dui non elit.
+  Vestibulum semper posuere magna, quis molestie mauris faucibus ut.
+</p>
