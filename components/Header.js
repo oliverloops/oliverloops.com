@@ -30,9 +30,10 @@ export default function Header() {
           translateY: 0,
         },
       }}
-      className="flex justify-evenly flex-row fixed sticky sticky-nav top-0 h-18 py-8 bg-white dark:bg-black bg-opacity-60"
+      className="flex justify-between items-center mx-auto max-w-4xl w-full fixed sticky sticky-nav
+      h-18 p-8 py-8 bg-white dark:bg-black bg-opacity-60"
     >
-      <div className="pr-8 pl-2">
+      <div className="pr-8">
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
@@ -47,22 +48,22 @@ export default function Header() {
         </motion.button>
       </div>
       <div className="flex justify-evenly flex-row w-42 px-8 pr-2">
-        <div className="p-1">
+        <div className="p-1 sm:p-4">
           <Link href="/">
             <a className="text-md dark:text-white">Portfolio</a>
           </Link>
         </div>
-        <div className="p-1 pl-1">
+        <div className="p-1 sm:p-4">
           <Link href="/blog">
             <a className="text-md dark:text-white">Blog</a>
           </Link>
         </div>
-        <div className="p-1 pl-1">
+        <div className="p-1 sm:p-4">
           <Link href="/">
             <a className="text-md dark:text-white">About</a>
           </Link>
         </div>
-        <div className="p-1 pl-1">
+        <div className="p-1 sm:p-4">
           <Link href="/">
             <a className="text-md dark:text-white">Home</a>
           </Link>
