@@ -3,5 +3,10 @@ const withMDX = require("@next/mdx")({
 });
 
 module.exports = withMDX({
+  images: {
+    domains: [
+      "i.scdn.co", // Spotify Album Art
+    ],
+  },
   pageExtensions: ["js", "jsx", "md", "mdx"],
 });
