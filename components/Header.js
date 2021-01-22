@@ -49,7 +49,7 @@ export default function Header() {
       </div>
       <div className="flex justify-evenly flex-row w-42 px-8 pr-2">
         <div className="p-1 sm:p-4">
-          <Link href="/">
+          <Link href="/portfolio">
             <a className="text-md dark:text-white">Portfolio</a>
           </Link>
         </div>
