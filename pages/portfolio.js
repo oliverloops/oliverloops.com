@@ -2,8 +2,8 @@ export default function Portfolio() {
   return (
     <div className="flex flex-col space-y-4 sm:mx-auto lg:mx-8">
       <a href="#">
-        <div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg lg:mx-8">
-          <div>
+        <div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg mx-0 lg:mx-12">
+          <div className="p-6">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               hendrerit elit quis ullamcorper vehicula. Cras sed scelerisque
@@ -14,8 +14,8 @@ export default function Portfolio() {
         </div>
       </a>
       <a href="#">
-        <div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg lg:mx-8">
-          <div>
+        <div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg mx-0 lg:mx-12">
+          <div className="p-6">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               hendrerit elit quis ullamcorper vehicula. Cras sed scelerisque
