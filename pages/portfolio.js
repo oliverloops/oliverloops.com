@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 //Custom styled components
 const Div = styled.div`
   height: 320px;
+  width: 600px;
   position: relative;
   overflow: hidden;
 
@@ -15,17 +16,23 @@ const Div = styled.div`
 
     & > #arrow {
       opacity: 1;
-      transform: translateX(40px);
+      transform: translateX(45px);
     }
   }
 
   @media (min-width: 300px) and (max-width: 768px) {
     height: auto;
+    width: auto;
   }
 `;
 
 const AppImage = styled(Image)`
-  border-radius: 10px;
+  border-radius: 12px;
+`;
+
+const PreviewContainer = styled.div`
+  transform: translate(330px, 30px);
+  position: absolute;
 `;
 
 const ArrowContainer = styled.div`
@@ -39,11 +46,11 @@ const ArrowContainer = styled.div`
 `;
 
 const Circle = styled.div`
-  width: 265px;
-  height: 265px;
+  width: 365px;
+  height: 365px;
   border-radius: 50%;
-  left: -120px;
-  bottom: -120px;
+  left: -200px;
+  bottom: -200px;
   transform: scale(0);
   position: absolute;
   will-change: transform;
@@ -70,7 +77,7 @@ export default function Portfolio() {
       }}
     >
       <a href="#">
-        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg mx-0 lg:max-w-xl lg:mx-auto">
+        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg mx-0 lg:w-full lg:mx-auto">
           <div className="p-4">
             <span className="flex">
               <AppImage
@@ -89,7 +96,10 @@ export default function Portfolio() {
               </div>
             </span>
           </div>
-          <Circle style={{ backgroundColor: "orange" }} id="circle"></Circle>
+          <Circle
+            style={{ backgroundColor: "rgb(255, 150, 81)" }}
+            id="circle"
+          ></Circle>
           <ArrowContainer id="arrow" className="text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -98,17 +108,25 @@ export default function Portfolio() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <path d="M5 12h13M12 5l7 7-7 7"></path>
             </svg>
           </ArrowContainer>
+          <PreviewContainer className="shadow-xl">
+            <AppImage
+              src={"/static/images/portfolio/barrio_intercambia_web.png"}
+              width={380}
+              height={200}
+              alt={"Desktop View"}
+            />
+          </PreviewContainer>
         </Div>
       </a>
       <a href="#">
-        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg mx-0 lg:max-w-xl lg:mx-auto">
+        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg mx-0 lg:max-w-4xl lg:mx-auto">
           <div className="p-4">
             <span className="flex">
               <AppImage
@@ -136,17 +154,25 @@ export default function Portfolio() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <path d="M5 12h13M12 5l7 7-7 7"></path>
             </svg>
           </ArrowContainer>
+          <PreviewContainer className="shadow-xl">
+            <AppImage
+              src={"/static/images/portfolio/barrio_intercambia_web.png"}
+              width={380}
+              height={200}
+              alt={"Desktop View"}
+            />
+          </PreviewContainer>
         </Div>
       </a>
       <a href="#">
-        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg mx-0 lg:max-w-xl lg:mx-auto">
+        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg mx-0 lg:max-w-4xl lg:mx-auto">
           <div className="p-4">
             <span className="flex">
               <AppImage
@@ -165,7 +191,10 @@ export default function Portfolio() {
               </div>
             </span>
           </div>
-          <Circle style={{ backgroundColor: "teal" }} id="circle"></Circle>
+          <Circle
+            style={{ backgroundColor: "rgb(40, 188, 252)" }}
+            id="circle"
+          ></Circle>
           <ArrowContainer id="arrow" className="text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -174,17 +203,25 @@ export default function Portfolio() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <path d="M5 12h13M12 5l7 7-7 7"></path>
             </svg>
           </ArrowContainer>
+          <PreviewContainer className="shadow-xl">
+            <Image
+              src={"/static/images/portfolio/barrio_intercambia_web.png"}
+              width={380}
+              height={200}
+              alt={"Desktop View"}
+            />
+          </PreviewContainer>
         </Div>
       </a>
       <a href="#">
-        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg mx-0 lg:max-w-xl lg:mx-auto">
+        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg mx-0 lg:max-w-4xl lg:mx-auto">
           <div className="p-4">
             <span className="flex">
               <AppImage
@@ -203,7 +240,10 @@ export default function Portfolio() {
               </div>
             </span>
           </div>
-          <Circle style={{ backgroundColor: "purple" }} id="circle"></Circle>
+          <Circle
+            style={{ backgroundColor: "rgb(49, 206, 135)" }}
+            id="circle"
+          ></Circle>
           <ArrowContainer id="arrow" className="text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -212,13 +252,21 @@ export default function Portfolio() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <path d="M5 12h13M12 5l7 7-7 7"></path>
             </svg>
           </ArrowContainer>
+          <PreviewContainer className="shadow-xl">
+            <Image
+              src={"/static/images/portfolio/barrio_intercambia_web.png"}
+              width={380}
+              height={200}
+              alt={"Desktop View"}
+            />
+          </PreviewContainer>
         </Div>
       </a>
     </motion.div>
