@@ -12,6 +12,11 @@ const Div = styled.div`
     & > #circle {
       transform: scale(1);
     }
+
+    & > #arrow {
+      opacity: 1;
+      transform: translateX(40px);
+    }
   }
 
   @media (min-width: 300px) and (max-width: 768px) {
@@ -21,6 +26,16 @@ const Div = styled.div`
 
 const AppImage = styled(Image)`
   border-radius: 10px;
+`;
+
+const ArrowContainer = styled.div`
+  position: absolute;
+  transform: translateX(12px);
+  bottom: 48px;
+  opacity: 0;
+  will-change: transform;
+  transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s,
+    opacity 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 `;
 
 const Circle = styled.div`
@@ -36,6 +51,7 @@ const Circle = styled.div`
 `;
 // End of custom styled components
 
+// Main Portfolio Component
 export default function Portfolio() {
   return (
     <motion.div
@@ -74,6 +90,21 @@ export default function Portfolio() {
             </span>
           </div>
           <Circle style={{ backgroundColor: "orange" }} id="circle"></Circle>
+          <ArrowContainer id="arrow" className="text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h13M12 5l7 7-7 7"></path>
+            </svg>
+          </ArrowContainer>
         </Div>
       </a>
       <a href="#">
@@ -97,6 +128,21 @@ export default function Portfolio() {
             </span>
           </div>
           <Circle style={{ backgroundColor: "tomato" }} id="circle"></Circle>
+          <ArrowContainer id="arrow" className="text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h13M12 5l7 7-7 7"></path>
+            </svg>
+          </ArrowContainer>
         </Div>
       </a>
       <a href="#">
@@ -120,6 +166,21 @@ export default function Portfolio() {
             </span>
           </div>
           <Circle style={{ backgroundColor: "teal" }} id="circle"></Circle>
+          <ArrowContainer id="arrow" className="text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h13M12 5l7 7-7 7"></path>
+            </svg>
+          </ArrowContainer>
         </Div>
       </a>
       <a href="#">
@@ -143,6 +204,21 @@ export default function Portfolio() {
             </span>
           </div>
           <Circle style={{ backgroundColor: "purple" }} id="circle"></Circle>
+          <ArrowContainer id="arrow" className="text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h13M12 5l7 7-7 7"></path>
+            </svg>
+          </ArrowContainer>
         </Div>
       </a>
     </motion.div>
