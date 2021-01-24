@@ -24,8 +24,8 @@ const AppImage = styled(Image)`
 `;
 
 const Circle = styled.div`
-  width: 240px;
-  height: 240px;
+  width: 265px;
+  height: 265px;
   border-radius: 50%;
   left: -120px;
   bottom: -120px;
