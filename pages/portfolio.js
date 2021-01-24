@@ -18,6 +18,12 @@ const Div = styled.div`
       opacity: 1;
       transform: translateX(45px);
     }
+
+    & > #preview {
+      transform: translate(330px, 30px) rotate3d(0.342, -0.2, 0, 0deg)
+        rotateZ(0deg);
+      transition: transform 200ms linear;
+    }
   }
 
   @media (min-width: 300px) and (max-width: 768px) {
@@ -30,8 +36,21 @@ const AppImage = styled(Image)`
   border-radius: 12px;
 `;
 
+const PreviewImage = styled(Image)`
+  border-radius: 10px 0 0 0;
+  filter: grayscale(1);
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+    filter: grayscale(0);
+    transition: opacity 200ms linear;
+  }
+`;
+
 const PreviewContainer = styled.div`
-  transform: translate(330px, 30px);
+  transform: translate(330px, 32px) rotate3d(0.342, -0.2, 0, 18deg)
+    rotateZ(2deg);
   position: absolute;
 `;
 
@@ -115,9 +134,10 @@ export default function Portfolio() {
               <path d="M5 12h13M12 5l7 7-7 7"></path>
             </svg>
           </ArrowContainer>
-          <PreviewContainer className="shadow-xl">
-            <AppImage
-              src={"/static/images/portfolio/barrio_intercambia_web.png"}
+          <PreviewContainer id="preview" className="shadow-xl">
+            <PreviewImage
+              id="preview-image"
+              src={"/static/images/portfolio/fitcloud_web.png"}
               width={380}
               height={200}
               alt={"Desktop View"}
@@ -161,8 +181,8 @@ export default function Portfolio() {
               <path d="M5 12h13M12 5l7 7-7 7"></path>
             </svg>
           </ArrowContainer>
-          <PreviewContainer className="shadow-xl">
-            <AppImage
+          <PreviewContainer id="preview" className="shadow-xl">
+            <PreviewImage
               src={"/static/images/portfolio/barrio_intercambia_web.png"}
               width={380}
               height={200}
@@ -210,9 +230,9 @@ export default function Portfolio() {
               <path d="M5 12h13M12 5l7 7-7 7"></path>
             </svg>
           </ArrowContainer>
-          <PreviewContainer className="shadow-xl">
-            <Image
-              src={"/static/images/portfolio/barrio_intercambia_web.png"}
+          <PreviewContainer id="preview" className="shadow-xl">
+            <PreviewImage
+              src={"/static/images/portfolio/react_hider_web.png"}
               width={380}
               height={200}
               alt={"Desktop View"}
@@ -259,8 +279,8 @@ export default function Portfolio() {
               <path d="M5 12h13M12 5l7 7-7 7"></path>
             </svg>
           </ArrowContainer>
-          <PreviewContainer className="shadow-xl">
-            <Image
+          <PreviewContainer id="preview" className="shadow-xl">
+            <PreviewImage
               src={"/static/images/portfolio/barrio_intercambia_web.png"}
               width={380}
               height={200}
