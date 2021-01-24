@@ -22,9 +22,10 @@ export default function Portfolio() {
           <div className="p-4">
             <span className="flex">
               <AppImage
-                src={"/static/images/chief.png"}
+                src={"/static/images/portfolio/fitcloud.png"}
                 width={58}
                 height={58}
+                alt={"fitcloud.mx"}
               />
               <div className="flex flex-col ">
                 <p className="pt-2 px-4 text-lg font-semibold dark:text-white">
@@ -43,9 +44,10 @@ export default function Portfolio() {
           <div className="p-4">
             <span className="flex">
               <AppImage
-                src={"/static/images/chief.png"}
+                src={"/static/images/portfolio/barrio.png"}
                 width={58}
                 height={58}
+                alt={"Barrio Intercambia"}
               />
               <div className="flex flex-col ">
                 <p className="pt-2 px-4 text-lg font-semibold dark:text-white">
@@ -64,9 +66,32 @@ export default function Portfolio() {
           <div className="p-4">
             <span className="flex">
               <AppImage
-                src={"/static/images/chief.png"}
+                src={"/static/images/portfolio/react_hider.png"}
                 width={58}
                 height={58}
+                alt={"React Hider"}
+              />
+              <div className="flex flex-col ">
+                <p className="pt-2 px-4 text-lg font-semibold dark:text-white">
+                  React Hider
+                </p>
+                <p className="px-4  font-semibold dark:text-white">
+                  Conditional Rendering Made Easy
+                </p>
+              </div>
+            </span>
+          </div>
+        </Div>
+      </a>
+      <a href="#">
+        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg mx-0 lg:max-w-xl lg:mx-auto">
+          <div className="p-4">
+            <span className="flex">
+              <AppImage
+                src={"/static/images/portfolio/kila.png"}
+                width={58}
+                height={58}
+                alt={"Kila Logo"}
               />
               <div className="flex flex-col ">
                 <p className="pt-2 px-4 text-lg font-semibold dark:text-white">
