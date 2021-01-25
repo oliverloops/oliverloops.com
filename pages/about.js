@@ -43,11 +43,23 @@ export default function About() {
           bibendum.
         </Text>
       </div>
-      <h2 className="font-bold text-2xl md:text-3xl tracking-tight mb-4 text-black dark:text-white">
-        Things I like and recommend
+      <h2 className="font-bold text-3xl md:text-3xl tracking-tight mb-4 text-black dark:text-white">
+        Things I like
       </h2>
-      <h3 className="font-medium mb-2 text-lg">Book(s) I'm reading</h3>
-      <h3 className="font-medium mb-2 text-lg">Recently reads</h3>
+      <h3 className="font-medium mb-2 text-lg dark:text-white">
+        Book(s) I'm reading
+      </h3>
+      <h3 className="font-medium mb-2 text-lg dark:text-white">
+        Recently reads
+      </h3>
+      <div className="mb-8 prose leading-6 text-gray-600 dark:text-gray-400">
+        <h2 className="font-bold text-3xl md:text-3xl tracking-tight mb-4 text-black dark:text-white">
+          My Tech Stack
+        </h2>
+        <Text className=" text-gray-600 dark:text-gray-400">
+          This is the technology stack I use the most on my daily work
+        </Text>
+      </div>
     </motion.div>
   );
 }
