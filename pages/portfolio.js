@@ -130,7 +130,7 @@ export default function Portfolio() {
                 <p className="pt-2 px-4 text-md lg:text-lg font-semibold dark:text-white">
                   Fitcloud.mx
                 </p>
-                <p className="px-4 text-xs lg:text-lg font-semibold dark:text-white">
+                <p className="px-4 text-xs lg:text-md font-semibold dark:text-white">
                   Fitness sessions on demand
                 </p>
               </div>
@@ -180,7 +180,7 @@ export default function Portfolio() {
                 <p className="pt-2 px-4 text-md lg:text-lg font-semibold dark:text-white">
                   Barrio Intercambia
                 </p>
-                <p className="px-4 text-xs lg:text-lg font-semibold dark:text-white">
+                <p className="px-4 text-xs lg:text-md font-semibold dark:text-white">
                   Support against COVID-19
                 </p>
               </div>
@@ -227,7 +227,7 @@ export default function Portfolio() {
                 <p className="pt-2 px-4 text-md lg:text-lg font-semibold dark:text-white">
                   React Hider
                 </p>
-                <p className="px-4 text-xs lg:text-lg font-semibold dark:text-white">
+                <p className="px-4 text-xs lg:text-md font-semibold dark:text-white">
                   Conditional Rendering Made Easy
                 </p>
               </div>
@@ -277,7 +277,7 @@ export default function Portfolio() {
                 <p className="pt-2 px-4 text-md lg:text-lg font-semibold dark:text-white">
                   Kila
                 </p>
-                <p className="px-4 text-xs lg:text-lg font-semibold dark:text-white">
+                <p className="px-4 text-xs lg:text-md font-semibold dark:text-white">
                   Environmental Services
                 </p>
               </div>
@@ -327,7 +327,7 @@ export default function Portfolio() {
                 <p className="pt-2 px-4 text-md lg:text-lg font-semibold dark:text-white">
                   Natours
                 </p>
-                <p className="px-4 text-xs lg:text-lg font-semibold dark:text-white">
+                <p className="px-4 text-xs lg:text-md font-semibold dark:text-white">
                   Pure CSS challenge
                 </p>
               </div>

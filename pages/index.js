@@ -32,7 +32,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col py-4">
-          <h1 className="font-extrabold text-2xl lg:text-5xl dark:text-white">
+          <h1 className="font-bold text-3xl tracking-tight lg:text-4xl dark:text-white">
             Hi there!, I'm Oliver Lopez{" "}
             <span role="img" aria-label="waving hand">
               👋
@@ -63,7 +63,7 @@ export default function Home() {
           },
         }}
       >
-        <h1 className="font-extrabold text-2xl sm:text-4xl dark:text-white">
+        <h1 className="font-bold text-3xl tracking-tight lg:text-4xl dark:text-white">
           Some Cool Blogs!
         </h1>
         {posts.reverse().map((post) => (
@@ -84,7 +84,7 @@ export default function Home() {
           },
         }}
       >
-        <h1 className="py-4 font-extrabold text-2xl sm:text-4xl dark:text-white">
+        <h1 className="py-4 font-bold tracking-tight text-3xl lg:text-4xl dark:text-white">
           Projects
         </h1>
         <ProjectCard
