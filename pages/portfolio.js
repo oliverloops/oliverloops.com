@@ -22,7 +22,13 @@ const Div = styled.div`
     & > #preview {
       transform: translate(330px, 30px) rotate3d(0.342, -0.2, 0, 0deg)
         rotateZ(0deg);
-      transition: transform 200ms linear;
+      transition: transform 200ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+
+      & > div > #preview-image {
+        opacity: 1;
+        filter: grayscale(0);
+        transition: opacity 200ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+      }
     }
   }
 
@@ -40,12 +46,6 @@ const PreviewImage = styled(Image)`
   border-radius: 10px 0 0 0;
   filter: grayscale(1);
   opacity: 0.2;
-
-  &:hover {
-    opacity: 1;
-    filter: grayscale(0);
-    transition: opacity 200ms linear;
-  }
 `;
 
 const PreviewContainer = styled.div`
@@ -136,7 +136,7 @@ export default function Portfolio() {
           </ArrowContainer>
           <PreviewContainer id="preview" className="shadow-xl">
             <PreviewImage
-              id="preview-image"
+              id={"preview-image"}
               src={"/static/images/portfolio/fitcloud_web.png"}
               width={380}
               height={200}
@@ -183,6 +183,7 @@ export default function Portfolio() {
           </ArrowContainer>
           <PreviewContainer id="preview" className="shadow-xl">
             <PreviewImage
+              id={"preview-image"}
               src={"/static/images/portfolio/barrio_intercambia_web.png"}
               width={380}
               height={200}
@@ -232,6 +233,7 @@ export default function Portfolio() {
           </ArrowContainer>
           <PreviewContainer id="preview" className="shadow-xl">
             <PreviewImage
+              id={"preview-image"}
               src={"/static/images/portfolio/react_hider_web.png"}
               width={380}
               height={200}
@@ -281,6 +283,7 @@ export default function Portfolio() {
           </ArrowContainer>
           <PreviewContainer id="preview" className="shadow-xl">
             <PreviewImage
+              id={"preview-image"}
               src={"/static/images/portfolio/barrio_intercambia_web.png"}
               width={380}
               height={200}
