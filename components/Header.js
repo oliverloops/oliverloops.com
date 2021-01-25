@@ -59,7 +59,7 @@ export default function Header() {
           </Link>
         </div>
         <div className="p-1 sm:p-4">
-          <Link href="/">
+          <Link href="/about">
             <a className="text-md dark:text-white">About</a>
           </Link>
         </div>

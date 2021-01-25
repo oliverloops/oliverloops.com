@@ -35,6 +35,13 @@ const Div = styled.div`
   @media (min-width: 300px) and (max-width: 768px) {
     height: auto;
     width: auto;
+
+    &:hover {
+      & > #arrow {
+        opacity: 1;
+        transform: translate(15px, 0px);
+      }
+    }
   }
 `;
 
@@ -62,6 +69,14 @@ const ArrowContainer = styled.div`
   will-change: transform;
   transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s,
     opacity 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+
+  @media (min-width: 300px) and (max-width: 768px) {
+    opacity: 1;
+    transform: translateY(-50%);
+    right: 24px;
+    height: 32px;
+    top: 50%;
+  }
 `;
 
 const Circle = styled.div`
@@ -74,6 +89,12 @@ const Circle = styled.div`
   position: absolute;
   will-change: transform;
   transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+
+  @media (min-width: 300px) and (max-width: 768px) {
+    left: 70%;
+    right: 0px;
+    transform: rotateZ(35deg);
+  }
 `;
 // End of custom styled components
 
@@ -106,10 +127,10 @@ export default function Portfolio() {
                 alt={"fitcloud.mx"}
               />
               <div className="flex flex-col ">
-                <p className="pt-2 px-4 text-lg font-semibold dark:text-white">
+                <p className="pt-2 px-4 text-md lg:text-lg font-semibold dark:text-white">
                   Fitcloud.mx
                 </p>
-                <p className="px-4 font-semibold dark:text-white">
+                <p className="px-4 text-xs lg:text-lg font-semibold dark:text-white">
                   Fitness sessions on demand
                 </p>
               </div>
@@ -156,10 +177,10 @@ export default function Portfolio() {
                 alt={"Barrio Intercambia"}
               />
               <div className="flex flex-col ">
-                <p className="pt-2 px-4 text-lg font-semibold dark:text-white">
+                <p className="pt-2 px-4 text-md lg:text-lg font-semibold dark:text-white">
                   Barrio Intercambia
                 </p>
-                <p className="px-4 font-semibold dark:text-white">
+                <p className="px-4 text-xs lg:text-lg font-semibold dark:text-white">
                   Support against COVID-19
                 </p>
               </div>
@@ -203,10 +224,10 @@ export default function Portfolio() {
                 alt={"React Hider"}
               />
               <div className="flex flex-col ">
-                <p className="pt-2 px-4 text-lg font-semibold dark:text-white">
+                <p className="pt-2 px-4 text-md lg:text-lg font-semibold dark:text-white">
                   React Hider
                 </p>
-                <p className="px-4  font-semibold dark:text-white">
+                <p className="px-4 text-xs lg:text-lg font-semibold dark:text-white">
                   Conditional Rendering Made Easy
                 </p>
               </div>
@@ -253,10 +274,10 @@ export default function Portfolio() {
                 alt={"Kila Logo"}
               />
               <div className="flex flex-col ">
-                <p className="pt-2 px-4 text-lg font-semibold dark:text-white">
+                <p className="pt-2 px-4 text-md lg:text-lg font-semibold dark:text-white">
                   Kila
                 </p>
-                <p className="px-4  font-semibold dark:text-white">
+                <p className="px-4 text-xs lg:text-lg font-semibold dark:text-white">
                   Environmental Services
                 </p>
               </div>
@@ -285,6 +306,56 @@ export default function Portfolio() {
             <PreviewImage
               id={"preview-image"}
               src={"/static/images/portfolio/barrio_intercambia_web.png"}
+              width={380}
+              height={200}
+              alt={"Desktop View"}
+            />
+          </PreviewContainer>
+        </Div>
+      </a>
+      <a href="#">
+        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg mx-0 lg:max-w-4xl lg:mx-auto">
+          <div className="p-4">
+            <span className="flex">
+              <AppImage
+                src={"/static/images/portfolio/natours_logo.png"}
+                width={58}
+                height={58}
+                alt={"Natours Logo"}
+              />
+              <div className="flex flex-col ">
+                <p className="pt-2 px-4 text-md lg:text-lg font-semibold dark:text-white">
+                  Natours
+                </p>
+                <p className="px-4 text-xs lg:text-lg font-semibold dark:text-white">
+                  Pure CSS challenge
+                </p>
+              </div>
+            </span>
+          </div>
+          <Circle
+            style={{ backgroundColor: "rgb(155, 213, 181)" }}
+            id="circle"
+          ></Circle>
+          <ArrowContainer id="arrow" className="text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M5 12h13M12 5l7 7-7 7"></path>
+            </svg>
+          </ArrowContainer>
+          <PreviewContainer id="preview" className="shadow-xl">
+            <PreviewImage
+              id={"preview-image"}
+              src={"/static/images/portfolio/natours_web.png"}
               width={380}
               height={200}
               alt={"Desktop View"}
