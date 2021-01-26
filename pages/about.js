@@ -8,6 +8,32 @@ const Text = styled.p`
   margin-bottom: 1.2em;
 `;
 
+// List item component
+const AppItem = ({ image, name, desc }) => (
+  <>
+    <a
+      className="flex rounded-lg sm:p-4 sm:hover:bg-gray-100 sm:dark:hover:bg-gray-900"
+      href="#"
+    >
+      <Image
+        className="rounded-lg"
+        src={image}
+        width={58}
+        height={58}
+        alt={"VS Code icon"}
+      />
+      <div className="flex flex-col justify-center flex-1 pl-5 space-y-2">
+        <div className="flex flex-col">
+          <p className="font-semibold text-black dark:text-white">{name}</p>
+          <p className="text-base font-normal text-gray-600 dark:text-gray-400">
+            {desc}
+          </p>
+        </div>
+      </div>
+    </a>
+  </>
+);
+
 export default function About() {
   return (
     <motion.div
@@ -28,7 +54,7 @@ export default function About() {
       <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
         About Me
       </h1>
-      <div className="mb-8 prose leading-6 text-gray-600 dark:text-gray-400">
+      <div className="mb-4 prose leading-6 text-gray-600 dark:text-gray-400">
         <p>
           I'm Oliver Lopez, i'm really excited about this blog! Lorem ipsum
           dolor sit amet, consectetur adipiscing elit. Quisque neque elit,
@@ -70,7 +96,7 @@ export default function About() {
       <h3 className="font-medium mb-2 text-xl dark:text-white">
         Recently reads
       </h3>
-      <div className="flex justify-center py-4">
+      <div className="flex justify-center pt-4 pb-8">
         <div>
           <Image
             src={"/static/images/books/opinionated_guide.png"}
@@ -96,13 +122,32 @@ export default function About() {
           />
         </div>
       </div>
-      <div className="mb-8 prose leading-6 text-gray-600 dark:text-gray-400">
+      <div className="mb-4 prose leading-6 text-gray-600 dark:text-gray-400">
         <h2 className="font-bold text-3xl md:text-3xl tracking-tight mb-4 text-black dark:text-white">
           My Tech Stack
         </h2>
         <Text className=" text-gray-600 dark:text-gray-400">
           This is the technology stack I use the most on my daily work
         </Text>
+      </div>
+      <div className="flex flex-col mt-2">
+        <AppItem
+          image={"/static/images/logos/vscode.png"}
+          name={"Visual Studio Code"}
+          desc={"Best text editor for web developers and everyone else."}
+        />
+        <AppItem
+          image={"/static/images/logos/figma_icon.png"}
+          name={"Figma"}
+          desc={
+            "My favorite design tool by far, I use it for UI mockups and design systems."
+          }
+        />
+        <AppItem
+          image={"/static/images/logos/notion_icon.png"}
+          name={"Notion"}
+          desc={"The super app where I manage my workflow."}
+        />
       </div>
     </motion.div>
   );
