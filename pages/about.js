@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Text = styled.p`
   margin-top: 1.2em;
@@ -49,6 +50,24 @@ export default function About() {
       <h3 className="font-medium mb-2 text-lg dark:text-white">
         Book(s) I'm reading
       </h3>
+      <div className="flex justify-center">
+        <div>
+          <Image
+            src={"/static/images/books/opinionated_guide.png"}
+            width={160}
+            height={240}
+            alt={"A book"}
+          />
+        </div>
+        <div className="mx-4">
+          <Image
+            src={"/static/images/books/jamstack_book.png"}
+            width={160}
+            height={240}
+            alt={"A book"}
+          />
+        </div>
+      </div>
       <h3 className="font-medium mb-2 text-lg dark:text-white">
         Recently reads
       </h3>

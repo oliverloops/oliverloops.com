@@ -7,23 +7,6 @@ import { HiSun } from "react-icons/hi";
 //Context
 import { darkMode } from "./Layout";
 
-//Custom styled component(s)
-const Anchor = styled.a`
-  text-decoration: none;
-  background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff),
-    linear-gradient(#000, #000);
-  cursor: pointer;
-  background-size: 20px 2px, 100% 2px, 0 2px;
-  background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 500ms linear, background-position 500ms linear;
-
-  &:hover {
-    background-size: 20px 2px, 0 2px, 100% 2px;
-    background-position: calc(100% + 50px) 100%, 100% 100%, 0 100%;
-  }
-`;
-
 export default function Header() {
   const darkContext = useContext(darkMode);
 
@@ -68,22 +51,22 @@ export default function Header() {
       <div className="flex justify-evenly flex-row w-42 px-8 pr-2">
         <div className="p-1 sm:p-4">
           <Link href="/portfolio">
-            <Anchor className="text-md dark:text-white">Portfolio</Anchor>
+            <a className="text-md dark:text-white">Portfolio</a>
           </Link>
         </div>
         <div className="p-1 sm:p-4">
           <Link href="/blog">
-            <Anchor className="text-md dark:text-white">Blog</Anchor>
+            <a className="text-md dark:text-white">Blog</a>
           </Link>
         </div>
         <div className="p-1 sm:p-4">
           <Link href="/about">
-            <Anchor className="text-md dark:text-white">About</Anchor>
+            <a className="text-md dark:text-white">About</a>
           </Link>
         </div>
         <div className="p-1 sm:p-4">
           <Link href="/">
-            <Anchor className="text-md dark:text-white">Home</Anchor>
+            <a className="text-md dark:text-white">Home</a>
           </Link>
         </div>
       </div>
