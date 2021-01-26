@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+// Custom styled components
 const Text = styled.p`
   margin-top: 1.2em;
   margin-bottom: 1.2em;
@@ -45,32 +46,56 @@ export default function About() {
         </Text>
       </div>
       <h2 className="font-bold text-3xl md:text-3xl tracking-tight mb-4 text-black dark:text-white">
-        Things I like
+        Books
       </h2>
-      <h3 className="font-medium mb-2 text-lg dark:text-white">
-        Book(s) I'm reading
-      </h3>
-      <div className="flex justify-center">
+      <h3 className="font-medium mb-2 text-xl dark:text-white">Reading now</h3>
+      <div className="flex justify-center py-4">
         <div>
           <Image
-            src={"/static/images/books/opinionated_guide.png"}
-            width={160}
-            height={240}
+            src={"/static/images/books/jamstack_book.png"}
+            width={155}
+            height={235}
             alt={"A book"}
           />
         </div>
-        <div className="mx-4">
+        <div className="ml-4">
           <Image
-            src={"/static/images/books/jamstack_book.png"}
-            width={160}
-            height={240}
+            src={"/static/images/books/genoma_cover.jpeg"}
+            width={155}
+            height={235}
             alt={"A book"}
           />
         </div>
       </div>
-      <h3 className="font-medium mb-2 text-lg dark:text-white">
+      <h3 className="font-medium mb-2 text-xl dark:text-white">
         Recently reads
       </h3>
+      <div className="flex justify-center py-4">
+        <div>
+          <Image
+            src={"/static/images/books/opinionated_guide.png"}
+            width={155}
+            height={235}
+            alt={"A book"}
+          />
+        </div>
+        <div className="ml-4">
+          <Image
+            src={"/static/images/books/the_one_thing.jpeg"}
+            width={155}
+            height={235}
+            alt={"A book"}
+          />
+        </div>
+        <div className="ml-4">
+          <Image
+            src={"/static/images/books/hooked_cover.jpeg"}
+            width={155}
+            height={235}
+            alt={"A book"}
+          />
+        </div>
+      </div>
       <div className="mb-8 prose leading-6 text-gray-600 dark:text-gray-400">
         <h2 className="font-bold text-3xl md:text-3xl tracking-tight mb-4 text-black dark:text-white">
           My Tech Stack
