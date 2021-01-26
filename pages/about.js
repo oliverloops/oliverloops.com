@@ -171,8 +171,44 @@ export default function About() {
           image={"/static/images/logos/iterm2.jpg"}
           name={"iTerm 2"}
           desc={
-            "One of the fanciest terminal I've used, the first app you download when buy a mac."
+            "One of the fanciest terminal I've used, the first app you must download when get a mac."
           }
+        />
+        <AppItem
+          image={"/static/images/logos/tunnel_bear.png"}
+          name={"Tunnelbear"}
+          desc={"Sometimes I need a VPN, Tunnelbear does the job."}
+        />
+        <AppItem
+          image={"/static/images/logos/duet_icon.jpeg"}
+          name={"Duet"}
+          desc={
+            "A cool productivity app to use when I'm not at home and because I have an old iPad not compatible with sidecar."
+          }
+        />
+        <AppItem
+          image={"/static/images/logos/netlify_icon.png"}
+          name={"Netlify"}
+          desc={"I love to deploy on Netlify, you can just deploy in seconds."}
+        />
+        <AppItem
+          image={"/static/images/logos/tailwind.png"}
+          name={"Tailwind CSS"}
+          desc={
+            "A compositional CSS framework that increase developer experiece. It’s like writing CSS on steroids."
+          }
+        />
+        <AppItem
+          image={"/static/images/logos/react_icon.png"}
+          name={"React"}
+          desc={
+            "The JavaScript Framework. Naa, I'm joking it's just a pretty cool library ;)"
+          }
+        />
+        <AppItem
+          image={"/static/images/logos/protonmail_icon.png"}
+          name={"Protonmail"}
+          desc={"A secure mail client and my favorite one"}
         />
       </div>
     </motion.div>
