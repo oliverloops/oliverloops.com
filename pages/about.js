@@ -9,11 +9,11 @@ const Text = styled.p`
 `;
 
 // List item component
-const AppItem = ({ image, name, desc }) => (
+const AppItem = ({ url, image, name, desc }) => (
   <>
     <a
       className="flex rounded-lg py-4 sm:p-4 sm:hover:bg-gray-100 sm:dark:hover:bg-gray-900"
-      href="#"
+      href={url}
     >
       <div>
         <Image
@@ -134,11 +134,15 @@ export default function About() {
       </div>
       <div className="flex flex-col">
         <AppItem
+          url={"https://code.visualstudio.com/"}
           image={"/static/images/logos/vscode.png"}
           name={"Visual Studio Code"}
-          desc={"Best text editor for web developers and everyone else."}
+          desc={
+            "Best text editor for web developers and one of the best for everyone else."
+          }
         />
         <AppItem
+          url={"https://www.figma.com/"}
           image={"/static/images/logos/figma_icon.png"}
           name={"Figma"}
           desc={
@@ -146,69 +150,86 @@ export default function About() {
           }
         />
         <AppItem
+          url={"https://www.notion.so/"}
           image={"/static/images/logos/notion_icon.png"}
           name={"Notion"}
-          desc={"The super app where I manage my workflow."}
+          desc={"The super app where I manage my life and workflow."}
         />
         <AppItem
+          url={"https://nextjs.org/"}
           image={"/static/images/logos/nextjs_icon.jpeg"}
           name={"Next.js"}
           desc={"A powerful framework to build modern React websites."}
         />
         <AppItem
+          url={"https://vercel.com/"}
           image={"/static/images/logos/vercel_icon.jpeg"}
           name={"Vercel"}
           desc={
-            "I started to deploy on Vercel and I need to say that the experience it's awesome. Just develop, ship and preview."
+            "I recently started to deploy on Vercel and the experience it's awesome. Just develop, ship and preview."
           }
         />
         <AppItem
+          url={
+            "https://play.google.com/store/apps/details?id=org.thunderdog.challegram&hl=en&gl=US"
+          }
           image={"/static/images/logos/telegram_x.png"}
-          name={"Telegram"}
-          desc={"My main and secure messaging client."}
+          name={"Telegram X"}
+          desc={
+            "My main, favorite and secure messaging client but powered 10x."
+          }
         />
         <AppItem
+          url={"https://iterm2.com/"}
           image={"/static/images/logos/iterm2.jpg"}
           name={"iTerm 2"}
           desc={
-            "One of the fanciest terminal I've used, the first app you must download when get a mac."
+            "It's the best macOS terminal replacement and one of the fanciest terminal I've used, the first app you must download when you get a mac."
           }
         />
         <AppItem
+          url={"https://www.tunnelbear.com/"}
           image={"/static/images/logos/tunnel_bear.png"}
           name={"Tunnelbear"}
-          desc={"Sometimes I need a VPN, Tunnelbear does the job."}
+          desc={"Sometimes I need a VPN, Tunnelbear simply does the job."}
         />
         <AppItem
+          url={"https://www.duetdisplay.com/"}
           image={"/static/images/logos/duet_icon.jpeg"}
-          name={"Duet"}
+          name={"Duet Display"}
           desc={
-            "A cool productivity app to use when I'm not at home and because I have an old iPad not compatible with sidecar."
+            "A cool display sharing app to use when I'm not at home and because I have an old iPad not compatible with sidecar."
           }
         />
         <AppItem
+          url={"https://www.netlify.com/"}
           image={"/static/images/logos/netlify_icon.png"}
           name={"Netlify"}
-          desc={"I love to deploy on Netlify, you can just deploy in seconds."}
+          desc={
+            "I love to deploy on Netlify, you can just deploy in seconds it's really insane."
+          }
         />
         <AppItem
+          url={"https://tailwindcss.com/"}
           image={"/static/images/logos/tailwind.png"}
           name={"Tailwind CSS"}
           desc={
-            "A compositional CSS framework that increase developer experiece. It’s like writing CSS on steroids."
+            "A compositional CSS framework that increases developer experiece. It’s like writing CSS on steroids."
           }
         />
         <AppItem
+          url={"https://reactjs.org/"}
           image={"/static/images/logos/react_icon.png"}
           name={"React"}
           desc={
-            "The JavaScript Framework. Naa, I'm joking it's just a pretty cool library ;)"
+            "The JavaScript Framework!. Naa, I'm joking it's just a pretty cool library ;)."
           }
         />
         <AppItem
+          url={"https://protonmail.com/"}
           image={"/static/images/logos/protonmail_icon.png"}
           name={"Protonmail"}
-          desc={"A secure mail client and my favorite one"}
+          desc={"A super secure email client and my favorite one."}
         />
       </div>
     </motion.div>
