@@ -39,7 +39,7 @@ const Div = styled.div`
     &:hover {
       & > #arrow {
         opacity: 1;
-        transform: translate(15px, 0px);
+        transform: translate(10px, -15px);
       }
     }
   }
@@ -131,7 +131,7 @@ export default function Portfolio() {
                   Fitcloud.mx
                 </p>
                 <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
-                  Fitness sessions
+                  Fitness sessions&nbsp;
                   <span className="hidden md:inline md:text-black md:dark:text-white">
                     on demand
                   </span>
