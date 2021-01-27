@@ -17,11 +17,11 @@ const AppItem = ({ url, image, name, desc }) => (
     >
       <div>
         <Image
-          className="rounded-lg"
+          className="rounded-xl"
           src={image}
           width={58}
           height={58}
-          alt={"VS Code icon"}
+          alt={"App icon"}
         />
       </div>
       <div className="flex flex-col justify-center flex-1 pl-5 space-y-2">
@@ -134,11 +134,19 @@ export default function About() {
       </div>
       <div className="flex flex-col">
         <AppItem
-          url={"https://code.visualstudio.com/"}
-          image={"/static/images/logos/vscode.png"}
-          name={"Visual Studio Code"}
+          url={"https://brave.com/"}
+          image={"/static/images/logos/brave_icon.png"}
+          name={"Brave Browser"}
           desc={
-            "Best text editor for web developers and one of the best for everyone else."
+            "The private browser, I even have a crypto BAT wallet and can jump between search engines like Google and Duck Duck Go."
+          }
+        />
+        <AppItem
+          url={"https://www.duetdisplay.com/"}
+          image={"/static/images/logos/duet_icon.jpeg"}
+          name={"Duet Display"}
+          desc={
+            "A cool display sharing app to use when I'm not at home and because I have an old iPad not compatible with sidecar."
           }
         />
         <AppItem
@@ -150,23 +158,59 @@ export default function About() {
           }
         />
         <AppItem
+          url={"https://iterm2.com/"}
+          image={"/static/images/logos/iterm2.jpeg"}
+          name={"iTerm 2"}
+          desc={
+            "It's the best macOS terminal replacement and one of the fanciest terminal I've used, the first app you must download when you get a mac."
+          }
+        />
+        <AppItem
+          url={"https://www.netlify.com/"}
+          image={"/static/images/logos/netlify_icon.png"}
+          name={"Netlify"}
+          desc={
+            "I love to deploy on Netlify, you can just deploy in seconds it's really insane."
+          }
+        />
+        <AppItem
+          url={"https://nextjs.org/"}
+          image={"/static/images/logos/nextjs_icon.png"}
+          name={"Next.js"}
+          desc={"A powerful framework to build modern React websites."}
+        />
+        <AppItem
+          url={"https://nodejs.org/"}
+          image={"/static/images/logos/node_icon.png"}
+          name={"Node.js"}
+          desc={"Oh My Node!, I'm really involved with node.js environment."}
+        />
+        <AppItem
           url={"https://www.notion.so/"}
           image={"/static/images/logos/notion_icon.png"}
           name={"Notion"}
           desc={"The super app where I manage my life and workflow."}
         />
         <AppItem
-          url={"https://nextjs.org/"}
-          image={"/static/images/logos/nextjs_icon.jpeg"}
-          name={"Next.js"}
-          desc={"A powerful framework to build modern React websites."}
+          url={"https://protonmail.com/"}
+          image={"/static/images/logos/protonmail_icon.png"}
+          name={"Protonmail"}
+          desc={"A super secure email client and my favorite one."}
         />
         <AppItem
-          url={"https://vercel.com/"}
-          image={"/static/images/logos/vercel_icon.jpeg"}
-          name={"Vercel"}
+          url={"https://reactjs.org/"}
+          image={"/static/images/logos/react_icon.png"}
+          name={"React"}
           desc={
-            "I recently started to deploy on Vercel and the experience it's awesome. Just develop, ship and preview."
+            "The JavaScript Framework!. Naa, I'm joking it's just a pretty cool library ;)."
+          }
+        />
+        <AppItem
+          url={"https://tailwindcss.com/"}
+          image={"/static/images/logos/tailwind.png"}
+          name={"Tailwind CSS"}
+          desc={
+            "A compositional CSS framework that increases developer experiece. It’s like writing CSS on steroids."
           }
         />
         <AppItem
@@ -180,56 +224,26 @@ export default function About() {
           }
         />
         <AppItem
-          url={"https://iterm2.com/"}
-          image={"/static/images/logos/iterm2.jpg"}
-          name={"iTerm 2"}
-          desc={
-            "It's the best macOS terminal replacement and one of the fanciest terminal I've used, the first app you must download when you get a mac."
-          }
-        />
-        <AppItem
           url={"https://www.tunnelbear.com/"}
           image={"/static/images/logos/tunnel_bear.png"}
           name={"Tunnelbear"}
           desc={"Sometimes I need a VPN, Tunnelbear simply does the job."}
         />
         <AppItem
-          url={"https://www.duetdisplay.com/"}
-          image={"/static/images/logos/duet_icon.jpeg"}
-          name={"Duet Display"}
+          url={"https://vercel.com/"}
+          image={"/static/images/logos/vercel_icon.jpeg"}
+          name={"Vercel"}
           desc={
-            "A cool display sharing app to use when I'm not at home and because I have an old iPad not compatible with sidecar."
+            "I recently started to deploy on Vercel and the experience it's awesome. Just develop, ship and preview."
           }
         />
         <AppItem
-          url={"https://www.netlify.com/"}
-          image={"/static/images/logos/netlify_icon.png"}
-          name={"Netlify"}
+          url={"https://code.visualstudio.com/"}
+          image={"/static/images/logos/vscode.png"}
+          name={"Visual Studio Code"}
           desc={
-            "I love to deploy on Netlify, you can just deploy in seconds it's really insane."
+            "Best text editor for web developers and one of the best for everyone else."
           }
-        />
-        <AppItem
-          url={"https://tailwindcss.com/"}
-          image={"/static/images/logos/tailwind.png"}
-          name={"Tailwind CSS"}
-          desc={
-            "A compositional CSS framework that increases developer experiece. It’s like writing CSS on steroids."
-          }
-        />
-        <AppItem
-          url={"https://reactjs.org/"}
-          image={"/static/images/logos/react_icon.png"}
-          name={"React"}
-          desc={
-            "The JavaScript Framework!. Naa, I'm joking it's just a pretty cool library ;)."
-          }
-        />
-        <AppItem
-          url={"https://protonmail.com/"}
-          image={"/static/images/logos/protonmail_icon.png"}
-          name={"Protonmail"}
-          desc={"A super secure email client and my favorite one."}
         />
       </div>
     </motion.div>
