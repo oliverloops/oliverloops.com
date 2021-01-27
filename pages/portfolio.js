@@ -91,7 +91,7 @@ const Circle = styled.div`
   transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 
   @media (min-width: 300px) and (max-width: 768px) {
-    left: 70%;
+    left: 72%;
     right: 0px;
     transform: rotateZ(35deg);
   }
@@ -102,7 +102,7 @@ const Circle = styled.div`
 export default function Portfolio() {
   return (
     <motion.div
-      className="flex flex-col space-y-4 mx-auto"
+      className="flex flex-col space-y-4 w-full"
       initial="pageInitial"
       animate="pageAnimate"
       variants={{
@@ -117,7 +117,7 @@ export default function Portfolio() {
       }}
     >
       <a href="#">
-        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg mx-0 lg:w-full lg:mx-auto">
+        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg py-2 mx-0 md:w-full md:mx-auto">
           <div className="p-4">
             <span className="flex">
               <AppImage
@@ -127,11 +127,14 @@ export default function Portfolio() {
                 alt={"fitcloud.mx"}
               />
               <div className="flex flex-col ">
-                <p className="pt-2 px-4 text-md lg:text-lg font-semibold dark:text-white">
+                <p className="pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
                   Fitcloud.mx
                 </p>
-                <p className="px-4 text-xs lg:text-md font-semibold dark:text-white">
-                  Fitness sessions on demand
+                <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
+                  Fitness sessions
+                  <span className="hidden md:inline md:text-black md:dark:text-white">
+                    on demand
+                  </span>
                 </p>
               </div>
             </span>
@@ -167,7 +170,7 @@ export default function Portfolio() {
         </Div>
       </a>
       <a href="#">
-        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg mx-0 lg:max-w-4xl lg:mx-auto">
+        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg py-2 mx-0 md:max-w-4xl md:mx-auto">
           <div className="p-4">
             <span className="flex">
               <AppImage
@@ -177,11 +180,15 @@ export default function Portfolio() {
                 alt={"Barrio Intercambia"}
               />
               <div className="flex flex-col ">
-                <p className="pt-2 px-4 text-md lg:text-lg font-semibold dark:text-white">
+                <p className="pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
                   Barrio Intercambia
                 </p>
-                <p className="px-4 text-xs lg:text-md font-semibold dark:text-white">
-                  Support against COVID-19
+                <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
+                  Support{" "}
+                  <span className="hidden md:inline md:text-black md:dark:text-white">
+                    against
+                  </span>{" "}
+                  COVID-19
                 </p>
               </div>
             </span>
@@ -214,7 +221,7 @@ export default function Portfolio() {
         </Div>
       </a>
       <a href="#">
-        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg mx-0 lg:max-w-4xl lg:mx-auto">
+        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg py-2 mx-0 md:max-w-4xl md:mx-auto">
           <div className="p-4">
             <span className="flex">
               <AppImage
@@ -224,11 +231,14 @@ export default function Portfolio() {
                 alt={"React Hider"}
               />
               <div className="flex flex-col ">
-                <p className="pt-2 px-4 text-md lg:text-lg font-semibold dark:text-white">
+                <p className="pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
                   React Hider
                 </p>
-                <p className="px-4 text-xs lg:text-md font-semibold dark:text-white">
-                  Conditional Rendering Made Easy
+                <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
+                  Conditional Rendering{" "}
+                  <span className="hidden md:inline md:text-black md:dark:text-white">
+                    Made Easy
+                  </span>
                 </p>
               </div>
             </span>
@@ -264,7 +274,7 @@ export default function Portfolio() {
         </Div>
       </a>
       <a href="#">
-        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg mx-0 lg:max-w-4xl lg:mx-auto">
+        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg py-2 mx-0 md:max-w-4xl md:mx-auto">
           <div className="p-4">
             <span className="flex">
               <AppImage
@@ -274,10 +284,10 @@ export default function Portfolio() {
                 alt={"Kila Logo"}
               />
               <div className="flex flex-col ">
-                <p className="pt-2 px-4 text-md lg:text-lg font-semibold dark:text-white">
+                <p className="pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
                   Kila
                 </p>
-                <p className="px-4 text-xs lg:text-md font-semibold dark:text-white">
+                <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
                   Environmental Services
                 </p>
               </div>
@@ -314,7 +324,7 @@ export default function Portfolio() {
         </Div>
       </a>
       <a href="#">
-        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg mx-0 lg:max-w-4xl lg:mx-auto">
+        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg py-2 mx-0 md:max-w-4xl md:mx-auto">
           <div className="p-4">
             <span className="flex">
               <AppImage
@@ -324,10 +334,10 @@ export default function Portfolio() {
                 alt={"Natours Logo"}
               />
               <div className="flex flex-col ">
-                <p className="pt-2 px-4 text-md lg:text-lg font-semibold dark:text-white">
+                <p className="pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
                   Natours
                 </p>
-                <p className="px-4 text-xs lg:text-md font-semibold dark:text-white">
+                <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
                   Pure CSS challenge
                 </p>
               </div>

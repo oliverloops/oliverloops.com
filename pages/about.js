@@ -219,9 +219,7 @@ export default function About() {
           }
           image={"/static/images/logos/telegram_x.png"}
           name={"Telegram X"}
-          desc={
-            "My main, favorite and secure messaging client but powered 10x."
-          }
+          desc={"My favorite and secure messaging client but powered by 10x."}
         />
         <AppItem
           url={"https://www.tunnelbear.com/"}
