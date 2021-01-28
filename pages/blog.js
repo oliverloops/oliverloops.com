@@ -25,8 +25,10 @@ export default function Blog() {
       }}
       className="flex flex-col mx-auto"
     >
-      <h1 className="text-3xl font-extrabold dark:text-white">Blog</h1>
-      <p className="mt-4 mb-4 dark:text-white">
+      <h1 className="text-3xl font-extrabold dark:text-white transition-all">
+        Blog
+      </h1>
+      <p className="mt-4 mb-4 dark:text-white transition-all">
         I want to start writing and sharing all my experiences, projects and
         other cool stuff.
       </p>

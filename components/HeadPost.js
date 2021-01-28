@@ -4,11 +4,11 @@ export default function HeadPost({ meta, link }) {
   return (
     <div className="flex justify-center flex-col">
       <Link href={"/blog" + link}>
-        <a className="text-2xl font-bold text-blue-500 dark:text-blue-300">
+        <a className="text-2xl font-bold text-blue-500 dark:text-blue-300 transition-all">
           {meta.title}
         </a>
       </Link>
-      <div className="text-xl font-semibold dark:text-white">
+      <div className="text-xl font-semibold dark:text-white transition-all">
         {meta.description}
       </div>
       <div className="flex justify-between row">

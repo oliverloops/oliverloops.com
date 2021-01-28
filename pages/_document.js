@@ -1,6 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
-import darkMode from "../components/Layout";
 
 class MyDocument extends Document {
   static getInitialProps({ renderPage }) {

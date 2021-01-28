@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function AuthorHeadPost({ meta, link }) {
   return (
     <div className="flex justify-center flex-col space-y-2 mb-6">
-      <h1 className="mb-2 text-4xl font-extrabold  dark:text-white">
+      <h1 className="mb-2 text-4xl font-extrabold  dark:text-white transition-all">
         {meta.title}
       </h1>
       <div className="flex space-x-2 row">
@@ -16,17 +16,19 @@ export default function AuthorHeadPost({ meta, link }) {
         />
         <p
           className="text-sm
-         text-gray-700 dark:text-gray-300"
+         text-gray-700 dark:text-gray-300 transition-all"
         >
           {meta.author}
         </p>
-        <span className="text-sm text-gray-700 dark:text-gray-300">-</span>
-        <div className="text-sm text-gray-700 dark:text-gray-300">
+        <span className="text-sm text-gray-700 dark:text-gray-300 transition-all">
+          -
+        </span>
+        <div className="text-sm text-gray-700 dark:text-gray-300 transition-all">
           {meta.date}
         </div>
       </div>
       <div className="flex justify-between row">
-        <div className="text-sm text-gray-400 dark:text-gray-500">
+        <div className="text-sm text-gray-400 dark:text-gray-500 transition-all">
           <span role="img" aria-label="book">
             📖
           </span>{" "}

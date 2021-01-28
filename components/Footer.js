@@ -19,26 +19,26 @@ export default function Footer() {
           translateX: 0,
         },
       }}
-      className="flex flex-col justify-center dark:bg-black"
+      className="flex flex-col justify-center dark:bg-black transition-all"
     >
       <div className="flex justify-center mt-8">
         <NowPlaying />
       </div>
       <div className="flex justify-center mb-4 pt-4">
         <a href="#">
-          <FaTwitter className="mr-4 text-2xl hover:text-blue-400 dark:text-white" />
+          <FaTwitter className="mr-4 text-2xl hover:text-blue-400 dark:text-white transition-all" />
         </a>
         <a href="#">
-          <FaGithub className="mr-4 text-2xl hover:text-gray-400 dark:text-white" />
+          <FaGithub className="mr-4 text-2xl hover:text-gray-400 dark:text-white transition-all" />
         </a>
         <a href="">
-          <FaLinkedin className="mr-4 text-2xl hover:text-blue-500 dark:text-white" />
+          <FaLinkedin className="mr-4 text-2xl hover:text-blue-500 dark:text-white transition-all" />
         </a>
         <a href="#">
-          <MdEmail className="mr-4 text-2xl hover:text-indigo-500 dark:text-white" />
+          <MdEmail className="mr-4 text-2xl hover:text-indigo-500 dark:text-white transition-all" />
         </a>
       </div>
-      <small className="mb-4 flex justify-center dark:text-white">
+      <small className="mb-4 flex justify-center dark:text-white transition-all">
         Hosted on&nbsp;
         <span role="img" aria-label="triangule">
           ▲
