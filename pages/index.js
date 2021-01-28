@@ -66,9 +66,12 @@ export default function Home() {
         <h1 className="font-bold text-3xl tracking-tight lg:text-4xl dark:text-white">
           Some Cool Blogs!
         </h1>
-        {posts.reverse().map((post) => (
-          <Post key={post.link} post={post} />
-        ))}
+        {posts
+          .slice()
+          .reverse()
+          .map((post) => (
+            <Post key={post.link} post={post} />
+          ))}
       </motion.div>
       <motion.div
         initial="pageInitial"

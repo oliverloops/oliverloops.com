@@ -8,7 +8,7 @@ export default function HeadPost({ meta, link }) {
           {meta.title}
         </a>
       </Link>
-      <div className="text-xl font-semibold   dark:text-white">
+      <div className="text-xl font-semibold dark:text-white">
         {meta.description}
       </div>
       <div className="flex justify-between row">

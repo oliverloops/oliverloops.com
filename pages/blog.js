@@ -5,6 +5,8 @@ import { Post } from "../components/Post";
 import { posts } from "../getAllPosts";
 
 export default function Blog() {
+  console.log(posts.slice(0).reverse());
+
   return (
     <motion.div
       initial="pageInitial"
@@ -28,7 +30,7 @@ export default function Blog() {
       </p>
       <Search />
       {posts
-        .slice(0)
+        .slice()
         .reverse()
         .map((post) => (
           <Post key={post.link} post={post} />
