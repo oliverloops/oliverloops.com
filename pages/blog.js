@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 //UI components
 import Search from "../components/Search";
@@ -5,7 +6,7 @@ import { Post } from "../components/Post";
 import { posts } from "../getAllPosts";
 
 export default function Blog() {
-  console.log(posts.slice(0).reverse());
+  const [postList, setPostList] = useState(posts);
 
   return (
     <motion.div
@@ -29,7 +30,7 @@ export default function Blog() {
         other cool stuff.
       </p>
       <Search />
-      {posts
+      {postList
         .slice()
         .reverse()
         .map((post) => (
