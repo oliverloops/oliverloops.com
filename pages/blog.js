@@ -9,13 +9,6 @@ export default function Blog() {
   const [postList, setPostList] = useState(posts);
   const [result, setResult] = useState("");
 
-  posts
-    .slice()
-    .reverse()
-    .map((post) => {
-      console.log(post.module.meta.title.toLowerCase().split(""));
-    });
-
   return (
     <motion.div
       initial="pageInitial"
@@ -48,7 +41,7 @@ export default function Blog() {
             .reverse()
             .map(
               (post) =>
-                result === post.module.meta.title.toLowerCase().split("") && (
+                post.module.meta.title.toLowerCase().includes(result) && (
                   <Post key={post.link} post={post} />
                 )
             )}
