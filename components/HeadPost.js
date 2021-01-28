@@ -13,7 +13,7 @@ export default function HeadPost({ meta, link }) {
       </div>
       <div className="flex justify-between row">
         <div className="text-gray-400">{meta.date}</div>
-        <div className="text-gray-400">
+        <div className="px-2 text-gray-400">
           <span role="img" aria-label="book">
             📖
           </span>{" "}

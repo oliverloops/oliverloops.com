@@ -138,7 +138,7 @@ export default function About() {
           image={"/static/images/logos/brave_icon.png"}
           name={"Brave Browser"}
           desc={
-            "The private browser, I even have a crypto BAT wallet and can jump between search engines like Google and Duck Duck Go."
+            "The private browser, I even have a crypto BAT wallet and can jump between search engines like Google and DuckDuckGo."
           }
         />
         <AppItem

@@ -7,6 +7,14 @@ import { posts } from "../getAllPosts";
 
 export default function Blog() {
   const [postList, setPostList] = useState(posts);
+  const [result, setResult] = useState("");
+
+  posts
+    .slice()
+    .reverse()
+    .map((post) => {
+      console.log(post.module.meta.title.toLowerCase().split(""));
+    });
 
   return (
     <motion.div
@@ -29,13 +37,21 @@ export default function Blog() {
         I want to start writing and sharing all my experiences, projects and
         other cool stuff.
       </p>
-      <Search />
-      {postList
-        .slice()
-        .reverse()
-        .map((post) => (
-          <Post key={post.link} post={post} />
-        ))}
+      <Search setResult={setResult} postList={postList} />
+      {result === ""
+        ? postList
+            .slice()
+            .reverse()
+            .map((post) => <Post key={post.link} post={post} />)
+        : postList
+            .slice()
+            .reverse()
+            .map(
+              (post) =>
+                result === post.module.meta.title.toLowerCase().split("") && (
+                  <Post key={post.link} post={post} />
+                )
+            )}
     </motion.div>
   );
 }
