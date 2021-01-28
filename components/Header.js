@@ -31,17 +31,17 @@ export default function Header() {
         },
       }}
       className="flex justify-between items-center mx-auto max-w-4xl w-full fixed sticky sticky-nav
-      h-18 p-8 py-8 bg-white dark:bg-black bg-opacity-60 transition-all"
+      h-18 p-8 py-8 bg-white dark:bg-black bg-opacity-60"
     >
       <div className="pr-8">
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => isDarkModeOn()}
-          className="flex justify-center items-center rounded-md bg-gray-200 dark:bg-gray-700 h-10 w-10 transition-all"
+          className="flex justify-center items-center rounded-md bg-gray-200 dark:bg-gray-700 h-10 w-10"
         >
           {darkContext.dark ? (
-            <HiSun className="icon dark:text-white transition-all" />
+            <HiSun className="icon dark:text-white" />
           ) : (
             <IoMdMoon className="icon" />
           )}
@@ -50,22 +50,22 @@ export default function Header() {
       <div className="flex justify-evenly flex-row w-42 px-8 pr-2">
         <div className="p-1 sm:p-4">
           <Link href="/portfolio">
-            <a className="text-md dark:text-white transition-all">Portfolio</a>
+            <a className="text-md dark:text-white ">Portfolio</a>
           </Link>
         </div>
         <div className="p-1 sm:p-4">
           <Link href="/blog">
-            <a className="text-md dark:text-white transition-all">Blog</a>
+            <a className="text-md dark:text-white ">Blog</a>
           </Link>
         </div>
         <div className="p-1 sm:p-4">
           <Link href="/about">
-            <a className="text-md dark:text-white transition-all">About</a>
+            <a className="text-md dark:text-white ">About</a>
           </Link>
         </div>
         <div className="p-1 sm:p-4">
           <Link href="/">
-            <a className="text-md dark:text-white transition-all">Home</a>
+            <a className="text-md dark:text-white ">Home</a>
           </Link>
         </div>
       </div>
