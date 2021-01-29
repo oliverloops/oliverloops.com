@@ -3,6 +3,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { IoMdMoon } from "react-icons/io";
 import { HiSun } from "react-icons/hi";
+
 //Context
 import { darkMode } from "../components/Layout";
 
