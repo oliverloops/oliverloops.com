@@ -18,6 +18,12 @@ export default function Header() {
     }
   };
 
+  const switchTheme = () => {
+    if (darkContext.isMounted) {
+      setTheme(darkContext.theme === "light" ? "dark" : "light");
+    }
+  };
+
   return (
     <motion.nav
       initial="pageInitial"
@@ -37,10 +43,10 @@ export default function Header() {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          onClick={() => isDarkModeOn()}
+          onClick={() => switchTheme}
           className="flex justify-center items-center rounded-md bg-gray-200 dark:bg-gray-700 h-10 w-10"
         >
-          {darkContext.dark ? (
+          {darkContext.isMounted ? (
             <HiSun className="icon dark:text-white" />
           ) : (
             <IoMdMoon className="icon" />
