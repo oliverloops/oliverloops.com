@@ -19,7 +19,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>{this.props.styleTags}</Head>
-        <body className="bg-white dark:bg-black">
+        <body className="bg-white text-black dark:bg-black dark:text-white">
           <Main />
           <NextScript />
         </body>

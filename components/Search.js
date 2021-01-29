@@ -6,15 +6,9 @@ const Search = ({ setResult }) => {
   }
 
   return (
-    <div className="search-container mb-4 border border-gray-300 dark:border-black bg-white dark:bg-gray-700 transition-all">
-      {/* <input
-        type="text"
-        value={props.inputValue}
-        onChange={props.cardFilter}
-        placeholder="Buscar"
-      /> */}
+    <div className="search-container mb-4 border border-gray-300 dark:border-black bg-white dark:bg-gray-700">
       <input
-        className="bg-white dark:bg-gray-700 dark:text-white transition-all"
+        className="bg-white dark:bg-gray-700 dark:text-white"
         type="text"
         placeholder="Search"
         onChange={getInput}
