@@ -9,18 +9,9 @@ import { darkMode } from "../components/Layout";
 export default function Header() {
   const darkContext = useContext(darkMode);
 
-  //Check if dark mode is active and change the status
-  const isDarkModeOn = () => {
-    if (!darkContext.dark) {
-      darkContext.activeDark(true);
-    } else {
-      darkContext.activeDark(false);
-    }
-  };
-
   const switchTheme = () => {
     if (darkContext.isMounted) {
-      setTheme(darkContext.theme === "light" ? "dark" : "light");
+      darkContext.setTheme(darkContext.theme === "light" ? "dark" : "light");
     }
   };
 
@@ -43,10 +34,10 @@ export default function Header() {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          onClick={() => switchTheme}
+          onClick={() => switchTheme()}
           className="flex justify-center items-center rounded-md bg-gray-200 dark:bg-gray-700 h-10 w-10"
         >
-          {darkContext.isMounted ? (
+          {darkContext.theme === "dark" ? (
             <HiSun className="icon dark:text-white" />
           ) : (
             <IoMdMoon className="icon" />

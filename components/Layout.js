@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 export const darkMode = createContext();
 
 export default function Layout({ children, pageTitle, description }) {
-  const [dark, setDark] = useState(false);
   const { theme, setTheme } = useTheme();
   const [isMounted, setIsMounted] = useState(false);
 
@@ -26,7 +25,7 @@ export default function Layout({ children, pageTitle, description }) {
       </Head>
 
       <darkMode.Provider
-        value={{ dark: dark, theme: theme, isMounted: isMounted }}
+        value={{ theme: theme, setTheme: setTheme, isMounted: isMounted }}
       >
         <main>
           <Header />
