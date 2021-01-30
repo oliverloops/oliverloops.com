@@ -59,13 +59,15 @@ export default function About() {
       <div className="mb-4 prose leading-6 text-gray-600 dark:text-gray-400">
         <p>
           Hi again!, I'm Oliver and I'm a software developer, rookie barista and
-          an enthusiast tech writer. I'm a part-time freelance developer and
+          an enthusiast tech writer. I'm a part-time freelance web developer and
           full-time information systems student.
         </p>
         <Text>
-          The core idea of this I want it to share what I knwo and learn through
-          blog posts in order to help other developers succeed in their learning
-          paths.
+          I started this website because I want it to share everything I know,
+          learn and discover through blog posts in order to help other
+          developers succeed on their learning paths. Last but not least this
+          space on the internet will document my entrepreneurial adventures and
+          life experiences around software.
         </Text>
         <Text>
           I'm currently living on Guanajuato, Mexico and I usually spend my time

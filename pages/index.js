@@ -26,7 +26,7 @@ export default function Home() {
           <img
             style={{ width: "64px", height: "64px" }}
             className="rounded-full"
-            src="/me_cross.jpg"
+            src="/static/images/me_cross.jpg"
             alt="Oliver Lopez"
           />
         </div>
@@ -39,8 +39,8 @@ export default function Home() {
             </span>
           </h1>
           <h3 className="font-medium text-md text-gray-500 dark:text-gray-400  max-w-xl py-2">
-            I'm a software developer, rookie barista, and writer. Welcome to my
-            personal space on the internet where you can find{" "}
+            I'm a software developer, rookie barista, and a tech writer. Welcome
+            to my personal space on the internet where you can find{" "}
             <span style={{ color: "#F7E01E" }}>JavaScript</span>,{" "}
             <span style={{ color: "#52D8FF" }}>React</span> and my{" "}
             <span style={{ color: "#32C119" }}>entrepreneurial adventures</span>{" "}
