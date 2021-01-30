@@ -117,7 +117,7 @@ export default function Portfolio() {
       }}
     >
       <a href="#">
-        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg py-2 mx-0 md:w-full md:mx-auto">
+        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg py-2 mx-0 md:max-w-4xl md:mx-auto">
           <div className="p-4">
             <span className="flex">
               <AppImage
@@ -328,14 +328,14 @@ export default function Portfolio() {
           <div className="p-4">
             <span className="flex">
               <AppImage
-                src={"/static/images/portfolio/natours_logo.png"}
+                src={"/static/images/portfolio/pinche_web.png"}
                 width={58}
                 height={58}
                 alt={"Natours Logo"}
               />
               <div className="flex flex-col ">
                 <p className="pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
-                  Natours
+                  El pinche grabador
                 </p>
                 <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
                   Pure CSS challenge
@@ -344,7 +344,7 @@ export default function Portfolio() {
             </span>
           </div>
           <Circle
-            style={{ backgroundColor: "rgb(155, 213, 181)" }}
+            style={{ backgroundColor: "rgb(163, 90, 251)" }}
             id="circle"
           ></Circle>
           <ArrowContainer id="arrow" className="text-white">
@@ -365,7 +365,7 @@ export default function Portfolio() {
           <PreviewContainer id="preview" className="shadow-xl">
             <PreviewImage
               id={"preview-image"}
-              src={"/static/images/portfolio/natours_web.png"}
+              src={"/static/images/portfolio/pinche_web.png"}
               width={380}
               height={200}
               alt={"Desktop View"}

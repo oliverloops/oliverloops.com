@@ -28,7 +28,7 @@ export default function Header() {
           translateY: 0,
         },
       }}
-      className="flex justify-between items-center mx-auto max-w-4xl w-full fixed sticky sticky-nav
+      className="flex justify-between items-center mx-auto max-w-4xl w-full sticky sticky-nav
       h-18 p-8 py-8 bg-white dark:bg-black bg-opacity-60"
     >
       <div className="pr-8">
