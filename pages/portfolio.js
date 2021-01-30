@@ -315,7 +315,7 @@ export default function Portfolio() {
           <PreviewContainer id="preview" className="shadow-xl">
             <PreviewImage
               id={"preview-image"}
-              src={"/static/images/portfolio/barrio_intercambia_web.png"}
+              src={"/static/images/portfolio/kila_web.png"}
               width={380}
               height={200}
               alt={"Desktop View"}
