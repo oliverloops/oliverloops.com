@@ -25,13 +25,13 @@ export default function Footer() {
         <NowPlaying />
       </div>
       <div className="flex justify-center mb-4 pt-4">
-        <a href="#">
+        <a href="https://twitter.com/oliverloops">
           <FaTwitter className="mr-4 text-2xl hover:text-blue-400 dark:text-white transition-all" />
         </a>
-        <a href="#">
+        <a href="https://github.com/oliverloops">
           <FaGithub className="mr-4 text-2xl hover:text-gray-400 dark:text-white transition-all" />
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/oliver-lopez-a57a88165/">
           <FaLinkedin className="mr-4 text-2xl hover:text-blue-500 dark:text-white transition-all" />
         </a>
         <a href="#">
@@ -43,7 +43,7 @@ export default function Footer() {
         <span role="img" aria-label="triangule">
           ▲
         </span>
-        Vercel | oliverloops ©2021
+        Vercel | oliverloops 2021
       </small>
     </motion.footer>
   );
