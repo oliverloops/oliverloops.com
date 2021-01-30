@@ -58,19 +58,20 @@ export default function About() {
       </h1>
       <div className="mb-4 prose leading-6 text-gray-600 dark:text-gray-400">
         <p>
-          I'm Oliver Lopez, i'm really excited about this blog! Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Quisque neque elit,
-          viverra vitae tortor non, malesuada condimentum mauris.
+          Hi again!, I'm Oliver and I'm a software developer, rookie barista and
+          an enthusiast tech writer. I'm a part-time freelance developer and
+          full-time information systems student.
         </p>
         <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          placerat mauris in elit posuere placerat. Suspendisse non dolor vel
-          nunc vestibulum consequat.
+          The core idea of this I want it to share what I knwo and learn through
+          blog posts in order to help other developers succeed in their learning
+          paths.
         </Text>
         <Text>
-          Ut sollicitudin, tellus pulvinar pulvinar porta, odio odio eleifend
-          lorem, ac pretium massa diam nec augue. Ut in arcu nec velit finibus
-          bibendum.
+          I'm currently living on Guanajuato, Mexico and I usually spend my time
+          exploring outsides, learning new skills, reading new books and playing
+          videogames. Other topics I enjoy rather than software are science,
+          entrepreuneurship, genomics and everything about coffee.
         </Text>
       </div>
       <h2 className="font-bold text-3xl md:text-3xl tracking-tight mb-4 text-black dark:text-white">
