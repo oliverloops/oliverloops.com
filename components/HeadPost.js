@@ -12,13 +12,15 @@ export default function HeadPost({ meta, link }) {
         {meta.description}
       </div>
       <div className="flex justify-between row">
-        <div className="text-gray-400">{meta.date}</div>
-        <div className="px-2 text-gray-400">
-          <span role="img" aria-label="book">
-            📖
-          </span>{" "}
-          &nbsp;
-          {meta.readTime} min read
+        <div className="flex text-gray-400">
+          {meta.date}
+          <div className="px-2 text-gray-400">
+            <span role="img" aria-label="book">
+              📖
+            </span>{" "}
+            &nbsp;
+            {meta.readTime} min read
+          </div>
         </div>
       </div>
     </div>

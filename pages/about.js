@@ -63,17 +63,16 @@ export default function About() {
           full-time information systems student.
         </p>
         <Text>
-          I started this website because I want it to share everything I know,
-          learn and discover through blog posts in order to help other
-          developers succeed on their learning paths. Last but not least this
-          space on the internet will document my entrepreneurial adventures and
-          life experiences around software.
+          I want it to share everything I know, learn and discover through blog
+          posts in order to help other developers succeed on their learning
+          paths and I will document my entrepreneurial adventures and life
+          experiences around software.
         </Text>
         <Text>
-          I'm currently living on Guanajuato, Mexico and I usually spend my time
-          exploring outsides, learning new skills, reading new books and playing
-          videogames. Other topics I enjoy rather than software are science,
-          entrepreuneurship, genomics and everything about coffee.
+          I usually spend my time exploring outsides, learning new skills,
+          reading new books and playing videogames. Other topics I enjoy rather
+          than software are science, entrepreuneurship, genomics and everything
+          about coffee.
         </Text>
       </div>
       <h2 className="font-bold text-3xl md:text-3xl tracking-tight mb-4 text-black dark:text-white">

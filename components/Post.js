@@ -12,7 +12,7 @@ export const Post = ({ post }) => {
   return (
     <div
       className="flex flex-col 
-      justify-center items-start h-32"
+      justify-center items-start mt-10 md:mt-0 h-32"
     >
       <HeadPost meta={meta} link={link} />
     </div>

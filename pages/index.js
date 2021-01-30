@@ -34,11 +34,15 @@ export default function Home() {
         <div className="flex flex-col py-4">
           <h1 className="font-bold text-3xl tracking-tight lg:text-4xl dark:text-white">
             Hi there!, I'm Oliver Lopez{" "}
-            <span role="img" aria-label="waving hand">
+            <span
+              className="hidden md:inline "
+              role="img"
+              aria-label="waving hand"
+            >
               👋
             </span>
           </h1>
-          <h3 className="font-medium text-md text-gray-500 dark:text-gray-400  max-w-xl py-2">
+          <h3 className="font-medium text-md text-gray-500 dark:text-gray-400  max-w-xl py-4 md:py-2">
             I'm a software developer, rookie barista, and a tech writer. Welcome
             to my personal space on the internet where you can find{" "}
             <span style={{ color: "#F7E01E" }}>JavaScript</span>,{" "}
