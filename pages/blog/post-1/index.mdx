@@ -20,18 +20,105 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   height={280}
 />
 
+<blockquote className="break-words text-md text-left leading-relaxed">
+  <i>
+    “In React, you can create distinct components that encapsulate behavior you
+    need. Then, you can render only some of them, depending on the state of your
+    application.” — <a href="/">React’s official documentation</a>
+  </i>
+</blockquote>
+
+<h2 className="text-2xl font-bold">What Is Conditional Rendering?</h2>
+
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  For the better part of the last year, I've been investing heavily in front-end
-  development and design. When I started my new role at Hy-Vee, I identified a
-  need for a component library and created it. Since then, I've learned a lot
-  about style guides, design systems, component libraries, and their best
-  practices. This post will be a deep-dive on everything I've learned in the
-  past year.
+  When you work with React, sometimes you need to show or hide a component’s
+  content. For example, when you load a website like Medium, Twitter, or Airbnb,
+  you see a skeleton instead of content. Or maybe you’ve seen a loader animation
+  before a component is loaded. That’s because the website needs to load, fetch,
+  or request any resource, and it’s showing you this skeleton or animation
+  representing a loading status in the meantime.
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/intro-to-react/react-banner.png"}
+    alt={"React Banner"}
+    layout="responsive"
+    width={500}
+    height={280}
+  />
+  <figcaption className="text-center text-gray-500 text-xs pt-2">
+    Medium showing a skeleton before the content loads.
+  </figcaption>
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  This is the most common example, but conditional rendering is really helpful when you need to hide or show content that needs to be unlocked after any event or side effect. 
+  Conditional rendering is also helpful if you need to show a loader before any component finishes their fetching/requesting process or you want to pull out elements inside 
+  the view without re-rerendering the entire window or modifying a complex state.
+
+</p>
+
+<h2 className="text-2xl font-bold">
+  OK, but My Code Looks Weird and Verbose Now
+</h2>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  When you implement this feature inside a component, you find different ways to
+  accomplish that. The first one is using{" "}
+  <code className="bg-gray-200 px-1">if</code>/
+  <code className="bg-gray-200 px-1">else</code> statements using a boolean
+  value to decide what should be rendered or not, but sometimes this is not a
+  really good solution because the conditional statements could re-render the
+  entire component. If this is connected to a lifecycle method, you could find
+  this implementation not very beneficial. Another problem is that even if you
+  don’t wrap your UI elements inside an individual component, this generates
+  less readable components thanks to the use of curly braces, the conditional{" "}
+  <code className="bg-gray-200 px-1">&&</code>
+  operator, or even the inline <code className="bg-gray-200 px-1">if</code>/<code className="bg-gray-200 px-1">
+    else
+  </code> statement syntax (the conditional ternary operator). That’s the reason
+  why I created React Hider.
+</p>
+
+<h2 className="text-2xl font-bold">React Hider in a Nutshell</h2>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  React Hider is a minimalist library that can be used to make conditional
+  rendering simpler and code cleaner. Thanks to just one component that does the
+  conditional rendering for you, it increases productivity and saves time spent
+  reading or creating code. Getting started is quite simple. Just install the
+  library through NPM:
 </p>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus
-  pellentesque dolor non egestas. In sed tristique elit. Cras vehicula, nisl vel
-  ultricies gravida, augue nibh laoreet arcu, et tincidunt augue dui non elit.
-  Vestibulum semper posuere magna, quis molestie mauris faucibus ut.
+  Import the <code className="bg-gray-200 px-1">Hider</code> inside any
+  pre-configured React project you want:
+</p>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  And using the component is simple as well. First, set an initial boolean state
+  depending on your component’s requirements:
+</p>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Now it’s time to use the <code className="bg-gray-200 px-1">Hider</code>{" "}
+  component to wrap the components that you need to show/hide. The first one
+  needs to be the component to show and the second one the component to hide.
+  After that, just provide the actual boolean status declared before to the
+  state prop inside Hider:
+</p>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  I need to say that this library is capable of showing/hiding a single child
+  component because Hider is based on React’s conditional{" "}
+  <code className="bg-gray-200 px-1">&&</code> operator too. You just need to
+  worry about which elements need to be rendered or not.
+</p>
+
+<h2 className="text-2xl font-bold">You’re Done!</h2>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  And that’s everything you need to know to use React Hider inside any future
+  project, Thanks for reading and feel free to contribute.
 </p>
