@@ -47,6 +47,10 @@ article > p {
   font-size: 1.3rem;
 }
 
+article > p > code {
+  font-size: 1rem;
+}
+
 article button {
   outline: none;
 }
@@ -98,6 +102,16 @@ footer {
   margin-right: 0.65em;
   transform: translateY(0.2em) rotateY(-180deg);
   color: rgb(188, 188, 188);
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  article > blockquote {
+    font-size: 1.2rem;
+  }
+
+  article > p {
+    font-size: 1.25rem;
+  }
 }
 
 /* Start purging... */
