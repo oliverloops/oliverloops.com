@@ -43,7 +43,7 @@ export default function Footer() {
         <span role="img" aria-label="triangule">
           ▲
         </span>
-        Vercel | oliverloops 2021
+        Vercel | oliverloops© 2021
       </small>
     </motion.footer>
   );
