@@ -12,7 +12,7 @@ export const meta = {
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <Image
-  src={"/static/images/blog_img/post-2/3masks.jpg"}
+  src={"/static/images/blog_img/the-3-masks/3masks.jpg"}
   alt={"City Banner"}
   layout="responsive"
   width={1000}
@@ -36,6 +36,86 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   built-in state management.
 </p>
 
+<h2 className="mt-6 text-2xl font-bold">The First Mask 🎭</h2>
+
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  Still migrating...
+  I’ll want to begin with the most common way to use this.setState, using just
+  and object as a parameter and changing the initial state through attributes as
+  we can see on the next example using a simple apple(s) increment button:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/intro-to-react/react-banner.png"}
+    alt={"Medium Skeleton"}
+    layout="responsive"
+    width={480}
+    height={250}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  as you see we incorporate the this.setState into a method called toBasket,
+  that will be integrated and called through the onClick event as you see
+  bellow:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/intro-to-react/react-banner.png"}
+    alt={"Medium Skeleton"}
+    layout="responsive"
+    width={480}
+    height={250}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  I know that’s a simple example but I will add the expected result bellow:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/intro-to-react/react-banner.png"}
+    alt={"Medium Skeleton"}
+    layout="responsive"
+    width={480}
+    height={250}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  this is quite common and one of the first things to know and grab when we
+  started to learn React, now let’s move to the interesting part.
+</p>
+
+<h2 className="mt-6 text-2xl font-bold">The Second Mask 👺</h2>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Maybe you’re asking for: which other functionality offers this method?
+</p>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Well imagine that you want to run a function that needs the updated state, if
+  we execute a function that will use the new state this one will return the old
+  state because the updated one takes effect just after rendering step. In this
+  case this.setState provides the option to pass a function as an additional
+  parameter that can access to the new state as you can see on the example
+  bellow adding a console.log that show us the updated state’s value:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/intro-to-react/react-banner.png"}
+    alt={"Medium Skeleton"}
+    layout="responsive"
+    width={480}
+    height={250}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  this console.log returns the old state because it’s executed before rendering
+  step and when the Add more apples button it’s pressed we see that result
+  projected in both DOM and console:
 </p>
