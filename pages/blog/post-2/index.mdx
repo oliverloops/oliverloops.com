@@ -119,3 +119,105 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   step and when the Add more apples button it’s pressed we see that result
   projected in both DOM and console:
 </p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/intro-to-react/react-banner.png"}
+    alt={"Medium Skeleton"}
+    layout="responsive"
+    width={480}
+    height={250}
+  />
+  <figcaption className="text-center text-gray-400 dark:text-gray-300 text-xs pt-2">
+    NOTE: I initialized the state to 0 and extra text inside the JSX was added.
+  </figcaption>
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  now if we use the second implementation (passing an anonymous function as a
+  second parameter to this.setState) it will looks like this:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/intro-to-react/react-banner.png"}
+    alt={"Medium Skeleton"}
+    layout="responsive"
+    width={480}
+    height={250}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  we obtain the same exact updated result on both console and DOM:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/intro-to-react/react-banner.png"}
+    alt={"Medium Skeleton"}
+    layout="responsive"
+    width={480}
+    height={250}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  with this in mind it’s correct to say that this.setState it’s actually an
+  asynchronous function and by the way the function used as a second parameter
+  is considered a callback.
+</p>
+
+<h2 className="mt-6 text-2xl font-bold">The Third Mask 👹</h2>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  And last but not least there are a different and more efficient way to write
+  this.setState and it’s called the functional way and this is quite simple to
+  write, just need to replace the object component with a function that receives
+  the state and could receive even a prop as parameters the only aspect to
+  consider is that this.setState must return an object with the state changes as
+  we see bellow:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/intro-to-react/react-banner.png"}
+    alt={"Medium Skeleton"}
+    layout="responsive"
+    width={480}
+    height={250}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  this way of expressing this.setState returns the same expected state changes
+  that the first one (just an object as a parameter way) just resulting into:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/intro-to-react/react-banner.png"}
+    alt={"Medium Skeleton"}
+    layout="responsive"
+    width={480}
+    height={250}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  and we even could manage complex tasks considering that we have instantly
+  access to props values, it’s recommended to implement this third way over the
+  first one whenever is posible in order to avoid weird behaviors after or
+  during the event lifecycle.
+</p>
+
+<h2 className="mt-6 text-2xl font-bold">Here’s the end</h2>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  We could consider a lot of things around this useful method like all the
+  lifecycles specific methods or how the built-in state management functionality
+  interacts with third party libraries and a lot more but this is just a
+  practical and easy to grab tutorial just to really see the general
+  capabilities of this.setState method at the end it’s important to have in mind
+  that this method is not limited to receive just an object as a parameter.
+</p>
