@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { motion } from "framer-motion";
 //UI components
 import HeadPost from "./HeadPost";
 
