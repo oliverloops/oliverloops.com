@@ -10,6 +10,8 @@ import { darkMode } from "../components/Layout";
 export default function Header() {
   const darkContext = useContext(darkMode);
 
+  console.log(darkContext.theme);
+
   const switchTheme = () => {
     if (darkContext.isMounted) {
       darkContext.setTheme(darkContext.theme === "light" ? "dark" : "light");
