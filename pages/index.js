@@ -35,7 +35,7 @@ export default function Home() {
           <h1 className="font-bold text-3xl tracking-tight lg:text-4xl dark:text-white">
             Hi there!, I'm Oliver Lopez{" "}
             <span
-              className="hidden md:inline "
+              className="hidden md:inline"
               role="img"
               aria-label="waving hand"
             >

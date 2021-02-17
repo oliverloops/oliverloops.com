@@ -50,22 +50,22 @@ export default function Header() {
       <div className="flex justify-evenly flex-row w-42 px-8 pr-2">
         <div className="p-1 sm:p-4">
           <Link href="/portfolio">
-            <a className="text-md dark:text-white ">Portfolio</a>
+            <a className="text-md dark:text-white">Portfolio</a>
           </Link>
         </div>
         <div className="p-1 sm:p-4">
           <Link href="/blog">
-            <a className="text-md dark:text-white ">Blog</a>
+            <a className="text-md dark:text-white">Blog</a>
           </Link>
         </div>
         <div className="p-1 sm:p-4">
           <Link href="/about">
-            <a className="text-md dark:text-white ">About</a>
+            <a className="text-md dark:text-white">About</a>
           </Link>
         </div>
         <div className="p-1 sm:p-4">
           <Link href="/">
-            <a className="text-md dark:text-white ">Home</a>
+            <a className="text-md dark:text-white">Home</a>
           </Link>
         </div>
       </div>
