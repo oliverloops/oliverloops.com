@@ -219,9 +219,9 @@ export default function About() {
           url={
             "https://play.google.com/store/apps/details?id=org.thunderdog.challegram&hl=en&gl=US"
           }
-          image={"/static/images/logos/telegram_x.png"}
-          name={"Telegram X"}
-          desc={"My favorite and secure messaging client but powered by 10x."}
+          image={"/static/images/logos/telegram.jpg"}
+          name={"Telegram"}
+          desc={"My favorite, powerfull and secure messaging client."}
         />
         <AppItem
           url={"https://www.tunnelbear.com/"}
