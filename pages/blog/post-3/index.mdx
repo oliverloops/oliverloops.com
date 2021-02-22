@@ -6,12 +6,25 @@ export const meta = {
   title: "How to create a custom search filter on pure React",
   description: "Learn how to build a custom React search filter for your apps",
   date: "Feb 21, 2021",
-  readTime: 8,
+  readTime: 9,
 };
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
-<h2 className="mt-6 text-2xl font-bold">Let's begin</h2>
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/coffee_cover.jpg"}
+    alt={"React Hider"}
+    layout="responsive"
+    width={2480}
+    height={1530}
+  />
+  <figcaption className="text-center text-gray-400 dark:text-gray-300 text-xs pt-2">
+    Image from Thomas Martinsen - Unsplash
+  </figcaption>
+</figure>
+
+<h2 className="mt-6 text-2xl font-bold">Ok,let's begin</h2>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Usually when we build a project we need to implement a way to filter all the
@@ -107,7 +120,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
     src={"/static/images/blog_img/search-filter-howto/base_input.png"}
     alt={"App and Filter base"}
     layout="responsive"
-    width={550}
+    width={570}
     height={260}
   />
 </figure>
@@ -125,8 +138,8 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
     }
     alt={"Terminal output"}
     layout="responsive"
-    width={350}
-    height={230}
+    width={300}
+    height={210}
   />
 </figure>
 
