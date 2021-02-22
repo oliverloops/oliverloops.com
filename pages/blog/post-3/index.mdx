@@ -363,9 +363,11 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 </h2>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  Let's create the variables where we will be holding our requested data and the
-  search input in order to control the flow and the data we should show and
-  update. remember that we need to keep our{" "}
+  Let's create the variables using the{" "}
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">useState()</code> hook
+  where we will be holding our requested data and the search input in order to
+  control the flow and the data we should show and update. remember that we need
+  to keep our{" "}
   <code className="bg-gray-200 dark:bg-gray-500 px-1">getData()</code> function
   inside <code className="bg-gray-200 dark:bg-gray-500 px-1">App</code> parent
   component:
@@ -391,7 +393,8 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   The way you get the date it's up to you, but as an example I'm using a simple
-  API Rest using an asynchronous function as you see below:
+  API Rest to request NASA public patents names using an asynchronous function
+  as you see below:
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
@@ -403,3 +406,90 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
     height={140}
   />
 </figure>
+
+<h2 className="mt-6 text-2xl font-bold">
+  Now the magic and what you've waiting for ✨
+</h2>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Now it’s time to use our skills to build a simple data card filter considering
+  our previous logic, first we should create a variable called{" "}
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">filtered</code>
+  where we will be maping through all the requested and stored items from the API
+  and filtering by the exact same value that it's passed through the <code className="bg-gray-200 dark:bg-gray-500 px-1">
+    SearchFilter
+  </code>
+  component:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/magic_code_1.png"}
+    alt={"Magic Code"}
+    layout="responsive"
+    width={260}
+    height={120}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Just consider that we will be filtering by title and in this case we're
+  storing our requested data as a matrix or arrays inside arrays, that's the
+  reason why it's necesary to loop twice on our{" "}
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">filtered</code> on render:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/magic_code_2.png"}
+    alt={"Magic Code"}
+    layout="responsive"
+    width={300}
+    height={200}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  And with this implementations our UI will looks like this:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/final_1.png"}
+    alt={"Final UI"}
+    layout="responsive"
+    width={450}
+    height={300}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Now if we try to filter by numbers for example:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/final_2.png"}
+    alt={"Final UI"}
+    layout="responsive"
+    width={450}
+    height={300}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  We get just get and filter the data related to the input we entered, and it
+  works!
+</p>
+
+<h2 className="mt-6 text-2xl font-bold">Thanks to read until the end 🙌</h2>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  You can find all the codebase of this example on{" "}
+  <a href="https://github.com/oliverloops/React_SearchFilter">
+    this GitHub repository
+  </a>
+  . I'll hope this can help you on future projects or at least solve one or two of
+  your questions. Stay alert for more and follow me on Twitter where I share usefull
+  tips 😁.
+</p>
