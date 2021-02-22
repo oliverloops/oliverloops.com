@@ -6,7 +6,7 @@ export const meta = {
   title: "How to create a custom search filter on pure React",
   description: "Learn how to build a custom React search filter for your apps",
   date: "Feb 21, 2021",
-  readTime: 7,
+  readTime: 8,
 };
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
@@ -304,8 +304,8 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
   <Image
-    src={"/static/images/blog_img/search-filter-howto/code_5.png"}
-    alt={"Card component"}
+    src={"/static/images/blog_img/search-filter-howto/code_6.png"}
+    alt={"Updated App component"}
     layout="responsive"
     width={320}
     height={200}
@@ -317,3 +317,89 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   integrating the styling from our code repository, the sample app now looks
   like this:
 </p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/sample_layout_2.png"}
+    alt={"updated UI"}
+    layout="responsive"
+    width={320}
+    height={70}
+  />
+  <figcaption className="text-center text-gray-400 dark:text-gray-300 text-xs pt-2">
+    Search filter and sample header.
+  </figcaption>
+</figure>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/sample_layout.png"}
+    alt={"updated UI"}
+    layout="responsive"
+    width={300}
+    height={120}
+  />
+  <figcaption className="text-center text-gray-400 dark:text-gray-300 text-xs pt-2">
+    Search filter and sample footer.
+  </figcaption>
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Don't forget the hoverable effect:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/sample_layout_3.png"}
+    alt={"Updated UI"}
+    layout="responsive"
+    width={330}
+    height={70}
+  />
+</figure>
+
+<h2 className="mt-6 text-2xl font-bold">
+  Adding logic and data before the magic
+</h2>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Let's create the variables where we will be holding our requested data and the
+  search input in order to control the flow and the data we should show and
+  update. remember that we need to keep our{" "}
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">getData()</code> function
+  inside <code className="bg-gray-200 dark:bg-gray-500 px-1">App</code> parent
+  component:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/code_8.png"}
+    alt={"App logic"}
+    layout="responsive"
+    width={280}
+    height={140}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  And now we just need to pull the data from NASA API, you can find it here on{" "}
+  <a href="https://api.nasa.gov">https://api.nasa.gov</a>, and you just will
+  need to provide you name, email and an optional URL from your hosted project,
+  after this they will provide you an API KEY to use on your requests. it's easy
+  as that!
+</p>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  The way you get the date it's up to you, but as an example I'm using a simple
+  API Rest using an asynchronous function as you see below:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/code_9.png"}
+    alt={"API Request"}
+    layout="responsive"
+    width={280}
+    height={140}
+  />
+</figure>
