@@ -1,0 +1,14 @@
+import BlogPost from "../../../components/BlogPost";
+import Image from "next/image";
+
+export const meta = {
+  author: "Oliver Lopez",
+  title: "How to create a custom search filter on pure React",
+  description: "Learn how to build a custom React search filter for your apps",
+  date: "Feb 21, 2021",
+  readTime: 4,
+};
+
+export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
+
+<h2 className="mt-6 text-2xl font-bold">This is the title</h2>

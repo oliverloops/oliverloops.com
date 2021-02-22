@@ -16,8 +16,6 @@ export default function Header() {
     }
   };
 
-  console.log(darkContext.isMounted);
-
   return (
     <motion.nav
       initial="pageInitial"
