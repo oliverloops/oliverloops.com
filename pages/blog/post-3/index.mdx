@@ -24,17 +24,17 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   </figcaption>
 </figure>
 
-<h2 className="mt-6 text-2xl font-bold">Ok, let's begin</h2>
+<h2 className="mt-8 text-2xl font-bold">Ok, let's begin</h2>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Usually when we build a project we need to implement a way to filter all the
-  data or portions of this data, one of the ways to achive this is through a
-  search bar at the begin this could looks tricky but with the help of just
-  plain React it's much easier than you think.
+  data or portions of this data, one of the main ways to achive this is through
+  a search bar but this could sound tricky but with help of just plain React and
+  hooks it's much easier than you think.
 </p>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  For this little example I'm going to use Create React App just for keep this
+  For this small example I'm going to use Create React App just to keep this
   config. easy as possible and just focus on the functionality:
 </p>
 
@@ -49,7 +49,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 </figure>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  After this step it's optional to delete everything inside <i>src</i> and{" "}
+  After this step is optional to delete everything inside <i>src</i> and{" "}
   <i>public</i> directory ,this time I just keep everything inside the project,
   then got to <i>App.js</i> file delete everything and create and{" "}
   <code className="bg-gray-200 dark:bg-gray-500 px-1">App</code> component like
@@ -83,7 +83,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 </figure>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  Eventually inside <i>SearchFilter.js</i> let's just create a base search bar:
+  Eventually inside <i>SearchFilter.js</i> we will create a base search bar:
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
@@ -97,7 +97,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 </figure>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  And let's import this first component inside our{" "}
+  Now let's import this first component inside our{" "}
   <code className="bg-gray-200 dark:bg-gray-500 px-1">App</code> component:
 </p>
 
@@ -146,9 +146,9 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Before continue with our{" "}
   <code className="bg-gray-200 dark:bg-gray-500 px-1">Card</code> component I
-  just want to take some steps to give some styles to our search filter. The
-  idea is to style this component as the well knowed Google search bar as the
-  example you see bellow:
+  just wanna to take some extra steps to give some styling to our search filter.
+  The idea is to style this component as the well knowed Google search bar, as
+  the example you see bellow:
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
@@ -239,8 +239,14 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 </figure>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  All the codebase for the whole project it's included the styling it's on
-  GitHub repository.
+  The codebase for the whole project includes all the styling and it's on{" "}
+  <a
+    className="text-blue-600 dark:text-blue-400"
+    href="https://github.com/oliverloops/React_SearchFilter"
+  >
+    this GitHub repository
+  </a>
+  .
 </p>
 
 <h2 className="mt-6 text-2xl font-bold">Creating sample Card component</h2>
@@ -262,9 +268,9 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 </figure>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  From this step we should modelate our component with the props this will
-  receive, an image, a title and a description, this is just optional and you
-  can implement your own modeleded layout and data.
+  From this step we should modelate our component with the needed props, an
+  image, a title and a description, this is optional and you can implement your
+  own modeleded layout and data.
 </p>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
@@ -295,9 +301,9 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   It's a best practice to keep all our components separated but for this small
   example I created{" "}
-  <code className="bg-gray-200 dark:bg-gray-500 px-1">Header</code> and
-  <code className="bg-gray-200 dark:bg-gray-500 px-1">Footer</code> components inside
-  the parent component file, and looks like this:
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">Header</code> and{" "}
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">Footer</code> components
+  inside the parent component file, and looks like this:
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
@@ -312,7 +318,8 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   And this is how our{" "}
-  <code className="bg-gray-200 dark:bg-gray-500 px-1">App</code> looks like:
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">App</code> component looks
+  like:
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
@@ -326,9 +333,8 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 </figure>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  As you can see I even added an icon component from react-icons library and now
-  integrating the styling from our code repository, the sample app now looks
-  like this:
+  As you can see I even added an icon component using the react-icons library
+  and integrating additional, the sample app now looks like this:
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
@@ -366,7 +372,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
     src={"/static/images/blog_img/search-filter-howto/sample_layout_3.png"}
     alt={"Updated UI"}
     layout="responsive"
-    width={330}
+    width={350}
     height={70}
   />
 </figure>
@@ -376,14 +382,13 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 </h2>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  Let's create the variables using the{" "}
+  Let's create our state management logic using the{" "}
   <code className="bg-gray-200 dark:bg-gray-500 px-1">useState()</code> hook
   where we will be holding our requested data and the search input in order to
-  control the flow and the data we should show and update. remember that we need
-  to keep our{" "}
-  <code className="bg-gray-200 dark:bg-gray-500 px-1">getData()</code> function
-  inside <code className="bg-gray-200 dark:bg-gray-500 px-1">App</code> parent
-  component:
+  control the data flow we should show and update. remember that we need to keep
+  our <code className="bg-gray-200 dark:bg-gray-500 px-1">getData()</code>{" "}
+  function inside <code className="bg-gray-200 dark:bg-gray-500 px-1">App</code>{" "}
+  parent component:
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
@@ -398,16 +403,18 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   And now we just need to pull the data from NASA API, you can find it here on{" "}
-  <a href="https://api.nasa.gov">https://api.nasa.gov</a>, and you just will
-  need to provide you name, email and an optional URL from your hosted project,
-  after this they will provide you an API KEY to use on your requests. it's easy
-  as that!
+  <a className="text-blue-600 dark:text-blue-400" href="https://api.nasa.gov">
+    https://api.nasa.gov
+  </a>
+  , and you just will need to provide you name, email and an optional URL where your
+  hosted project is located, after this they will provide you an API KEY to use on
+  your requests. it's easy as that!
 </p>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   The way you get the date it's up to you, but as an example I'm using a simple
-  API Rest to request NASA public patents names using an asynchronous function
-  as you see below:
+  API Rest model to request NASA's public patents names using an asynchronous
+  function as you see below:
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
@@ -427,11 +434,10 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Now it’s time to use our skills to build a simple data card filter considering
   our previous logic, first we should create a variable called{" "}
-  <code className="bg-gray-200 dark:bg-gray-500 px-1">filtered</code>
-  where we will be maping through all the requested and stored items from the API
-  and filtering by the exact same value that it's passed through the <code className="bg-gray-200 dark:bg-gray-500 px-1">
-    SearchFilter
-  </code>
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">filtered</code> where we
+  will be maping through all the requested and stored items from the API and
+  filtering by the exact same value that it's passed through the{" "}
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">SearchFilter</code>{" "}
   component:
 </p>
 
@@ -448,8 +454,9 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Just consider that we will be filtering by title and in this case we're
   storing our requested data as a matrix or arrays inside arrays, that's the
-  reason why it's necesary to loop twice on our{" "}
-  <code className="bg-gray-200 dark:bg-gray-500 px-1">filtered</code> on render:
+  reason why it's necesary to loop twice on{" "}
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">filtered</code>variable
+  when we render:
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
@@ -477,7 +484,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 </figure>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  Now if we try to filter by numbers for example:
+  Now if we try to filter by a number for example:
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
@@ -491,18 +498,21 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 </figure>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  We get just get and filter the data related to the input we entered, and it
-  works!
+  We get just get the filtered data related to the actual input. and the job is
+  done!, it works!
 </p>
 
-<h2 className="mt-6 text-2xl font-bold">Thanks to read until the end 🙌</h2>
+<h2 className="mt-6 text-2xl font-bold">Thanks for read! 🙌</h2>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   You can find all the codebase of this example on{" "}
-  <a href="https://github.com/oliverloops/React_SearchFilter">
+  <a
+    className="text-blue-600 dark:text-blue-400"
+    href="https://github.com/oliverloops/React_SearchFilter"
+  >
     this GitHub repository
   </a>
-  . I'll hope this can help you on future projects or at least solve one or two of
-  your questions. Stay alert for more and follow me on Twitter where I share usefull
-  tips 😁.
+  . I'll hope this can help you on future projects or at least solve a question or
+  couple of them. Stay alert for more and follow me on Twitter where I share usefull
+  tips and resources 😁 .
 </p>
