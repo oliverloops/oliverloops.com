@@ -11,4 +11,127 @@ export const meta = {
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
-<h2 className="mt-6 text-2xl font-bold">This is the title</h2>
+<h2 className="mt-6 text-2xl font-bold">Let's begin</h2>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Usually when we build a project we need to implement a way to filter all the
+  data or portions of this data, one of the ways to achive this is through a
+  search bar at the begin this could looks tricky but with the help of just
+  plain React it's much easier than you think.
+</p>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  For this little example I'm going to use Create React App just for keep this
+  config. easy as possible and just focus on the functionality:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/command_1.png"}
+    alt={"Installing CRA"}
+    layout="responsive"
+    width={800}
+    height={276}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  After this step it's optional to delete everything inside <i>src</i> and{" "}
+  <i>public</i> directory ,this time I just keep everything inside the project,
+  then got to <i>App.js</i> file delete everything and create and{" "}
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">App</code> component like
+  this one:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/code_0.png"}
+    alt={"App initial"}
+    layout="responsive"
+    width={700}
+    height={550}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Then inside <i>src</i> directory, create a new one called <i>components</i>,
+  and inside create just 2 new files <i>SearchFilter.js</i> and <i>Card.js</i>{" "}
+  this are the only two components we need for this example.
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/folders.png"}
+    alt={"directory"}
+    layout="responsive"
+    width={25}
+    height={20}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Eventually inside <i>SearchFilter.js</i> let's just create a base search bar:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/code_1.png"}
+    alt={"Search Filter base"}
+    layout="responsive"
+    width={800}
+    height={660}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  And let's import this first component inside our{" "}
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">App</code> component:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/code_2.png"}
+    alt={"App and Filter base"}
+    layout="responsive"
+    width={800}
+    height={660}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Right now the whole app should looks like this:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/base_input.png"}
+    alt={"App and Filter base"}
+    layout="responsive"
+    width={550}
+    height={260}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Quite simple I know but we're just getting started, when you type on this
+  simple search bar you should see what you type as output on your browser
+  console
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={
+      "/static/images/blog_img/search-filter-howto/search_bar_base_terminal.png"
+    }
+    alt={"Terminal output"}
+    layout="responsive"
+    width={350}
+    height={230}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Before continue with our{" "}
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">Card</code> component I
+  just want to take some steps to give some styles to our search filter:
+</p>
