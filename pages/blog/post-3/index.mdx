@@ -6,7 +6,7 @@ export const meta = {
   title: "How to create a custom search filter on pure React",
   description: "Learn how to build a custom React search filter for your apps",
   date: "Feb 21, 2021",
-  readTime: 4,
+  readTime: 7,
 };
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
@@ -133,5 +133,187 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Before continue with our{" "}
   <code className="bg-gray-200 dark:bg-gray-500 px-1">Card</code> component I
-  just want to take some steps to give some styles to our search filter:
+  just want to take some steps to give some styles to our search filter. The
+  idea is to style this component as the well knowed Google search bar as the
+  example you see bellow:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/google_ex_1.png"}
+    alt={"Google search bar"}
+    layout="responsive"
+    width={450}
+    height={150}
+  />
+  <figcaption className="text-center text-gray-400 dark:text-gray-300 text-xs pt-2">
+    Google search bar design.
+  </figcaption>
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  And the hoverable shadow effect included:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/google_ex_2.png"}
+    alt={"Google search bar on hover"}
+    layout="responsive"
+    width={680}
+    height={150}
+  />
+  <figcaption className="text-center text-gray-400 dark:text-gray-300 text-xs pt-2">
+    Google search bar and his hoverable shadow effect.
+  </figcaption>
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  for this I used a dependency called react-icons for the search icon and took
+  the time to add some custom styles inside <i>App.css</i> file as you see:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/styling_1.png"}
+    alt={"Custom styles"}
+    layout="responsive"
+    width={350}
+    height={230}
+  />
+</figure>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/styling_2.png"}
+    alt={"Custom styles"}
+    layout="responsive"
+    width={300}
+    height={230}
+  />
+</figure>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/styling_3.png"}
+    alt={"Custom styles"}
+    layout="responsive"
+    width={260}
+    height={270}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  And as a last step we need to modify the{" "}
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">SearchFilter</code>{" "}
+  component to the final version, where the search icon from react-icons was
+  added (<code className="bg-gray-200 dark:bg-gray-500 px-1">IoMdSearch</code>)
+  and as you can see I removed the{" "}
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">getField()</code> function
+  but it was just relocated to{" "}
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">App</code> component
+  because it's better to manage this behavior from the parent component.
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/code_7.png"}
+    alt={"Final SearchFilter"}
+    layout="responsive"
+    width={260}
+    height={270}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  All the codebase for the whole project it's included the styling it's on
+  GitHub repository.
+</p>
+
+<h2 className="mt-6 text-2xl font-bold">Creating sample Card component</h2>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Now we can continue with our Card component, this one will be filled with
+  sample data directly from NASA API 🚀, but first let's create the component’s
+  layout:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/code_3.png"}
+    alt={"Card component"}
+    layout="responsive"
+    width={360}
+    height={270}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  From this step we should modelate our component with the props this will
+  receive, an image, a title and a description, this is just optional and you
+  can implement your own modeleded layout and data.
+</p>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Now we just import{" "}
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">Card</code> to our{" "}
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">App</code> parent
+  component:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/code_4.png"}
+    alt={"new imports"}
+    layout="responsive"
+    width={330}
+    height={130}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  From this step we should modelate our component with the props this will
+  receive, an image, a title and a description, this is just optional and you
+  can implement your own modeleded layout and data.
+</p>
+
+<h2 className="mt-6 text-2xl font-bold">Adding our last layout components</h2>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  It's a best practice to keep all our components separated but for this small
+  example I created{" "}
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">Header</code> and
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">Footer</code> components inside
+  the parent component file, and looks like this:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/code_5.png"}
+    alt={"Additional layout"}
+    layout="responsive"
+    width={320}
+    height={200}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  And this is how our{" "}
+  <code className="bg-gray-200 dark:bg-gray-500 px-1">App</code> looks like:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/search-filter-howto/code_5.png"}
+    alt={"Card component"}
+    layout="responsive"
+    width={320}
+    height={200}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  As you can see I even added an icon component from react-icons library and now
+  integrating the styling from our code repository, the sample app now looks
+  like this:
 </p>
