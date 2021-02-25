@@ -82,7 +82,7 @@ export default function About() {
       <div className="flex justify-center py-4">
         <div>
           <Image
-            src={"/static/images/books/jamstack_book.png"}
+            src={"/static/images/books/js_algorithms.png"}
             width={165}
             height={235}
             alt={"A book"}
@@ -90,7 +90,7 @@ export default function About() {
         </div>
         <div className="ml-4">
           <Image
-            src={"/static/images/books/genoma_cover.jpeg"}
+            src={"/static/images/books/inspired_cover.jpg"}
             width={165}
             height={235}
             alt={"A book"}
