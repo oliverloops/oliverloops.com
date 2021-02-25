@@ -103,23 +103,23 @@ export default function About() {
       <div className="flex justify-center pt-4 pb-8">
         <div>
           <Image
+            src={"/static/images/books/jamstack_book.png"}
+            width={165}
+            height={235}
+            alt={"A book"}
+          />
+        </div>
+        <div className="ml-4">
+          <Image
+            src={"/static/images/books/genoma_cover.jpeg"}
+            width={165}
+            height={235}
+            alt={"A book"}
+          />
+        </div>
+        <div className="ml-4">
+          <Image
             src={"/static/images/books/opinionated_guide.png"}
-            width={165}
-            height={235}
-            alt={"A book"}
-          />
-        </div>
-        <div className="ml-4">
-          <Image
-            src={"/static/images/books/the_one_thing.jpeg"}
-            width={165}
-            height={235}
-            alt={"A book"}
-          />
-        </div>
-        <div className="ml-4">
-          <Image
-            src={"/static/images/books/hooked_cover.jpeg"}
             width={165}
             height={235}
             alt={"A book"}
