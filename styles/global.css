@@ -28,6 +28,15 @@ html {
   font-size: 18px;
 }
 
+/* Progress Bar */
+#progress {
+  border-bottom: 8px solid tomato;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 /* Default article's layout styling */
 article > blockquote {
   margin-top: 1.275rem;
