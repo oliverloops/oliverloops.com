@@ -101,7 +101,7 @@ export default function About() {
         Recently reads
       </h3>
       <div className="flex justify-center pt-4 pb-8">
-        <div className="ml-4">
+        <div>
           <Image
             src={"/static/images/books/inspired_cover.jpg"}
             width={165}
@@ -109,7 +109,7 @@ export default function About() {
             alt={"A book"}
           />
         </div>
-        <div>
+        <div className="ml-4">
           <Image
             src={"/static/images/books/jamstack_book.png"}
             width={165}
