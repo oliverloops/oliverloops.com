@@ -111,7 +111,7 @@ export default function About() {
         </div>
         <div className="ml-4">
           <Image
-            src={"/static/images/books/genoma_cover.jpeg"}
+            src={"/static/images/books/inspired_cover.jpg"}
             width={165}
             height={235}
             alt={"A book"}
