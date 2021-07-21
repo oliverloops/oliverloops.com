@@ -194,6 +194,14 @@ export default function About() {
           desc={"The super app where I manage my life and workflow."}
         />
         <AppItem
+          url={"https://prisma.io/"}
+          image={"/static/images/logos/prisma_icon.png"}
+          name={"Prisma"}
+          desc={
+            "My default SQL based ORM, it helps me a lot with database building and modeling and it's really fast."
+          }
+        />
+        <AppItem
           url={"https://protonmail.com/"}
           image={"/static/images/logos/protonmail_icon.png"}
           name={"Protonmail"}
