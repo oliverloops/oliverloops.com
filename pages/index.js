@@ -95,16 +95,16 @@ export default function Home() {
           Projects
         </h1>
         <ProjectCard
+          icon={"cube"}
+          title={"Rango Creative Lab"}
+          description={"JAMstack based solutions"}
+          href={"https://rango.dev"}
+        />
+        <ProjectCard
           icon={"hat"}
           title={"React Hider"}
           description={"Conditional Rendering Made Easy"}
           href={"https://github.com/oliverloops/react-hider"}
-        />
-        <ProjectCard
-          icon={"cloud"}
-          title={"Fitcloud.mx"}
-          description={"Fitness sessions on demand"}
-          href={"https://fitcloud.mx/"}
         />
         <ProjectCard
           icon={"fire"}

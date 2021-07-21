@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { GiMagicHat } from "react-icons/gi";
-import { FaCloud } from "react-icons/fa";
+import { IoCube } from "react-icons/io5";
 import { IoIosWarning } from "react-icons/io";
 
 export default function ProjectCard({ icon, title, description, href }) {
@@ -17,8 +17,8 @@ export default function ProjectCard({ icon, title, description, href }) {
               className="dark:text-gray-100 transition-all"
               style={{ fontSize: "1.6em" }}
             />
-          ) : icon === "cloud" ? (
-            <FaCloud
+          ) : icon === "cube" ? (
+            <IoCube
               className="dark:text-gray-100 transition-all"
               style={{ fontSize: "1.6em" }}
             />

@@ -82,7 +82,7 @@ export default function About() {
       <div className="flex justify-center py-4">
         <div>
           <Image
-            src={"/static/images/books/remote_book.jpeg"}
+            src={"/static/images/books/node_cookbook.png"}
             width={165}
             height={235}
             alt={"A book"}
@@ -90,7 +90,7 @@ export default function About() {
         </div>
         <div className="ml-4">
           <Image
-            src={"/static/images/books/js_algorithms.png"}
+            src={"/static/images/books/atomic_habits_book.jpg"}
             width={165}
             height={235}
             alt={"A book"}
@@ -103,6 +103,14 @@ export default function About() {
       <div className="flex justify-center pt-4 pb-8">
         <div>
           <Image
+            src={"/static/images/books/remote_book.jpeg"}
+            width={165}
+            height={235}
+            alt={"A book"}
+          />
+        </div>
+        <div className="ml-4">
+          <Image
             src={"/static/images/books/shoedog_cover.jpg"}
             width={165}
             height={235}
@@ -111,15 +119,7 @@ export default function About() {
         </div>
         <div className="ml-4">
           <Image
-            src={"/static/images/books/inspired_cover.jpg"}
-            width={165}
-            height={235}
-            alt={"A book"}
-          />
-        </div>
-        <div className="ml-4">
-          <Image
-            src={"/static/images/books/jamstack_book.png"}
+            src={"/static/images/books/js_algorithms.png"}
             width={165}
             height={235}
             alt={"A book"}
@@ -168,11 +168,11 @@ export default function About() {
           }
         />
         <AppItem
-          url={"https://www.netlify.com/"}
-          image={"/static/images/logos/netlify_icon.png"}
-          name={"Netlify"}
+          url={"https://vercel.com/"}
+          image={"/static/images/logos/vercel_icon.jpeg"}
+          name={"Vercel"}
           desc={
-            "I love to deploy on Netlify, you can just deploy in seconds it's really insane."
+            "I love to deploy on Vercel, you can just deploy in seconds, it's really insane and the DX it's awesome. Just develop, ship and preview."
           }
         />
         <AppItem
@@ -216,6 +216,14 @@ export default function About() {
           }
         />
         <AppItem
+          url={"https://www.netlify.com/"}
+          image={"/static/images/logos/netlify_icon.png"}
+          name={"Netlify"}
+          desc={
+            "Netlify is an awesome serverless hosting provider, it makes you really productive and let you deploy fast as hell."
+          }
+        />
+        <AppItem
           url={
             "https://play.google.com/store/apps/details?id=org.thunderdog.challegram&hl=en&gl=US"
           }
@@ -228,14 +236,6 @@ export default function About() {
           image={"/static/images/logos/tunnel_bear.png"}
           name={"Tunnelbear"}
           desc={"Sometimes I need a VPN, Tunnelbear simply does the job."}
-        />
-        <AppItem
-          url={"https://vercel.com/"}
-          image={"/static/images/logos/vercel_icon.jpeg"}
-          name={"Vercel"}
-          desc={
-            "I recently started to deploy on Vercel and the experience it's awesome. Just develop, ship and preview."
-          }
         />
         <AppItem
           url={"https://code.visualstudio.com/"}
