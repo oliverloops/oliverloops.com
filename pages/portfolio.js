@@ -116,6 +116,59 @@ export default function Portfolio() {
         },
       }}
     >
+      <a href="https://rango.dev">
+        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg py-2 mx-0 md:max-w-4xl md:mx-auto">
+          <div className="p-4">
+            <span className="flex">
+              <AppImage
+                src={"/static/images/portfolio/rango_icon.png"}
+                width={58}
+                height={58}
+                alt={"Rango Logo"}
+              />
+              <div className="flex flex-col ">
+                <p className="pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
+                  Rango
+                </p>
+                <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
+                  JAMstack based{" "}
+                  <span className="hidden md:inline md:text-black md:dark:text-white">
+                    Solutions
+                  </span>
+                </p>
+              </div>
+            </span>
+          </div>
+          <Circle
+            style={{ backgroundColor: "rgb(253, 211, 89)" }}
+            id="circle"
+          ></Circle>
+          <ArrowContainer id="arrow" className="text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M5 12h13M12 5l7 7-7 7"></path>
+            </svg>
+          </ArrowContainer>
+          <PreviewContainer id="preview" className="shadow-xl">
+            <PreviewImage
+              id={"preview-image"}
+              src={"/static/images/portfolio/rango_web.png"}
+              width={380}
+              height={200}
+              alt={"Desktop View"}
+            />
+          </PreviewContainer>
+        </Div>
+      </a>
       <a href="https://fullcodetesting.pythonanywhere.com/">
         <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg py-2 mx-0 md:max-w-4xl md:mx-auto">
           <div className="p-4">
@@ -366,59 +419,6 @@ export default function Portfolio() {
             <PreviewImage
               id={"preview-image"}
               src={"/static/images/portfolio/natours_web.png"}
-              width={380}
-              height={200}
-              alt={"Desktop View"}
-            />
-          </PreviewContainer>
-        </Div>
-      </a>
-      <a href="#">
-        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg py-2 mx-0 md:max-w-4xl md:mx-auto">
-          <div className="p-4">
-            <span className="flex">
-              <AppImage
-                src={"/static/images/portfolio/pinche_logo.png"}
-                width={58}
-                height={58}
-                alt={"Natours Logo"}
-              />
-              <div className="flex flex-col ">
-                <p className="pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
-                  El Pinche Grabador
-                </p>
-                <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
-                  Mexican Engraving{" "}
-                  <span className="hidden md:inline md:text-black md:dark:text-white">
-                    Workshop
-                  </span>
-                </p>
-              </div>
-            </span>
-          </div>
-          <Circle
-            style={{ backgroundColor: "rgb(163, 90, 251)" }}
-            id="circle"
-          ></Circle>
-          <ArrowContainer id="arrow" className="text-white">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M5 12h13M12 5l7 7-7 7"></path>
-            </svg>
-          </ArrowContainer>
-          <PreviewContainer id="preview" className="shadow-xl">
-            <PreviewImage
-              id={"preview-image"}
-              src={"/static/images/portfolio/pinche_web.png"}
               width={380}
               height={200}
               alt={"Desktop View"}
