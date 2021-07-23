@@ -6,7 +6,7 @@ import { Post } from "../components/Post";
 import { posts } from "../getAllPosts";
 
 export default function Blog() {
-  const [postList, setPostList] = useState(posts);
+  const [postList, _] = useState(posts);
   const [result, setResult] = useState("");
 
   return (
