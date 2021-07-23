@@ -22,113 +22,164 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <blockquote className="break-words text-md text-left leading-relaxed">
   <i>
-    “In React, you can create distinct components that encapsulate behavior you
-    need. Then, you can render only some of them, depending on the state of your
-    application.” — <a href="/">React’s official documentation</a>
+    “Focusing on the front-end is the most customer-obsessive way to build your
+    products.” — <span>Guillermo Rauch, CEO Vercel</span>
   </i>
+  {/* <i>
+    Only end-users make your app succeed and they don't how your app was built,
+    they just care about how the final product looks.
+  </i> */}
 </blockquote>
 
-<h2 className="mt-6 text-2xl font-bold">What Is Conditional Rendering?</h2>
+<h2 className="mt-6 text-2xl font-bold">Why use this solution?</h2>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  When you work with React, sometimes you need to show or hide a component’s
-  content. For example, when you load a website like Medium, Twitter, or Airbnb,
-  you see a skeleton instead of content. Or maybe you’ve seen a loader animation
-  before a component is loaded. That’s because the website needs to load, fetch,
-  or request any resource, and it’s showing you this skeleton or animation
-  representing a loading status in the meantime.
+  Sometimes you are under pressure building a client's website or a project and
+  you find in the situation where saving time is essential. I was trying
+  different solutions for small and simple contact form integration and I have
+  to say that Formspree is the quickest and easiest way to get your contact
+  forms up and running. Their simplicity in their React API really makes a good
+  developer experience when is combined with Next.js. Let's see this in action.
+</p>
+
+<h2 className="mt-6 text-2xl font-bold">Getting Started</h2>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Before to show the code sample we will need to start a Next.js project and
+  create a Formspree account if you don’t have one yet. first visit{" "}
+  <a className="text-blue-400 dark:text-blue-400" href="https://formspree.io">
+    formspree website
+  </a>
+  , sign in and fill in your data:
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
   <Image
-    src={"/static/images/blog_img/intro-to-react/skeleton.png"}
-    alt={"Medium Skeleton"}
-    layout="responsive"
-    width={480}
-    height={250}
-  />
-  <figcaption className="text-center text-gray-400 dark:text-gray-300 text-xs pt-2">
-    Medium showing a skeleton before the content loads.
-  </figcaption>
-</figure>
-
-<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  This is the most common example, but conditional rendering is really helpful when you need to hide or show content that needs to be unlocked after any event or side effect. 
-  Conditional rendering is also helpful if you need to show a loader before any component finishes their fetching/requesting process or you want to pull out elements inside 
-  the view without re-rerendering the entire window or modifying a complex state.
-
-</p>
-
-<h2 className="mt-6 text-2xl font-bold">
-  OK, but My Code Looks Weird and Verbose Now
-</h2>
-
-<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  When you implement this feature inside a component, you find different ways to
-  accomplish that. The first one is using{" "}
-  <code className="bg-gray-200 dark:bg-gray-500  px-1">if</code>/
-  <code className="bg-gray-200 dark:bg-gray-500  px-1">else</code> statements
-  using a boolean value to decide what should be rendered or not, but sometimes
-  this is not a really good solution because the conditional statements could
-  re-render the entire component. If this is connected to a lifecycle method,
-  you could find this implementation not very beneficial. Another problem is
-  that even if you don’t wrap your UI elements inside an individual component,
-  this generates less readable components thanks to the use of curly braces, the
-  conditional <code className="bg-gray-200 dark:bg-gray-500  px-1">&&</code>
-  operator, or even the inline <code className="bg-gray-200 dark:bg-gray-500  px-1">
-    if
-  </code>/<code className="bg-gray-200 dark:bg-gray-500  px-1">else</code> statement
-  syntax (the conditional ternary operator). That’s the reason why I created React
-  Hider.
-</p>
-
-<h2 className="mt-6 text-2xl font-bold">React Hider in a Nutshell</h2>
-
-<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  React Hider is a minimalist library that can be used to make conditional
-  rendering simpler and code cleaner. Thanks to just one component that does the
-  conditional rendering for you, it increases productivity and saves time spent
-  reading or creating code. Getting started is quite simple. Just install the
-  library through NPM:
-</p>
-
-<figure className="md:px-5 md:mt-4 md:mb-5">
-  <Image
-    src={"/static/images/blog_img/intro-to-react/terminal_script.png"}
-    alt={"Medium Skeleton"}
+    src={"/static/images/blog_img/nextjs-and-formspree/platform_1.png"}
+    alt={"Formspree sign up"}
     layout="responsive"
     width={700}
-    height={48}
+    height={375}
   />
 </figure>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  Import the <code className="bg-gray-200 dark:bg-gray-500  px-1">Hider</code>{" "}
-  inside any pre-configured React project you want:
+  Then in the next section is important to create a project and not a form,
+  because we'll be using Formspree CLI in order to configure our project
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
   <Image
-    src={"/static/images/blog_img/intro-to-react/first_line.png"}
-    alt={"Medium Skeleton"}
+    src={"/static/images/blog_img/nextjs-and-formspree/platform_2.png"}
+    alt={"Formspree create a project"}
     layout="responsive"
     width={700}
-    height={276}
+    height={375}
   />
 </figure>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  And using the component is simple as well. First, set an initial boolean state
-  depending on your component’s requirements:
+  After clicking New Project, assign any name you like and then select the
+  option <span className="font-semibold">Commnad Line Project</span>
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
   <Image
-    src={"/static/images/blog_img/intro-to-react/second_line.png"}
-    alt={"Medium Skeleton"}
+    src={"/static/images/blog_img/nextjs-and-formspree/platform_3.png"}
+    alt={"Formspree sign up"}
     layout="responsive"
     width={700}
-    height={254}
+    height={650}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  At the end the platform will provide us 2 diferent important access keys, the
+  first one is the <b>Project ID</b> which which will be used to access from our
+  project to Formspree API, and the <b>Deploy Key</b> that we'll gonna use
+  later:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/nextjs-and-formspree/platform_4.png"}
+    alt={"Formspree sign up"}
+    layout="responsive"
+    width={900}
+    height={160}
+  />
+</figure>
+
+<h2 className="mt-6 text-2xl font-bold">Up and Running with Next.js</h2>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  For this small example I'm goint to use the Next.js + TailwindCSS starter in
+  order to create a custom design for the contact form, you can dive deep into
+  installing Tailwind and Next.js in the{" "}
+  <a
+    className="text-blue-500 dark:text-blue-400"
+    href="https://tailwindcss.com/docs/guides/nextjs"
+  >
+    official docs site
+  </a>
+  .
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/nextjs-and-formspree/cli_1.png"}
+    alt={"Formspree sign up"}
+    layout="responsive"
+    width={900}
+    height={110}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Open your project's directory and install the <code>@formspree/react</code>{" "}
+  and Formspree CLI dependencies, with this we can setup our project correctly
+  and it’s everything we'll need.
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/nextjs-and-formspree/cli_2.png"}
+    alt={"Formspree sign up"}
+    layout="responsive"
+    width={900}
+    height={180}
+  />
+</figure>
+
+<h2 className="mt-6 text-2xl font-bold">Now it's time to code</h2>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  First we need to modify the <code>_app.js</code> file using the Formspree
+  provider with the right project ID
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/nextjs-and-formspree/code_1.png"}
+    alt={"Medium Skeleton"}
+    layout="responsive"
+    width={650}
+    height={400}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Open your project's directory and install the Formspree CLI dependency, with
+  this we can setup our project correctly
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    src={"/static/images/blog_img/nextjs-and-formspree/cli_2.png"}
+    alt={"Formspree sign up"}
+    layout="responsive"
+    width={900}
+    height={180}
   />
 </figure>
 
