@@ -55,6 +55,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
   <Image
+    className="rounded-lg"
     src={"/static/images/blog_img/nextjs-and-formspree/platform_1.png"}
     alt={"Formspree sign up"}
     layout="responsive"
@@ -70,6 +71,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
   <Image
+    className="rounded-lg"
     src={"/static/images/blog_img/nextjs-and-formspree/platform_2.png"}
     alt={"Formspree create a project"}
     layout="responsive"
@@ -85,11 +87,12 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
   <Image
+    className="rounded-lg"
     src={"/static/images/blog_img/nextjs-and-formspree/platform_3.png"}
     alt={"Formspree sign up"}
     layout="responsive"
-    width={700}
-    height={650}
+    width={400}
+    height={450}
   />
 </figure>
 
@@ -102,6 +105,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
   <Image
+    className="rounded-lg"
     src={"/static/images/blog_img/nextjs-and-formspree/platform_4.png"}
     alt={"Formspree sign up"}
     layout="responsive"
@@ -127,6 +131,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
   <Image
+    className="rounded-lg"
     src={"/static/images/blog_img/nextjs-and-formspree/cli_1.png"}
     alt={"Formspree sign up"}
     layout="responsive"
@@ -136,13 +141,17 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 </figure>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  Open your project's directory and install the <code>@formspree/react</code>{" "}
+  Open your project's directory and install the{" "}
+  <code className="dark:text-black bg-gray-300 rounded-lg font-semibold px-2 py-1">
+    @formspree/react
+  </code>{" "}
   and Formspree CLI dependencies, with this we can setup our project correctly
   and it’s everything we'll need.
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
   <Image
+    className="rounded-lg"
     src={"/static/images/blog_img/nextjs-and-formspree/cli_2.png"}
     alt={"Formspree sign up"}
     layout="responsive"
@@ -154,12 +163,16 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 <h2 className="mt-6 text-2xl font-bold">Now it's time to code</h2>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  First we need to modify the <code>_app.js</code> file using the Formspree
-  provider with the right project ID
+  First we need to modify the{" "}
+  <code className="dark:text-black bg-gray-300 rounded-lg font-semibold px-2 py-1">
+    _app.js
+  </code>{" "}
+  file using the Formspree provider with the right project ID
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
   <Image
+    className="rounded-lg"
     src={"/static/images/blog_img/nextjs-and-formspree/code_1.png"}
     alt={"Medium Skeleton"}
     layout="responsive"
@@ -169,12 +182,87 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 </figure>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Before to use the Formspree hook, it's fundamental to create a{" "}
+  <code className="dark:text-black bg-gray-300 rounded-lg font-semibold px-2 py-1">
+    formspree.json
+  </code>{" "}
+  file which is the configuration file and contains information about our form,
+  the email you want to use to receive the form submissions and here we can add
+  other supported integrations as well. It's important don't forget to assign a
+  name for this form which is the first attribute under "forms" attribute, in
+  this case "contactForm". here's a small sample of a basic config:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    className="rounded-lg"
+    src={"/static/images/blog_img/nextjs-and-formspree/code_2.png"}
+    alt={"Medium Skeleton"}
+    layout="responsive"
+    width={650}
+    height={400}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  After this let's create a component file which or where your form UI resides
+  and now we can import 2 of the dependencies. In this point just{" "}
+  <code>useForm</code> hook is needed, <code>ValidationError</code>
+  is just provided if you don't want to handle form validation from sratch. You can
+  read more about in the <a
+    className="text-blue-500 dark:text-blue-400"
+    href="https://help.formspree.io/hc/en-us/articles/360055613373-The-Formspree-React-library#validation"
+  >
+    formspree docs
+  </a>
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    className="rounded-lg"
+    src={"/static/images/blog_img/nextjs-and-formspree/code_3.png"}
+    alt={"Medium Skeleton"}
+    layout="responsive"
+    width={700}
+    height={270}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Then it’s time to use the <code>useForm</code> hook, this needs only one
+  parameter which is the form's name created on the{" "}
+  <code className="dark:text-black bg-gray-300 rounded-lg font-semibold px-2 py-1">
+    formspree.json
+  </code>{" "}
+  file, "contactForm" in this case. Here I'm using <code>useRef</code> hook in
+  order to handle form event submission, reading the state status and reset the
+  form's input fields as a side effect with the help of <code>useEffect</code>{" "}
+  (this is something optional and depends on your own custom implementation)
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    className="rounded-lg"
+    src={"/static/images/blog_img/nextjs-and-formspree/code_4.png"}
+    alt={"Medium Skeleton"}
+    layout="responsive"
+    width={700}
+    height={500}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  More content here...
+</p>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Open your project's directory and install the Formspree CLI dependency, with
   this we can setup our project correctly
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
   <Image
+    className="rounded-lg"
     src={"/static/images/blog_img/nextjs-and-formspree/cli_2.png"}
     alt={"Formspree sign up"}
     layout="responsive"
