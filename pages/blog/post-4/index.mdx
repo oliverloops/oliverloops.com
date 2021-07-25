@@ -145,8 +145,12 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   <code className="dark:text-black bg-gray-300 rounded-lg font-semibold px-2 py-1">
     @formspree/react
   </code>{" "}
-  and Formspree CLI dependencies, with this we can setup our project correctly
-  and it’s everything we'll need.
+  and{" "}
+  <code className="dark:text-black bg-gray-300 rounded-lg font-semibold px-2 py-1">
+    @formspree/cli
+  </code>{" "}
+  dependencies, with this we can setup our project correctly and it’s everything
+  we'll need.
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
@@ -268,6 +272,88 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
     layout="responsive"
     width={700}
     height={285}
+  />
+</figure>
+
+<h2 className="mt-6 text-2xl font-bold">Last step...</h2>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  That's everything about the formspree integration, as you see is really simple
+  and quite easy to connect, the last thing beyond the code is to deploy our{" "}
+  <code>forsmpree.json </code> file to the platform in order to upload our
+  custom configuration, but don't worry this process is easy as this and we just
+  need the command: <code>formspree deploy -k your-deploy-key</code> as you see
+  below:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    className="rounded-lg"
+    src={"/static/images/blog_img/nextjs-and-formspree/cli_2.png"}
+    alt={"Formspree sign up"}
+    layout="responsive"
+    width={900}
+    height={100}
+  />
+</figure>
+
+<figure className="md:px-5 mt-4 md:mb-5">
+  <Image
+    className="rounded-lg"
+    src={"/static/images/blog_img/nextjs-and-formspree/cli_3.png"}
+    alt={"Formspree sign up"}
+    layout="responsive"
+    width={900}
+    height={180}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Then after this deploy, you can see the platform is showing the actual project
+  and the configuration we added before
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    className="rounded-lg"
+    src={"/static/images/blog_img/nextjs-and-formspree/platform_5.png"}
+    alt={"Formspree sign up"}
+    layout="responsive"
+    width={900}
+    height={150}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  After this process we can test our contact form and see that everything it's
+  working properly and just takes few steps
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    className="rounded-lg"
+    src={"/static/images/blog_img/nextjs-and-formspree/form_example.gif"}
+    alt={"Formspree sign up"}
+    layout="responsive"
+    width={"auto"}
+    height={"auto"}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  Inside Submission section in{" "}
+  <a href="https://forsmpree.io">formspree's platform</a> you can see all email
+  submissions and the specific date and time when they were sent
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    className="rounded-lg"
+    src={"/static/images/blog_img/nextjs-and-formspree/platform_6.png"}
+    alt={"Formspree sign up"}
+    layout="responsive"
+    width={900}
+    height={300}
   />
 </figure>
 
