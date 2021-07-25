@@ -5,7 +5,7 @@ import { ThemeProvider } from "next-themes";
 function App({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
-      <Layout pageTitle="Oliver Lopez | Home" description="My personal blog">
+      <Layout pageTitle="Oliver Lopez" description="My personal blog">
         <Component {...pageProps} />
       </Layout>
     </ThemeProvider>

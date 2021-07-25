@@ -6,8 +6,8 @@ export const meta = {
   title: "Creating a Contact Form with Next.js and Formspree",
   description:
     "The fastest way to create a contact form for your Next.js website",
-  date: "Jul 23, 2021",
-  readTime: 6,
+  date: "Jul 26, 2021",
+  readTime: 7,
 };
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
@@ -20,7 +20,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   height={150}
 />
 
-<blockquote className="break-words text-md text-left leading-relaxed">
+<blockquote className="font-serif break-words text-md text-left leading-relaxed">
   <i>
     “Focusing on the front-end is the most customer-obsessive way to build your
     products.” — <span>Guillermo Rauch, CEO Vercel</span>
@@ -33,13 +33,14 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <h2 className="mt-6 text-2xl font-bold">Why use this solution?</h2>
 
-<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Sometimes you are under pressure building a client's website or a project and
   you find in the situation where saving time is essential. I was trying
   different solutions for small and simple contact form integration and I have
   to say that Formspree is the quickest and easiest way to get your contact
-  forms up and running. Their simplicity in their React API really makes a good
-  developer experience when is combined with Next.js. Let's see this in action.
+  forms up and running, just take a couple of minutes to get everything up and
+  running. Their simplicity in their React API really makes a good developer
+  experience when is combined with Next.js. Let's see this in action.
 </p>
 
 <h2 className="mt-6 text-2xl font-bold">Getting Started</h2>
@@ -47,7 +48,10 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Before to show the code sample we will need to start a Next.js project and
   create a Formspree account if you don’t have one yet. first visit{" "}
-  <a className="text-blue-400 dark:text-blue-400" href="https://formspree.io">
+  <a
+    className="text-blue-500 dark:text-blue-300"
+    href="https://formspree.io/login"
+  >
     formspree website
   </a>
   , sign in and fill in your data:
@@ -82,7 +86,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   After clicking New Project, assign any name you like and then select the
-  option <span className="font-semibold">Commnad Line Project</span>
+  option <span className="bold">Commnad Line Project</span>
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
@@ -97,13 +101,13 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 </figure>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  At the end the platform will provide us 2 diferent important access keys, the
-  first one is the <b>Project ID</b> which which will be used to access from our
-  project to Formspree API, and the <b>Deploy Key</b> that we'll gonna use
-  later:
+  At the end the platform will provide us 2 diferent access keys, the first one
+  is the <span className="font-bold">Project ID</span> which will be used to
+  access from our project to Formspree API, and the{" "}
+  <span className="font-bold">Deploy Key</span> that we'll gonna use later:
 </p>
 
-<figure className="md:px-5 md:mt-4 md:mb-5">
+<figure className="md:px-5 md:mt-4 mb-5">
   <Image
     className="rounded-lg"
     src={"/static/images/blog_img/nextjs-and-formspree/platform_4.png"}
@@ -121,7 +125,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   order to create a custom design for the contact form, you can dive deep into
   installing Tailwind and Next.js in the{" "}
   <a
-    className="text-blue-500 dark:text-blue-400"
+    className="text-blue-500 dark:text-blue-300"
     href="https://tailwindcss.com/docs/guides/nextjs"
   >
     official docs site
@@ -180,7 +184,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   the contact form, feel free to use it and customize it if you need. the full
   project is located on this{" "}
   <a
-    className="text-blue-500 dark:text-blue-400"
+    className="text-blue-500 dark:text-blue-300"
     href="https://github.com/oliverloops/Next-Formspree"
   >
     GitHub repository
@@ -227,7 +231,11 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   file which is the configuration file and contains information about our form,
   the email you want to use to receive the form submissions and here we can add
   other supported integrations as well, this file can be generated automatically
-  using the <code>formspree init</code> command.
+  using the{" "}
+  <code className="dark:text-black bg-gray-300 rounded-lg px-2 py-1">
+    formspree init
+  </code>{" "}
+  command.
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
@@ -244,7 +252,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   It's important don't forget to assign a name for this form which is the first
   attribute under "forms" attribute, in this case "contactForm" and a name for
-  this project in this case "Next.js Formspree" .here's a small sample of a
+  this project in this case "Next.js Formspree". here's a small sample of a
   basic config:
 </p>
 
@@ -261,11 +269,17 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   After this let's create a component file which or where your form UI resides
-  and now we can import 2 of the dependencies. In this point just{" "}
-  <code>useForm</code> hook is needed, <code>ValidationError</code>
+  and now we can import two of the dependencies. In this point just{" "}
+  <code className="dark:text-black bg-gray-300 rounded-lg px-2 py-1">
+    useForm
+  </code>{" "}
+  hook is needed,{" "}
+  <code className="dark:text-black bg-gray-300 rounded-lg px-2 py-1">
+    ValidationError
+  </code>
   is just provided if you don't want to handle form validation from sratch. You can
   read more about in the <a
-    className="text-blue-500 dark:text-blue-400"
+    className="text-blue-500 dark:text-blue-300"
     href="https://help.formspree.io/hc/en-us/articles/360055613373-The-Formspree-React-library#validation"
   >
     formspree docs
@@ -284,14 +298,23 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 </figure>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  Then it’s time to use the <code>useForm</code> hook, this needs only one
-  parameter which is the form's name created on the{" "}
+  Then it’s time to use the{" "}
+  <code className="dark:text-black bg-gray-300 rounded-lg px-2 py-1">
+    useForm
+  </code>{" "}
+  hook, this needs only one parameter which is the form's name created on the{" "}
   <code className="dark:text-black bg-gray-300 rounded-lg font-semibold px-2 py-1">
     formspree.json
   </code>{" "}
-  file, "contactForm" in this case. Here I'm using <code>useRef</code> hook in
-  order to handle form event submission, reading the state status and reset the
-  form's input fields as a side effect with the help of <code>useEffect</code>{" "}
+  file, "contactForm" in this case. Here I'm using{" "}
+  <code className="dark:text-black bg-gray-300 rounded-lg px-2 py-1">
+    useRef
+  </code>{" "}
+  hook in order to handle form event submission, reading the state status and
+  reset the form's input fields as a side effect with the help of{" "}
+  <code className="dark:text-black bg-gray-300 rounded-lg px-2 py-1">
+    useEffect
+  </code>{" "}
   (this is something optional and depends on your own custom implementation)
 </p>
 
@@ -308,14 +331,23 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   From here everything is almost done, don't forget to add{" "}
-  <code>type="submit"</code> attribute inside the submit button and formspree
-  provides an state value in order to track if the submission is done or in
-  process, with this in mind we can set <code>state.submitting</code> inside
-  <code>disabled</code> attribute in order to disable the button after clicking and
-  before submission is complete
+  <code className="dark:text-black bg-gray-300 rounded-lg px-2 py-1">
+    type="submit"
+  </code>{" "}
+  attribute inside the submit button and formspree provides an state value in
+  order to track if the submission is done or in process, with this in mind we
+  can set{" "}
+  <code className="dark:text-black bg-gray-300 rounded-lg px-2 py-1">
+    state.submitting
+  </code>{" "}
+  inside
+  <code className="dark:text-black bg-gray-300 rounded-lg px-2 py-1">
+    disabled
+  </code> attribute in order to disable the button after clicking and before submission
+  is complete
 </p>
 
-<figure className="md:px-5 md:mt-4 md:mb-5">
+<figure className="md:px-5 md:mt-4 mb-5">
   <Image
     className="rounded-lg"
     src={"/static/images/blog_img/nextjs-and-formspree/code_5.png"}
@@ -331,10 +363,15 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   That's everything about the formspree integration, as you see is really simple
   and quite easy to connect, the last thing beyond the code is to deploy our{" "}
-  <code>forsmpree.json </code> file to the platform in order to upload our
-  custom configuration, but don't worry this process is easy as this and we just
-  need the command: <code>formspree deploy -k your-deploy-key</code> as you see
-  below:
+  <code className="dark:text-black bg-gray-300 font-semibold rounded-lg px-2 py-1">
+    formspree.json
+  </code>{" "}
+  file to the platform in order to upload our custom configuration, but don't
+  worry this process is easy as this and we just need the command:{" "}
+  <code className="dark:text-black bg-gray-300 rounded-lg px-2 py-1">
+    formspree deploy -k your-deploy-key
+  </code>{" "}
+  as you see below:
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
@@ -377,7 +414,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   After this process we can test our contact form and see that everything it's
-  working properly and just takes few steps
+  working properly and just takes us few steps
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
@@ -393,7 +430,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Inside Submission section in{" "}
-  <a className="text-blue-500 dark:text-blue-400" href="https://forsmpree.io">
+  <a className="text-blue-500 dark:text-blue-300" href="https://forsmpree.io">
     formspree's platform
   </a>{" "}
   you can see all email submissions and the specific date and time when they
@@ -411,6 +448,26 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   />
 </figure>
 
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  And the form is actually sending all the information to my own email, that was
+  configured on{" "}
+  <code className="dark:text-black bg-gray-300 font-semibold rounded-lg px-2 py-1">
+    formspree.json
+  </code>
+  &nbsp;before:
+</p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    className="rounded-lg"
+    src={"/static/images/blog_img/nextjs-and-formspree/email-submision.png"}
+    alt={"Formspree sign up"}
+    layout="responsive"
+    width={900}
+    height={600}
+  />
+</figure>
+
 <h2 className="mt-6 text-2xl font-bold">
   Your contact form is done!{" "}
   <span role="img" aria-label="party">
@@ -422,7 +479,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   Now you have a fully functional contact form, you can find the whole project
   on{" "}
   <a
-    className="text-blue-500 dark:text-blue-400"
+    className="text-blue-500 dark:text-blue-300"
     href="https://github.com/oliverloops/Next-Formspree"
   >
     this GitHub repository
@@ -434,13 +491,13 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white mt-4">
   If you want to deep dive into this API you can find more info on the{" "}
   <a
-    className="text-blue-500 dark:text-blue-400"
+    className="text-blue-500 dark:text-blue-300"
     href="https://help.formspree.io/hc/en-us"
   >
     Official Forsmpree
   </a>
   &nbsp;docs. I reccomend to read <a
-    className="text-blue-500 dark:text-blue-400"
+    className="text-blue-500 dark:text-blue-300"
     href="https://vercel.com/guides/deploying-react-forms-using-formspree-with-vercel"
   >
     this article
