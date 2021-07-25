@@ -252,8 +252,24 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 </figure>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  More content here...
+  From here everything is almost done, don't forget to add{" "}
+  <code>type="submit"</code> attribute inside the submit button and formspree
+  provides an state value in order to track if the submission is done or in
+  process, with this in mind we can set <code>state.submitting</code> inside
+  <code>disabled</code> attribute in order to disable the button after clicking and
+  before submission is complete
 </p>
+
+<figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    className="rounded-lg"
+    src={"/static/images/blog_img/nextjs-and-formspree/code_5.png"}
+    alt={"Medium Skeleton"}
+    layout="responsive"
+    width={700}
+    height={285}
+  />
+</figure>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Open your project's directory and install the Formspree CLI dependency, with
