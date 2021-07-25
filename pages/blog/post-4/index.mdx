@@ -110,7 +110,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
     alt={"Formspree sign up"}
     layout="responsive"
     width={900}
-    height={160}
+    height={210}
   />
 </figure>
 
@@ -156,11 +156,45 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 <figure className="md:px-5 md:mt-4 md:mb-5">
   <Image
     className="rounded-lg"
-    src={"/static/images/blog_img/nextjs-and-formspree/cli_2.png"}
+    src={"/static/images/blog_img/nextjs-and-formspree/cli_4.png"}
     alt={"Formspree sign up"}
     layout="responsive"
     width={900}
-    height={180}
+    height={100}
+  />
+</figure>
+
+<figure className="md:px-5 mt-4 md:mb-5">
+  <Image
+    className="rounded-lg"
+    src={"/static/images/blog_img/nextjs-and-formspree/cli_5.png"}
+    alt={"Formspree sign up"}
+    layout="responsive"
+    width={900}
+    height={100}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  As I mentioned before, for this example I'm going to use a custom layout for
+  the contact form, feel free to use it and customize it if you need. the full
+  project is located on this{" "}
+  <a
+    className="text-blue-500 dark:text-blue-400"
+    href="https://github.com/oliverloops/Next-Formspree"
+  >
+    GitHub repository
+  </a>
+</p>
+
+<figure className="md:px-5 mt-4 md:mb-5">
+  <Image
+    className="rounded-lg"
+    src={"/static/images/blog_img/nextjs-and-formspree/form_layout.png"}
+    alt={"Formspree sign up"}
+    layout="responsive"
+    width={"auto"}
+    height={"auto"}
   />
 </figure>
 
@@ -192,12 +226,29 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   </code>{" "}
   file which is the configuration file and contains information about our form,
   the email you want to use to receive the form submissions and here we can add
-  other supported integrations as well. It's important don't forget to assign a
-  name for this form which is the first attribute under "forms" attribute, in
-  this case "contactForm". here's a small sample of a basic config:
+  other supported integrations as well, this file can be generated automatically
+  using the <code>formspree init</code> command.
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
+  <Image
+    className="rounded-lg"
+    src={"/static/images/blog_img/nextjs-and-formspree/cli_6.png"}
+    alt={"Medium Skeleton"}
+    layout="responsive"
+    width={900}
+    height={100}
+  />
+</figure>
+
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+  It's important don't forget to assign a name for this form which is the first
+  attribute under "forms" attribute, in this case "contactForm" and a name for
+  this project in this case "Next.js Formspree" .here's a small sample of a
+  basic config:
+</p>
+
+<figure className="md:px-5 mt-4 md:mb-5">
   <Image
     className="rounded-lg"
     src={"/static/images/blog_img/nextjs-and-formspree/code_2.png"}
@@ -342,8 +393,11 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Inside Submission section in{" "}
-  <a href="https://forsmpree.io">formspree's platform</a> you can see all email
-  submissions and the specific date and time when they were sent
+  <a className="text-blue-500 dark:text-blue-400" href="https://forsmpree.io">
+    formspree's platform
+  </a>{" "}
+  you can see all email submissions and the specific date and time when they
+  were sent
 </p>
 
 <figure className="md:px-5 md:mt-4 md:mb-5">
@@ -357,51 +411,44 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   />
 </figure>
 
+<h2 className="mt-6 text-2xl font-bold">
+  Your contact form is done!{" "}
+  <span role="img" aria-label="party">
+    🎉
+  </span>
+</h2>
+
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  Open your project's directory and install the Formspree CLI dependency, with
-  this we can setup our project correctly
+  Now you have a fully functional contact form, you can find the whole project
+  on{" "}
+  <a
+    className="text-blue-500 dark:text-blue-400"
+    href="https://github.com/oliverloops/Next-Formspree"
+  >
+    this GitHub repository
+  </a>
+  &nbsp;, you can see this small example as an starter kit, feel free to use it on
+  your next project.
 </p>
 
-<figure className="md:px-5 md:mt-4 md:mb-5">
-  <Image
-    className="rounded-lg"
-    src={"/static/images/blog_img/nextjs-and-formspree/cli_2.png"}
-    alt={"Formspree sign up"}
-    layout="responsive"
-    width={900}
-    height={180}
-  />
-</figure>
-
-<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  Now it’s time to use the{" "}
-  <code className="bg-gray-200 dark:bg-gray-500  px-1">Hider</code> component to
-  wrap the components that you need to show/hide. The first one needs to be the
-  component to show and the second one the component to hide. After that, just
-  provide the actual boolean status declared before to the state prop inside
-  Hider:
-</p>
-
-<figure className="md:px-5 md:mt-4 md:mb-5">
-  <Image
-    src={"/static/images/blog_img/intro-to-react/third_line.png"}
-    alt={"Medium Skeleton"}
-    layout="responsive"
-    width={700}
-    height={430}
-  />
-</figure>
-
-<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  I need to say that this library is capable of showing/hiding a single child
-  component because Hider is based on React’s conditional{" "}
-  <code className="bg-gray-200 dark:bg-gray-500 px-1">&&</code> operator too.
-  You just need to worry about which elements need to be rendered or not.
-</p>
-
-<h2 className="mt-6 text-2xl font-bold">You’re Done!</h2>
-
-<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
-  And that’s everything you need to know to use React Hider inside any future
-  project, Thanks for reading and feel free to contribute.
+<p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white mt-4">
+  If you want to deep dive into this API you can find more info on the{" "}
+  <a
+    className="text-blue-500 dark:text-blue-400"
+    href="https://help.formspree.io/hc/en-us"
+  >
+    Official Forsmpree
+  </a>
+  &nbsp;docs. I reccomend to read <a
+    className="text-blue-500 dark:text-blue-400"
+    href="https://vercel.com/guides/deploying-react-forms-using-formspree-with-vercel"
+  >
+    this article
+  </a> from Vercel about how to deploy a form with Formpree on Vercel's platform,
+  is really useful and valuable content. Thanks for reading me! <span
+    role="img"
+    aria-label="victory hand"
+  >
+    ✌️
+  </span>
 </p>
