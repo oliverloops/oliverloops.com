@@ -30,7 +30,7 @@ export default function Header() {
         },
       }}
       className="flex justify-between items-center mx-auto max-w-4xl w-full sticky sticky-nav
-      h-18 p-8 py-8 bg-white dark:bg-black bg-opacity-60"
+      h-18 p-8 py-8 bg-white dark:bg-gray-800"
     >
       <Link href="/">
         <a>
@@ -52,7 +52,7 @@ export default function Header() {
         </a>
       </Link>
 
-      <div className="flex justify-evenly items-center w-42 px-8 pr-2">
+      <div className="flex justify-evenly items-center w-42 px-4">
         <div className="p-1 sm:p-4">
           <Link href="/portfolio">
             <a className="text-md dark:text-white">Portfolio</a>
@@ -68,7 +68,7 @@ export default function Header() {
             <a className="text-md dark:text-white">About</a>
           </Link>
         </div>
-        <div className="p-4 sm:p-4">
+        <div className="p-4">
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}

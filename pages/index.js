@@ -7,25 +7,11 @@ import ProjectCard from "../components/ProjectCard";
 export default function Home() {
   return (
     <div className="mx-auto">
-      <motion.div
-        className="flex flex-col items-center"
-        initial="pageInitial"
-        animate="pageAnimate"
-        variants={{
-          pageInitial: {
-            opacity: 0,
-            translateX: -800,
-          },
-          pageAnimate: {
-            opacity: 1,
-            translateX: 0,
-          },
-        }}
-      >
-        <div className="rounded-full border-2 border-blue-400">
+      <div>
+        <div className="flex justify-start">
           <img
-            style={{ width: "64px", height: "64px" }}
-            className="rounded-full"
+            style={{ width: "72px", height: "72px" }}
+            className="rounded-full border-2 border-blue-400"
             src="/static/images/me_cross.jpg"
             alt="Oliver Lopez"
           />
@@ -33,7 +19,7 @@ export default function Home() {
 
         <div className="flex flex-col py-4">
           <h1 className="font-bold text-3xl tracking-tight lg:text-4xl dark:text-white">
-            Hi there!, I'm Oliver Lopez{" "}
+            Hi there!, I'm Oliver{" "}
             <span
               className="hidden md:inline"
               role="img"
@@ -51,22 +37,8 @@ export default function Home() {
             related blog posts.
           </h3>
         </div>
-      </motion.div>
-      <motion.div
-        className="pt-6 pb-4"
-        initial="pageInitial"
-        animate="pageAnimate"
-        variants={{
-          pageInitial: {
-            opacity: 0,
-            translateX: -800,
-          },
-          pageAnimate: {
-            opacity: 1,
-            translateX: 0,
-          },
-        }}
-      >
+      </div>
+      <div>
         <h1 className="font-bold text-3xl tracking-tight lg:text-4xl dark:text-white">
           Some Cool Blogs!
         </h1>
@@ -76,21 +48,8 @@ export default function Home() {
           .map((post) => (
             <Post key={post.link} post={post} />
           ))}
-      </motion.div>
-      <motion.div
-        initial="pageInitial"
-        animate="pageAnimate"
-        variants={{
-          pageInitial: {
-            opacity: 0,
-            translateX: -800,
-          },
-          pageAnimate: {
-            opacity: 1,
-            translateX: 0,
-          },
-        }}
-      >
+      </div>
+      <div>
         <h1 className="py-4 font-bold tracking-tight text-3xl lg:text-4xl dark:text-white">
           Projects
         </h1>
@@ -112,7 +71,7 @@ export default function Home() {
           description={"This project is under construction"}
           href={"https://oliverloops.com/portfolio"}
         />
-      </motion.div>
+      </div>
     </div>
   );
 }

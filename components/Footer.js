@@ -19,7 +19,7 @@ export default function Footer() {
           translateX: 0,
         },
       }}
-      className="flex flex-col justify-center dark:bg-black"
+      className="flex flex-col justify-center dark:bg-gray-800"
     >
       <div className="flex justify-center mt-8">
         <NowPlaying />
