@@ -6,21 +6,7 @@ import NowPlaying from "./NowPlaying";
 
 export default function Footer() {
   return (
-    <motion.footer
-      initial="pageInitial"
-      animate="pageAnimate"
-      variants={{
-        pageInitial: {
-          opacity: 0,
-          translateX: -800,
-        },
-        pageAnimate: {
-          opacity: 1,
-          translateX: 0,
-        },
-      }}
-      className="flex flex-col justify-center dark:bg-gray-800"
-    >
+    <footer className="flex flex-col justify-center dark:bg-gray-800">
       <div className="flex justify-center mt-8">
         <NowPlaying />
       </div>
@@ -45,6 +31,6 @@ export default function Footer() {
         </span>
         Vercel | oliverloops ©2021
       </small>
-    </motion.footer>
+    </footer>
   );
 }

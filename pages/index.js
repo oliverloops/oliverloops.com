@@ -10,9 +10,9 @@ export default function Home() {
       <div>
         <div className="flex justify-start">
           <img
-            style={{ width: "72px", height: "72px" }}
+            style={{ width: "80px", height: "80px" }}
             className="rounded-full border-2 border-blue-400"
-            src="/static/images/me_cross.jpg"
+            src="/static/images/me_outside.jpg"
             alt="Oliver Lopez"
           />
         </div>
