@@ -117,7 +117,7 @@ export default function Portfolio() {
       }}
     >
       <a href="https://rango.dev">
-        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg py-2 mx-0 md:max-w-4xl md:mx-auto">
+        <Div className="bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg my-1 md:my-2 md:max-w-4xl md:mx-auto">
           <div className="p-4">
             <span className="flex">
               <AppImage
@@ -170,7 +170,7 @@ export default function Portfolio() {
         </Div>
       </a>
       <a href="https://fullcodetesting.pythonanywhere.com/">
-        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg py-2 mx-0 md:max-w-4xl md:mx-auto">
+        <Div className="bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-1 md:my-2 md:max-w-4xl md:mx-auto">
           <div className="p-4">
             <span className="flex">
               <AppImage
@@ -223,7 +223,7 @@ export default function Portfolio() {
         </Div>
       </a>
       <a href="https://barriointercambia.org/">
-        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg py-2 mx-0 md:max-w-4xl md:mx-auto">
+        <Div className="bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-1 md:my-2 md:max-w-4xl md:mx-auto">
           <div className="p-4">
             <span className="flex">
               <AppImage
@@ -274,7 +274,7 @@ export default function Portfolio() {
         </Div>
       </a>
       <a href="https://github.com/oliverloops/react-hider">
-        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg py-2 mx-0 md:max-w-4xl md:mx-auto">
+        <Div className="bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-1 md:my-2 md:max-w-4xl md:mx-auto">
           <div className="p-4">
             <span className="flex">
               <AppImage
@@ -327,7 +327,7 @@ export default function Portfolio() {
         </Div>
       </a>
       <a href="https://kilaenvservices.netlify.app">
-        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg py-2 mx-0 md:max-w-4xl md:mx-auto">
+        <Div className="bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-1 md:my-2 md:max-w-4xl md:mx-auto">
           <div className="p-4">
             <span className="flex">
               <AppImage
@@ -377,7 +377,7 @@ export default function Portfolio() {
         </Div>
       </a>
       <a href="#">
-        <Div className="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-lg py-2 mx-0 md:max-w-4xl md:mx-auto">
+        <Div className="bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-1 md:my-2 md:max-w-4xl md:mx-auto">
           <div className="p-4">
             <span className="flex">
               <AppImage
