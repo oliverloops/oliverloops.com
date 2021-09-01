@@ -4,7 +4,7 @@ export default function HeadPost({ meta, link }) {
   return (
     <div className="flex justify-center flex-col">
       <Link href={"/blog" + link}>
-        <a className="text-2xl font-bold text-blue-500 dark:text-blue-300 transition-all">
+        <a className="text-2xl font-bold text-blue-500 dark:text-blue-400 transition-all">
           {meta.title}
         </a>
       </Link>

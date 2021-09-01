@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 //UI components
 import { Post } from "../components/Post";
 import { posts } from "../getAllPosts";
@@ -6,7 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
   return (
-    <div className="mx-auto">
+    <div className="flex flex-col place-self-center">
       <div>
         <div className="flex justify-start">
           <img
@@ -18,8 +17,8 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col py-4">
-          <h1 className="font-bold text-3xl tracking-tight lg:text-4xl dark:text-white">
-            Hi there!, I'm Oliver{" "}
+          <h1 className="font-bold text-3xl tracking-normal lg:text-4xl dark:text-white">
+            Hi there, I'm Oliver{" "}
             <span
               className="hidden md:inline"
               role="img"
@@ -29,17 +28,22 @@ export default function Home() {
             </span>
           </h1>
           <h3 className="font-medium text-md text-gray-500 dark:text-gray-400  max-w-xl py-4 md:py-2">
-            I'm a software developer, rookie barista, and a tech writer. Welcome
-            to my personal space on the internet where you can find{" "}
-            <span style={{ color: "#F7E01E" }}>JavaScript</span>,{" "}
-            <span style={{ color: "#52D8FF" }}>React</span> and my{" "}
-            <span style={{ color: "#32C119" }}>entrepreneurial adventures</span>{" "}
-            related blog posts.
+            I'm a frontend developer, open source enthusiast and a casual tech
+            writer. Welcome to my{" "}
+            <span className="text-green-500 dark:text-green-400">
+              digital garden
+            </span>{" "}
+            where you can find some of my thoughts and blog posts related to{" "}
+            <span className="text-yellow-400 dark:text-yellow-300">
+              JavaScript
+            </span>
+            , <span className="text-blue-400">React</span> and experiments with{" "}
+            <span className="text-gray-900 dark:text-gray-100">Next.js</span>.
           </h3>
         </div>
       </div>
       <div>
-        <h1 className="font-bold text-3xl tracking-tight lg:text-4xl dark:text-white">
+        <h1 className="font-bold text-3xl tracking-normal lg:text-4xl dark:text-white">
           Some Cool Blogs!
         </h1>
         {posts

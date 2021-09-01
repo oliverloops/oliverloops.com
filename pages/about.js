@@ -12,7 +12,7 @@ const Text = styled.p`
 const AppItem = ({ url, image, name, desc }) => (
   <>
     <a
-      className="flex rounded-lg py-4 sm:p-4 sm:hover:bg-gray-100 sm:dark:hover:bg-gray-900"
+      className="flex rounded-lg py-4 p-4 hover:bg-gray-100 dark:hover:bg-gray-800"
       href={url}
     >
       <div>
@@ -82,7 +82,7 @@ export default function About() {
       <div className="flex justify-center py-4">
         <div>
           <Image
-            src={"/static/images/books/node_cookbook.png"}
+            src={"/static/images/books/react_hooks_book.png"}
             width={165}
             height={235}
             alt={"A book"}
