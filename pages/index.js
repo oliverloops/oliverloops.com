@@ -5,7 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
   return (
-    <div className="flex flex-col place-self-center max-w-3/5 w-3/5 bg-blue-300">
+    <div className="flex flex-col place-self-center md:max-w-3/5 md:w-3/5 pt-14 pb-12">
       <div className="flex justify-between py-4">
         <div className="flex flex-col">
           <h1 className="font-bold text-4xl tracking-normal lg:text-5xl dark:text-white">
@@ -43,7 +43,7 @@ export default function Home() {
       </div>
       <div>
         <h1 className="font-bold text-3xl tracking-normal lg:text-4xl dark:text-white">
-          Some Cool Blogs!
+          Recent Posts
         </h1>
         {posts
           .slice()

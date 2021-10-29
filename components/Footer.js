@@ -7,7 +7,7 @@ import NowPlaying from "./NowPlaying";
 export default function Footer() {
   return (
     <footer className="flex justify-center dark:bg-gray-900">
-      <div className="flex flex-col justify-center max-w-3/5 w-3/5 bg-red-400">
+      <div className="flex flex-col justify-center max-w-3/5 w-3/5 ">
         <div className="flex justify-center mt-8">
           <NowPlaying />
         </div>

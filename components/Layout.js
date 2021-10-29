@@ -29,7 +29,7 @@ export default function Layout({ children, pageTitle, description }) {
       >
         <main>
           <Header />
-          <div className="flex flex-col  justify-center items-start w-full mx-auto px-8 py-4 dark:bg-gray-900">
+          <div className="flex flex-col  justify-center items-start w-full mx-auto  dark:bg-gray-900">
             {children}
           </div>
           <Footer />
