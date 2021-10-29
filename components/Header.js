@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <nav
-      className="flex justify-between items-center mx-auto max-w-6xl w-full sticky sticky-nav
+      className="flex justify-around items-center mx-auto max-w-6xl w-full sticky sticky-nav
     h-18 p-8 py-8 bg-white dark:bg-gray-900 bg-opacity-60"
     >
       <Link href="/">
@@ -44,11 +44,6 @@ export default function Header() {
 
       <div className="flex justify-evenly items-center w-42 px-4">
         <div className="p-1 sm:p-4">
-          <Link href="/portfolio">
-            <a className="text-md dark:text-white">Portfolio</a>
-          </Link>
-        </div>
-        <div className="p-1 sm:p-4">
           <Link href="/blog">
             <a className="text-md dark:text-white">Blog</a>
           </Link>
@@ -56,6 +51,11 @@ export default function Header() {
         <div className="p-1 sm:p-4">
           <Link href="/about">
             <a className="text-md dark:text-white">About</a>
+          </Link>
+        </div>
+        <div className="p-1 sm:p-4">
+          <Link href="/portfolio">
+            <a className="text-md dark:text-white">Experiments</a>
           </Link>
         </div>
         <div className="p-4">

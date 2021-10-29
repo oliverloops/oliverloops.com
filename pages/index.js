@@ -6,18 +6,9 @@ import ProjectCard from "../components/ProjectCard";
 export default function Home() {
   return (
     <div className="flex flex-col place-self-center">
-      <div>
-        <div className="flex justify-start">
-          <img
-            style={{ width: "80px", height: "80px" }}
-            className="rounded-full border-2 border-blue-400"
-            src="/static/images/me_outside.jpg"
-            alt="Oliver Lopez"
-          />
-        </div>
-
+      <div className="flex bg-red-400">
         <div className="flex flex-col py-4">
-          <h1 className="font-bold text-3xl tracking-normal lg:text-4xl dark:text-white">
+          <h1 className="font-bold text-4xl tracking-normal lg:text-5xl dark:text-white">
             Hi there, I'm Oliver{" "}
             <span
               className="hidden md:inline"
@@ -27,7 +18,7 @@ export default function Home() {
               👋
             </span>
           </h1>
-          <h3 className="font-medium text-md text-gray-500 dark:text-gray-400  max-w-xl py-4 md:py-2">
+          <h3 className="font-medium text-lg text-gray-500 dark:text-gray-400  max-w-xl py-4 md:py-2">
             I'm a frontend developer, open source enthusiast and a casual tech
             writer. Welcome to my{" "}
             <span className="text-green-500 dark:text-green-400">
@@ -41,6 +32,12 @@ export default function Home() {
             <span className="text-gray-900 dark:text-gray-100">Next.js</span>.
           </h3>
         </div>
+        <img
+          style={{ width: "128px", height: "128px" }}
+          className="rounded-full border-2 border-blue-400"
+          src="/static/images/me_outside.jpg"
+          alt="Oliver Lopez"
+        />
       </div>
       <div>
         <h1 className="font-bold text-3xl tracking-normal lg:text-4xl dark:text-white">
