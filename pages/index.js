@@ -5,9 +5,9 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
   return (
-    <div className="flex flex-col place-self-center">
-      <div className="flex bg-red-400">
-        <div className="flex flex-col py-4">
+    <div className="flex flex-col place-self-center max-w-3/5 w-3/5 bg-blue-300">
+      <div className="flex justify-between py-4">
+        <div className="flex flex-col">
           <h1 className="font-bold text-4xl tracking-normal lg:text-5xl dark:text-white">
             Hi there, I'm Oliver{" "}
             <span
@@ -32,12 +32,14 @@ export default function Home() {
             <span className="text-gray-900 dark:text-gray-100">Next.js</span>.
           </h3>
         </div>
-        <img
-          style={{ width: "128px", height: "128px" }}
-          className="rounded-full border-2 border-blue-400"
-          src="/static/images/me_outside.jpg"
-          alt="Oliver Lopez"
-        />
+        <div className="px-2 py-4">
+          <img
+            style={{ width: "128px", height: "128px" }}
+            className="rounded-full border-2 border-blue-400"
+            src="/static/images/me_outside.jpg"
+            alt="Oliver Lopez"
+          />
+        </div>
       </div>
       <div>
         <h1 className="font-bold text-3xl tracking-normal lg:text-4xl dark:text-white">
