@@ -1,5 +1,5 @@
 //UI components
-import { Post } from "../components/Post";
+import PostCard from "../components/PostCard";
 import { posts } from "../getAllPosts";
 import ProjectCard from "../components/ProjectCard";
 
@@ -45,12 +45,14 @@ export default function Home() {
         <h1 className="font-bold text-3xl tracking-normal lg:text-4xl dark:text-white">
           Recent Posts
         </h1>
-        {posts
-          .slice()
-          .reverse()
-          .map((post) => (
-            <Post key={post.link} post={post} />
-          ))}
+        <div className="flex">
+          {posts
+            .slice(2)
+            .reverse()
+            .map((post) => (
+              <PostCard key={post.link} post={post} />
+            ))}
+        </div>
       </div>
       <div>
         <h1 className="py-4 font-bold tracking-tight text-3xl lg:text-4xl dark:text-white">
