@@ -18,7 +18,7 @@ export default function Header() {
   };
 
   return (
-    <nav className="bg-gray-50 dark:bg-gray-900 bg-opacity-60 sticky sticky-nav">
+    <nav className="bg-gray-50 dark:bg-gray-900 bg-opacity-40 dark:bg-opacity-60 sticky sticky-nav">
       <div className="flex justify-between mx-auto max-w-3/5 w-3/5 h-18 ">
         <div className="flex flex-col justify-center">
           <Link href="/">

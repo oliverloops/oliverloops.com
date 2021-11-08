@@ -6,7 +6,7 @@ import ProjectCard from "../components/ProjectCard";
 export default function Home() {
   return (
     <div className="flex flex-col place-self-center md:max-w-3/5 md:w-3/5 pt-14 pb-12">
-      <div className="flex justify-between py-4">
+      <div className="flex justify-between py-4 mb-6">
         <div className="flex flex-col">
           <h1 className="font-bold text-4xl tracking-normal lg:text-5xl dark:text-white">
             Hi there, I'm Oliver{" "}

@@ -7,15 +7,22 @@ const PostCard = ({ post }) => {
   } = post;
 
   return (
-    <div className="m-8 ml-2">
+    <div className="p-8 pl-0">
       <Content meta={meta} link={link} />
+      {/* <div className="border-4 bg-blue-400 dark:bg-blue-500 w-200 h-40 border-black dark:border-white rounded-xl"></div> */}
     </div>
   );
 };
 
 const Content = ({ meta, link }) => {
+  //colored box-shadow and border style
+  const shadowFormula = `0.65rem 0.65rem #5ea5f7, 0.65rem 0.65rem 0 4px #000`;
+
   return (
-    <div className="flex justify-center flex-col p-4 border-4 border-black rounded-xl">
+    <div
+      style={{ boxShadow: shadowFormula }}
+      className="flex justify-center flex-col p-4 border-4 bg-white dark:bg-gray-900 border-black dark:border-white rounded-xl"
+    >
       <Link href={"/blog" + link}>
         <a className="text-xl font-bold text-blue-500 dark:text-blue-400 transition-all">
           {meta.title}
