@@ -20,7 +20,7 @@ export default function Home() {
               👋
             </span>
           </h1>
-          <h3 className="font-medium text-lg text-gray-500 dark:text-gray-400  max-w-xl py-4 md:py-2">
+          <h3 className="font-medium text-lg text-gray-500 dark:text-gray-400 leading-relaxed max-w-xl py-4 md:py-2">
             I'm a frontend developer, open source enthusiast and a casual tech
             writer. Welcome to my{" "}
             <span className="text-green-500 dark:text-green-400">
@@ -66,6 +66,7 @@ export default function Home() {
         </h1>
         <div className="grid grid-cols-2">
           <ProjectCard
+            image={"/static/images/portfolio/rango_web.png"}
             title={"Rango Creative Lab"}
             description={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -73,13 +74,15 @@ export default function Home() {
             href={"https://rango.dev"}
           />
           <ProjectCard
-            title={"React Hider"}
+            image={"/static/images/portfolio/fitcloud_web.png"}
+            title={"Fitcloud"}
             description={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             }
             href={"https://github.com/oliverloops/react-hider"}
           />
           <ProjectCard
+            image={"/static/images/portfolio/natours_web.png"}
             title={"Comming Soon"}
             description={"This project is under construction"}
             href={"https://oliverloops.com/portfolio"}
