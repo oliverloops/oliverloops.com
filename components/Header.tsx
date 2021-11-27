@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { IoMdMoon } from "react-icons/io";
 import { HiSun } from "react-icons/hi";
@@ -28,17 +27,17 @@ export default function Header() {
         <div className="flex justify-evenly items-center">
           <div className="p-1 sm:p-4">
             <Link href="/blog">
-              <a className="text-md dark:text-white">Blog</a>
+              <a className="text-md font-medium dark:text-white">Blog</a>
             </Link>
           </div>
           <div className="p-1 sm:p-4">
             <Link href="/about">
-              <a className="text-md dark:text-white">About</a>
+              <a className="text-md font-medium dark:text-white">About</a>
             </Link>
           </div>
           <div className="p-1 sm:p-4">
             <Link href="/portfolio">
-              <a className="text-md dark:text-white">Experiments</a>
+              <a className="text-md font-medium dark:text-white">Experiments</a>
             </Link>
           </div>
           <div className="p-4">
@@ -46,7 +45,7 @@ export default function Header() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={() => switchTheme()}
-              className="flex justify-center items-center rounded-md bg-gray-200 dark:bg-gray-700 h-10 w-10"
+              className="flex justify-center items-center rounded-full bg-gray-200 dark:bg-gray-700 h-10 w-10"
             >
               {darkContext.theme === "dark" ? (
                 <HiSun className="icon dark:text-white" />
