@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/Link";
+import Link from "next/link";
 
 export default function ProjectCard({ image, title, description, href }) {
   return (
