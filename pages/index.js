@@ -1,3 +1,5 @@
+import Link from "next/link";
+import Image from "next/image";
 //UI components
 import PostCard from "../components/PostCard";
 import { posts } from "../getAllPosts";
@@ -6,9 +8,9 @@ import ProjectCard from "../components/ProjectCard";
 export default function Home() {
   return (
     <div className="flex flex-col place-self-center md:max-w-3/5 md:w-3/5 pt-14 pb-12">
-      <div className="flex justify-between py-4 mb-6">
+      <div className="flex justify-between py-4 mb-8">
         <div className="flex flex-col">
-          <h1 className="font-bold text-4xl tracking-normal lg:text-5xl dark:text-white">
+          <h1 className="font-bold text-4xl lg:text-5xl dark:text-white">
             Hi there, I'm Oliver{" "}
             <span
               className="hidden md:inline"
@@ -33,15 +35,16 @@ export default function Home() {
           </h3>
         </div>
         <div className="px-2 py-4">
-          <img
-            style={{ width: "128px", height: "128px" }}
-            className="rounded-full border-2 border-blue-400"
-            src="/static/images/me_outside.jpg"
-            alt="Oliver Lopez"
+          <Image
+            width={128}
+            height={128}
+            className={"rounded-full border-2 border-blue-400"}
+            src={"/static/images/me_outside.jpeg"}
+            alt={"Oliver Lopez"}
           />
         </div>
       </div>
-      <div>
+      <div className="mb-8">
         <h1 className="font-bold text-3xl tracking-normal lg:text-4xl dark:text-white">
           Recent Posts
         </h1>
@@ -53,29 +56,35 @@ export default function Home() {
               <PostCard key={post.link} post={post} />
             ))}
         </div>
+        <Link href="/blog">
+          <a>Read all posts &rarr;</a>
+        </Link>
       </div>
       <div>
         <h1 className="py-4 font-bold tracking-tight text-3xl lg:text-4xl dark:text-white">
           Projects
         </h1>
-        <ProjectCard
-          icon={"cube"}
-          title={"Rango Creative Lab"}
-          description={"JAMstack based solutions"}
-          href={"https://rango.dev"}
-        />
-        <ProjectCard
-          icon={"hat"}
-          title={"React Hider"}
-          description={"Conditional Rendering Made Easy"}
-          href={"https://github.com/oliverloops/react-hider"}
-        />
-        <ProjectCard
-          icon={"fire"}
-          title={"Comming Soon"}
-          description={"This project is under construction"}
-          href={"https://oliverloops.com/portfolio"}
-        />
+        <div className="grid grid-cols-2">
+          <ProjectCard
+            title={"Rango Creative Lab"}
+            description={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+            href={"https://rango.dev"}
+          />
+          <ProjectCard
+            title={"React Hider"}
+            description={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+            href={"https://github.com/oliverloops/react-hider"}
+          />
+          <ProjectCard
+            title={"Comming Soon"}
+            description={"This project is under construction"}
+            href={"https://oliverloops.com/portfolio"}
+          />
+        </div>
       </div>
     </div>
   );

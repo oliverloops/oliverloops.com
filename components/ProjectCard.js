@@ -1,43 +1,25 @@
-import { motion } from "framer-motion";
-import { GiMagicHat } from "react-icons/gi";
-import { IoCube } from "react-icons/io5";
-import { IoIosWarning } from "react-icons/io";
+import Image from "next/image";
+import Link from "next/Link";
 
-export default function ProjectCard({ icon, title, description, href }) {
+export default function ProjectCard({ title, description, href }) {
   return (
-    <div className="mb-4">
-      <a href={href}>
-        <motion.div
-          className="flex items-center hover:shadow-md border border-gray-300 dark:border-gray-700 rounded p-4 transition-all"
-          whileHover={{ scale: 1.025 }}
-          whileTap={{ scale: 0.965 }}
-        >
-          {icon === "hat" ? (
-            <GiMagicHat
-              className="dark:text-gray-100 transition-all"
-              style={{ fontSize: "1.6em" }}
-            />
-          ) : icon === "cube" ? (
-            <IoCube
-              className="dark:text-gray-100 transition-all"
-              style={{ fontSize: "1.6em" }}
-            />
-          ) : (
-            <IoIosWarning
-              className="dark:text-gray-100 transition-all"
-              style={{ fontSize: "1.6em" }}
-            />
-          )}
-          <div className="flex flex-col px-4">
-            <h4 className="text-lg font-bold tracking-tight text-gray-900 dark:text-gray-100 transition-all">
-              {title}
-            </h4>
-            <p className="leading-5 text-gray-700 dark:text-gray-300 transition-all">
-              {description}
-            </p>
-          </div>
-        </motion.div>
-      </a>
+    <div className="my-4">
+      <div className="flex flex-col rounded p-4 transition-all">
+        <Image
+          className="rounded-xl"
+          src={"/static/images/portfolio/fitcloud_web.png"}
+          width={380}
+          height={192}
+        />
+        <div className="flex flex-col py-4">
+          <h4 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-gray-100 transition-all">
+            {title}
+          </h4>
+          <p className="leading-5 text-gray-700 dark:text-gray-300 transition-all">
+            {description}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
