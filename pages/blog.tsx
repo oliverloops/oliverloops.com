@@ -32,17 +32,17 @@ export default function Blog() {
         I want to start writing and sharing all my experiences, projects and
         other cool stuff.
       </p>
-      <Search setResult={setResult} postList={postList} />
+      <Search setResult={setResult} />
       {result === ""
         ? postList
             .slice()
             .reverse()
-            .map((post) => <Post key={post.link} post={post} />)
+            .map((post: any) => <Post key={post.link} post={post} />)
         : postList
             .slice()
             .reverse()
             .map(
-              (post) =>
+              (post: any) =>
                 post.module.meta.title.toLowerCase().includes(result) && (
                   <Post key={post.link} post={post} />
                 )

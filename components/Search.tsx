@@ -1,7 +1,7 @@
 import { MdSearch } from "react-icons/md";
 
-const Search = ({ setResult }) => {
-  function getInput(e) {
+const Search = ({ setResult }: { setResult: any }) => {
+  function getInput(e: any) {
     setResult(e.target.value.toLowerCase());
   }
 

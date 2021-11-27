@@ -3,11 +3,19 @@ import Head from "next/head";
 import { useTheme } from "next-themes";
 //UI components
 import Header from "./Header";
-import Footer from "../components/Footer";
+import Footer from "./Footer";
 
-export const darkMode = createContext();
+export const darkMode = createContext({});
 
-export default function Layout({ children, pageTitle, description }) {
+export default function Layout({
+  children,
+  pageTitle,
+  description,
+}: {
+  children: any;
+  pageTitle: string;
+  description: string;
+}) {
   const { theme, setTheme } = useTheme();
   const [isMounted, setIsMounted] = useState(false);
 

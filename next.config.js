@@ -8,5 +8,5 @@ module.exports = withMDX({
       "i.scdn.co", // Spotify Album Art
     ],
   },
-  pageExtensions: ["js", "jsx", "md", "mdx"],
+  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 });

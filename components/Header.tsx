@@ -6,10 +6,10 @@ import { IoMdMoon } from "react-icons/io";
 import { HiSun } from "react-icons/hi";
 
 //Context
-import { darkMode } from "../components/Layout";
+import { darkMode } from "./Layout";
 
 export default function Header() {
-  const darkContext = useContext(darkMode);
+  const darkContext: any = useContext(darkMode);
 
   const switchTheme = () => {
     if (darkContext.isMounted) {

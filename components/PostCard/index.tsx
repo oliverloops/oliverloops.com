@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const PostCard = ({ post }) => {
+const PostCard = ({ post }: { post: any }) => {
   const {
     link,
     module: { meta },
@@ -17,9 +17,9 @@ const PostCard = ({ post }) => {
   );
 };
 
-const Content = ({ meta }) => {
+const Content = ({ meta }: { meta: any }) => {
   //colored box-shadow and border style
-  const shadowFormula = `0.65rem 0.65rem #F3CB56, 0.65rem 0.65rem 0 4px #000`;
+  const shadowFormula: string = `0.65rem 0.65rem #F3CB56, 0.65rem 0.65rem 0 4px #000`;
 
   return (
     <div

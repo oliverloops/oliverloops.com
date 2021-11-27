@@ -2,12 +2,12 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
 class MyDocument extends Document {
-  static getInitialProps({ renderPage }) {
+  static getInitialProps({ renderPage }: { renderPage: any }) {
     // Create an instance of ServerStyleSheet
     const sheet = new ServerStyleSheet();
     // Retrieve styles from components in the page
     const page = renderPage(
-      (App) => (props) => sheet.collectStyles(<App {...props} />)
+      (App: any) => (props: any) => sheet.collectStyles(<App {...props} />)
     );
     // Extract the styles as <style> tags
     const styleTags = sheet.getStyleElement();

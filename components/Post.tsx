@@ -1,7 +1,7 @@
 //UI components
 import HeadPost from "./HeadPost";
 
-export const Post = ({ post }) => {
+export const Post = ({ post }: { post: any }) => {
   const {
     link,
     module: { meta },

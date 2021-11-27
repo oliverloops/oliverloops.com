@@ -1,7 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ProjectCard({ image, title, description, href }) {
+export default function ProjectCard({
+  image,
+  title,
+  description,
+  href,
+}: {
+  image: string;
+  title: string;
+  description: string;
+  href: string;
+}) {
   return (
     <div className="my-4">
       <div className="flex flex-col rounded p-4 transition-all">

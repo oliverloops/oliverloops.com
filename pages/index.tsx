@@ -52,7 +52,7 @@ export default function Home() {
           {posts
             .slice(2)
             .reverse()
-            .map((post) => (
+            .map((post: any) => (
               <PostCard key={post.link} post={post} />
             ))}
         </div>

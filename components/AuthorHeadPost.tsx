@@ -1,6 +1,12 @@
 import Image from "next/image";
 
-export default function AuthorHeadPost({ meta, link }) {
+export default function AuthorHeadPost({
+  meta,
+  isBlogPost,
+}: {
+  meta: any;
+  isBlogPost: boolean;
+}) {
   return (
     <div className="flex justify-center flex-col space-y-2 mb-6">
       <h1 className="mb-2 text-4xl font-extrabold  dark:text-white">
