@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FiEye } from "react-icons/fi";
 
 const PostCard = ({ post }: { post: any }) => {
   const {
@@ -19,30 +20,33 @@ const PostCard = ({ post }: { post: any }) => {
 
 const Content = ({ meta }: { meta: any }) => {
   //colored box-shadow and border style
-  const shadowFormula: string = `0.65rem 0.65rem #F3CB56, 0.65rem 0.65rem 0 4px #000`;
+  const shadowFormula: string = `0.65rem 0.65rem #5EA5F7, 0.65rem 0.65rem 0 4px #000`;
 
   return (
     <div
       style={{ boxShadow: shadowFormula }}
-      className="flex justify-center flex-col p-4 border-4 bg-white dark:bg-gray-900 border-black dark:border-white rounded-lg md:rounded-xl"
+      className="flex justify-center flex-col px-4 py-6 border-4 bg-white dark:bg-gray-900 border-black dark:border-white rounded-xl"
     >
-      <p className="text-lg md:text-xl font-bold text-yellow-300 dark:text-yellow-300 py-1 transition-all">
+      <p className="text-xl md:text-2xl font-bold text-blue-400 dark:text-blue-300 pb-2 transition-all">
         {meta.title}
       </p>
-
-      <div className="text-lg md:text-xl font-medium dark:text-white leading-relaxed py-2 transition-all">
-        {meta.description.slice(0, 40).concat("...")}
-      </div>
-      <div className="flex justify-between row py-2">
-        <div className="flex text-gray-400">
-          {meta.date}
-          <div className="px-2 text-gray-400">
-            <span role="img" aria-label="book">
-              📖
-            </span>{" "}
-            &nbsp;
+      <div className="flex justify-between items-end pt-2">
+        <div className="flex items-center">
+          <FiEye
+            className="text-black dark:text-gray-100 transition-all"
+            size={21}
+          />
+          <p className="text-sm md:text-base text-black dark:text-gray-100 font-semibold ml-1.5 transition-all">
+            0 Views
+          </p>
+        </div>
+        <div className="flex flex-col text-gray-400">
+          <p className="text-sm md:text-base text-black dark:text-gray-100 font-semibold transition-all">
             {meta.readTime} min read
-          </div>
+          </p>
+          <p className="text-sm md:text-base text-black  dark:text-gray-100  font-semibold transition-all">
+            {meta.date}
+          </p>
         </div>
       </div>
     </div>
