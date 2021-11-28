@@ -24,16 +24,16 @@ const Content = ({ meta }: { meta: any }) => {
   return (
     <div
       style={{ boxShadow: shadowFormula }}
-      className="flex justify-center flex-col p-4 border-4 bg-white dark:bg-gray-900 border-black dark:border-white rounded-xl"
+      className="flex justify-center flex-col p-4 border-4 bg-white dark:bg-gray-900 border-black dark:border-white rounded-lg md:rounded-xl"
     >
-      <p className="text-xl font-bold text-yellow-300 dark:text-yellow-300 transition-all">
+      <p className="text-lg md:text-xl font-bold text-yellow-300 dark:text-yellow-300 py-1 transition-all">
         {meta.title}
       </p>
 
-      <div className="text-lg font-semibold dark:text-white transition-all">
-        {meta.description}
+      <div className="text-lg md:text-xl font-medium dark:text-white leading-relaxed py-2 transition-all">
+        {meta.description.slice(0, 40).concat("...")}
       </div>
-      <div className="flex justify-between row">
+      <div className="flex justify-between row py-2">
         <div className="flex text-gray-400">
           {meta.date}
           <div className="px-2 text-gray-400">

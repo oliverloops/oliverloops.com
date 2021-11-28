@@ -18,10 +18,12 @@ export default function Header() {
 
   return (
     <nav className="bg-gray-50 dark:bg-gray-900 bg-opacity-40 dark:bg-opacity-60 sticky sticky-nav">
-      <div className="flex justify-between mx-auto max-w-3/5 w-3/5 h-18 ">
+      <div className="flex flex-col md:flex-row justify-between mx-auto md:max-w-3/5 md:w-3/5 md:h-18 ">
         <div className="flex flex-col justify-center">
           <Link href="/">
-            <a className="text-3xl font-bold dark:text-white">oliverloops</a>
+            <a className="text-2xl md:text-3xl font-bold dark:text-white">
+              oliverloops
+            </a>
           </Link>
         </div>
         <div className="flex justify-evenly items-center">
