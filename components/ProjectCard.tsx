@@ -15,12 +15,13 @@ export default function ProjectCard({
   return (
     <div className="mb-4 md:mb-0 md:my-4">
       <div className="flex flex-col rounded p-4 transition-all">
-        <Image
-          className="rounded-lg md:rounded-xl"
-          src={image}
-          width={370}
-          height={190}
-        />
+        <figure className="h-44 md:h-52 relative border-4 border-black dark:border-white rounded-xl transition-all">
+          <Image
+            className="rounded-lg md:rounded-lg"
+            src={image}
+            layout="fill"
+          />
+        </figure>
         <div className="flex flex-col py-4">
           <h4 className="text-xl font-bold tracking-tight text-gray-900 dark:text-gray-100 transition-all">
             {title}
