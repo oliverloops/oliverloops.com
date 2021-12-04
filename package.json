@@ -17,6 +17,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@grikomsn/cal-sans": "^0.0.2",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.0.4",
     "@types/node": "^16.11.10",

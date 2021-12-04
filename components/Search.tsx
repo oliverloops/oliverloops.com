@@ -6,14 +6,17 @@ const Search = ({ setResult }: { setResult: any }) => {
   }
 
   return (
-    <div className="search-container mb-4 border border-gray-300 dark:border-black bg-white dark:bg-gray-700">
+    <div className="search-container flex align-center w-full md:w-4/5 h-11 mb-4 border-2 border-gray-400 rounded-lg bg-white dark:bg-gray-700">
       <input
         className="bg-white dark:bg-gray-700 dark:text-white"
         type="text"
-        placeholder="Search"
+        placeholder="Search a topic..."
         onChange={getInput}
       />
-      <MdSearch className="search" size={30} />
+      <MdSearch
+        className="text-gray-300 dark:text-gray-400 mt-1 mr-2.5"
+        size={32}
+      />
     </div>
   );
 };

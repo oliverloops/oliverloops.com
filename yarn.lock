@@ -325,6 +325,11 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
   integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
+"@grikomsn/cal-sans@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@grikomsn/cal-sans/-/cal-sans-0.0.2.tgz#66e3b17b861b897eeec36fda6cbf4be3396da853"
+  integrity sha512-EqttNg/yHfm9SheGYSHd8tqGmVdJXIxjKBmozcgFfi6JAl6FMqnnYQa0GK4n8Zpq66dORDy4daZtgyvpGznUOg==
+
 "@hapi/accept@5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@hapi/accept/-/accept-5.0.1.tgz#068553e867f0f63225a506ed74e899441af53e10"

@@ -10,27 +10,12 @@ export default function Blog() {
   const [result, setResult] = useState("");
 
   return (
-    <motion.div
-      initial="pageInitial"
-      animate="pageAnimate"
-      variants={{
-        pageInitial: {
-          opacity: 0,
-          translateX: -800,
-        },
-        pageAnimate: {
-          opacity: 1,
-          translateX: 0,
-        },
-      }}
-      className="flex flex-col mx-auto"
-    >
-      <h1 className="text-3xl font-extrabold dark:text-white transition-all">
+    <div className="flex flex-col md:max-w-3/5 md:w-3/5 mx-auto pt-12 pb-20">
+      <h1 className="text-3xl md:text-4xl font-extrabold dark:text-white transition-all">
         Blog
       </h1>
-      <p className="mt-4 mb-4 dark:text-white transition-all">
-        I want to start writing and sharing all my experiences, projects and
-        other cool stuff.
+      <p className="text-lg font-light mt-2 mb-4 dark:text-white transition-all">
+        All about my ideas, experiences, projects and other cool stuff.
       </p>
       <Search setResult={setResult} />
       {result === ""
@@ -47,6 +32,6 @@ export default function Blog() {
                   <Post key={post.link} post={post} />
                 )
             )}
-    </motion.div>
+    </div>
   );
 }

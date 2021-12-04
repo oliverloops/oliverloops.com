@@ -1,7 +1,7 @@
-import Layout from "../components/Layout";
 import "../styles/global.css";
+import "@grikomsn/cal-sans";
+import Layout from "../components/Layout";
 import { ThemeProvider } from "next-themes";
-import { Component } from "react";
 
 function App({ Component, pageProps }: { Component: any; pageProps: any }) {
   return (

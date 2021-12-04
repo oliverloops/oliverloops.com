@@ -10,7 +10,7 @@ export default function Home() {
     <div className="flex flex-col place-self-center md:max-w-3/5 md:w-3/5 md:pt-14 pb-12">
       <div className="flex flex-col-reverse md:flex-row justify-between md:py-4 mb-8">
         <div className="flex flex-col">
-          <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl dark:text-white">
+          <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl tracking-wide dark:text-white">
             Hi there, I'm Oliver{" "}
             <span
               className="hidden md:inline"
@@ -20,7 +20,7 @@ export default function Home() {
               👋
             </span>
           </h1>
-          <h3 className="font-medium md:text-lg text-gray-500 dark:text-gray-400 leading-relaxed max-w-xl py-4 pr-8 md:pr-0">
+          <h3 className="font-medium md:text-lg text-gray-500 dark:text-gray-400 tracking-wide leading-relaxed max-w-xl py-4 pr-8 md:pr-0">
             I'm a frontend developer and an open source enthusiast. Welcome to
             my{" "}
             <span className="text-green-500 dark:text-green-400">
@@ -34,15 +34,14 @@ export default function Home() {
             <span className="text-gray-900 dark:text-gray-100">Next.js</span>.
           </h3>
         </div>
-        <div className="px-2 py-4">
+        <figure className="w-28 h-28 md:w-36 md:h-36 relative px-2 my-4">
           <Image
-            width={128}
-            height={128}
-            className={"rounded-full border-2 border-blue-400"}
+            layout="fill"
+            className="rounded-full"
             src={"/static/images/me_outside.jpeg"}
             alt={"Oliver Lopez"}
           />
-        </div>
+        </figure>
       </div>
       <div className="mb-8">
         <h2 className="font-bold text-3xl tracking-normal lg:text-4xl dark:text-white">

@@ -1,16 +1,14 @@
 @tailwind base;
-/* Write base styles here */
-
-/* Start purging... */
 @tailwind components;
-/* Stop purging. */
 
 /* Custom component styles */
-html {
+html,
+body {
   margin: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  font-family: "Cal Sans";
 }
 
 .sticky-nav {
@@ -74,18 +72,6 @@ footer {
 }
 
 /* Search Component */
-.search-container {
-  width: 95%;
-  height: 2.5em;
-  display: flex;
-  justify-content: center;
-  border-radius: 8px;
-
-  @media (min-width: 300px) and (max-width: 768px) {
-    width: 100%;
-  }
-}
-
 .search-container > input {
   border: none;
   width: 100%;
@@ -104,14 +90,8 @@ footer {
 
 ::placeholder {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 500;
   color: rgba(188, 188, 188, 0.75);
-}
-
-.search {
-  margin-right: 0.65em;
-  transform: translateY(0.2em) rotateY(-180deg);
-  color: rgb(188, 188, 188);
 }
 
 @media (min-width: 300px) and (max-width: 768px) {
@@ -124,9 +104,7 @@ footer {
   }
 }
 
-/* Start purging... */
 @tailwind utilities;
-/* Stop purging. */
 
 /* Custom utilities */
 @layer components {

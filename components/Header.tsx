@@ -26,7 +26,7 @@ export default function Header() {
             </a>
           </Link>
         </div>
-        <div className="flex justify-evenly items-center">
+        <div className="flex items-center">
           <div className="p-1 sm:p-4">
             <Link href="/blog">
               <a className="text-md font-medium dark:text-white">Blog</a>
@@ -42,7 +42,7 @@ export default function Header() {
               <a className="text-md font-medium dark:text-white">Experiments</a>
             </Link>
           </div>
-          <div className="p-4">
+          <div className="pl-4 py-4">
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
