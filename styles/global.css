@@ -2,13 +2,20 @@
 @tailwind components;
 
 /* Custom component styles */
-html,
-body {
+html {
   margin: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: "Cal Sans";
+}
+
+.heading {
+  font-family: "Cal Sans", sans-serif;
+}
+
+.basic-text {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .sticky-nav {

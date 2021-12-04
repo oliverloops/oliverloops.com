@@ -23,18 +23,18 @@ export default function ProjectCard({
           />
         </figure>
         <div className="flex flex-col py-4">
-          <h4 className="text-xl font-bold tracking-tight text-gray-900 dark:text-gray-100 transition-all">
+          <h4 className="heading text-xl font-bold tracking-tight text-gray-900 dark:text-gray-100 transition-all">
             {title}
           </h4>
           <span className="pt-2 md:pr-4">
-            <p className="font-medium leading-relaxed text-gray-700 dark:text-gray-300 transition-all">
+            <p className="basic-text font-medium leading-relaxed text-gray-700 dark:text-gray-300 transition-all">
               {description}
             </p>
           </span>
         </div>
         <Link href={href}>
           <a>
-            <p className="font-medium">View Project &rarr;</p>
+            <p className="basic-text font-semibold">View Project &rarr;</p>
           </a>
         </Link>
       </div>

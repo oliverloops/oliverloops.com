@@ -1,14 +1,14 @@
 import Link from "next/link";
 
-export default function HeadPost({ meta, link }) {
+export default function HeadPost({ meta, link }: { meta: any; link: string }) {
   return (
     <div className="flex justify-center flex-col">
       <Link href={"/blog" + link}>
-        <a className="text-2xl font-bold text-blue-500 dark:text-blue-400 transition-all">
+        <a className="heading text-2xl font-bold text-blue-500 dark:text-blue-400 transition-all">
           {meta.title}
         </a>
       </Link>
-      <div className="text-xl font-semibold dark:text-white transition-all">
+      <div className="heading text-xl font-semibold dark:text-white transition-all">
         {meta.description}
       </div>
       <div className="flex justify-between row">

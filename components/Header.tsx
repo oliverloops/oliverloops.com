@@ -21,7 +21,7 @@ export default function Header() {
       <div className="flex flex-col md:flex-row justify-between mx-auto md:max-w-3/5 md:w-3/5 md:h-18 ">
         <div className="flex flex-col justify-center">
           <Link href="/">
-            <a className="text-2xl md:text-3xl font-bold dark:text-white">
+            <a className="heading text-2xl md:text-3xl font-bold dark:text-white">
               oliverloops
             </a>
           </Link>
@@ -29,17 +29,23 @@ export default function Header() {
         <div className="flex items-center">
           <div className="p-1 sm:p-4">
             <Link href="/blog">
-              <a className="text-md font-medium dark:text-white">Blog</a>
+              <a className="basic-text text-md font-medium dark:text-white">
+                Blog
+              </a>
             </Link>
           </div>
           <div className="p-1 sm:p-4">
             <Link href="/about">
-              <a className="text-md font-medium dark:text-white">About</a>
+              <a className="basic-text text-md font-medium dark:text-white">
+                About
+              </a>
             </Link>
           </div>
           <div className="p-1 sm:p-4">
             <Link href="/portfolio">
-              <a className="text-md font-medium dark:text-white">Experiments</a>
+              <a className="basic-text text-md font-medium dark:text-white">
+                Experiments
+              </a>
             </Link>
           </div>
           <div className="pl-4 py-4">

@@ -11,7 +11,7 @@ export default function Blog() {
 
   return (
     <div className="flex flex-col md:max-w-3/5 md:w-3/5 mx-auto pt-12 pb-20">
-      <h1 className="text-3xl md:text-4xl font-extrabold dark:text-white transition-all">
+      <h1 className="heading text-3xl md:text-4xl dark:text-white transition-all">
         Blog
       </h1>
       <p className="text-lg font-light mt-2 mb-4 dark:text-white transition-all">

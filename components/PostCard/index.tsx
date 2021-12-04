@@ -27,7 +27,7 @@ const Content = ({ meta }: { meta: any }) => {
       style={{ boxShadow: shadowFormula }}
       className="flex justify-center flex-col px-4 py-6 border-4 bg-white dark:bg-gray-900 border-black dark:border-white rounded-xl"
     >
-      <p className="text-xl md:text-2xl font-bold text-blue-400 dark:text-blue-300 pr-2 pb-2 transition-all">
+      <p className="heading text-xl md:text-2xl font-bold text-blue-400 dark:text-blue-300 pr-2 pb-2 transition-all">
         {meta.title}
       </p>
       <div className="flex justify-between items-end pt-2">
@@ -36,15 +36,15 @@ const Content = ({ meta }: { meta: any }) => {
             className="text-black dark:text-gray-100 transition-all"
             size={21}
           />
-          <p className="text-sm md:text-base text-black dark:text-gray-100 font-semibold ml-1.5 transition-all">
+          <p className="basic-text text-sm md:text-base text-black dark:text-gray-100 font-semibold ml-1.5 transition-all">
             0 Views
           </p>
         </div>
         <div className="flex flex-col text-gray-400">
-          <p className="text-sm md:text-base text-black dark:text-gray-100 font-semibold transition-all">
+          <p className="basic-text text-sm md:text-base text-black dark:text-gray-100 font-semibold transition-all">
             {meta.readTime} min read
           </p>
-          <p className="text-sm md:text-base text-black  dark:text-gray-100  font-semibold transition-all">
+          <p className="basic-text text-sm md:text-base text-black  dark:text-gray-100  font-medium transition-all">
             {meta.date}
           </p>
         </div>

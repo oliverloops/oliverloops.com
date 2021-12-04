@@ -10,7 +10,7 @@ export default function Home() {
     <div className="flex flex-col place-self-center md:max-w-3/5 md:w-3/5 md:pt-14 pb-12">
       <div className="flex flex-col-reverse md:flex-row justify-between md:py-4 mb-8">
         <div className="flex flex-col">
-          <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl tracking-wide dark:text-white">
+          <h1 className="heading font-bold text-3xl md:text-4xl lg:text-5xl  dark:text-white">
             Hi there, I'm Oliver{" "}
             <span
               className="hidden md:inline"
@@ -20,7 +20,7 @@ export default function Home() {
               👋
             </span>
           </h1>
-          <h3 className="font-medium md:text-lg text-gray-500 dark:text-gray-400 tracking-wide leading-relaxed max-w-xl py-4 pr-8 md:pr-0">
+          <h3 className="basic-text md:text-lg  text-gray-500 dark:text-gray-400 leading-relaxed max-w-xl py-4 pr-8 md:pr-0">
             I'm a frontend developer and an open source enthusiast. Welcome to
             my{" "}
             <span className="text-green-500 dark:text-green-400">
@@ -44,7 +44,7 @@ export default function Home() {
         </figure>
       </div>
       <div className="mb-8">
-        <h2 className="font-bold text-3xl tracking-normal lg:text-4xl dark:text-white">
+        <h2 className="heading font-bold text-3xl lg:text-4xl dark:text-white">
           Recent Posts
         </h2>
         <div className="flex flex-col md:flex-row">
@@ -57,12 +57,14 @@ export default function Home() {
         </div>
         <Link href="/blog">
           <a>
-            <p className="text-lg font-medium">Read all posts &rarr;</p>
+            <p className="basic-text text-lg font-medium">
+              Read all posts &rarr;
+            </p>
           </a>
         </Link>
       </div>
       <div>
-        <h2 className="py-4 font-bold tracking-tight text-3xl lg:text-4xl dark:text-white">
+        <h2 className="heading py-4 font-bold text-3xl lg:text-4xl dark:text-white">
           Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2">
