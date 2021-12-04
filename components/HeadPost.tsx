@@ -13,13 +13,9 @@ export default function HeadPost({ meta, link }: { meta: any; link: string }) {
       </div>
       <div className="flex justify-between row">
         <div className="flex text-gray-400">
-          {meta.date}
+          <p className="basic-text">{meta.date}</p>
           <div className="px-2 text-gray-400">
-            <span role="img" aria-label="book">
-              📖
-            </span>{" "}
-            &nbsp;
-            {meta.readTime} min read
+            <p className="basic-text">{meta.readTime} min read</p>
           </div>
         </div>
       </div>

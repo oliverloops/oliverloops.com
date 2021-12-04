@@ -19,14 +19,14 @@ export default function NowPlaying() {
 
         <div className="flex flex-col justify-center items-start ml-2 transition-all">
           <a
-            className="text-sm text-gray-800 dark:text-gray-200 font-semibold w-44 max-w-44 md:w-36 md:max-w-36 truncate transition-all"
+            className="basic-text text-sm text-gray-800 dark:text-gray-200 font-semibold w-44 max-w-44 md:w-36 md:max-w-36 truncate transition-all"
             href={data?.songUrl}
             target="_blank"
             rel="noopener noreferrer"
           >
             {data?.title ?? "Not Playing"}
           </a>
-          <p className="text-sm text-gray-500 dark:text-gray-300 font-medium w-44 max-w-44 md:w-36 md:max-w-36 truncate transition-all">
+          <p className="basic-text text-sm text-gray-500 dark:text-gray-300 font-medium w-44 max-w-44 md:w-36 md:max-w-36 truncate transition-all">
             {data?.artist ?? "Spotify"}
           </p>
         </div>
