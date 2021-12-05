@@ -10,7 +10,7 @@ export default function BlogPost({
 }) {
   return (
     <>
-      <article className="flex flex-col justify-center max-w-2xl mx-auto mb-4 w-full">
+      <article className="flex flex-col justify-center w-full md:max-w-3/5 md:w-3/5 my-8 md:my-16 mx-auto ">
         <AuthorHeadPost meta={meta} isBlogPost />
         {children}
       </article>

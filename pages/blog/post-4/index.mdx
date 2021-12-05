@@ -20,7 +20,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   height={150}
 />
 
-<blockquote className="font-serif break-words text-md text-left leading-relaxed">
+<blockquote className="base-text break-words text-md text-left leading-relaxed">
   <i>
     “Focusing on the front-end is the most customer-obsessive way to build your
     products.” — <span>Guillermo Rauch, CEO Vercel</span>
@@ -33,7 +33,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <h2 className="mt-6 text-2xl font-bold">Why use this solution?</h2>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Sometimes you are under pressure building a client's website or a project and
   you find in the situation where saving time is essential. I was trying
   different solutions for small and simple contact form integration and I have
@@ -45,7 +45,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <h2 className="mt-6 text-2xl font-bold">Getting Started</h2>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Before to show the code sample we will need to start a Next.js project and
   create a Formspree account if you don’t have one yet. first visit{" "}
   <a
@@ -68,7 +68,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   />
 </figure>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Then in the next section is important to create a project and not a form,
   because we'll be using Formspree CLI in order to configure our project
 </p>
@@ -84,7 +84,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   />
 </figure>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   After clicking New Project, assign any name you like and then select the
   option <span className="font-bold">Commnad Line Project</span>
 </p>
@@ -100,7 +100,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   />
 </figure>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   At the end the platform will provide us 2 diferent access keys, the first one
   is the <span className="font-bold">Project ID</span> which will be used to
   access from our project to Formspree API, and the{" "}
@@ -120,7 +120,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <h2 className="mt-6 text-2xl font-bold">Up and Running with Next.js</h2>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   For this small example I'm goint to use the Next.js + TailwindCSS starter in
   order to create a custom design for the contact form, you can dive deep into
   installing Tailwind and Next.js in the{" "}
@@ -144,7 +144,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   />
 </figure>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Open your project's directory and install the{" "}
   <code className="dark:text-black bg-gray-300 rounded-lg font-semibold px-2 py-1">
     @formspree/react
@@ -179,7 +179,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   />
 </figure>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   As I mentioned before, for this example I'm going to use a custom layout for
   the contact form, feel free to use it and customize it if you need. the full
   project is located on this{" "}
@@ -204,7 +204,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <h2 className="mt-6 text-2xl font-bold">Now it's time to code</h2>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   First we need to modify the{" "}
   <code className="dark:text-black bg-gray-300 rounded-lg font-semibold px-2 py-1">
     _app.js
@@ -223,7 +223,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   />
 </figure>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Before to use the Formspree hook, it's fundamental to create a{" "}
   <code className="dark:text-black bg-gray-300 rounded-lg font-semibold px-2 py-1">
     formspree.json
@@ -249,7 +249,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   />
 </figure>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   It's important don't forget to assign a name for this form which is the first
   attribute under "forms" attribute, in this case "contactForm" and a name for
   this project in this case "Next.js Formspree". here's a small sample of a
@@ -267,7 +267,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   />
 </figure>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   After this let's create a component file which or where your form UI resides
   and now we can import two of the dependencies. In this point just{" "}
   <code className="dark:text-black bg-gray-300 rounded-lg px-2 py-1">
@@ -297,7 +297,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   />
 </figure>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Then it’s time to use the{" "}
   <code className="dark:text-black bg-gray-300 rounded-lg px-2 py-1">
     useForm
@@ -329,7 +329,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   />
 </figure>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   From here everything is almost done, don't forget to add{" "}
   <code className="dark:text-black bg-gray-300 rounded-lg px-2 py-1">
     type="submit"
@@ -360,7 +360,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 <h2 className="mt-6 text-2xl font-bold">Last step...</h2>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   That's everything about the formspree integration, as you see is really simple
   and quite easy to connect, the last thing beyond the code is to deploy our{" "}
   <code className="dark:text-black bg-gray-300 font-semibold rounded-lg px-2 py-1">
@@ -396,7 +396,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   />
 </figure>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Then after this deploy, you can see the platform is showing the actual project
   and the configuration we added before
 </p>
@@ -412,7 +412,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   />
 </figure>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   After this process we can test our contact form and see that everything it's
   working properly and just takes us few steps
 </p>
@@ -428,7 +428,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   />
 </figure>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Inside Submission section in{" "}
   <a className="text-blue-500 dark:text-blue-300" href="https://forsmpree.io">
     formspree's platform
@@ -448,7 +448,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   />
 </figure>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   And the form is actually sending all the information to my own email, that was
   configured on{" "}
   <code className="dark:text-black bg-gray-300 font-semibold rounded-lg px-2 py-1">
@@ -475,7 +475,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   </span>
 </h2>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Now you have a fully functional contact form, you can find the whole project
   on{" "}
   <a
@@ -488,7 +488,7 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
   your next project.
 </p>
 
-<p className="font-sans break-words text-md text-left leading-relaxed text-gray-700 dark:text-white mt-4">
+<p className="basic-text break-words text-md text-left leading-relaxed text-gray-700 dark:text-white mt-4">
   If you want to deep dive into this API you can find more info on the{" "}
   <a
     className="text-blue-500 dark:text-blue-300"

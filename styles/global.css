@@ -9,10 +9,13 @@ html {
   box-sizing: border-box;
 }
 
+h2,
 .heading {
   font-family: "Cal Sans", sans-serif;
+  letter-spacing: 0.35px;
 }
 
+p,
 .basic-text {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
