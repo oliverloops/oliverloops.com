@@ -18,20 +18,22 @@ export default function Blog() {
         All about my ideas, experiences, projects and other cool stuff.
       </p>
       <Search setResult={setResult} />
-      {result === ""
-        ? postList
-            .slice()
-            .reverse()
-            .map((post: any) => <Post key={post.link} post={post} />)
-        : postList
-            .slice()
-            .reverse()
-            .map(
-              (post: any) =>
-                post.module.meta.title.toLowerCase().includes(result) && (
-                  <Post key={post.link} post={post} />
-                )
-            )}
+      <main className="grid grid-cols-1 md:grid-cols-2 w-full md:w-11/12 gap-y-14 py-8">
+        {result === ""
+          ? postList
+              .slice()
+              .reverse()
+              .map((post: any) => <Post key={post.link} post={post} />)
+          : postList
+              .slice()
+              .reverse()
+              .map(
+                (post: any) =>
+                  post.module.meta.title.toLowerCase().includes(result) && (
+                    <Post key={post.link} post={post} />
+                  )
+              )}
+      </main>
     </div>
   );
 }

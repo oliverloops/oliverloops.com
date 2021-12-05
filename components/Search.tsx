@@ -6,7 +6,7 @@ const Search = ({ setResult }: { setResult: any }) => {
   }
 
   return (
-    <div className="search-container flex align-center w-full md:w-4/5 h-11 mb-4 border-2 border-gray-400 rounded-lg bg-white dark:bg-gray-700">
+    <div className="search-container flex align-center w-full md:w-10/12 h-11 mb-4 border-2 border-gray-400 rounded-lg bg-white dark:bg-gray-700">
       <input
         className="bg-white dark:bg-gray-700 dark:text-white"
         type="text"
