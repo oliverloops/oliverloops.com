@@ -9,7 +9,17 @@ const Text = styled.p`
 `;
 
 // List item component
-const AppItem = ({ url, image, name, desc }) => (
+const AppItem = ({
+  url,
+  image,
+  name,
+  desc,
+}: {
+  url: string;
+  image: string;
+  name: string;
+  desc: string;
+}) => (
   <>
     <a
       className="flex rounded-lg py-4 p-4 hover:bg-gray-100 dark:hover:bg-gray-800"
@@ -27,7 +37,7 @@ const AppItem = ({ url, image, name, desc }) => (
       <div className="flex flex-col justify-center flex-1 pl-5 space-y-2">
         <div className="flex flex-col">
           <p className="font-semibold text-black dark:text-white">{name}</p>
-          <p className="text-base font-normal text-gray-600 dark:text-gray-400">
+          <p className="text-base font-normal text-gray-600 dark:text-gray-400 mr-4">
             {desc}
           </p>
         </div>
@@ -38,22 +48,8 @@ const AppItem = ({ url, image, name, desc }) => (
 
 export default function About() {
   return (
-    <motion.div
-      className="flex flex-col items-start text-left max-w-2xl mx-auto mb-16"
-      initial="pageInitial"
-      animate="pageAnimate"
-      variants={{
-        pageInitial: {
-          opacity: 0,
-          translateX: -800,
-        },
-        pageAnimate: {
-          opacity: 1,
-          translateX: 0,
-        },
-      }}
-    >
-      <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+    <div className="flex flex-col items-start text-left md:max-w-3/5 md:w-3/5 mx-auto my-16">
+      <h1 className="heading font-bold text-3xl md:text-4xl mb-4 text-black dark:text-white">
         About Me
       </h1>
       <div className="mb-4 prose leading-6 text-gray-600 dark:text-gray-400">
@@ -78,17 +74,32 @@ export default function About() {
       <h2 className="font-bold text-3xl md:text-3xl tracking-tight mb-4 text-black dark:text-white">
         Books
       </h2>
-      <h3 className="font-medium mb-2 text-xl dark:text-white">Reading now</h3>
+      <h3 className="basic-text font-medium mb-2 text-xl dark:text-white">
+        Reading now
+      </h3>
       <div className="flex justify-center py-4">
-        <div>
+        <figure>
           <Image
-            src={"/static/images/books/react_hooks_book.png"}
+            src={"/static/images/books/atomic_design_book.svg"}
+            width={165}
+            height={235}
+            alt={"A book"}
+          />
+        </figure>
+        <div className="ml-4">
+          <Image
+            src={"/static/images/books/working_in_public_book.jpeg"}
             width={165}
             height={235}
             alt={"A book"}
           />
         </div>
-        <div className="ml-4">
+      </div>
+      <h3 className="basic-text font-medium mb-2 text-xl dark:text-white">
+        Recent reads
+      </h3>
+      <div className="flex justify-center pt-4 pb-8">
+        <div>
           <Image
             src={"/static/images/books/atomic_habits_book.jpg"}
             width={165}
@@ -96,12 +107,7 @@ export default function About() {
             alt={"A book"}
           />
         </div>
-      </div>
-      <h3 className="font-medium mb-2 text-xl dark:text-white">
-        Recently reads
-      </h3>
-      <div className="flex justify-center pt-4 pb-8">
-        <div>
+        <div className="ml-4">
           <Image
             src={"/static/images/books/remote_book.jpeg"}
             width={165}
@@ -117,17 +123,9 @@ export default function About() {
             alt={"A book"}
           />
         </div>
-        <div className="ml-4">
-          <Image
-            src={"/static/images/books/js_algorithms.png"}
-            width={165}
-            height={235}
-            alt={"A book"}
-          />
-        </div>
       </div>
       <div className="mb-4 prose leading-6 text-gray-600 dark:text-gray-400">
-        <h2 className="font-bold text-3xl md:text-3xl tracking-tight mb-4 text-black dark:text-white">
+        <h2 className="font-bold text-3xl md:text-3xl mb-4 text-black dark:text-white">
           My Tech Stack
         </h2>
         <Text className=" text-gray-600 dark:text-gray-400">
@@ -254,6 +252,6 @@ export default function About() {
           }
         />
       </div>
-    </motion.div>
+    </div>
   );
 }
