@@ -102,12 +102,14 @@ const Circle = styled.div`
 export default function Portfolio() {
   return (
     <div className="flex flex-col flex-wr space-y-4 md:max-w-3/5 md:w-3/5 mx-auto my-16">
-      <h1 className="heading font-bold text-3xl md:text-4xl mb-4 text-black dark:text-white">
-        Experiments
-      </h1>
-      <p className="basic-text text-lg font-light mt-2 mb-4 dark:text-white transition-all">
-        Active and past projects and visual experiments.
-      </p>
+      <span className="mb-8">
+        <h1 className="heading text-3xl md:text-4xl dark:text-white transition-all">
+          Experiments
+        </h1>
+        <p className="basic-text text-lg font-light mt-2  dark:text-white transition-all">
+          Active and past projects and some visual experiments.
+        </p>
+      </span>
       <a href="https://rango.dev">
         <Div className="bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg my-1 md:my-2 md:max-w-4xl md:mx-auto">
           <div className="p-4">
