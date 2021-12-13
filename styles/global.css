@@ -17,6 +17,7 @@ html {
 
 .oliverloops {
   font-family: "Grotesque", sans-serif;
+  letter-spacing: 0.5px;
 }
 
 h2,
@@ -114,6 +115,72 @@ footer {
   color: rgba(188, 188, 188, 0.75);
 }
 
+/* Navbar menu button template */
+.menu-mobile-button {
+  width: 27px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.menu-button-line-open::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 27px;
+  background-color: #000;
+  transform: translateY(1px) rotate(45deg);
+  transition: transform 0.15s ease;
+}
+
+.menu-button-line-open::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 27px;
+  background-color: #000;
+  transform: translateY(0px) rotate(-45deg);
+  transition: transform 0.15s ease;
+}
+
+.menu-button-line::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 27px;
+  background-color: #000;
+  transform: translateY(5px) rotate(0deg);
+  transition: transform 0.15s ease;
+}
+
+.menu-button-line::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 27px;
+  background-color: #000;
+  transform: translateY(-5px) rotate(0deg);
+  transition: transform 0.15s ease;
+}
+
+.mobile-navbar-menu-open {
+  display: block;
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  margin-top: 10vh;
+  z-index: 2;
+  position: fixed;
+  background-color: #fff;
+}
+
+.mobile-navbar-menu-closed {
+  display: none;
+}
+
+/* Global Media Queries */
 @media (min-width: 300px) and (max-width: 768px) {
   article > blockquote {
     font-size: 1.2rem;
