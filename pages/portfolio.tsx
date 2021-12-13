@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 //Custom styled components
 const Div = styled.div`
-  height: 320px;
-  width: 680px;
+  height: 350px;
+  width: 700px;
   position: relative;
   overflow: hidden;
 
@@ -22,12 +22,12 @@ const Div = styled.div`
     & > #preview {
       transform: translate(330px, 30px) rotate3d(0.342, -0.2, 0, 0deg)
         rotateZ(0deg);
-      transition: transform 200ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+      transition: transform 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 
       & > div > #preview-image {
         opacity: 1;
         filter: grayscale(0);
-        transition: opacity 200ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+        transition: opacity 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
       }
     }
   }
@@ -50,13 +50,13 @@ const AppImage = styled(Image)`
 `;
 
 const PreviewImage = styled(Image)`
-  border-radius: 10px 0 0 0;
+  border-radius: 8px 0 0 0;
   filter: grayscale(1);
   opacity: 0.2;
 `;
 
 const PreviewContainer = styled.div`
-  transform: translate(330px, 32px) rotate3d(0.342, -0.2, 0, 18deg)
+  transform: translate(340px, 32px) rotate3d(0.342, -0.2, 0, 18deg)
     rotateZ(2deg);
   position: absolute;
 `;
@@ -80,10 +80,10 @@ const ArrowContainer = styled.div`
 `;
 
 const Circle = styled.div`
-  width: 365px;
-  height: 365px;
+  width: 375px;
+  height: 375px;
   border-radius: 50%;
-  left: -200px;
+  left: -220px;
   bottom: -200px;
   transform: scale(0);
   position: absolute;
@@ -101,7 +101,7 @@ const Circle = styled.div`
 // Main Portfolio Component
 export default function Portfolio() {
   return (
-    <div className="flex flex-col flex-wr space-y-4 md:max-w-3/5 md:w-3/5 mx-auto my-16">
+    <div className="flex flex-col space-y-4 md:max-w-3/5 md:w-3/5 mx-auto my-16">
       <span className="mb-8">
         <h1 className="heading text-3xl md:text-4xl dark:text-white transition-all">
           Experiments
@@ -111,7 +111,7 @@ export default function Portfolio() {
         </p>
       </span>
       <a href="https://rango.dev">
-        <Div className="bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg my-1 md:my-2 md:max-w-4xl md:mx-auto">
+        <Div className="bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-lg my-1 md:my-2 md:max-w-4xl md:mx-auto">
           <div className="p-4">
             <span className="flex">
               <AppImage
@@ -156,8 +156,8 @@ export default function Portfolio() {
             <PreviewImage
               id={"preview-image"}
               src={"/static/images/portfolio/rango_web.png"}
-              width={380}
-              height={200}
+              width={450}
+              height={230}
               alt={"Desktop View"}
             />
           </PreviewContainer>
@@ -209,8 +209,8 @@ export default function Portfolio() {
             <PreviewImage
               id={"preview-image"}
               src={"/static/images/portfolio/fitcloud_web.png"}
-              width={380}
-              height={200}
+              width={450}
+              height={230}
               alt={"Desktop View"}
             />
           </PreviewContainer>
@@ -260,8 +260,8 @@ export default function Portfolio() {
             <PreviewImage
               id={"preview-image"}
               src={"/static/images/portfolio/barrio_intercambia_web.png"}
-              width={380}
-              height={200}
+              width={450}
+              height={230}
               alt={"Desktop View"}
             />
           </PreviewContainer>
@@ -313,8 +313,8 @@ export default function Portfolio() {
             <PreviewImage
               id={"preview-image"}
               src={"/static/images/portfolio/react_hider_web.png"}
-              width={380}
-              height={200}
+              width={450}
+              height={230}
               alt={"Desktop View"}
             />
           </PreviewContainer>
@@ -363,8 +363,8 @@ export default function Portfolio() {
             <PreviewImage
               id={"preview-image"}
               src={"/static/images/portfolio/kila_web.png"}
-              width={380}
-              height={200}
+              width={450}
+              height={230}
               alt={"Desktop View"}
             />
           </PreviewContainer>
@@ -413,8 +413,8 @@ export default function Portfolio() {
             <PreviewImage
               id={"preview-image"}
               src={"/static/images/portfolio/natours_web.png"}
-              width={380}
-              height={200}
+              width={450}
+              height={230}
               alt={"Desktop View"}
             />
           </PreviewContainer>
