@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 //Custom styled components
 const Div = styled.div`
   height: 320px;
-  width: 600px;
+  width: 680px;
   position: relative;
   overflow: hidden;
 
@@ -101,21 +101,13 @@ const Circle = styled.div`
 // Main Portfolio Component
 export default function Portfolio() {
   return (
-    <motion.div
-      className="flex flex-col space-y-4 w-full"
-      initial="pageInitial"
-      animate="pageAnimate"
-      variants={{
-        pageInitial: {
-          opacity: 0,
-          translateX: -800,
-        },
-        pageAnimate: {
-          opacity: 1,
-          translateX: 0,
-        },
-      }}
-    >
+    <div className="flex flex-col flex-wr space-y-4 md:max-w-3/5 md:w-3/5 mx-auto my-16">
+      <h1 className="heading font-bold text-3xl md:text-4xl mb-4 text-black dark:text-white">
+        Experiments
+      </h1>
+      <p className="basic-text text-lg font-light mt-2 mb-4 dark:text-white transition-all">
+        Active and past projects and visual experiments.
+      </p>
       <a href="https://rango.dev">
         <Div className="bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg my-1 md:my-2 md:max-w-4xl md:mx-auto">
           <div className="p-4">
@@ -426,6 +418,6 @@ export default function Portfolio() {
           </PreviewContainer>
         </Div>
       </a>
-    </motion.div>
+    </div>
   );
 }
