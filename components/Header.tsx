@@ -22,7 +22,7 @@ export default function Header() {
         "flex flex-col justify-center w-full h-full menu-button-line";
 
       mobileMenu.current.className =
-        "flex flex-col md:hidden mobile-navbar-menu-closed absolute";
+        "flex-col hidden mobile-navbar-menu-closed absolute";
     } else {
       button.current.className =
         "flex flex-col justify-center w-full h-full menu-button-line-open";
@@ -41,7 +41,7 @@ export default function Header() {
 
   return (
     <>
-      <nav className="flex justify-between items-center px-8 py-4 bg-gray-50 dark:bg-gray-900 bg-opacity-40 dark:bg-opacity-60 sticky sticky-nav">
+      <nav className="flex justify-between items-center px-8 py-4 md:px-0 md:py-0 bg-gray-50 dark:bg-gray-900 bg-opacity-40 dark:bg-opacity-60 sticky sticky-nav">
         <div className="flex flex-col md:flex-row justify-between md:mx-auto md:max-w-3/5 md:w-3/5 md:h-18 ">
           <div className="flex flex-col justify-center">
             <Link href="/">
@@ -101,25 +101,25 @@ export default function Header() {
       </nav>
       <ul
         ref={mobileMenu}
-        className="flex flex-col md:hidden mobile-navbar-menu-closed fixed"
+        className="flex-col hidden mobile-navbar-menu-closed fixed"
       >
         <li className="p-4 px-6">
           <div className="border-b-2 border-gray-200 px-2 py-3">
-            <Link href="/services">
+            <Link href="/blog">
               <a className="text-xl font-medium">Blog</a>
             </Link>
           </div>
         </li>
         <li className="p-4 px-6">
           <div className="border-b-2 border-gray-200 px-2 py-2">
-            <Link href="/jamstack">
+            <Link href="/about">
               <a className="text-xl font-medium">About</a>
             </Link>
           </div>
         </li>
         <li className="p-4 px-6">
           <div className="border-b-2 border-gray-200 px-2 py-2">
-            <Link href="/about">
+            <Link href="/portfolio">
               <a className="text-xl font-medium">Experiments</a>
             </Link>
           </div>
