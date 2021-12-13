@@ -1,5 +1,11 @@
 @tailwind base;
 @tailwind components;
+/* Custom fonts */
+@font-face {
+  font-family: "Grotesque";
+  src: url("/fonts/Grotesque/Grotesque-Black.otf");
+  font-display: swap;
+}
 
 /* Custom component styles */
 html {
@@ -7,6 +13,10 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   box-sizing: border-box;
+}
+
+.oliverloops {
+  font-family: "Grotesque", sans-serif;
 }
 
 h2,

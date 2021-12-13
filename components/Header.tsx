@@ -21,7 +21,7 @@ export default function Header() {
       <div className="flex flex-col md:flex-row justify-between mx-auto md:max-w-3/5 md:w-3/5 md:h-18 ">
         <div className="flex flex-col justify-center">
           <Link href="/">
-            <a className="heading text-2xl md:text-3xl font-bold dark:text-white">
+            <a className="oliverloops text-xl md:text-2xl  dark:text-white">
               oliverloops
             </a>
           </Link>

@@ -18,7 +18,15 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>{this.props.styleTags}</Head>
+        <Head>
+          {this.props.styleTags}
+          <link
+            rel="preload"
+            href="/fonts/Grotesque/Grotesque-Black.otf"
+            as="font"
+            crossOrigin=""
+          />
+        </Head>
         <body className="bg-gray-50 text-black dark:bg-gray-900 dark:text-white">
           <Main />
           <NextScript />
