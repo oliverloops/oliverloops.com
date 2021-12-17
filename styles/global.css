@@ -172,7 +172,8 @@ footer {
   min-height: 100vh;
   z-index: 2;
   position: fixed;
-  background-color: #fff;
+  backdrop-filter: saturate(180%) blur(20px);
+  transition: background-color 0.1 ease-in-out;
 }
 
 .mobile-navbar-menu-closed {

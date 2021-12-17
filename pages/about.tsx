@@ -71,60 +71,45 @@ export default function About() {
           about coffee.
         </Text>
       </div>
-      <h2 className="font-bold text-3xl md:text-3xl tracking-tight mb-4 text-black dark:text-white">
+      <h2 className="font-bold text-3xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
         Books
       </h2>
-      <h3 className="basic-text font-medium mb-2 text-xl dark:text-white">
+      <h3 className="basic-text font-semibold mb-2 text-2xl dark:text-white">
         Reading now
       </h3>
       <div className="flex justify-center py-4">
         <figure>
           <Image
-            src={"/static/images/books/atomic_design_book.svg"}
-            width={165}
-            height={235}
+            className="rounded-lg"
+            src={"/static/images/books/atomic_design.png"}
+            width={185}
+            height={285}
             alt={"A book"}
           />
+          <figcaption>
+            <p className="text-lg md:text-xl font-semibold">Atomic Desing</p>
+            <p className="text-md md:text-lg text-gray-400">Brad Frost</p>
+          </figcaption>
         </figure>
-        <div className="ml-4">
-          <Image
-            src={"/static/images/books/working_in_public_book.jpeg"}
-            width={165}
-            height={235}
-            alt={"A book"}
-          />
+        <div className="ml-8">
+          <figure>
+            <Image
+              className="rounded-lg"
+              src={"/static/images/books/working_in_public_book.jpeg"}
+              width={190}
+              height={285}
+              alt={"A book"}
+            />
+            <figcaption>
+              <p className="text-lg md:text-xl font-semibold">
+                Working in Public
+              </p>
+              <p className="text-md md:text-lg text-gray-400">Nadia Eghbal</p>
+            </figcaption>
+          </figure>
         </div>
       </div>
-      <h3 className="basic-text font-medium mb-2 text-xl dark:text-white">
-        Recent reads
-      </h3>
-      <div className="flex justify-center pt-4 pb-8">
-        <div>
-          <Image
-            src={"/static/images/books/atomic_habits_book.jpg"}
-            width={165}
-            height={235}
-            alt={"A book"}
-          />
-        </div>
-        <div className="ml-4">
-          <Image
-            src={"/static/images/books/remote_book.jpeg"}
-            width={165}
-            height={235}
-            alt={"A book"}
-          />
-        </div>
-        <div className="ml-4">
-          <Image
-            src={"/static/images/books/shoedog_cover.jpg"}
-            width={165}
-            height={235}
-            alt={"A book"}
-          />
-        </div>
-      </div>
-      <div className="mb-4 prose leading-6 text-gray-600 dark:text-gray-400">
+      <div className="mt-8 mb-4 prose leading-6 text-gray-600 dark:text-gray-400">
         <h2 className="font-bold text-3xl md:text-3xl mb-4 text-black dark:text-white">
           My Tech Stack
         </h2>

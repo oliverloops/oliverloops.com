@@ -28,7 +28,7 @@ export default function Header() {
         "flex flex-col justify-center w-full h-full menu-button-line-open";
 
       mobileMenu.current.className =
-        "flex flex-col md:hidden mobile-navbar-menu-open absolute";
+        "flex flex-col md:hidden mobile-navbar-menu-open bg-gray-50 dark:bg-gray-900 bg-opacity-40 dark:bg-opacity-60 fixed";
     }
   };
 
@@ -106,24 +106,44 @@ export default function Header() {
         <li className="p-4 px-6">
           <div className="border-b-2 border-gray-200 px-2 py-3">
             <Link href="/blog">
-              <a className="text-xl font-medium">Blog</a>
+              <a className="basic-text text-xl font-semibold dark:text-white">
+                Blog
+              </a>
             </Link>
           </div>
         </li>
         <li className="p-4 px-6">
           <div className="border-b-2 border-gray-200 px-2 py-2">
             <Link href="/about">
-              <a className="text-xl font-medium">About</a>
+              <a className="basic-text text-xl font-semibold dark:text-white">
+                About
+              </a>
             </Link>
           </div>
         </li>
         <li className="p-4 px-6">
           <div className="border-b-2 border-gray-200 px-2 py-2">
             <Link href="/portfolio">
-              <a className="text-xl font-medium">Experiments</a>
+              <a className="basic-text text-xl font-semibold dark:text-white">
+                Experiments
+              </a>
             </Link>
           </div>
         </li>
+        <div className="p-4 px-6">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={() => switchTheme()}
+            className="flex justify-center items-center rounded-full bg-gray-200 dark:bg-gray-700 h-10 w-10"
+          >
+            {darkContext.theme === "dark" ? (
+              <HiSun className="icon dark:text-white" />
+            ) : (
+              <IoMdMoon className="icon" />
+            )}
+          </motion.button>
+        </div>
       </ul>
     </>
   );
