@@ -19,10 +19,10 @@ export default function Footer() {
           </p>
           <span className="flex mt-2 md:mt-0">
             <a href="https://twitter.com/oliverloops">
-              <p className="basic-text font-semibold pr-4">Twitter</p>
+              <p className="basic-text font-medium pr-4">twitter</p>
             </a>
             <a href="https://github.com/oliverloops">
-              <p className="basic-text font-semibold pl-4">GitHub</p>
+              <p className="basic-text font-medium pl-4">github</p>
             </a>
           </span>
         </div>

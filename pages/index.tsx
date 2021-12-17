@@ -72,15 +72,15 @@ export default function Home() {
             image={"/static/images/portfolio/rango_web.png"}
             title={"Rango Creative Lab"}
             description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit sit amet."
             }
-            href={"https://rango.dev"}
+            href={"/showcase"}
           />
           <ProjectCard
             image={"/static/images/portfolio/fitcloud_web.png"}
             title={"Fitcloud"}
             description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit sit amet."
             }
             href={"https://github.com/oliverloops/react-hider"}
           />

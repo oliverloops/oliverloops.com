@@ -13,8 +13,8 @@ export default function ProjectCard({
   href: string;
 }) {
   return (
-    <div className="mb-4 md:mb-0 md:my-4">
-      <div className="flex flex-col rounded p-4 transition-all">
+    <div className="mb-4 md:mb-8 md:my-4">
+      <div className="flex flex-col pr-6 rounded transition-all">
         <figure className="h-44 md:h-52 relative border-4 border-black dark:border-white rounded-xl transition-all">
           <Image
             className="rounded-lg md:rounded-lg"

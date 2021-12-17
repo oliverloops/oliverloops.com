@@ -52,11 +52,11 @@ export default function About() {
       <h1 className="heading font-bold text-3xl md:text-4xl mb-4 text-black dark:text-white">
         About Me
       </h1>
-      <div className="mb-4 prose leading-6 text-gray-600 dark:text-gray-400">
+      <div className="mb-4 mr-12 text-justify leading-6 text-gray-600 dark:text-gray-400">
         <p>
-          Hi again!, I'm Oliver and I'm a software developer, rookie barista and
-          an enthusiast tech writer. I'm a part-time freelance web developer and
-          full-time information systems student.
+          I'm a frontend developer, rookie barista and an enthusiast tech
+          writer. I'm a part-time freelance web developer and full-time
+          information systems student.
         </p>
         <Text>
           I want it to share everything I know, learn and discover through blog
