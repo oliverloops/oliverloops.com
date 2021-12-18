@@ -106,7 +106,7 @@ export default function Portfolio() {
         <h1 className="heading text-3xl md:text-4xl dark:text-white transition-all">
           Experiments
         </h1>
-        <p className="basic-text text-lg font-light mt-2  dark:text-white transition-all">
+        <p className="remarkable text-lg mt-2  dark:text-white transition-all">
           Active and past projects and some visual experiments.
         </p>
       </span>
@@ -121,7 +121,7 @@ export default function Portfolio() {
                 alt={"Rango Logo"}
               />
               <div className="flex flex-col ">
-                <p className="pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
+                <p className="heading pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
                   Rango
                 </p>
                 <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
@@ -174,7 +174,7 @@ export default function Portfolio() {
                 alt={"fitcloud.mx"}
               />
               <div className="flex flex-col ">
-                <p className="pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
+                <p className="heading pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
                   Fitcloud.mx
                 </p>
                 <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
@@ -227,7 +227,7 @@ export default function Portfolio() {
                 alt={"Barrio Intercambia"}
               />
               <div className="flex flex-col ">
-                <p className="pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
+                <p className="heading pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
                   Barrio Intercambia
                 </p>
                 <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
@@ -278,7 +278,7 @@ export default function Portfolio() {
                 alt={"React Hider"}
               />
               <div className="flex flex-col ">
-                <p className="pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
+                <p className="heading pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
                   React Hider
                 </p>
                 <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
@@ -331,7 +331,7 @@ export default function Portfolio() {
                 alt={"Kila Logo"}
               />
               <div className="flex flex-col ">
-                <p className="pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
+                <p className="heading pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
                   Kila
                 </p>
                 <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
@@ -381,7 +381,7 @@ export default function Portfolio() {
                 alt={"Natours Logo"}
               />
               <div className="flex flex-col ">
-                <p className="pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
+                <p className="heading pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
                   Natours
                 </p>
                 <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">

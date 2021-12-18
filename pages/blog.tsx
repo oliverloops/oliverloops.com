@@ -15,7 +15,7 @@ export default function Blog() {
         <h1 className="heading text-3xl md:text-4xl dark:text-white transition-all">
           Blog
         </h1>
-        <p className="basic-text text-lg font-light mt-2 dark:text-white transition-all">
+        <p className="remarkable text-lg font-light mt-2 dark:text-white transition-all">
           All about my ideas, experiences, projects and other cool stuff.
         </p>
       </span>
