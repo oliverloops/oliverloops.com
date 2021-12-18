@@ -7,6 +7,22 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Medium.ttf");
+  font-weight: 500;
+  font-style: medium;
+  font-display: swap;
+}
+
 /* Custom component styles */
 html {
   margin: 0;
@@ -20,6 +36,7 @@ html {
   letter-spacing: 0.5px;
 }
 
+h1,
 h2,
 .heading {
   font-family: "Cal Sans", sans-serif;
@@ -28,8 +45,15 @@ h2,
 
 p,
 .basic-text {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.remarkable {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: medium;
 }
 
 .sticky-nav {

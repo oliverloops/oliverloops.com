@@ -24,7 +24,22 @@ class MyDocument extends Document {
             rel="preload"
             href="/fonts/Grotesque/Grotesque-Black.otf"
             as="font"
-            crossOrigin=""
+            type="font/otf"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/Inter/Inter-Regular.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/Inter/Inter-Medium.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin="anonymous"
           />
         </Head>
         <body className="bg-gray-50 text-black dark:bg-gray-900 dark:text-white">

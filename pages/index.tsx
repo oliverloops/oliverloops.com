@@ -20,7 +20,7 @@ export default function Home() {
               👋
             </span>
           </h1>
-          <h3 className="basic-text md:text-lg  text-gray-500 dark:text-gray-400 leading-relaxed max-w-xl py-4 pr-8 md:pr-0">
+          <h3 className="remarkable md:text-lg  text-gray-500 dark:text-gray-400 leading-relaxed max-w-xl py-4 pr-8 md:pr-0">
             I'm a frontend developer and an open source enthusiast. Welcome to
             my{" "}
             <span className="text-green-500 dark:text-green-400">
