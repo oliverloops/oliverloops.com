@@ -42,6 +42,7 @@ const Showcase = () => {
               </li>
             </ul>
           </div>
+          <div></div>
         </div>
       </div>
       <div className="md:row-start-2 col-start-1 md:col-span-3 py-12">
@@ -73,7 +74,7 @@ const Showcase = () => {
         </p>
       </div>
       <div className="md:row-start-5 md:col-span-3 mt-16">
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           <figure className="mb-8 md:mb-0 md:mr-4 rounded-md shadow-lg md:shadow-xl dark:shadow-none">
             <Image
               className="rounded-md"
@@ -92,7 +93,7 @@ const Showcase = () => {
           </figure>
         </div>
       </div>
-      <div className="md:row-start-6 md:col-span-3 md:mt-16">
+      <div className="md:row-start-6 md:col-span-3 mt-8 md:mt-16">
         <h2 className="text-2xl md:text-3xl md:text-center mb-4">Subtitle 3</h2>
         <p className="remarkable text-gray-500 md:text-center leading-6 md:px-16 mt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
@@ -111,7 +112,7 @@ const Showcase = () => {
           />
         </figure>
       </div>
-      <div className="md:row-start-8 md:col-start-1 md:col-span-3 mt-4 mb-8">
+      <div className="md:row-start-8 md:col-start-1 md:col-span-3 md:mt-4 mb-8">
         <h2 className="text-2xl md:text-3xl mb-4">Subtitle 4</h2>
         <p className="remarkable text-gray-500 leading-6 mt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
