@@ -17,14 +17,18 @@ export default function Footer() {
             </span>
             <span className="heading tracking-wide">Vercel</span>
           </p>
-          <span className="flex mt-2 md:mt-0">
-            <a href="https://twitter.com/oliverloops">
-              <p className="basic-text font-medium pr-4">twitter</p>
-            </a>
-            <a href="https://github.com/oliverloops">
-              <p className="basic-text font-medium pl-4">github</p>
-            </a>
-          </span>
+          <div className="flex mt-2 md:mt-0">
+            <span className="pr-4">
+              <a href="https://twitter.com/oliverloops">
+                <p className="basic-text font-medium">twitter</p>
+              </a>
+            </span>
+            <span className="pl-4">
+              <a href="https://github.com/oliverloops">
+                <p className="basic-text font-medium">github</p>
+              </a>
+            </span>
+          </div>
         </div>
       </div>
     </footer>
