@@ -139,7 +139,7 @@ footer {
   color: rgba(188, 188, 188, 0.75);
 }
 
-/* Navbar underline animation */
+/* Navbar anchor underline animation */
 .underline-animation {
   display: inline-block;
   position: relative;
@@ -151,7 +151,7 @@ footer {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
+  height: 3px;
   bottom: 0;
   left: 0;
   background-color: #000;

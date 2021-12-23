@@ -20,12 +20,16 @@ export default function Footer() {
           <div className="flex mt-2 md:mt-0">
             <span className="pr-4">
               <a href="https://twitter.com/oliverloops">
-                <p className="basic-text font-medium">twitter</p>
+                <p className="basic-text py-1 underline-animation font-medium">
+                  twitter
+                </p>
               </a>
             </span>
             <span className="pl-4">
               <a href="https://github.com/oliverloops">
-                <p className="basic-text font-medium">github</p>
+                <p className="basic-text py-1 underline-animation font-medium">
+                  github
+                </p>
               </a>
             </span>
           </div>

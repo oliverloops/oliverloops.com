@@ -54,21 +54,21 @@ export default function Header() {
             <div className="flex items-center">
               <div className="p-1 sm:p-4">
                 <Link href="/blog">
-                  <a className="basic-text underline-animation text-md font-semibold dark:text-white">
+                  <a className="basic-text py-1 underline-animation text-md font-semibold dark:text-white">
                     Blog
                   </a>
                 </Link>
               </div>
               <div className="p-1 sm:p-4">
                 <Link href="/about">
-                  <a className="basic-text text-md font-semibold dark:text-white">
+                  <a className="basic-text py-1 underline-animation text-md font-semibold dark:text-white">
                     About
                   </a>
                 </Link>
               </div>
               <div className="p-1 sm:p-4">
                 <Link href="/portfolio">
-                  <a className="bsic-text text-md font-semibold dark:text-white">
+                  <a className="bsic-text py-1 underline-animation text-md font-semibold dark:text-white">
                     Experiments
                   </a>
                 </Link>
