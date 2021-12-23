@@ -16,16 +16,13 @@ export default function ProjectCard({
   return (
     <div className="mb-4 md:mb-8 md:my-4">
       <div className="flex flex-col pr-6 rounded transition-all">
-        <motion.figure
-          whileHover={{ scale: 1.025 }}
-          className="h-44 md:h-52 relative border-4 border-black dark:border-white rounded-xl transition-all"
-        >
+        <figure className="h-44 md:h-52 relative border-4 border-black dark:border-white rounded-xl transition-all">
           <Image
             className="rounded-lg md:rounded-lg"
             src={image}
             layout="fill"
           />
-        </motion.figure>
+        </figure>
         <div className="flex flex-col py-4">
           <h4 className="heading text-xl text-gray-900 dark:text-gray-100 transition-all">
             {title}
@@ -38,7 +35,9 @@ export default function ProjectCard({
         </div>
         <Link href={href}>
           <a>
-            <p className="basic-text font-semibold">View Project &rarr;</p>
+            <p className="basic-text py-1 after:bg-black dark:after:bg-white underline-animation  font-semibold">
+              View Project &rarr;
+            </p>
           </a>
         </Link>
       </div>

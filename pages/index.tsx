@@ -58,7 +58,7 @@ export default function Home() {
         </div>
         <Link href="/blog">
           <a>
-            <p className="basic-text text-lg font-medium">
+            <p className="basic-text py-1 after:bg-black dark:after:bg-white underline-animation  text-lg font-medium">
               Read all posts &rarr;
             </p>
           </a>
