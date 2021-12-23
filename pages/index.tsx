@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 //UI components
 import PostCard from "../components/PostCard";
 import { posts } from "../getAllPosts";

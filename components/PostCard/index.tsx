@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { FiEye } from "react-icons/fi";
 
 const PostCard = ({ post }: { post: any }) => {
@@ -21,9 +22,13 @@ const PostCard = ({ post }: { post: any }) => {
 const Content = ({ meta }: { meta: any }) => {
   //colored box-shadow and border style
   const shadowFormula: string = `0.65rem 0.65rem #5EA5F7, 0.65rem 0.65rem 0 4px #000`;
+  const shadowExpandedFormula: string = `0.85rem 0.85rem #5EA5F7, 0.85rem 0.85rem 0 4px #000`;
+  const shadowCompressedFormula: string = `0.45rem 0.45rem #5EA5F7, 0.45rem 0.45rem 0 4px #000`;
 
   return (
-    <div
+    <motion.div
+      whileHover={{ boxShadow: shadowExpandedFormula }}
+      whileTap={{ boxShadow: shadowCompressedFormula }}
       style={{ boxShadow: shadowFormula }}
       className="flex justify-center flex-col px-4 py-6 border-4 bg-white dark:bg-gray-900 border-black dark:border-white rounded-xl"
     >
@@ -49,7 +54,7 @@ const Content = ({ meta }: { meta: any }) => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -139,6 +139,31 @@ footer {
   color: rgba(188, 188, 188, 0.75);
 }
 
+/* Navbar underline animation */
+.underline-animation {
+  display: inline-block;
+  position: relative;
+  color: "#000";
+}
+
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 /* Navbar menu button template */
 .menu-mobile-button {
   width: 27px;
