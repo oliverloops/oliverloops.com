@@ -143,7 +143,6 @@ footer {
 .underline-animation {
   display: inline-block;
   position: relative;
-  color: "#000";
 }
 
 .underline-animation::after {
@@ -179,7 +178,6 @@ footer {
   display: block;
   height: 2px;
   width: 27px;
-  background-color: #000;
   transform: translateY(1px) rotate(45deg);
   transition: transform 0.15s ease;
 }
@@ -189,7 +187,6 @@ footer {
   display: block;
   height: 2px;
   width: 27px;
-  background-color: #000;
   transform: translateY(0px) rotate(-45deg);
   transition: transform 0.15s ease;
 }
@@ -199,7 +196,6 @@ footer {
   display: block;
   height: 2px;
   width: 27px;
-  background-color: #000;
   transform: translateY(5px) rotate(0deg);
   transition: transform 0.15s ease;
 }
@@ -209,7 +205,6 @@ footer {
   display: block;
   height: 2px;
   width: 27px;
-  background-color: #000;
   transform: translateY(-5px) rotate(0deg);
   transition: transform 0.15s ease;
 }
@@ -241,7 +236,3 @@ footer {
 }
 
 @tailwind utilities;
-
-/* Custom utilities */
-@layer components {
-}

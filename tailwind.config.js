@@ -1,5 +1,9 @@
 module.exports = {
-  purge: ["./pages/**/*.js", "./components/**/*.js", "./styles/**/*.css"],
+  content: [
+    "./pages/**/*.{tsx,js}",
+    "./components/**/*.{tsx,js}",
+    "./styles/**/*.css",
+  ],
   darkMode: "class",
   theme: {
     extend: {},
@@ -9,9 +13,6 @@ module.exports = {
       lg: "1024px",
       xl: "1280px",
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 };
