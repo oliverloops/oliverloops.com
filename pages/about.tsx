@@ -131,28 +131,16 @@ export default function About() {
           desc={"Is literally JavaScript with syntax for types."}
         />
         <AppItem
+          url={"https://reactjs.org/"}
+          image={"/static/images/logos/react_icon.png"}
+          name={"React"}
+          desc={"The JavaScript library for building user interfaces."}
+        />
+        <AppItem
           url={"https://reactnative.dev/"}
           image={"/static/images/logos/react_native_logo.png"}
           name={"React Native"}
           desc={"Create native apps for Android and iOS using React."}
-        />
-        <AppItem
-          url={"https://graphql.org/"}
-          image={"/static/images/logos/graphql_logo.png"}
-          name={"GraphQL"}
-          desc={"A query language for your API."}
-        />
-        <AppItem
-          url={"https://www.mongodb.com/"}
-          image={"/static/images/logos/mongo_db_logo.png"}
-          name={"MongoDB"}
-          desc={"A document based NoSQL database."}
-        />
-        <AppItem
-          url={"https://planetscale.com/"}
-          image={"/static/images/logos/planet_scale_logo.png"}
-          name={"Planetscale"}
-          desc={"The database for developers."}
         />
         <AppItem
           url={"https://www.solidjs.com/"}
@@ -163,10 +151,10 @@ export default function About() {
           }
         />
         <AppItem
-          url={"https://vercel.com/"}
-          image={"/static/images/logos/vercel_icon.jpeg"}
-          name={"Vercel"}
-          desc={"Develop. Preview. Ship."}
+          url={"https://tailwindcss.com/"}
+          image={"/static/images/logos/tailwind.png"}
+          name={"Tailwind CSS"}
+          desc={"Rapidly build modern websites without ever leaving your HTML."}
         />
         <AppItem
           url={"https://nextjs.org/"}
@@ -175,28 +163,40 @@ export default function About() {
           desc={"A powerful framework to build modern React websites."}
         />
         <AppItem
-          url={"https://nodejs.org/"}
-          image={"/static/images/logos/node_icon.png"}
-          name={"Node.js"}
-          desc={"The JavaScript runtime built on Chrome's V8 engine."}
-        />
-        <AppItem
           url={"https://prisma.io/"}
           image={"/static/images/logos/prisma_icon.png"}
           name={"Prisma"}
           desc={"Next-generation Node.js and TypeScript ORM."}
         />
         <AppItem
-          url={"https://reactjs.org/"}
-          image={"/static/images/logos/react_icon.png"}
-          name={"React"}
-          desc={"The JavaScript library for building user interfaces."}
+          url={"https://nodejs.org/"}
+          image={"/static/images/logos/node_icon.png"}
+          name={"Node.js"}
+          desc={"The JavaScript runtime built on Chrome's V8 engine."}
         />
         <AppItem
-          url={"https://tailwindcss.com/"}
-          image={"/static/images/logos/tailwind.png"}
-          name={"Tailwind CSS"}
-          desc={"Rapidly build modern websites without ever leaving your HTML."}
+          url={"https://graphql.org/"}
+          image={"/static/images/logos/graphql_logo.png"}
+          name={"GraphQL"}
+          desc={"A query language for your API."}
+        />
+        <AppItem
+          url={"https://planetscale.com/"}
+          image={"/static/images/logos/planet_scale_logo.png"}
+          name={"Planetscale"}
+          desc={"The database for developers."}
+        />
+        <AppItem
+          url={"https://www.mongodb.com/"}
+          image={"/static/images/logos/mongo_db_logo.png"}
+          name={"MongoDB"}
+          desc={"A document based NoSQL database."}
+        />
+        <AppItem
+          url={"https://vercel.com/"}
+          image={"/static/images/logos/vercel_icon.jpeg"}
+          name={"Vercel"}
+          desc={"Develop. Preview. Ship."}
         />
         <AppItem
           url={"https://www.netlify.com/"}
