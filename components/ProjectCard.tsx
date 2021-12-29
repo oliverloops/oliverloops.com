@@ -18,9 +18,10 @@ export default function ProjectCard({
       <div className="flex flex-col pr-6 rounded transition-all">
         <figure className="h-44 md:h-52 relative border-4 border-black dark:border-white rounded-xl transition-all">
           <Image
-            className="rounded-lg md:rounded-lg"
+            className="rounded-xl"
             src={image}
             layout="fill"
+            objectFit="contain"
           />
         </figure>
         <div className="flex flex-col py-4">

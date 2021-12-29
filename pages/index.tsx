@@ -70,12 +70,12 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2">
           <ProjectCard
-            image={"/static/images/portfolio/rango_web.png"}
+            image={"/static/images/showcase/rango_cover.png"}
             title={"Rango Creative Lab"}
             description={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit sit amet."
             }
-            href={"/showcase"}
+            href={"/showcase/rango"}
           />
           <ProjectCard
             image={"/static/images/portfolio/fitcloud_web.png"}

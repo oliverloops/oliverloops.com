@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-const Showcase = () => {
+const RangoShowcase = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-auto gap-4 place-self-center md:max-w-3/5 md:w-3/5 md:pt-14 pt-12 pb-12">
       <div className="col-start-1 md:col-span-2">
-        <h1 className="text-3xl md:text-4xl mb-4">Showcase</h1>
+        <h1 className="text-3xl md:text-4xl mb-4">Rango.dev</h1>
         <p className="remarkable text-gray-500 leading-6 mt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
           tortor libero, lacinia laoreet imperdiet a, finibus sed nibh. Nullam
@@ -32,30 +32,39 @@ const Showcase = () => {
                   Next.js
                 </p>
               </li>
+              <li>
+                <p className="remarkable text-gray-600 dark:text-gray-400">
+                  Vercel
+                </p>
+              </li>
             </ul>
           </div>
           <div>
             <p className="heading text-lg mb-2">Link</p>
             <ul>
               <li>
-                <a href="#">Visit site</a>
+                <a href="https://rango.dev">
+                  <p className="basic-text py-1 after:bg-black dark:after:bg-white underline-animation  font-semibold">
+                    Visit site
+                  </p>
+                </a>
               </li>
             </ul>
           </div>
           <div></div>
         </div>
       </div>
-      <div className="md:row-start-2 col-start-1 md:col-span-3 py-12">
-        <figure className="rounded-md shadow-lg md:shadow-xl dark:shadow-none">
+      <div className="md:row-start-2 col-start-1 md:col-span-3 mt-8">
+        <figure className="mb-8 md:mb-0 md:mr-4 rounded-md shadow-lg md:shadow-xl dark:shadow-none">
           <Image
-            className="rounded-md"
-            src={"/static/images/showcase/showcase_template_1.png"}
-            width={2000}
-            height={1200}
+            className="rounded-md shadow-lg md:shadow-xl dark:shadow-none"
+            src={"/static/images/showcase/rango_showcase_1.png"}
+            width={800}
+            height={500}
           />
         </figure>
       </div>
-      <div className="md:row-start-3 md:col-start-1 md:col-span-2 mt-4">
+      <div className="md:row-start-3 md:col-start-1 md:col-span-2 mt-12">
         <h2 className="text-2xl md:text-3xl mb-4">Subtitle 1</h2>
         <p className="remarkable text-gray-500 leading-6 mt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
@@ -78,7 +87,7 @@ const Showcase = () => {
           <figure className="mb-8 md:mb-0 md:mr-4 rounded-md shadow-lg md:shadow-xl dark:shadow-none">
             <Image
               className="rounded-md"
-              src={"/static/images/showcase/showcase_template_1.png"}
+              src={"/static/images/showcase/rango_showcase_2.png"}
               width={2000}
               height={1200}
             />
@@ -125,4 +134,4 @@ const Showcase = () => {
   );
 };
 
-export default Showcase;
+export default RangoShowcase;
