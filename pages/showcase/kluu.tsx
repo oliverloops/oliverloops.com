@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-const RangoShowcase = () => {
+const KluuShowcase = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-auto gap-4 place-self-center md:max-w-3/5 md:w-3/5 md:pt-14 pt-12 pb-12">
       <div className="col-start-1 md:col-span-2">
-        <h1 className="text-3xl md:text-4xl mb-4">Rango.dev</h1>
+        <h1 className="text-3xl md:text-4xl mb-4">Kluu</h1>
         <p className="remarkable text-gray-500 leading-6 mt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
           tortor libero, lacinia laoreet imperdiet a, finibus sed nibh. Nullam
@@ -19,22 +19,17 @@ const RangoShowcase = () => {
             <ul>
               <li>
                 <p className="remarkable text-gray-600 dark:text-gray-400">
-                  React
+                  React Native
                 </p>
               </li>
               <li>
                 <p className="remarkable text-gray-600 dark:text-gray-400">
-                  Tailwind CSS
+                  Node.js
                 </p>
               </li>
               <li>
                 <p className="remarkable text-gray-600 dark:text-gray-400">
-                  Next.js
-                </p>
-              </li>
-              <li>
-                <p className="remarkable text-gray-600 dark:text-gray-400">
-                  Vercel
+                  Azure Cloud
                 </p>
               </li>
             </ul>
@@ -134,4 +129,4 @@ const RangoShowcase = () => {
   );
 };
 
-export default RangoShowcase;
+export default KluuShowcase;

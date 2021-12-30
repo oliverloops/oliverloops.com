@@ -71,7 +71,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <ProjectCard
             image={"/static/images/showcase/rango_cover.png"}
-            title={"Rango Creative Lab"}
+            title={"Rango.dev"}
             description={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit sit amet."
             }
@@ -79,11 +79,11 @@ export default function Home() {
           />
           <ProjectCard
             image={"/static/images/portfolio/fitcloud_web.png"}
-            title={"Fitcloud"}
+            title={"Kluu"}
             description={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit sit amet."
             }
-            href={"https://github.com/oliverloops/react-hider"}
+            href={"/showcase/kluu"}
           />
           <ProjectCard
             image={"/static/images/portfolio/natours_web.png"}
