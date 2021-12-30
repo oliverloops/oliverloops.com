@@ -1,10 +1,12 @@
 import Image from "next/image";
 
-const KluuShowcase = () => {
+const KilaShowcase = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-auto gap-4 place-self-center md:max-w-3/5 md:w-3/5 md:pt-14 pt-12 pb-12">
       <div className="col-start-1 md:col-span-2">
-        <h1 className="text-3xl md:text-4xl mb-4">Kluu</h1>
+        <h1 className="text-3xl md:text-4xl mb-4">
+          Kila Environmental Services
+        </h1>
         <p className="remarkable text-gray-500 leading-6 mt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
           tortor libero, lacinia laoreet imperdiet a, finibus sed nibh. Nullam
@@ -19,22 +21,22 @@ const KluuShowcase = () => {
             <ul>
               <li>
                 <p className="remarkable text-gray-600 dark:text-gray-400">
-                  React Native
+                  React
                 </p>
               </li>
               <li>
                 <p className="remarkable text-gray-600 dark:text-gray-400">
-                  GraphQL
+                  Styled Components
                 </p>
               </li>
               <li>
                 <p className="remarkable text-gray-600 dark:text-gray-400">
-                  Node.js
+                  Next.js
                 </p>
               </li>
               <li>
                 <p className="remarkable text-gray-600 dark:text-gray-400">
-                  Azure Cloud
+                  Netlify
                 </p>
               </li>
             </ul>
@@ -43,7 +45,7 @@ const KluuShowcase = () => {
             <p className="heading text-lg mb-2">Link</p>
             <ul>
               <li>
-                <a href="https://kluu.mx">
+                <a href="https://kilaenvservices.netlify.app/">
                   <p className="basic-text py-1 after:bg-black dark:after:bg-white underline-animation  font-semibold">
                     Visit site
                   </p>
@@ -58,9 +60,9 @@ const KluuShowcase = () => {
         <figure className="mb-8 md:mb-0 md:mr-4 rounded-md shadow-lg md:shadow-xl dark:shadow-none">
           <Image
             className="rounded-md shadow-lg md:shadow-xl dark:shadow-none"
-            src={"/static/images/showcase/kluu/kluu_showcase_1.png"}
+            src={"/static/images/showcase/kila/kila_showcase_1.png"}
             width={900}
-            height={500}
+            height={550}
           />
         </figure>
       </div>
@@ -87,7 +89,7 @@ const KluuShowcase = () => {
           <figure className="mb-8 md:mb-0 md:mr-4 rounded-md shadow-lg md:shadow-xl dark:shadow-none">
             <Image
               className="rounded-md"
-              src={"/static/images/showcase/kluu/kluu_showcase_2.png"}
+              src={"/static/images/showcase/kila/kila_showcase_3.png"}
               width={2000}
               height={1100}
             />
@@ -95,7 +97,7 @@ const KluuShowcase = () => {
           <figure className="md:ml-4 rounded-md shadow-lg md:shadow-xl dark:shadow-none">
             <Image
               className="rounded-md"
-              src={"/static/images/showcase/kluu/kluu_showcase_3.png"}
+              src={"/static/images/showcase/kila/kila_showcase_2.png"}
               width={2000}
               height={1100}
             />
@@ -115,7 +117,7 @@ const KluuShowcase = () => {
         <figure className="rounded-md shadow-lg md:shadow-xl dark:shadow-none">
           <Image
             className="rounded-md"
-            src={"/static/images/showcase/kluu/kluu_showcase_4.png"}
+            src={"/static/images/showcase/kila/kila_showcase_4.png"}
             width={2000}
             height={1100}
           />
@@ -134,4 +136,4 @@ const KluuShowcase = () => {
   );
 };
 
-export default KluuShowcase;
+export default KilaShowcase;

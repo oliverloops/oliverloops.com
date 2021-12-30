@@ -78,7 +78,7 @@ export default function Home() {
             href={"/showcase/rango"}
           />
           <ProjectCard
-            image={"/static/images/portfolio/fitcloud_web.png"}
+            image={"/static/images/showcase/kluu/kluu_cover.png"}
             title={"Kluu"}
             description={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit sit amet."
@@ -86,10 +86,20 @@ export default function Home() {
             href={"/showcase/kluu"}
           />
           <ProjectCard
-            image={"/static/images/portfolio/natours_web.png"}
-            title={"Comming Soon"}
-            description={"This project is under construction"}
-            href={"https://oliverloops.com/portfolio"}
+            image={"/static/images/showcase/kila/kila_cover.png"}
+            title={"Kila Environmental Services"}
+            description={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit sit amet."
+            }
+            href={"/showcase/kila"}
+          />
+          <ProjectCard
+            image={"/static/images/showcase/kila/kila_cover.png"}
+            title={"Airbnb Clone"}
+            description={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit sit amet."
+            }
+            href={"/showcase/airbnb"}
           />
         </div>
       </div>
