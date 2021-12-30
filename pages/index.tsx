@@ -73,31 +73,29 @@ export default function Home() {
             image={"/static/images/showcase/rango_cover.png"}
             title={"Rango.dev"}
             description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit sit amet."
+              "JAMstack based development agency that improves sites and web apps."
             }
             href={"/showcase/rango"}
           />
           <ProjectCard
             image={"/static/images/showcase/kluu/kluu_cover.png"}
             title={"Kluu"}
-            description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit sit amet."
-            }
+            description={"Market, food and other useful services delivery app."}
             href={"/showcase/kluu"}
           />
           <ProjectCard
             image={"/static/images/showcase/kila/kila_cover.png"}
             title={"Kila Environmental Services"}
             description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit sit amet."
+              "Improving environmental consultancy for building infrastructure."
             }
             href={"/showcase/kila"}
           />
           <ProjectCard
-            image={"/static/images/showcase/kila/kila_cover.png"}
+            image={"/static/images/showcase/airbnb/airbnb_cover.png"}
             title={"Airbnb Clone"}
             description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit sit amet."
+              "An Airbnb Clone app but for discovering famous Mexican locations."
             }
             href={"/showcase/airbnb"}
           />

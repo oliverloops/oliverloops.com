@@ -39,6 +39,21 @@ const AirbnbShowcase = () => {
               </li>
             </ul>
           </div>
+          <div>
+            <p className="heading text-lg mb-2">Platform</p>
+            <ul>
+              <li>
+                <p className="remarkable text-gray-600 dark:text-gray-400">
+                  iOS
+                </p>
+              </li>
+              <li>
+                <p className="remarkable text-gray-600 dark:text-gray-400">
+                  Android
+                </p>
+              </li>
+            </ul>
+          </div>
           <div></div>
         </div>
       </div>
@@ -46,8 +61,8 @@ const AirbnbShowcase = () => {
         <figure className="mb-8 md:mb-0 md:mr-4 rounded-md shadow-lg md:shadow-xl dark:shadow-none">
           <Image
             className="rounded-md shadow-lg md:shadow-xl dark:shadow-none"
-            src={"/static/images/showcase/rango_showcase_1.png"}
-            width={800}
+            src={"/static/images/showcase/airbnb/airbnb_showcase_1.png"}
+            width={900}
             height={500}
           />
         </figure>
@@ -75,17 +90,17 @@ const AirbnbShowcase = () => {
           <figure className="mb-8 md:mb-0 md:mr-4 rounded-md shadow-lg md:shadow-xl dark:shadow-none">
             <Image
               className="rounded-md"
-              src={"/static/images/showcase/rango_showcase_3.png"}
+              src={"/static/images/showcase/airbnb/airbnb_showcase_2.png"}
               width={2000}
-              height={1200}
+              height={1100}
             />
           </figure>
           <figure className="md:ml-4 rounded-md shadow-lg md:shadow-xl dark:shadow-none">
             <Image
               className="rounded-md"
-              src={"/static/images/showcase/rango_showcase_2.png"}
+              src={"/static/images/showcase/airbnb/airbnb_cover.png"}
               width={2000}
-              height={1200}
+              height={1100}
             />
           </figure>
         </div>
@@ -103,9 +118,9 @@ const AirbnbShowcase = () => {
         <figure className="rounded-md shadow-lg md:shadow-xl dark:shadow-none">
           <Image
             className="rounded-md"
-            src={"/static/images/showcase/rango_showcase_4.png"}
+            src={"/static/images/showcase/airbnb/airbnb_showcase_4.png"}
             width={2000}
-            height={1200}
+            height={1100}
           />
         </figure>
       </div>

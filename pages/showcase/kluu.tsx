@@ -40,14 +40,17 @@ const KluuShowcase = () => {
             </ul>
           </div>
           <div>
-            <p className="heading text-lg mb-2">Link</p>
+            <p className="heading text-lg mb-2">Platform</p>
             <ul>
               <li>
-                <a href="https://kluu.mx">
-                  <p className="basic-text py-1 after:bg-black dark:after:bg-white underline-animation  font-semibold">
-                    Visit site
-                  </p>
-                </a>
+                <p className="remarkable text-gray-600 dark:text-gray-400">
+                  iOS
+                </p>
+              </li>
+              <li>
+                <p className="remarkable text-gray-600 dark:text-gray-400">
+                  Android
+                </p>
               </li>
             </ul>
           </div>
