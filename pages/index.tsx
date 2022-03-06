@@ -1,26 +1,34 @@
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 //UI components
 import PostCard from "../components/PostCard";
 import { posts } from "../getAllPosts";
 import ProjectCard from "../components/ProjectCard";
+//i18n
+import homeTranslations from "./assets/homeTranslations.json";
 
 export default function Home() {
+  const { locale, locales, asPath } = useRouter();
+
   return (
     <div className="flex flex-col place-self-center md:max-w-3/5 md:w-3/5 md:pt-14 pb-12">
       <div className="flex flex-col-reverse md:flex-row justify-between md:py-4 mb-8">
         <div className="flex flex-col">
-          <h1 className="heading font-bold text-3xl md:text-4xl lg:text-5xl  dark:text-white">
-            Hi there, I'm Oliver{" "}
-            <span
-              className="hidden md:inline"
-              role="img"
-              aria-label="waving hand"
-            >
-              👋
-            </span>
-          </h1>
+          {homeTranslations.home
+            .filter((p) => p.locale === locale)
+            .map((text) => (
+              <h1 className="heading font-bold text-3xl md:text-4xl lg:text-5xl  dark:text-white">
+                {text.title}{" "}
+                <span
+                  className="hidden md:inline"
+                  role="img"
+                  aria-label="waving hand"
+                >
+                  👋
+                </span>
+              </h1>
+            ))}
           <h3 className="remarkable md:text-lg  text-gray-500 dark:text-gray-400 leading-relaxed max-w-xl py-4 pr-8 md:pr-0">
             I'm a frontend developer and an open source enthusiast. Welcome to
             my{" "}

@@ -1,0 +1,16 @@
+{
+  "home": [
+    {
+      "locale": "en-US",
+      "title": "Hi There I'm Oliver",
+      "about": "About",
+      "experiments": "Experiments"
+    },
+    {
+      "locale": "es-MX",
+      "title": "Hola, Soy Oliver",
+      "about": "Sobre mí",
+      "experiments": "Experimentos"
+    }
+  ]
+}
