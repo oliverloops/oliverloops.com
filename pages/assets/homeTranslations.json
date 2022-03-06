@@ -1,16 +1,60 @@
 {
-  "home": [
+  "navbar": [
     {
       "locale": "en-US",
-      "title": "Hi There I'm Oliver",
       "about": "About",
       "experiments": "Experiments"
     },
     {
       "locale": "es-MX",
-      "title": "Hola, Soy Oliver",
       "about": "Sobre mí",
       "experiments": "Experimentos"
+    }
+  ],
+  "home": [
+    {
+      "locale": "en-US",
+      "title": "Hi There, I'm Oliver",
+      "desc_one": "Software developer and open source enthusiast. Welcome to my",
+      "desc_two": "where you can find some of my thoughts and blog posts related to my road for",
+      "desc_three": "and some experiments with",
+      "colored": [
+        { "digital_garden": "digital garden", "ios_dev": "iOS development" }
+      ],
+      "recent_posts": "Recent Posts",
+      "read_all": "Read all posts",
+      "projects": "Projects",
+      "project_card": [
+        {
+          "rango": "JAMstack based development agency that improves sites and web apps.",
+          "kluu": "An app that offers food, market and other delivery services.",
+          "kila": "Improving environmental consultancy for building infrastructure.",
+          "airbnb": "An Airbnb Clone app but for discovering famous Mexican locations."
+        }
+      ],
+      "textLink": "View project"
+    },
+    {
+      "locale": "es-MX",
+      "title": "Hola, Soy Oliver",
+      "desc_one": "Desarrollador de software y entusiasta open source. Bienvenido a mi",
+      "desc_two": "donde puedes encontrar algunos de mis pensamientos y publicaciones relacionadas a mi camino por el",
+      "desc_three": "y algunos experimentos con",
+      "colored": [
+        { "digital_garden": "jardín digital", "ios_dev": "desarrollo en iOS" }
+      ],
+      "recent_posts": "Publicaciones recientes",
+      "read_all": "Ver todas",
+      "projects": "Proyectos",
+      "project_card": [
+        {
+          "rango": "Agencia de desarollo basada en JAMstack que mejora sitios y aplicaciones web.",
+          "kluu": "App que ofrece delivery de comida, mercado y otros servicios.",
+          "kila": "Mejorando la consultoría ambiental para infraestructura de obras.",
+          "airbnb": "Un clon de Airbnb pero para discubrir ubicaciones mexicanas famosas."
+        }
+      ],
+      "textLink": "Ver proyecto"
     }
   ]
 }

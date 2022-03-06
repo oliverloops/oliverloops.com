@@ -7,11 +7,13 @@ export default function ProjectCard({
   title,
   description,
   href,
+  textLink,
 }: {
   image: string;
   title: string;
   description: string;
   href: string;
+  textLink: string;
 }) {
   return (
     <div className="mb-4 md:mb-8 md:my-4">
@@ -37,7 +39,7 @@ export default function ProjectCard({
         <Link href={href}>
           <a>
             <p className="basic-text py-1 after:bg-black dark:after:bg-white underline-animation  font-semibold">
-              View Project &rarr;
+              {textLink} &rarr;
             </p>
           </a>
         </Link>

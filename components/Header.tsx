@@ -58,7 +58,7 @@ export default function Header() {
             </Link>
           </div>
           <div className="hidden md:block">
-            {homeTranslations.home
+            {homeTranslations.navbar
               .filter((elem) => elem.locale === locale)
               .map((text) => (
                 <div className="flex items-center">
