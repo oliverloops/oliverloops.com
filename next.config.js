@@ -9,8 +9,8 @@ module.exports = withMDX({
     ],
   },
   i18n: {
-    locales: ["en-US", "es-MX"],
-    defaultLocale: "en-US",
+    locales: ["EN", "ES"],
+    defaultLocale: "EN",
   },
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 });

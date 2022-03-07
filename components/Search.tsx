@@ -1,6 +1,12 @@
 import { MdSearch } from "react-icons/md";
 
-const Search = ({ setResult }: { setResult: any }) => {
+const Search = ({
+  setResult,
+  placeholder,
+}: {
+  setResult: any;
+  placeholder: string;
+}) => {
   function getInput(e: any) {
     setResult(e.target.value.toLowerCase());
   }
@@ -10,7 +16,7 @@ const Search = ({ setResult }: { setResult: any }) => {
       <input
         className="bg-white dark:bg-gray-700 dark:text-white"
         type="text"
-        placeholder="Search a topic..."
+        placeholder={placeholder}
         onChange={getInput}
       />
       <MdSearch

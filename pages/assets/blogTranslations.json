@@ -1,0 +1,14 @@
+{
+  "blog": [
+    {
+      "locale": "EN",
+      "desc": "All about my ideas, tips and other cool stuff 😎",
+      "placeholder": "Search a topic..."
+    },
+    {
+      "locale": "ES",
+      "desc": "Todo sobre mis ideas, tips y otras cosas cool 😎",
+      "placeholder": "Buscar por tema..."
+    }
+  ]
+}

@@ -1,19 +1,19 @@
 {
   "navbar": [
     {
-      "locale": "en-US",
+      "locale": "EN",
       "about": "About",
       "experiments": "Experiments"
     },
     {
-      "locale": "es-MX",
+      "locale": "ES",
       "about": "Sobre mí",
       "experiments": "Experimentos"
     }
   ],
   "home": [
     {
-      "locale": "en-US",
+      "locale": "EN",
       "title": "Hi There, I'm Oliver",
       "desc_one": "Software developer and open source enthusiast. Welcome to my",
       "desc_two": "where you can find some of my thoughts and blog posts related to my road for",
@@ -35,7 +35,7 @@
       "textLink": "View project"
     },
     {
-      "locale": "es-MX",
+      "locale": "ES",
       "title": "Hola, Soy Oliver",
       "desc_one": "Desarrollador de software y entusiasta open source. Bienvenido a mi",
       "desc_two": "donde puedes encontrar algunos de mis pensamientos y publicaciones relacionadas a mi camino por el",

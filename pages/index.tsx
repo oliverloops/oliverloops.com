@@ -9,7 +9,7 @@ import ProjectCard from "../components/ProjectCard";
 import homeTranslations from "./assets/homeTranslations.json";
 
 export default function Home() {
-  const { locale, locales, asPath } = useRouter();
+  const { locale } = useRouter();
 
   return (
     <>

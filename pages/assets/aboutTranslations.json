@@ -1,0 +1,70 @@
+{
+  "about": [
+    {
+      "locale": "EN",
+      "title": "About Me",
+      "desc": [
+        {
+          "p1": "I'm a software developer, open source and tech enthusiast. working most of my time for my software agency",
+          "p2": "Out of tech I have some hobbies like cook new stuff (like italian food 👨‍🍳), try become a rookie barista ☕ or read about astronomy 🪐  and Sci-fi 🛸.",
+          "p3": "I want it to share useful tips, guides and ideas around my own experience and share my mobile development learning path. I hope this little space on the internet will be useful to you."
+        }
+      ],
+      "books": "Books",
+      "reading": "Reading now",
+      "tech": "My Tech Stack",
+      "techsub": "This is the technology stack I use the most on my daily work or just for fun",
+      "stack": [
+        {
+          "javascript": "The language I love and hate the most.",
+          "typescript": "Is literally JavaScript with syntax for types.",
+          "react": "The JavaScript library for building user interfaces.",
+          "react_native": "Create native apps for Android and iOS using React.",
+          "swift": "One of the most beautiful designed programming languages I ever used.",
+          "swift_ui": "New declarative syntax to build UI's for the Apple ecosystem.",
+          "tailwind": "Rapidly build modern websites without ever leaving your HTML.",
+          "next": "A powerful framework to build modern React websites.",
+          "node": "The JavaScript runtime built on Chrome's V8 engine.",
+          "graphql": "A query language for your API.",
+          "planetscale": "The database for developers.",
+          "mongodb": "A document based NoSQL database.",
+          "vercel": "Develop. Preview. Ship.",
+          "netlify": "Build, deploy and scale modern web projects."
+        }
+      ]
+    },
+    {
+      "locale": "ES",
+      "title": "Sobre mí",
+      "desc": [
+        {
+          "p1": "Soy un desarrollador de software, entusiasta del open source y la tecnología. trabajando la mayor parte del tiempo en mi agencia de software",
+          "p2": "Fuera de la tecnología tengo algunos pasatiempos como cocinar cosas nuevas (como comida italiana 👨‍🍳), intentar convertirme en un barista novato ☕ o leer sobre astronomía 🪐  y ciencia ficción 🛸 .",
+          "p3": "Quiero compartir tips utiles, guias e ideas bajo mi experiencia y compartir mi camino por el aprendizaje del desarrollo móvil. Espero que este pequeño espacio en internet sea de utilidad para ti."
+        }
+      ],
+      "books": "Libros",
+      "reading": "Leyendo ahora",
+      "tech": "Mi Stack de Tecnologías",
+      "techsub": "Este es el stack que uso en su mayoría durante el trabajo o solo por diversión",
+      "stack": [
+        {
+          "javascript": "El lenguaje que mas amo y odio.",
+          "typescript": "Es literalmente JavaScript pero con sintáxis para tipos.",
+          "react": "La biblioteca de JavaScript para crear interfaces de usuario.",
+          "react_native": "Crea aplicaciones nativas para Android y iOS usando React.",
+          "swift": "Uno de los lenguajes de programación mejor diseñados que he utilizado.",
+          "swift_ui": "Nueva sintáxis declarativa para crear UI's en el ecosistema de Apple.",
+          "tailwind": "Construya rápidamente sitios web modernos sin salir de HTML.",
+          "next": "Un framework poderoso para crear sitios modernos con React.",
+          "node": "Entorno de ejecución de JavaScript construido sobre el motor V8 de Google.",
+          "graphql": "Un lenguaje de consultas para tu API.",
+          "planetscale": "La base de datos para desarrolladores.",
+          "mongodb": "Una base de datos NoSQL basada en documentos.",
+          "vercel": "Develop. Preview. Ship.",
+          "netlify": "Construye, despliega y escala proyectos web modernos."
+        }
+      ]
+    }
+  ]
+}

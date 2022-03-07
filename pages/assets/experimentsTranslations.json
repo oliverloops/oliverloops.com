@@ -1,0 +1,14 @@
+{
+  "experiments": [
+    {
+      "locale": "EN",
+      "title": "Experiments",
+      "desc": "Active and past projects with some visual experiments."
+    },
+    {
+      "locale": "ES",
+      "title": "Experimentos",
+      "desc": "Proyectos activos y pasados con algunos experimentos visuales."
+    }
+  ]
+}
