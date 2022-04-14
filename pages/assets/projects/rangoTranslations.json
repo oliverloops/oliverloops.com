@@ -1,0 +1,14 @@
+{
+  "content": [
+    {
+      "locale": "EN",
+      "description": "Rango is a digital agency that builds software for startups and etrepreneurs. I built the marketing landing page and lauch to production.",
+      "link": "Visit site"
+    },
+    {
+      "locale": "ES",
+      "description": "Rango es una agencia digital que crea software para startups y emprendedores. Construí el sitio web para marketing y lanzé a producción.",
+      "link": "Visitar sitio"
+    }
+  ]
+}

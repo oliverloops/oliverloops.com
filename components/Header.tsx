@@ -150,20 +150,31 @@ export default function Header() {
             </Link>
           </div>
         </li>
-        <div className="p-4 px-6">
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={() => switchTheme()}
-            className="flex justify-center items-center rounded-full bg-gray-200 dark:bg-gray-700 h-10 w-10"
-          >
-            {darkContext.theme === "dark" ? (
-              <HiSun className="icon dark:text-white" />
-            ) : (
-              <IoMdMoon className="icon" />
-            )}
-          </motion.button>
-        </div>
+        <li className="flex items-center">
+          <div className="p-4 px-6">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={() => switchTheme()}
+              className="flex justify-center items-center rounded-full bg-gray-200 dark:bg-gray-700 h-10 w-10"
+            >
+              {darkContext.theme === "dark" ? (
+                <HiSun className="icon dark:text-white" />
+              ) : (
+                <IoMdMoon className="icon" />
+              )}
+            </motion.button>
+          </div>
+          <div className="p-1 sm:p-4">
+            {locales?.map((l, i) => (
+              <Link key={i} href={asPath} locale={l}>
+                <a className="bsic-text py-1 after:bg-black dark:after:bg-white underline-animation text-md font-semibold dark:text-white">
+                  {l}
+                </a>
+              </Link>
+            ))}
+          </div>
+        </li>
       </ul>
     </>
   );

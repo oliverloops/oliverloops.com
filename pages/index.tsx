@@ -29,7 +29,7 @@ export default function Home() {
                     👋
                   </span>
                 </h1>
-                <h3 className="remarkable md:text-lg  text-gray-500 dark:text-gray-400 leading-relaxed max-w-xl py-4 pr-8 md:pr-0">
+                <h3 className="remarkable md:text-lg  text-gray-500 dark:text-gray-400 leading-relaxed text-left max-w-xl py-4">
                   {text.desc_one}{" "}
                   <span className="text-green-500 dark:text-green-400">
                     {text.colored[0].digital_garden}

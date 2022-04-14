@@ -57,6 +57,11 @@ const PreviewImage = styled(Image)`
   border-radius: 8px 0 0 0;
   filter: grayscale(1);
   opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+    filter: grayscale(0);
+  }
 `;
 
 const PreviewContainer = styled.div`

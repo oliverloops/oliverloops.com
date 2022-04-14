@@ -15,8 +15,8 @@
     {
       "locale": "EN",
       "title": "Hi There, I'm Oliver",
-      "desc_one": "Software developer and open source enthusiast. Welcome to my",
-      "desc_two": "where you can find some of my thoughts and blog posts related to my road for",
+      "desc_one": "Software developer and tech enthusiast. Welcome to my",
+      "desc_two": "where you will find some of my thoughts and blog posts related to my road for",
       "desc_three": "and some experiments with",
       "colored": [
         { "digital_garden": "digital garden", "ios_dev": "iOS development" }
@@ -37,8 +37,8 @@
     {
       "locale": "ES",
       "title": "Hola, Soy Oliver",
-      "desc_one": "Desarrollador de software y entusiasta open source. Bienvenido a mi",
-      "desc_two": "donde puedes encontrar algunos de mis pensamientos y publicaciones relacionadas a mi camino por el",
+      "desc_one": "Desarrollador de software y entusiasta de la tecnología. Bienvenido a mi",
+      "desc_two": "donde encontrarás algunos de mis pensamientos y publicaciones relacionadas a mi camino por el",
       "desc_three": "y algunos experimentos con",
       "colored": [
         { "digital_garden": "jardín digital", "ios_dev": "desarrollo en iOS" }
