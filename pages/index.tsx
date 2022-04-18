@@ -21,11 +21,7 @@ export default function Home() {
               <div className="flex flex-col">
                 <h1 className="heading font-bold text-3xl md:text-4xl lg:text-5xl  dark:text-white">
                   {text.title}{" "}
-                  <span
-                    className="hidden md:inline"
-                    role="img"
-                    aria-label="waving hand"
-                  >
+                  <span role="img" aria-label="waving hand">
                     👋
                   </span>
                 </h1>
@@ -35,11 +31,14 @@ export default function Home() {
                     {text.colored[0].digital_garden}
                   </span>{" "}
                   {text.desc_two}{" "}
-                  <span className="text-orange-500 dark:text-orange-400">
-                    {text.colored[0].ios_dev}
+                  <span className="text-purple-500 dark:text-purple-400">
+                    {text.colored[0].product_dev}
                   </span>{" "}
                   {text.desc_three}{" "}
-                  <span className="text-blue-400">React (Native)</span>.
+                  <span className="text-yellow-500 dark:text-yellow-400">
+                    javascript
+                  </span>{" "}
+                  {text.desc_four}
                 </h3>
               </div>
               <figure className="w-28 h-28 md:w-36 md:h-36 relative px-2 my-4">

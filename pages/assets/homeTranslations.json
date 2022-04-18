@@ -16,10 +16,14 @@
       "locale": "EN",
       "title": "Hi There, I'm Oliver",
       "desc_one": "Software developer and tech enthusiast. Welcome to my",
-      "desc_two": "where you will find some of my thoughts and blog posts related to my road for",
-      "desc_three": "and some experiments with",
+      "desc_two": "where you will find some of my thoughts and blog posts about",
+      "desc_three": "and some",
+      "desc_four": "experiments.",
       "colored": [
-        { "digital_garden": "digital garden", "ios_dev": "iOS development" }
+        {
+          "digital_garden": "digital garden",
+          "product_dev": "product development"
+        }
       ],
       "recent_posts": "Recent Posts",
       "read_all": "Read all posts",
@@ -38,10 +42,13 @@
       "locale": "ES",
       "title": "Hola, Soy Oliver",
       "desc_one": "Desarrollador de software y entusiasta de la tecnología. Bienvenido a mi",
-      "desc_two": "donde encontrarás algunos de mis pensamientos y publicaciones relacionadas a mi camino por el",
-      "desc_three": "y algunos experimentos con",
+      "desc_two": "donde encontrarás algunos de mis pensamientos y publicaciones sobre",
+      "desc_three": "y algunos experimentos en",
       "colored": [
-        { "digital_garden": "jardín digital", "ios_dev": "desarrollo en iOS" }
+        {
+          "digital_garden": "jardín digital",
+          "product_dev": "desarrollo de productos"
+        }
       ],
       "recent_posts": "Publicaciones recientes",
       "read_all": "Ver todas",
