@@ -2,13 +2,61 @@
   "content": [
     {
       "locale": "EN",
-      "description": "Rango is a digital agency that builds software for startups and etrepreneurs. I built the marketing landing page and lauch to production.",
-      "link": "Visit site"
+      "description": "Rango is a digital agency that builds software for startups and entrepreneurs. I built the marketing landing site and launch it to production.",
+      "link": "Visit site",
+      "subtitle_one": [
+        {
+          "title": "Project Purpose",
+          "desc": "Build and enganging website that attracts new potential customers and leads to new business."
+        }
+      ],
+      "subtitle_two": [
+        {
+          "title": "Stack explanation",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor libero, lacinia laoreet imperdiet a, finibus sed nibh. Nullam felis felis, suscipit nec dictum at, mattis vel massa."
+        }
+      ],
+      "subtitle_three": [
+        {
+          "title": "Problems solved",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor libero, lacinia laoreet imperdiet a, finibus sed nibh. Nullam felis felis, suscipit nec dictum at, mattis vel massa."
+        }
+      ],
+      "subtitle_four": [
+        {
+          "title": "Conclusion",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor libero, lacinia laoreet imperdiet a, finibus sed nibh. Nullam felis felis, suscipit nec dictum at, mattis vel massa."
+        }
+      ]
     },
     {
       "locale": "ES",
-      "description": "Rango es una agencia digital que crea software para startups y emprendedores. Construí el sitio web para marketing y lanzé a producción.",
-      "link": "Visitar sitio"
+      "description": "Rango es una agencia digital que crea software para startups y emprendedores. Construí el sitio web de marketing y lo puse en producción.",
+      "link": "Visitar sitio",
+      "subtitle_one": [
+        {
+          "title": "Propósito del proyecto",
+          "desc": "Construir un sitio web atractivo que atraiga a nuevos clientes potenciales y conduzca a nuevos negocios."
+        }
+      ],
+      "subtitle_two": [
+        {
+          "title": "Explicación del stack",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor libero, lacinia laoreet imperdiet a, finibus sed nibh. Nullam felis felis, suscipit nec dictum at, mattis vel massa."
+        }
+      ],
+      "subtitle_three": [
+        {
+          "title": "Problemas resueltos",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor libero, lacinia laoreet imperdiet a, finibus sed nibh. Nullam felis felis, suscipit nec dictum at, mattis vel massa."
+        }
+      ],
+      "subtitle_four": [
+        {
+          "title": "Conclusión",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor libero, lacinia laoreet imperdiet a, finibus sed nibh. Nullam felis felis, suscipit nec dictum at, mattis vel massa."
+        }
+      ]
     }
   ]
 }
