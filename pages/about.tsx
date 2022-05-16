@@ -94,7 +94,7 @@ export default function About() {
                 />
                 <figcaption className="py-2 lg:py-4">
                   <p className="text-md md:text-xl font-semibold">
-                    Atomic Desing
+                    Atomic Design
                   </p>
                   <p className="text-sm md:text-lg text-gray-400">Brad Frost</p>
                 </figcaption>
