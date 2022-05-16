@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
-class MyDocument extends Document {
+class MyDocument extends Document<any> {
   static getInitialProps({ renderPage }: { renderPage: any }) {
     // Create an instance of ServerStyleSheet
     const sheet = new ServerStyleSheet();

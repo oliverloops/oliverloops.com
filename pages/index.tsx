@@ -31,7 +31,7 @@ export default function Home() {
                     {text.colored[0].digital_garden}
                   </span>{" "}
                   {text.desc_two}{" "}
-                  <span className="text-purple-500 dark:text-purple-400">
+                  <span className="text-blue-400 dark:text-blue-300">
                     {text.colored[0].product_dev}
                   </span>{" "}
                   {text.desc_three}{" "}

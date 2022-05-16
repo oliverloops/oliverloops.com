@@ -36,7 +36,7 @@ const Content = ({ meta }: { meta: any }) => {
         {meta.title}
       </p>
       <div className="flex justify-between items-end pt-2">
-        <div className="flex items-center">
+        {/* <div className="flex items-center">
           <FiEye
             className="text-black dark:text-gray-100 transition-all"
             size={21}
@@ -44,7 +44,7 @@ const Content = ({ meta }: { meta: any }) => {
           <p className="basic-text text-sm md:text-base text-black dark:text-gray-100 font-semibold ml-1.5 transition-all">
             0 Views
           </p>
-        </div>
+        </div> */}
         <div className="flex flex-col text-gray-400">
           <p className="basic-text text-sm md:text-base text-black dark:text-gray-100 font-semibold transition-all">
             {meta.readTime} min read

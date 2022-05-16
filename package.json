@@ -37,6 +37,7 @@
     "typescript": "^4.5.2"
   },
   "devDependencies": {
+    "@types/webpack-env": "^1.16.4",
     "babel-plugin-styled-components": "^1.12.0"
   }
 }

@@ -87,7 +87,7 @@ export default function Header() {
                     {locales?.map((l, i) => (
                       <Link key={i} href={asPath} locale={l}>
                         <a className="bsic-text py-1 after:bg-black dark:after:bg-white underline-animation text-md font-semibold dark:text-white">
-                          {l}
+                          {l === "EN" ? l.concat("/") : l}
                         </a>
                       </Link>
                     ))}

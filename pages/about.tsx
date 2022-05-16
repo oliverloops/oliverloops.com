@@ -152,7 +152,7 @@ export default function About() {
                 name={"React Native"}
                 desc={text.stack[0].react_native}
               />
-              <AppItem
+              {/* <AppItem
                 url={"https://developer.apple.com/swift/"}
                 image={"/static/images/logos/swift_logo.png"}
                 name={"Swift"}
@@ -163,7 +163,7 @@ export default function About() {
                 image={"/static/images/logos/swiftui_logo.png"}
                 name={"Swift UI"}
                 desc={text.stack[0].swift_ui}
-              />
+              /> */}
               <AppItem
                 url={"https://tailwindcss.com/"}
                 image={"/static/images/logos/tailwind.png"}
