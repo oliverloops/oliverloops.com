@@ -23,6 +23,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Cal Sans";
+  src: url("/fonts/CalSans/CalSans-SemiBold.ttf");
+  font-weight: 600;
+  font-style: medium;
+  font-display: swap;
+}
+
 /* Custom component styles */
 html {
   margin: 0;

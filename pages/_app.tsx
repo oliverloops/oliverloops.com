@@ -1,5 +1,4 @@
 import "../styles/global.css";
-import "@grikomsn/cal-sans";
 import Layout from "../components/Layout";
 import { ThemeProvider } from "next-themes";
 

@@ -41,6 +41,13 @@ class MyDocument extends Document<any> {
             type="font/ttf"
             crossOrigin="anonymous"
           />
+          <link
+            rel="preload"
+            href="/fonts/CalSans/CalSans-SemiBold.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin="anonymous"
+          />
         </Head>
         <body className="bg-gray-50 text-black dark:bg-gray-900 dark:text-white">
           <Main />
