@@ -21,7 +21,7 @@ export const Post = ({ post }: { post: any }) => {
             {meta.title}
           </p>
           <div className="flex justify-between items-end pt-2">
-            <div className="flex items-center">
+            {/* <div className="flex items-center">
               <FiEye
                 className="text-black dark:text-gray-100 transition-all"
                 size={18}
@@ -29,7 +29,7 @@ export const Post = ({ post }: { post: any }) => {
               <p className="basic-text text-xs md:text-sm text-black dark:text-gray-100 font-semibold ml-1.5 transition-all">
                 0 Views
               </p>
-            </div>
+            </div> */}
             <div className="flex flex-col text-gray-400">
               <p className="basic-text text-xs md:text-sm text-black dark:text-gray-100 font-semibold transition-all">
                 {meta.readTime} min read

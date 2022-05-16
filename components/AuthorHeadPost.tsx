@@ -40,10 +40,10 @@ export default function AuthorHeadPost({
           >
             {meta.readTime} min read
           </p>
-          <span className="text-sm text-gray-700 dark:text-gray-300">-</span>
-          <span className="flex items-center basic-text text-sm text-gray-700 dark:text-gray-300">
+          {/* <span className="text-sm text-gray-700 dark:text-gray-300">-</span> */}
+          {/* <span className="flex items-center basic-text text-sm text-gray-700 dark:text-gray-300">
             <FiEye size={16} /> &nbsp; 0 Views
-          </span>
+          </span> */}
         </div>
       </div>
     </div>
