@@ -45,7 +45,7 @@ export default function Home() {
                 <Image
                   layout="fill"
                   className="rounded-full"
-                  src={"/static/images/me_outside.jpeg"}
+                  src={"/static/images/me.jpg"}
                   alt={"Oliver Lopez"}
                 />
               </figure>

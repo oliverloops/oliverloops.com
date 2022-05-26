@@ -145,7 +145,7 @@ export default function Header() {
           <div className="border-b-2 border-gray-200 px-2 py-2">
             <Link href="/portfolio">
               <a className="basic-text text-xl font-semibold dark:text-white">
-                Experiments
+                Portfolio
               </a>
             </Link>
           </div>
