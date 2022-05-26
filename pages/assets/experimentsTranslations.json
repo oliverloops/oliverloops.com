@@ -2,13 +2,13 @@
   "experiments": [
     {
       "locale": "EN",
-      "title": "Experiments",
-      "desc": "Active and past projects with some visual experiments."
+      "title": "Portfolio",
+      "desc": "Active and past projects."
     },
     {
       "locale": "ES",
-      "title": "Experimentos",
-      "desc": "Proyectos activos y pasados con algunos experimentos visuales."
+      "title": "Portafolio",
+      "desc": "Proyectos activos y pasados."
     }
   ]
 }

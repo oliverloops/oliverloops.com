@@ -125,6 +125,56 @@ export default function Portfolio() {
                 {text.desc}
               </p>
             </span>
+            <a href="https://arriba.com">
+              <Div className="bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-1 md:my-2 md:max-w-4xl md:mx-auto">
+                <div className="p-4">
+                  <span className="flex">
+                    <AppImage
+                      src={"/static/images/portfolio/arriba_logo.png"}
+                      width={58}
+                      height={58}
+                      alt={"Arriba Logo"}
+                    />
+                    <div className="flex flex-col ">
+                      <p className="heading pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
+                        Arriba
+                      </p>
+                      <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
+                        Crypto Exchange for LATAM
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <Circle
+                  style={{ backgroundColor: "#000" }}
+                  id="circle"
+                ></Circle>
+                <ArrowContainer id="arrow" className="text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M5 12h13M12 5l7 7-7 7"></path>
+                  </svg>
+                </ArrowContainer>
+                <PreviewContainer id="preview" className="shadow-xl">
+                  <PreviewImage
+                    id={"preview-image"}
+                    src={"/static/images/portfolio/arriba_web.png"}
+                    width={450}
+                    height={230}
+                    alt={"Desktop View"}
+                  />
+                </PreviewContainer>
+              </Div>
+            </a>
             <a href="https://rango.dev">
               <Div className="bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-lg my-1 md:my-2 md:max-w-4xl md:mx-auto">
                 <div className="p-4">
@@ -381,56 +431,6 @@ export default function Portfolio() {
                   <PreviewImage
                     id={"preview-image"}
                     src={"/static/images/portfolio/kila_web.png"}
-                    width={450}
-                    height={230}
-                    alt={"Desktop View"}
-                  />
-                </PreviewContainer>
-              </Div>
-            </a>
-            <a href="#">
-              <Div className="bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-1 md:my-2 md:max-w-4xl md:mx-auto">
-                <div className="p-4">
-                  <span className="flex">
-                    <AppImage
-                      src={"/static/images/portfolio/natours_logo.png"}
-                      width={58}
-                      height={58}
-                      alt={"Natours Logo"}
-                    />
-                    <div className="flex flex-col ">
-                      <p className="heading pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
-                        Natours
-                      </p>
-                      <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
-                        Pure CSS challenge
-                      </p>
-                    </div>
-                  </span>
-                </div>
-                <Circle
-                  style={{ backgroundColor: "rgb(155, 213, 181)" }}
-                  id="circle"
-                ></Circle>
-                <ArrowContainer id="arrow" className="text-white">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M5 12h13M12 5l7 7-7 7"></path>
-                  </svg>
-                </ArrowContainer>
-                <PreviewContainer id="preview" className="shadow-xl">
-                  <PreviewImage
-                    id={"preview-image"}
-                    src={"/static/images/portfolio/natours_web.png"}
                     width={450}
                     height={230}
                     alt={"Desktop View"}
