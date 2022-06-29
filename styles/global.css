@@ -162,7 +162,7 @@ footer {
   bottom: 0;
   left: 0;
   background-color: #000;
-  transform-origin: bottom right;
+  transform-origin: bottom left;
   transition: transform 0.25s ease-out;
 }
 

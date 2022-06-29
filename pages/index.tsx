@@ -16,7 +16,7 @@ export default function Home() {
       {homeTranslations.home
         .filter((p) => p.locale === locale)
         .map((text) => (
-          <div className="flex flex-col place-self-center md:max-w-3/5 md:w-3/5 md:pt-14 pb-12">
+          <div className="flex flex-col place-self-center md:w-3/5 md:pt-14 pb-12">
             <div className="flex flex-col-reverse md:flex-row justify-between md:py-4 mb-8">
               <div className="flex flex-col">
                 <h1 className="heading font-bold text-3xl md:text-4xl lg:text-5xl  dark:text-white">
