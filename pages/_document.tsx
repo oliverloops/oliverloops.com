@@ -49,7 +49,7 @@ class MyDocument extends Document<any> {
             crossOrigin="anonymous"
           />
         </Head>
-        <body className="bg-gray-50 text-black dark:bg-gray-900 dark:text-white">
+        <body className="transition duration-300 bg-gray-50 text-black dark:bg-gray-900 dark:text-white">
           <Main />
           <NextScript />
         </body>

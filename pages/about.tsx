@@ -59,7 +59,7 @@ export default function About() {
       {aboutTranslations.about
         .filter((p) => p.locale === locale)
         .map((text) => (
-          <div className="flex flex-col items-start text-left md:max-w-3/5 md:w-3/5 mx-auto my-16">
+          <div className="flex flex-col justify-center items-start max-w-3xl w-full mx-auto text-left py-8 md:py-4 pb-20">
             <h1 className="heading font-bold text-3xl md:text-4xl mb-4 text-black dark:text-white">
               {text.title}
             </h1>

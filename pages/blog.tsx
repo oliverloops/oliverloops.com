@@ -18,7 +18,7 @@ export default function Blog() {
       {blogTranslations.blog
         .filter((p) => p.locale === locale)
         .map((text) => (
-          <div className="flex flex-col md:max-w-3/5 md:w-3/5 mx-auto pt-12 pb-20">
+          <div className="flex flex-col justify-center items-start max-w-3xl w-full mx-auto py-8 md:py-4 pb-20">
             <span className="mb-8">
               <h1 className="heading text-3xl md:text-4xl dark:text-white transition-all">
                 Blog
@@ -28,7 +28,7 @@ export default function Blog() {
               </p>
             </span>
             <Search setResult={setResult} placeholder={text.placeholder} />
-            <main className="grid grid-cols-1 md:grid-cols-2 w-full md:w-11/12 gap-y-14 py-8">
+            <main className="grid grid-cols-1 md:grid-cols-2 w-full gap-y-14 py-8">
               {result === ""
                 ? postList
                     .slice()

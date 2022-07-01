@@ -30,9 +30,9 @@ const Content = ({ meta }: { meta: any }) => {
       whileHover={{ boxShadow: shadowExpandedFormula }}
       whileTap={{ boxShadow: shadowCompressedFormula }}
       style={{ boxShadow: shadowFormula }}
-      className="flex justify-center flex-col px-4 py-6 border-4 bg-white dark:bg-gray-900 border-black dark:border-white rounded-xl"
+      className="transition duration-300 flex justify-center flex-col px-4 py-6 border-4 bg-white dark:bg-gray-900 border-black dark:border-white rounded-xl"
     >
-      <p className="heading text-xl md:text-2xl font-bold text-blue-400 dark:text-blue-300 pr-2 pb-2 transition-all">
+      <p className="transition duration-300 heading text-xl md:text-2xl font-bold text-blue-400 dark:text-blue-300 pr-2 pb-2">
         {meta.title}
       </p>
       <div className="flex justify-between items-end pt-2">
@@ -46,10 +46,10 @@ const Content = ({ meta }: { meta: any }) => {
           </p>
         </div> */}
         <div className="flex flex-col text-gray-400">
-          <p className="basic-text text-sm md:text-base text-black dark:text-gray-100 font-semibold transition-all">
+          <p className="transition duration-300 basic-text text-sm md:text-base text-black dark:text-gray-100 font-semibold">
             {meta.readTime} min read
           </p>
-          <p className="basic-text text-sm md:text-base text-black  dark:text-gray-100  font-medium transition-all">
+          <p className="transition duration-300 basic-text text-sm md:text-base text-black  dark:text-gray-100  font-medium">
             {meta.date}
           </p>
         </div>
