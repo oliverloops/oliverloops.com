@@ -7,7 +7,7 @@ const RangoShowcase = () => {
   const { locale } = useRouter();
 
   return (
-    <div className="flex flex-col justify-center items-start max-w-3xl mx-auto w-full pb-16">
+    <div className="flex flex-col justify-center items-start max-w-3xl mx-auto w-full pt-12 md:pt-4 pb-16">
       <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-auto gap-4 place-self-center w-full">
         <div className="col-start-1 md:col-span-2">
           <h1 className="text-3xl md:text-4xl mb-4">Rango.dev</h1>

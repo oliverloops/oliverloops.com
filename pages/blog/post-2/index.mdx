@@ -11,13 +11,15 @@ export const meta = {
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
-<Image
-  src={"/static/images/blog_img/the-3-masks/3masks.jpg"}
-  alt={"City Banner"}
-  layout="responsive"
-  width={1000}
-  height={333}
-/>
+<div>
+  <Image
+    src={"/static/images/blog_img/the-3-masks/3masks.jpg"}
+    alt={"City Banner"}
+    layout="responsive"
+    width={1000}
+    height={333}
+  />
+</div>
 
 <p className="break-words text-md text-left leading-relaxed text-gray-700 dark:text-white">
   Since the introduction of React Hooks on React 16.8 version the way we build
