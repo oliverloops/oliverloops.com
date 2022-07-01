@@ -18,14 +18,14 @@ export default function ProjectCard({
   return (
     <div className="mb-4 md:mb-8 my-4">
       <div className="flex flex-col pr-6 rounded transition-all">
-        <figure className="h-44 md:h-52 md:max-h-52 rounded-xl transition-all">
+        <div className="h-44 md:h-52 rounded-xl transition-all">
           <img
             className="rounded-xl border-4 border-black dark:border-white"
             src={image}
             width={900}
             height={400}
           />
-        </figure>
+        </div>
         <div className="flex flex-col py-4">
           <h4 className="heading text-xl text-gray-900 dark:text-gray-100 transition-all">
             {title}

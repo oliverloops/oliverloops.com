@@ -16,16 +16,16 @@ export default function Home() {
       {homeTranslations.home
         .filter((p) => p.locale === locale)
         .map((text) => (
-          <div className="flex flex-col place-self-center md:w-3/5 md:pt-14 pb-12">
-            <div className="flex flex-col-reverse md:flex-row justify-between md:py-4 mb-8">
+          <div className="flex flex-col justify-center items-start max-w-3xl mx-auto pb-16">
+            <div className="flex flex-col-reverse sm:flex-row items-start md:py-4 mb-8">
               <div className="flex flex-col">
-                <h1 className="heading font-bold text-3xl md:text-4xl lg:text-5xl  dark:text-white">
+                <h1 className="heading font-bold text-3xl md:text-4xl lg:text-5xl dark:text-white">
                   {text.title}{" "}
                   <span role="img" aria-label="waving hand">
                     👋
                   </span>
                 </h1>
-                <h3 className="remarkable md:text-lg  text-gray-500 dark:text-gray-400 leading-relaxed text-left max-w-xl py-4">
+                <h3 className="remarkable md:text-md text-gray-500 dark:text-gray-400 leading-relaxed text-left max-w-xl mx-auto py-4 mr-4">
                   {text.desc_one}{" "}
                   <span className="text-green-500 dark:text-green-400">
                     {text.colored[0].digital_garden}

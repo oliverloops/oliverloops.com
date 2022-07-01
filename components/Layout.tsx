@@ -35,13 +35,11 @@ export default function Layout({
       <darkMode.Provider
         value={{ theme: theme, setTheme: setTheme, isMounted: isMounted }}
       >
-        <main>
-          <Header />
-          <div className="flex flex-col justify-center items-start w-10/12 max-w-10/12 md:w-full md:max-w-full mx-auto dark:bg-gray-900">
-            {children}
-          </div>
-          <Footer />
+        <Header />
+        <main className="flex flex-col justify-center px-8 md:py-8 dark:bg-gray-900">
+          {children}
         </main>
+        <Footer />
       </darkMode.Provider>
     </>
   );

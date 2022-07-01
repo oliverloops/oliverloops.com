@@ -48,8 +48,8 @@ export default function Header() {
 
   return (
     <>
-      <nav className="flex justify-between items-center px-8 py-4 md:px-0 md:py-0 bg-gray-50 dark:bg-gray-900 bg-opacity-40 dark:bg-opacity-60 sticky sticky-nav">
-        <div className="flex flex-col md:flex-row justify-between md:mx-auto md:max-w-3/5 md:w-3/5 md:h-18 ">
+      <div className="flex justify-center items-center px-8 py-4 md:px-0 md:py-0 bg-gray-50 dark:bg-gray-900 bg-opacity-40 dark:bg-opacity-60 sticky sticky-nav">
+        <nav className="flex flex-col md:flex-row justify-between w-full relative max-w-3xl mx-auto md:py-2 md:h-18 ">
           <div className="flex flex-col justify-center">
             <Link href="/">
               <a className="oliverloops text-xl md:text-2xl  dark:text-white">
@@ -109,7 +109,7 @@ export default function Header() {
                 </div>
               ))}
           </div>
-        </div>
+        </nav>
         <div className="md:hidden">
           <button onClick={blockStyle} className="menu-mobile-button">
             <div
@@ -118,7 +118,7 @@ export default function Header() {
             ></div>
           </button>
         </div>
-      </nav>
+      </div>
       <ul
         ref={mobileMenu}
         className="flex-col hidden mobile-navbar-menu-closed fixed"
