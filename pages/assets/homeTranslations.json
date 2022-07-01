@@ -14,9 +14,10 @@
   "home": [
     {
       "locale": "EN",
-      "title": "Hi There, I'm Oliver",
-      "desc_one": "Software developer and tech enthusiast. Welcome to my",
-      "desc_two": "where you will find some of my thoughts and blog posts about",
+      "title": "Hi there, I'm Oliver",
+      "position": "Software Developer and Tech Enthusiast",
+      "desc_one": "Welcome to my",
+      "desc_two": "where you will find some of my projects, ideas and blog posts about",
       "desc_three": "and some",
       "desc_four": "experiments.",
       "colored": [
@@ -41,8 +42,9 @@
     {
       "locale": "ES",
       "title": "Hola, Soy Oliver",
-      "desc_one": "Desarrollador de software y entusiasta de la tecnología. Bienvenido a mi",
-      "desc_two": "donde encontrarás algunos de mis pensamientos y publicaciones sobre",
+      "position": "Desarrollador de Software y Entusiasta Tech",
+      "desc_one": "Bienvenido a mi",
+      "desc_two": "donde encontrarás algunas de mis ideas y publicaciones sobre",
       "desc_three": "y algunos experimentos en",
       "colored": [
         {

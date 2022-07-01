@@ -17,15 +17,18 @@ export default function Home() {
         .filter((p) => p.locale === locale)
         .map((text) => (
           <div className="flex flex-col justify-center items-start max-w-3xl mx-auto pb-16">
-            <div className="flex flex-col-reverse sm:flex-row items-start md:py-4 mb-8">
-              <div className="flex flex-col">
+            <div className="flex flex-col-reverse items-start sm:flex-row md:py-4 mb-8">
+              <div className="flex flex-col pr-8">
                 <h1 className="heading font-bold text-3xl md:text-4xl lg:text-5xl dark:text-white">
                   {text.title}{" "}
                   <span role="img" aria-label="waving hand">
                     👋
                   </span>
                 </h1>
-                <h3 className="remarkable md:text-md text-gray-500 dark:text-gray-400 leading-relaxed text-left max-w-xl mx-auto py-4 mr-4">
+                <h3 className="remarkable md:text-md text-gray-500 dark:text-gray-400 my-2">
+                  {text.position}
+                </h3>
+                <h3 className="remarkable md:text-md text-gray-500 dark:text-gray-400 leading-relaxed text-left max-w-lg mx-auto py-4 mr-8">
                   {text.desc_one}{" "}
                   <span className="text-green-500 dark:text-green-400">
                     {text.colored[0].digital_garden}
@@ -36,19 +39,19 @@ export default function Home() {
                   </span>{" "}
                   {text.desc_three}{" "}
                   <span className="text-yellow-500 dark:text-yellow-400">
-                    javascript
+                    JavaScript
                   </span>{" "}
                   {text.desc_four}
                 </h3>
               </div>
-              <figure className="w-28 h-28 md:w-36 md:h-36 relative px-2 my-4">
+              <div className="w-28 h-28 md:w-36 md:h-36 relative my-4 ml-10 mr-auto md:my-0">
                 <Image
                   layout="fill"
                   className="rounded-full"
-                  src={"/static/images/me.jpg"}
+                  src={"/static/images/me_outside.jpg"}
                   alt={"Oliver Lopez"}
                 />
-              </figure>
+              </div>
             </div>
             <div className="mb-8">
               <h2 className="heading font-bold text-3xl lg:text-4xl dark:text-white">
