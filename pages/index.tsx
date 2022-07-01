@@ -28,7 +28,7 @@ export default function Home() {
                 <h3 className="remarkable md:text-md text-gray-500 dark:text-gray-400 my-2">
                   {text.position}
                 </h3>
-                <h3 className="remarkable md:text-md text-gray-500 dark:text-gray-400 leading-relaxed text-left max-w-lg mx-auto py-4 mr-8">
+                <h3 className="remarkable md:text-md text-gray-500 dark:text-gray-400 leading-relaxed max-w-lg mx-auto py-4 md:mr-8">
                   {text.desc_one}{" "}
                   <span className="text-green-500 dark:text-green-400">
                     {text.colored[0].digital_garden}
@@ -44,7 +44,7 @@ export default function Home() {
                   {text.desc_four}
                 </h3>
               </div>
-              <div className="w-28 h-28 md:w-36 md:h-36 relative my-4 ml-10 mr-auto md:my-0">
+              <div className="w-28 h-28 md:w-36 md:h-36 relative my-6 md:ml-10 md:mr-auto md:my-0">
                 <Image
                   layout="fill"
                   className="rounded-full"
@@ -54,7 +54,7 @@ export default function Home() {
               </div>
             </div>
             <div className="mb-8">
-              <h2 className="heading font-bold text-3xl lg:text-4xl dark:text-white">
+              <h2 className="heading font-bold text-2xl md:text-3xl lg:text-4xl dark:text-white">
                 {text.recent_posts}
               </h2>
               <div className="flex flex-col md:flex-row">
@@ -74,7 +74,7 @@ export default function Home() {
               </Link>
             </div>
             <div>
-              <h2 className="heading py-4 font-bold text-3xl lg:text-4xl dark:text-white">
+              <h2 className="heading py-4 font-bold text-2xl md:text-3xl dark:text-white">
                 {text.projects}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2">

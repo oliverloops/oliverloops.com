@@ -8,8 +8,8 @@ import experimentsTranslations from "./assets/experimentsTranslations.json";
 
 //Custom styled components
 const Div = styled.div`
-  height: 350px;
-  width: 700px;
+  height: 380px;
+  width: "100%";
   position: relative;
   overflow: hidden;
 
@@ -28,7 +28,7 @@ const Div = styled.div`
         rotateZ(0deg);
       transition: transform 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 
-      & > div > #preview-image {
+      & > span > #preview-image {
         opacity: 1;
         filter: grayscale(0);
         transition: opacity 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
@@ -54,7 +54,7 @@ const AppImage = styled(Image)`
 `;
 
 const PreviewImage = styled(Image)`
-  border-radius: 8px 0 0 0;
+  border-radius: 10px 0 0 0;
   filter: grayscale(1);
   opacity: 0.2;
 
@@ -126,7 +126,7 @@ export default function Portfolio() {
               </p>
             </span>
             <a href="https://arriba.com">
-              <Div className="bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-2 md:max-w-4xl md:mx-auto">
+              <Div className="bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-lg py-2 my-2 md:max-w-4xl md:mx-auto">
                 <div className="p-4">
                   <span className="flex">
                     <AppImage
@@ -168,8 +168,8 @@ export default function Portfolio() {
                   <PreviewImage
                     id={"preview-image"}
                     src={"/static/images/portfolio/arriba_web.png"}
-                    width={450}
-                    height={230}
+                    width={445}
+                    height={255}
                     alt={"Desktop View"}
                   />
                 </PreviewContainer>
@@ -219,10 +219,11 @@ export default function Portfolio() {
                 </ArrowContainer>
                 <PreviewContainer id="preview" className="shadow-xl">
                   <PreviewImage
+                    priority
                     id={"preview-image"}
                     src={"/static/images/portfolio/rango_web.png"}
-                    width={450}
-                    height={230}
+                    width={445}
+                    height={265}
                     alt={"Desktop View"}
                   />
                 </PreviewContainer>
@@ -274,8 +275,8 @@ export default function Portfolio() {
                   <PreviewImage
                     id={"preview-image"}
                     src={"/static/images/portfolio/fitcloud_web.png"}
-                    width={450}
-                    height={230}
+                    width={445}
+                    height={255}
                     alt={"Desktop View"}
                   />
                 </PreviewContainer>
@@ -328,8 +329,8 @@ export default function Portfolio() {
                   <PreviewImage
                     id={"preview-image"}
                     src={"/static/images/portfolio/barrio_intercambia_web.png"}
-                    width={450}
-                    height={230}
+                    width={445}
+                    height={260}
                     alt={"Desktop View"}
                   />
                 </PreviewContainer>
@@ -381,8 +382,8 @@ export default function Portfolio() {
                   <PreviewImage
                     id={"preview-image"}
                     src={"/static/images/portfolio/react_hider_web.png"}
-                    width={450}
-                    height={230}
+                    width={445}
+                    height={255}
                     alt={"Desktop View"}
                   />
                 </PreviewContainer>
@@ -431,8 +432,8 @@ export default function Portfolio() {
                   <PreviewImage
                     id={"preview-image"}
                     src={"/static/images/portfolio/kila_web.png"}
-                    width={450}
-                    height={230}
+                    width={445}
+                    height={255}
                     alt={"Desktop View"}
                   />
                 </PreviewContainer>
