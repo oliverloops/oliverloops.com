@@ -6,7 +6,17 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        handmove: {
+          "0%, 100%": { transform: "rotate(-8deg)" },
+          "50%": { transform: "rotate(8deg)" },
+        },
+      },
+      animation: {
+        handmove: "handmove 1.5s ease-in-out 1s infinite",
+      },
+    },
     screens: {
       sm: "640px",
       md: "768px",

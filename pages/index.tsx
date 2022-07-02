@@ -21,9 +21,11 @@ export default function Home() {
               <div className="flex flex-col pr-8">
                 <h1 className="heading font-bold text-3xl md:text-4xl lg:text-5xl dark:text-white">
                   {text.title}{" "}
-                  <span role="img" aria-label="waving hand">
-                    👋
-                  </span>
+                  <div className="inline-block animate-handmove">
+                    <span role="img" aria-label="waving hand">
+                      👋
+                    </span>
+                  </div>
                 </h1>
                 <h3 className="remarkable md:text-md text-gray-500 dark:text-gray-400 my-2">
                   {text.position}

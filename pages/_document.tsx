@@ -17,7 +17,7 @@ class MyDocument extends Document<any> {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang="en-US">
         <Head>
           {this.props.styleTags}
           <link
