@@ -48,7 +48,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="transition duration-150  flex justify-center items-center px-8 py-4 md:px-0 md:py-0 bg-gray-50 dark:bg-gray-900 bg-opacity-40 dark:bg-opacity-60 sticky sticky-nav">
+      <div className="transition duration-300 flex justify-center items-center px-8 py-4 md:px-0 md:py-0 bg-gray-50 dark:bg-gray-900 bg-opacity-40 dark:bg-opacity-60 sticky sticky-nav">
         <nav className="flex flex-col md:flex-row justify-between w-full relative max-w-3xl mx-auto md:py-2 md:h-18 ">
           <div className="flex flex-col justify-center">
             <Link href="/">

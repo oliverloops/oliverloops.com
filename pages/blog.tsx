@@ -20,10 +20,10 @@ export default function Blog() {
         .map((text) => (
           <div className="flex flex-col justify-center items-start max-w-3xl w-full mx-auto py-8 md:py-4 pb-20">
             <span className="mb-8">
-              <h1 className="heading text-3xl md:text-4xl dark:text-white transition-all">
+              <h1 className="heading text-3xl md:text-4xl dark:text-white">
                 Blog
               </h1>
-              <p className="remarkable text-lg font-light mt-2 dark:text-white transition-all">
+              <p className="remarkable text-lg font-light mt-2 dark:text-white">
                 {text.desc}
               </p>
             </span>

@@ -126,7 +126,7 @@ export default function Portfolio() {
               </p>
             </span>
             <a href="https://arriba.com">
-              <Div className="bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-lg py-2 my-2 md:max-w-4xl md:mx-auto">
+              <Div className="transition duration-300 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-lg py-2 my-2 md:max-w-4xl md:mx-auto">
                 <div className="p-4">
                   <span className="flex">
                     <AppImage
@@ -176,7 +176,7 @@ export default function Portfolio() {
               </Div>
             </a>
             <a href="https://rango.dev">
-              <Div className="bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-lg my-2 md:max-w-4xl md:mx-auto">
+              <Div className="transition duration-300 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-lg my-2 md:max-w-4xl md:mx-auto">
                 <div className="p-4">
                   <span className="flex">
                     <AppImage
@@ -190,10 +190,7 @@ export default function Portfolio() {
                         Rango
                       </p>
                       <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
-                        JAMstack based{" "}
-                        <span className="hidden md:inline md:text-black md:dark:text-white">
-                          Solutions
-                        </span>
+                        Digital Agency
                       </p>
                     </div>
                   </span>
@@ -230,7 +227,7 @@ export default function Portfolio() {
               </Div>
             </a>
             <a href="https://fullcodetesting.pythonanywhere.com/">
-              <Div className="bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-2 md:max-w-4xl md:mx-auto">
+              <Div className="transition duration-300 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-2 md:max-w-4xl md:mx-auto">
                 <div className="p-4">
                   <span className="flex">
                     <AppImage
@@ -283,7 +280,7 @@ export default function Portfolio() {
               </Div>
             </a>
             <a href="https://barriointercambia.org/">
-              <Div className="bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-2 md:max-w-4xl md:mx-auto">
+              <Div className="transition duration-300 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-2 md:max-w-4xl md:mx-auto">
                 <div className="p-4">
                   <span className="flex">
                     <AppImage
@@ -337,7 +334,7 @@ export default function Portfolio() {
               </Div>
             </a>
             <a href="https://github.com/oliverloops/react-hider">
-              <Div className="bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-2 md:max-w-4xl md:mx-auto">
+              <Div className="transition duration-300 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-2 md:max-w-4xl md:mx-auto">
                 <div className="p-4">
                   <span className="flex">
                     <AppImage
@@ -390,7 +387,7 @@ export default function Portfolio() {
               </Div>
             </a>
             <a href="https://kilaenvservices.netlify.app">
-              <Div className="bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-2 md:max-w-4xl md:mx-auto">
+              <Div className="transition duration-300 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-2 md:max-w-4xl md:mx-auto">
                 <div className="p-4">
                   <span className="flex">
                     <AppImage

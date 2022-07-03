@@ -48,10 +48,11 @@ export default function Home() {
               </div>
               <div className="w-28 h-28 md:w-36 md:h-36 relative my-6 md:ml-10 md:mr-auto md:my-0">
                 <Image
+                  priority
                   layout="fill"
                   className="rounded-full"
                   src={"/static/images/me_outside.jpg"}
-                  alt={"Oliver Lopez"}
+                  alt="Oliver Lopez"
                 />
               </div>
             </div>

@@ -36,7 +36,7 @@ export default function Layout({
         value={{ theme: theme, setTheme: setTheme, isMounted: isMounted }}
       >
         <Header />
-        <main className="transition duration-300 flex flex-col justify-center px-8 md:py-8 dark:bg-gray-900">
+        <main className="flex flex-col justify-center px-8 md:py-8">
           {children}
         </main>
         <Footer />
