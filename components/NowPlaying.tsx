@@ -8,15 +8,16 @@ export default function NowPlaying() {
 
   return (
     <div className="flex justify-between">
-      <div className="flex">
-        <Image
-          alt="Spotify"
-          className="rounded-full"
-          height={45}
-          width={45}
-          src={data?.albumImageUrl || "/static/images/gorilla.png"}
-        />
-
+      <div className="flex justify-center items-center">
+        <div className="flex flex-col justify-center">
+          <Image
+            alt="Song Cover"
+            className="rounded-full"
+            height={45}
+            width={45}
+            src={data?.albumImageUrl || "/static/images/gorilla.png"}
+          />
+        </div>
         <div className="flex flex-col justify-center items-start ml-2 transition-all">
           <a
             className="remarkable text-sm text-gray-800 dark:text-gray-200 font-semibold w-44 max-w-44 md:w-36 md:max-w-36 truncate transition-all"
