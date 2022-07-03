@@ -27,10 +27,10 @@ export default function Home() {
                     </span>
                   </div>
                 </h1>
-                <h3 className="remarkable md:text-md text-gray-500 dark:text-gray-400 my-2">
+                <p className="remarkable md:text-md text-gray-500 dark:text-gray-400 my-2">
                   {text.position}
-                </h3>
-                <h3 className="remarkable md:text-md text-gray-500 dark:text-gray-400 leading-relaxed max-w-lg mx-auto py-4 md:mr-8">
+                </p>
+                <p className="remarkable md:text-md text-gray-500 dark:text-gray-400 leading-relaxed max-w-lg mx-auto py-4 md:mr-8">
                   {text.desc_one}{" "}
                   <span className="text-green-500 dark:text-green-400">
                     {text.colored[0].digital_garden}
@@ -44,12 +44,13 @@ export default function Home() {
                     JavaScript
                   </span>{" "}
                   {text.desc_four}
-                </h3>
+                </p>
               </div>
               <div className="w-28 h-28 md:w-36 md:h-36 relative my-6 md:ml-10 md:mr-auto md:my-0">
                 <Image
                   priority
                   layout="fill"
+                  sizes="100vw"
                   className="rounded-full"
                   src={"/static/images/me_outside.jpg"}
                   alt="Oliver Lopez"

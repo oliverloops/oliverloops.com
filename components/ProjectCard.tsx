@@ -23,14 +23,15 @@ export default function ProjectCard({
             className="rounded-lg"
             src={image}
             layout="fill"
+            sizes="100vw"
             priority
             alt="project-card"
           />
         </div>
         <div className="flex flex-col py-4">
-          <h4 className="transition duration-300 heading text-xl text-gray-900 dark:text-gray-100">
+          <p className="transition duration-300 heading text-xl text-gray-900 dark:text-gray-100">
             {title}
-          </h4>
+          </p>
           <span className="pt-2 md:pr-4">
             <p className="transition duration-300 basic-text font-medium leading-relaxed text-gray-700 dark:text-gray-300">
               {description}
