@@ -84,22 +84,26 @@ export default function About() {
               {text.reading}
             </h3>
             <div className="flex justify-center py-4">
-              <figure>
-                <Image
-                  className="rounded-lg"
-                  src={"/static/images/books/atomic_design.png"}
-                  width={185}
-                  height={285}
-                  alt={"A book"}
-                />
-                <figcaption className="py-2 lg:py-4">
-                  <p className="text-md md:text-xl font-semibold">
-                    Atomic Design
-                  </p>
-                  <p className="text-sm md:text-lg text-gray-400">Brad Frost</p>
-                </figcaption>
-              </figure>
-              <div className="ml-8">
+              <div className="w-1/2 max-w-1/2">
+                <figure>
+                  <Image
+                    className="rounded-lg"
+                    src={"/static/images/books/androids.jpeg"}
+                    width={185}
+                    height={285}
+                    alt={"A book"}
+                  />
+                  <figcaption className="py-2 lg:py-4">
+                    <p className="text-md md:text-xl font-semibold">
+                      Androids: The Team that Built the Android Operating System
+                    </p>
+                    <p className="text-sm md:text-lg text-gray-400">
+                      Chet Haase
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div className="w-1/2 max-w-1/2 ml-8">
                 <figure>
                   <Image
                     className="rounded-lg"
