@@ -5,12 +5,14 @@ import fetcher from "../lib/fetcher";
 
 export default function NowPlaying() {
   const { data } = useSWR("/api/now-playing", fetcher);
+  console.log(data);
 
   return (
     <div className="flex justify-between">
       <div className="flex justify-center items-center">
         <div className="flex flex-col justify-center">
           <Image
+            priority
             alt="Song Cover"
             className="rounded-full"
             height={45}

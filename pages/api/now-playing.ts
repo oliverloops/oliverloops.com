@@ -27,6 +27,8 @@ export default async (
     return res.status(200).json({ isPlaying: false });
   }
 
+  console.log(response);
+
   const song = await response.json();
   const isPlaying = song.is_playing;
   const title = song.item.name;

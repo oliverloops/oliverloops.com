@@ -6,26 +6,27 @@
       "link": "Visit site",
       "subtitle_one": [
         {
-          "title": "Project Purpose",
-          "desc": "Build and enganging website that attracts new potential customers and leads to new business."
+          "title": "Project purpose",
+          "desc": "Build and enganging website that attracts new potential customers that leads to new challenges and opportunities."
         }
       ],
       "subtitle_two": [
         {
           "title": "Stack explanation",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor libero, lacinia laoreet imperdiet a, finibus sed nibh. Nullam felis felis, suscipit nec dictum at, mattis vel massa."
+          "desc_one": "I built this site using React, Next.js and Tailwind in order to iterate faster on the go, giving the development team the flexibility to  maintain easily every component. Other bullet points on this stack is the perfomance improvents and SEO features built-in saving a lot of development time.",
+          "desc_two": "With React and his hooks for state management were really helpful in order to create the animations and intersection observer events and the 3D model was built with Three.js. last but not least for the contact form service the right choose was the Formspree API that is intercontected with multiple email clients implemented through Next.js API routes."
         }
       ],
       "subtitle_three": [
         {
-          "title": "Problems solved",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor libero, lacinia laoreet imperdiet a, finibus sed nibh. Nullam felis felis, suscipit nec dictum at, mattis vel massa."
+          "title": "Solved problems",
+          "desc": "Integrate a customizable user experience, implement best practices to increase SEO, web crawling and better perfomance in order to reach more customers. Integrate the core business website in a serverless environment and decrease and improve the loading times."
         }
       ],
       "subtitle_four": [
         {
           "title": "Conclusion",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor libero, lacinia laoreet imperdiet a, finibus sed nibh. Nullam felis felis, suscipit nec dictum at, mattis vel massa."
+          "desc": "It was my first time bulding a model with Three.js, this project just confirms that a serverless environment are really easy to inegrate with third party services and thanks to Next.js we approach to a better DX and saving a lot of time in the process."
         }
       ]
     },
@@ -36,25 +37,26 @@
       "subtitle_one": [
         {
           "title": "Propósito del proyecto",
-          "desc": "Construir un sitio web atractivo que atraiga a nuevos clientes potenciales y conduzca a nuevos negocios."
+          "desc": "Construir un sitio web atractivo que atraiga a nuevos clientes potenciales y conduzca a nuevos desafíos y oportunidades."
         }
       ],
       "subtitle_two": [
         {
           "title": "Explicación del stack",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor libero, lacinia laoreet imperdiet a, finibus sed nibh. Nullam felis felis, suscipit nec dictum at, mattis vel massa."
+          "desc_one": "Construí este sitio usando React, Next.js y Tailwind con el fin de iterar más rápido sobre la marcha, dando al equipo de desarrollo la flexibilidad para mantener fácilmente cada componente. Otros puntos de este stack son las mejoras de rendimiento y las características de SEO incorporadas que ahorran mucho tiempo de desarrollo.",
+          "desc_two": "Con React y sus hooks para la gestión de estados fué realmente útiles para crear las animaciones y los eventos del intersection observer y el modelo 3D se construyó con Three.js. Por último, pero no menos importante, para el servicio de formulario de contacto la elección correcta fue la API de Formspree que se interconecta con múltiples clientes de correo electrónico implementados a través de las rutas de la API de Next.js"
         }
       ],
       "subtitle_three": [
         {
           "title": "Problemas resueltos",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor libero, lacinia laoreet imperdiet a, finibus sed nibh. Nullam felis felis, suscipit nec dictum at, mattis vel massa."
+          "desc": "Integrar una experiencia de usuario personalizable, implementar las mejores prácticas para aumentar el SEO, el rastreo web y un mejor rendimiento para llegar a más clientes. Integrar el sitio web principal de la empresa en un entorno serverless para disminuir y mejorar los tiempos de carga."
         }
       ],
       "subtitle_four": [
         {
           "title": "Conclusión",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor libero, lacinia laoreet imperdiet a, finibus sed nibh. Nullam felis felis, suscipit nec dictum at, mattis vel massa."
+          "desc": "Fue la primera vez que construí un modelo con Three.js, este proyecto sólo confirma que un entorno serverless es realmente fácil de integrar con servicios de terceros y gracias a Next.js nos acercamos a un mejor DX y ahorramos mucho tiempo en el proceso."
         }
       ]
     }

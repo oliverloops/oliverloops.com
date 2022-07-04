@@ -63,7 +63,7 @@ const RangoShowcase = () => {
         </div>
         {rangoTranslations.content
           .filter((p) => p.locale === locale)
-          .map((text) => (
+          .map((text: any) => (
             <>
               <div className="md:row-start-2 col-start-1 md:col-span-3 mt-8">
                 <figure className="mb-8 md:mb-0 md:mr-4 rounded-md shadow-lg md:shadow-xl dark:shadow-none">
@@ -88,7 +88,10 @@ const RangoShowcase = () => {
                   {text.subtitle_two[0].title}
                 </h2>
                 <p className="remarkable text-gray-500 leading-6 mt-4">
-                  {text.subtitle_two[0].desc}
+                  {text.subtitle_two[0]?.desc_one}
+                </p>
+                <p className="remarkable text-gray-500 leading-6 mt-4">
+                  {text.subtitle_two[0]?.desc_two}
                 </p>
               </div>
               <div className="md:row-start-5 md:col-span-3 mt-16">

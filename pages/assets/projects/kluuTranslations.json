@@ -1,0 +1,64 @@
+{
+  "content": [
+    {
+      "locale": "EN",
+      "description": "Kluu is a delivery service startup based in Queretaro, Mexico. It provides different products and services from everyday customer's groceries to businesses and restaurants supplier.",
+      "link": "Visit site",
+      "subtitle_one": [
+        {
+          "title": "Project purpose",
+          "desc": "Build a cross-platform mobile application that provides products and services to the client layer, creating a user-friendly UI with component reuse in mind and make it work with the API layer, payment services and inventory database that can support thousands of users."
+        }
+      ],
+      "subtitle_two": [
+        {
+          "title": "Stack explanation",
+          "desc_one": "I chose a React Native Expo based stack for its developer productivity advantages, expo plugins, built-in package integration and compatibility, as well as an easy to work with development and production environment, animations and interactions were built with Animated API and a custom design system for the UI.",
+          "desc_two": "For the API layer we decided for GraphQL thanks to the multiple endpoints integrated to the inventory management system (Saleor) which is hosted on Azure Cloud and we used Firestore and Firebase Auth to handle user profiles and sessions. last but not least the use of a react native stripe wrapper was essential to build the payment system."
+        }
+      ],
+      "subtitle_three": [
+        {
+          "title": "Solved problems",
+          "desc": "Create a functional solution that can handle thousands of concurrent users with a dynamic and custom UI on Android and iOS. Solve all the styling and functional inconsistencies between two platforms, create an understandable navigation flow and code refactoring and optimization."
+        }
+      ],
+      "subtitle_four": [
+        {
+          "title": "Conclusion",
+          "desc": "I learned a lot of how to design API, plugin integrations and query optimization, but was a great experience to create everything from scrath with React Native, understanding how to keep a good cross-platform design consistency and saving a lot of time with Expo and EAS services, but learning a couple of new things of custom native module comfiguration through Xcode and Android Studio."
+        }
+      ]
+    },
+    {
+      "locale": "ES",
+      "description": "Kluu es una startup de servicios de entrega con sede en Querétaro, México. Ofrece diferentes productos y servicios, desde comestibles para clientes cotidianos hasta proveedores de negocios y restaurantes.",
+      "link": "Visitar sitio",
+      "subtitle_one": [
+        {
+          "title": "Propósito del proyecto",
+          "desc": "Construir una aplicación móvil multiplataforma que proporcione productos y servicios a la capa del cliente, creando una interfaz de usuario fácil de usar, con la reutilización de componentes en mente y hacer que funcione con la capa de la API, los servicios de pago y la base de datos de inventario que pueda soportar miles de usuarios."
+        }
+      ],
+      "subtitle_two": [
+        {
+          "title": "Explicación del stack",
+          "desc_one": "Elegí un stack basado en React Native Expo por sus ventajas de productividad para el desarrollador, los plugins expo, la integración de paquetes incorporados y la compatibilidad, así como un entorno de desarrollo y producción fácil de trabajar, las animaciones e interacciones se construyeron con Animated API y un sistema de diseño personalizado para la UI.",
+          "desc_two": "Para la capa API nos decidimos por GraphQL gracias a los múltiples endpoints integrados al sistema de gestión de inventario (Saleor) que está alojado en Azure Cloud y utilizamos Firestore y Firebase Auth para manejar los perfiles de usuario y las sesiones. por último, pero no menos importante, el uso de un wrapper de react native para stripe fue esencial para construir el sistema de pago."
+        }
+      ],
+      "subtitle_three": [
+        {
+          "title": "Problemas resueltos",
+          "desc": "Crear una solución funcional que pueda manejar miles de usuarios concurrentes con una interfaz de usuario dinámica y personalizada en Android e iOS. Resolver todas las inconsistencias de estilos y funcionales entre dos plataformas, crear un flujo de navegación comprensible así como la refactorización y optimización del código."
+        }
+      ],
+      "subtitle_four": [
+        {
+          "title": "Conclusión",
+          "desc": "Aprendí mucho de diseño de APIs, integraciones de plugins y optimización de consultas, pero fue una gran experiencia crear todo desde cero con React Native, entendiendo cómo mantener una buena consistencia de diseño multiplataforma y ahorrando mucho tiempo con los servicios Expo y EAS, pero aprendiendo un par de cosas nuevas de configuración de módulos nativos personalizados a través de Xcode y Android Studio"
+        }
+      ]
+    }
+  ]
+}
