@@ -1,0 +1,64 @@
+{
+  "content": [
+    {
+      "locale": "EN",
+      "description": "An Airbnb Clone app but for discovering famous Mexican locations.",
+      "link": "Visit site",
+      "subtitle_one": [
+        {
+          "title": "Project purpose",
+          "desc": "Build and app to test real-time location features and native maps integration on Android and iOS, using the Airbnb official app as a reference on UI design, In order to understand how the cross-platform integration works and try out the Reanimated API creating a couple of animations."
+        }
+      ],
+      "subtitle_two": [
+        {
+          "title": "Stack explanation",
+          "desc_one": "I decided to go with React Native because of my past web and frontend development knowledge and experince with React, but I start this project with an Expo managed workflow in order to test and run the app and test on different devices.",
+          "desc_two": "In this case the backend was a single server based on Heroku that handle different endpoints for different places and their coordinates on the map, using the GeoJSON format to render everything from a single place. the user's favorite places were stored on the device local storage."
+        }
+      ],
+      "subtitle_three": [
+        {
+          "title": "Solved problems",
+          "desc": "Integrate a well performed behavior on the API and real-time location services, create a global state handler for map relocation and store last searched locations and favorites places, handle the GeoJSON encoding on plain latitude and longitude parameters."
+        }
+      ],
+      "subtitle_four": [
+        {
+          "title": "Conclusion",
+          "desc": "Thanks to this recreation I was capable to understand how should be handled a map location system and make it dynamic through server requested API endpoints, other bullet points were the best understanding of Reanimated API and gesture handlers behavior."
+        }
+      ]
+    },
+    {
+      "locale": "ES",
+      "description": "Kluu es una startup de servicios de entrega con sede en Querétaro, México. Ofrece diferentes productos y servicios, desde comestibles para clientes cotidianos hasta proveedores de negocios y restaurantes.",
+      "link": "Visitar sitio",
+      "subtitle_one": [
+        {
+          "title": "Propósito del proyecto",
+          "desc": "Construir una aplicación para probar las características de localización en tiempo real y la integración de mapas nativos en Android y iOS, utilizando la aplicación oficial de Airbnb como referencia en el diseño de la interfaz de usuario, Con el fin de entender cómo funciona la integración multiplataforma y probar la Reanimated API creando un par de animaciones."
+        }
+      ],
+      "subtitle_two": [
+        {
+          "title": "Explicación del stack",
+          "desc_one": "Me decidí por React Native por mis conocimientos anteriores de desarrollo web y frontend y mi experiencia con React, pero empiezo este proyecto con un flujo de trabajo gestionado por Expo para poder probar y ejecutar la app y probar en diferentes dispositivos.",
+          "desc_two": "En este caso el backend era un único servidor basado en Heroku que manejaba diferentes endpoints para diferentes lugares y sus coordenadas en el mapa, utilizando el formato GeoJSON para renderizar todo desde un único lugar. los lugares favoritos del usuario se almacenaban en el almacenamiento local del dispositivo."
+        }
+      ],
+      "subtitle_three": [
+        {
+          "title": "Problemas resueltos",
+          "desc": "Integrar un comportamiento bien realizado en la API y los servicios de localización en tiempo real, crear un manejador de estado global para la reubicación del mapa y almacenar las últimas ubicaciones buscadas y los lugares favoritos, manejar la codificación GeoJSON en los parámetros de latitud y longitud."
+        }
+      ],
+      "subtitle_four": [
+        {
+          "title": "Conclusión",
+          "desc": "Gracias a esta recreación fui capaz de entender cómo se debe manejar un sistema de localización de mapas y hacerlo dinámico a través de puntos finales de la API solicitados por el servidor, otros puntos fueron la mejor comprensión del comportamiento de Reanimated API y  los manejadores de gesturas."
+        }
+      ]
+    }
+  ]
+}

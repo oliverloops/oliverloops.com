@@ -1,0 +1,62 @@
+{
+  "content": [
+    {
+      "locale": "EN",
+      "description": "Internal data visualization services for environmental consultancy services and intelligent data analysis.",
+      "link": "Visit site",
+      "subtitle_one": [
+        {
+          "title": "Project purpose",
+          "desc": "Develop internal tools for visualization of data collected from different private and governmental projects and integrate the different databases and spreadsheets into a single administrative manager based on web technologies."
+        }
+      ],
+      "subtitle_two": [
+        {
+          "title": "Stack explanation",
+          "desc_one": "I choose React for this project to build the SPA and web app features around authentication, Chart.js for data visualization, Redux as the global state manager. Everithing was handled through JavaScript native fetch for the API communication (and the Airtable based spreadsheets)."
+        }
+      ],
+      "subtitle_three": [
+        {
+          "title": "Solved problems",
+          "desc": "Build different chart representations, build interactive data state handlers and improve the render perfomance for real time interactivity and handling states for every registered project as well as optimize the Airtable API implementation for faster synchronization and data udpdates."
+        }
+      ],
+      "subtitle_four": [
+        {
+          "title": "Conclusion",
+          "desc": "I learned a lot of data reading and handling and represent this chunks of data into real time interactive charts that actually describes every analysis from the projects and integrated data from different endpoints. I understand the importance of API architecture from an in-house implementation to third party services and optimize asynchronous calls natively."
+        }
+      ]
+    },
+    {
+      "locale": "ES",
+      "description": "Servicios internos de visualización de datos para servicios de consultoría medioambiental y análisis inteligente de datos.",
+      "link": "Visitar sitio",
+      "subtitle_one": [
+        {
+          "title": "Propósito del proyecto",
+          "desc": "Desarrollar herramientas internas de visualización de datos recopilados de diferentes proyectos privados y gubernamentales e integrar las diferentes bases de datos y hojas de cálculo en un único gestor administrativo basado en tecnologías web."
+        }
+      ],
+      "subtitle_two": [
+        {
+          "title": "Explicación del stack",
+          "desc_one": "Elegí React para este proyecto para construir la SPA y las características de la aplicación web en torno a la autenticación, Chart.js para la visualización de datos, Redux como el gestor de estado global. Todo fue manejado a través del fetch nativo de JavaScript para la comunicación de la API (y las hojas de cálculo basadas en Airtable)."
+        }
+      ],
+      "subtitle_three": [
+        {
+          "title": "Problemas resueltos",
+          "desc": "Construir diferentes representaciones de gráficos, construir manejadores de estado de datos interactivos y mejorar el rendimiento de renderizado para la interactividad en tiempo real y el manejo de estados para cada proyecto registrado, así como optimizar la implementación de la API de Airtable para una sincronización y actualización de datos más rápida."
+        }
+      ],
+      "subtitle_four": [
+        {
+          "title": "Conclusión",
+          "desc": "Aprendí mucho sobre la lectura y el manejo de datos y representé estos trozos de datos en gráficos interactivos en tiempo real que realmente describen cada análisis de los proyectos y datos integrados de diferentes endpoints. Entiendo la importancia de la arquitectura de la API de una implementación interna a los servicios de terceros y optimizar las llamadas asíncronas de forma nativa"
+        }
+      ]
+    }
+  ]
+}
