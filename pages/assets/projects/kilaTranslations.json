@@ -13,7 +13,7 @@
       "subtitle_two": [
         {
           "title": "Stack explanation",
-          "desc_one": "I choose React for this project to build the SPA and web app features around authentication, Chart.js for data visualization, Redux as the global state manager. Everithing was handled through JavaScript native fetch for the API communication (and the Airtable based spreadsheets)."
+          "desc_one": "I choose React for this project to build the SPA and web app features around authentication, Chart.js for data visualization, Redux as the global state manager. Everything was handled through JavaScript native fetch for the API communication (and the Airtable based spreadsheets)."
         }
       ],
       "subtitle_three": [
