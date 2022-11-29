@@ -10,7 +10,6 @@ import homeTranslations from "./assets/homeTranslations.json";
 
 export default function Home() {
   const { locale } = useRouter();
-
   return (
     <>
       {homeTranslations.home
