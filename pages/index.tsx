@@ -36,14 +36,16 @@ export default function Home() {
                     {text.colored[0].digital_garden}
                   </span>{" "}
                   {text.desc_two}{" "}
-                  <span className="text-blue-400 dark:text-blue-300">
-                    {text.colored[0].product_dev}
+                  <span className="text-orange-500 dark:text-orange-400">
+                    {text.colored[0].software_dev},
                   </span>{" "}
-                  {text.desc_three}{" "}
                   <span className="text-yellow-500 dark:text-yellow-400">
                     JavaScript
+                  </span>
+                  {" "}{text.desc_three}{" "}
+                  <span className="text-blue-500 dark:text-blue-400">
+                    React.
                   </span>{" "}
-                  {text.desc_four}
                 </p>
               </div>
               <div className="w-28 h-28 md:w-36 md:h-36 relative my-6 md:ml-10 md:mr-auto md:my-0">
@@ -52,7 +54,7 @@ export default function Home() {
                   layout="fill"
                   sizes="100vw"
                   className="rounded-full"
-                  src={"/static/images/me_outside.jpg"}
+                  src={"/static/images/me_art.jpg"}
                   alt="Oliver Lopez"
                 />
               </div>

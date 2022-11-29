@@ -5,7 +5,7 @@
       "title": "About Me",
       "desc": [
         {
-          "p1": "I'm a software developer, open source and tech enthusiast. working most of my time for my software agency",
+          "p1": "I'm a software developer, open source and tech enthusiast. Right now I'm a React Native developer building apps for humans at",
           "p2": "Out of tech I have some hobbies like cook new stuff (like italian food 👨‍🍳), try become a rookie barista ☕ or read about astronomy 🪐  and Sci-fi 🛸.",
           "p3": "I want it to share useful tips, guides and ideas around my own experience and share my software development learning path. I hope this little space on the internet will be useful to you."
         }
@@ -38,7 +38,7 @@
       "title": "Sobre mí",
       "desc": [
         {
-          "p1": "Soy un desarrollador de software, entusiasta del open source y la tecnología. trabajando la mayor parte del tiempo en mi agencia de software",
+          "p1": "Soy un desarrollador de software, entusiasta del open source y la tecnología. Actualmente soy desarrollador React Native construyendo apps para humanos en",
           "p2": "Fuera de la tecnología tengo algunos pasatiempos como cocinar cosas nuevas (como comida italiana 👨‍🍳), intentar convertirme en un barista novato ☕ o leer sobre astronomía 🪐  y ciencia ficción 🛸 .",
           "p3": "Quiero compartir tips utiles, guias e ideas bajo mi experiencia y compartir mi camino por el aprendizaje en el desarrollo de software. Espero que este pequeño espacio en internet sea de utilidad para ti."
         }

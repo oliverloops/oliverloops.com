@@ -18,12 +18,12 @@
       "position": "Software Developer and Tech Enthusiast",
       "desc_one": "Welcome to my",
       "desc_two": "where you will find some of my projects, ideas and blog posts about",
-      "desc_three": "and some",
+      "desc_three": "and",
       "desc_four": "experiments.",
       "colored": [
         {
           "digital_garden": "digital garden",
-          "product_dev": "product development"
+          "software_dev": "software development"
         }
       ],
       "recent_posts": "Recent Posts",
@@ -49,7 +49,7 @@
       "colored": [
         {
           "digital_garden": "jardín digital",
-          "product_dev": "desarrollo de productos"
+          "software_dev": "desarrollo de software"
         }
       ],
       "recent_posts": "Publicaciones recientes",

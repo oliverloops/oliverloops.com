@@ -67,10 +67,10 @@ export default function About() {
               <p className="text-md">
                 {text.desc[0].p1}{" "}
                 <a
-                  className="text-yellow-300 font-semibold underline"
-                  href="https://rango.dev/"
+                  className="text-blue-600 font-semibold underline dark:text-blue-300"
+                  href="https://medizona.com.mx"
                 >
-                  Rango
+                  Medizona
                 </a>
                 .
               </p>
@@ -88,17 +88,17 @@ export default function About() {
                 <figure>
                   <Image
                     className="rounded-lg"
-                    src={"/static/images/books/androids.jpeg"}
-                    width={185}
+                    src={"/static/images/books/learning_typescript.png"}
+                    width={195}
                     height={285}
                     alt={"A book"}
                   />
                   <figcaption className="py-2 lg:py-4">
                     <p className="text-md md:text-xl font-semibold">
-                      Androids: The Team that Built the Android Operating System
+                      Learning TypeScript
                     </p>
                     <p className="text-sm md:text-lg text-gray-400">
-                      Chet Haase
+                      Josh Goldberg
                     </p>
                   </figcaption>
                 </figure>
@@ -107,17 +107,20 @@ export default function About() {
                 <figure>
                   <Image
                     className="rounded-lg"
-                    src={"/static/images/books/working_in_public_book.jpeg"}
+                    src={"/static/images/books/spotify_cover.jpeg"}
                     width={190}
                     height={285}
                     alt={"A book"}
                   />
                   <figcaption className="py-2 lg:py-4">
                     <p className="text-md md:text-xl font-semibold">
-                      Working in Public
+                      Spotify
                     </p>
                     <p className="text-sm md:text-lg text-gray-400">
-                      Nadia Eghbal
+                      Jonas Leijonhufvud
+                    </p>
+                    <p className="text-sm md:text-lg text-gray-400">
+                      Sven Carlsson
                     </p>
                   </figcaption>
                 </figure>
