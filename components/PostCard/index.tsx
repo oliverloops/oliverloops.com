@@ -26,14 +26,14 @@ const Content = ({ meta }: { meta: any }) => {
   //const shadowCompressedFormula: string = `0.45rem 0.45rem #5EA5F7, 0.45rem 0.45rem 0 4px #000`;
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col h-40">
       <motion.div
         style={{ 
           borderRadius: 22,
           borderWidth: 5,
           zIndex: 1,
         }}
-        className="blog-card transition duration-300 flex flex-col px-4 py-6 border-black dark:border-white rounded-xl"
+        className="blog-card h-40 transition duration-300 flex flex-col px-4 py-6 border-black dark:border-white rounded-xl"
       >
       <p className="transition duration-300 heading text-lg md:text-xl font-bold text-black ml-2 my-2">
         {meta.title}
@@ -54,18 +54,17 @@ const Content = ({ meta }: { meta: any }) => {
           </p>
         </div>
       </div>
-    </motion.div>
-    <motion.div 
+      <motion.div 
       style={{ 
-        height: 160, 
         width: 360,
         backgroundColor: "#5EA5F7",
         borderRadius: 22,
         borderWidth: 5,
         transform: "translate(18px, -140px)",
       }} 
-      className="border-black dark:border-white"
+      className="border-black dark:border-white h-40"
     >
+    </motion.div>
     </motion.div>
   </div>
   );
