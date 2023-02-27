@@ -85,24 +85,24 @@ export default function About() {
                 {text.reading}
               </h2>
               <div className="flex justify-center py-4">
-                <div className="w-1/2 max-w-1/2">
+                <div>
                   <figure>
                     <Image
                       className="rounded-lg"
                       src={"/static/images/books/learning_typescript.png"}
                       width={150}
-                      height={225}
+                      height={210}
                       alt={"A book"}
                     />
-                    <figcaption className="py-2 lg:py-4">
-                      <p className="text-md md:text-xl font-semibold">
+                  </figure>
+                  <figcaption className="py-2">
+                      <p className="text-sm md:text-lg font-semibold">
                         Learning TypeScript
                       </p>
                       <p className="text-sm md:text-lg text-gray-400">
                         Josh Goldberg
                       </p>
                     </figcaption>
-                  </figure>
                 </div>
                 <div className="w-1/2 max-w-1/2 ml-8">
                   <figure>
@@ -110,11 +110,11 @@ export default function About() {
                       className="rounded-lg"
                       src={"/static/images/books/spotify_cover.jpeg"}
                       width={150}
-                      height={225}
+                      height={210}
                       alt={"A book"}
                     />
-                    <figcaption className="py-2 lg:py-4">
-                      <p className="text-md md:text-xl font-semibold">
+                    <figcaption className="py-2">
+                      <p className="text-sm md:text-lg font-semibold">
                         Spotify
                       </p>
                       <p className="text-sm md:text-lg text-gray-400">
