@@ -31,6 +31,22 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Telegraf";
+  src: url("/fonts/Telegraf/PPTelegraf-UltraBold.otf");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Telegraf";
+  src: url("/fonts/Telegraf/PPTelegraf-Regular.otf");
+  font-weight: 400;
+  font-style: medium;
+  font-display: swap;
+}
+
 /* Custom component styles */
 html {
   margin: 0;
@@ -47,20 +63,19 @@ html {
 h1,
 h2,
 .heading {
-  font-family: "Cal Sans", sans-serif;
-  letter-spacing: 0.35px;
+  font-family: "Telegraf", sans-serif;
 }
 
 p,
 .basic-text {
-  font-family: "Inter", sans-serif;
+  font-family: "Telegraf", sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: medium;
 }
 
 .remarkable {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
+  font-family: "Telegraf", sans-serif;
+  font-weight: 400;
   font-style: medium;
 }
 
@@ -74,6 +89,10 @@ p,
 
 .blog-content {
   width: 100%;
+}
+
+.blog-card {
+  background-color: rgba(249, 250, 251, 0.9);
 }
 
 .icon {

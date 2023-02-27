@@ -52,8 +52,8 @@ export default function Header() {
         <nav className="flex flex-col md:flex-row justify-between w-full relative max-w-3xl mx-auto md:py-2 md:h-18 ">
           <div className="flex flex-col justify-center">
             <Link href="/">
-              <a className="oliverloops text-xl md:text-2xl  dark:text-white">
-                oliverloops.
+              <a className="oliverloops text-xl md:text-2xl dark:text-white">
+                oliverloops<span className="text-green-500">.</span>
               </a>
             </Link>
           </div>
@@ -64,21 +64,21 @@ export default function Header() {
                 <div className="flex items-center">
                   <div className="p-1 sm:p-4">
                     <Link href="/blog">
-                      <a className="basic-text py-1 after:bg-black dark:after:bg-white underline-animation text-md font-semibold dark:text-white">
+                      <a className="basic-text pt-1 after:bg-black dark:after:bg-white underline-animation text-md dark:text-white">
                         Blog
                       </a>
                     </Link>
                   </div>
                   <div className="p-1 sm:p-4">
                     <Link href="/about">
-                      <a className="basic-text py-1 after:bg-black dark:after:bg-white underline-animation text-md font-semibold dark:text-white">
+                      <a className="basic-text pt-1 after:bg-black dark:after:bg-white underline-animation text-md dark:text-white">
                         {text.about}
                       </a>
                     </Link>
                   </div>
                   <div className="p-1 sm:p-4">
                     <Link href="/portfolio">
-                      <a className="bsic-text py-1 after:bg-black dark:after:bg-white underline-animation text-md font-semibold dark:text-white">
+                      <a className="bsic-text pt-1 after:bg-black dark:after:bg-white underline-animation text-md dark:text-white">
                         {text.experiments}
                       </a>
                     </Link>
@@ -86,7 +86,7 @@ export default function Header() {
                   <div className="p-1 sm:p-4">
                     {locales?.map((l, i) => (
                       <Link key={i} href={asPath} locale={l}>
-                        <a className="bsic-text py-1 after:bg-black dark:after:bg-white underline-animation text-md font-semibold dark:text-white">
+                        <a className="bsic-text pt-1 after:bg-black dark:after:bg-white underline-animation text-md dark:text-white">
                           {l === "EN" ? l.concat("/") : l}
                         </a>
                       </Link>

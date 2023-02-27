@@ -21,40 +21,53 @@ const PostCard = ({ post }: { post: any }) => {
 
 const Content = ({ meta }: { meta: any }) => {
   //colored box-shadow and border style
-  const shadowFormula: string = `0.65rem 0.65rem #5EA5F7, 0.65rem 0.65rem 0 4px #000`;
-  const shadowExpandedFormula: string = `0.85rem 0.85rem #5EA5F7, 0.85rem 0.85rem 0 4px #000`;
-  const shadowCompressedFormula: string = `0.45rem 0.45rem #5EA5F7, 0.45rem 0.45rem 0 4px #000`;
+  const shadowFormula: string = `0.7rem 0.7rem #5EA5F7, 0.7rem 0.7rem 0 4px #000`;
+  //const shadowExpandedFormula: string = `0.85rem 0.85rem #5EA5F7, 0.85rem 0.85rem 0 4px #000`;
+  //const shadowCompressedFormula: string = `0.45rem 0.45rem #5EA5F7, 0.45rem 0.45rem 0 4px #000`;
 
   return (
-    <motion.div
-      whileHover={{ boxShadow: shadowExpandedFormula }}
-      whileTap={{ boxShadow: shadowCompressedFormula }}
-      style={{ boxShadow: shadowFormula }}
-      className="transition duration-300 flex justify-center flex-col px-4 py-6 border-4 bg-white dark:bg-gray-900 border-black dark:border-white rounded-xl"
-    >
-      <p className="transition duration-300 heading text-xl md:text-2xl font-bold text-blue-400 dark:text-blue-300 pr-2 pb-2">
+    <div className="flex flex-col">
+      <motion.div
+        style={{ 
+          borderRadius: 22,
+          borderWidth: 5,
+          zIndex: 1,
+        }}
+        className="blog-card transition duration-300 flex flex-col px-4 py-6 border-black dark:border-white rounded-xl"
+      >
+      <p className="transition duration-300 heading text-lg md:text-xl font-bold text-black ml-2 my-2">
         {meta.title}
       </p>
       <div className="flex justify-between items-end pt-2">
-        {/* <div className="flex items-center">
-          <FiEye
-            className="text-black dark:text-gray-100 transition-all"
-            size={21}
-          />
-          <p className="basic-text text-sm md:text-base text-black dark:text-gray-100 font-semibold ml-1.5 transition-all">
-            0 Views
-          </p>
-        </div> */}
-        <div className="flex flex-col text-gray-400">
-          <p className="transition duration-300 basic-text text-sm md:text-base text-black dark:text-gray-100 font-semibold">
-            {meta.readTime} min read
-          </p>
-          <p className="transition duration-300 basic-text text-sm md:text-base text-black  dark:text-gray-100  font-medium">
+        <div className="flex w-full mx-2 justify-between text-gray-400">
+          <div className="flex items-center">
+            <FiEye
+              className="text-black mr-1.5 transition-all"
+              size={19}
+            />
+            <p className="basic-text transition duration-300 basic-text text-sm text-black font-semibold">
+              343 Views
+            </p>
+          </div>
+          <p style={{ fontFamily: "Telegraf" }} className="transition duration-300 basic-text text-sm text-black font-medium">
             {meta.date}
           </p>
         </div>
       </div>
     </motion.div>
+    <motion.div 
+      style={{ 
+        height: 160, 
+        width: 360,
+        backgroundColor: "#5EA5F7",
+        borderRadius: 22,
+        borderWidth: 5,
+        transform: "translate(18px, -140px)",
+      }} 
+      className="border-black dark:border-white"
+    >
+    </motion.div>
+  </div>
   );
 };
 

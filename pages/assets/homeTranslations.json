@@ -14,16 +14,16 @@
   "home": [
     {
       "locale": "EN",
-      "title": "Hi there, I'm Oliver",
-      "position": "Software Developer and Tech Enthusiast",
+      "title": "Hi there, I'm Oliver.",
+      "position": "Mobile developer and tech enthusiast",
       "desc_one": "Welcome to my",
-      "desc_two": "where you will find some of my projects, ideas and blog posts about",
-      "desc_three": "and",
+      "desc_two": "where you will find some of my thoughts and blog posts about",
+      "desc_three": "and my",
       "desc_four": "experiments.",
       "colored": [
         {
           "digital_garden": "digital garden",
-          "software_dev": "software development"
+          "journey": "developer journey"
         }
       ],
       "recent_posts": "Recent Posts",
@@ -41,15 +41,15 @@
     },
     {
       "locale": "ES",
-      "title": "Hola, Soy Oliver",
-      "position": "Desarrollador de Software y Entusiasta Tech",
+      "title": "Hola, Soy Oliver.",
+      "position": "Desarrollador móvil y entusiasta tech",
       "desc_one": "Bienvenido a mi",
       "desc_two": "donde encontrarás algunas de mis ideas y publicaciones sobre",
-      "desc_three": "y algunos experimentos en",
+      "desc_three": "y mi",
       "colored": [
         {
           "digital_garden": "jardín digital",
-          "software_dev": "desarrollo de software"
+          "journey": "viaje como desarrollador"
         }
       ],
       "recent_posts": "Publicaciones recientes",

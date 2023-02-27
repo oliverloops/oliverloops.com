@@ -16,38 +16,8 @@ export default function Home() {
         .filter((p) => p.locale === locale)
         .map((text) => (
           <div className="flex flex-col justify-center items-start max-w-3xl mx-auto pb-16">
-            <div className="flex flex-col-reverse items-start sm:flex-row md:py-4 mb-8">
-              <div className="flex flex-col pr-8">
-                <h1 className="heading font-bold text-3xl md:text-4xl lg:text-5xl dark:text-white">
-                  {text.title}{" "}
-                  <div className="inline-block animate-handmove">
-                    <span role="img" aria-label="waving hand">
-                      👋
-                    </span>
-                  </div>
-                </h1>
-                <p className="remarkable md:text-md text-gray-500 dark:text-gray-400 my-2">
-                  {text.position}
-                </p>
-                <p className="remarkable md:text-md text-gray-500 dark:text-gray-400 leading-relaxed max-w-lg mx-auto py-4 md:mr-8">
-                  {text.desc_one}{" "}
-                  <span className="text-green-500 dark:text-green-400">
-                    {text.colored[0].digital_garden}
-                  </span>{" "}
-                  {text.desc_two}{" "}
-                  <span className="text-orange-500 dark:text-orange-400">
-                    {text.colored[0].software_dev},
-                  </span>{" "}
-                  <span className="text-yellow-500 dark:text-yellow-400">
-                    JavaScript
-                  </span>
-                  {" "}{text.desc_three}{" "}
-                  <span className="text-blue-500 dark:text-blue-400">
-                    React.
-                  </span>{" "}
-                </p>
-              </div>
-              <div className="w-28 h-28 md:w-36 md:h-36 relative my-6 md:ml-10 md:mr-auto md:my-0">
+            <div className="sm:flex-row md:py-4 mb-4">
+              <div className="avatar w-26 h-26 md:w-32 md:h-32 relative my-6 rounded-full border-4 border-black dark:border-white">
                 <Image
                   priority
                   layout="fill"
@@ -56,6 +26,31 @@ export default function Home() {
                   src={"/static/images/me_art.jpg"}
                   alt="Oliver Lopez"
                 />
+              </div>
+              <div className="flex flex-col pr-8">
+                <h1 className="heading font-bold text-3xl md:text-4xl lg:text-5xl dark:text-white">
+                  {text.title}
+                </h1>
+                <p style={{ fontFamily: "Telegraf", fontWeight: 600 }} className="remarkable md:text-lg text-gray-700 dark:text-gray-400">
+                  {text.position}
+                </p>
+                <p className="remarkable md:text-md text-gray-500 dark:text-gray-400 w-9/12 py-4">
+                  {text.desc_one}{" "}
+                  <span className="text-green-500 dark:text-green-400">
+                    {text.colored[0].digital_garden}
+                  </span>{" "}
+                  {text.desc_two}{" "}
+                  <span className="text-orange-500 dark:text-orange-400">
+                    Swift,
+                  </span>{" "}
+                  <span className="text-blue-500 dark:text-blue-400">
+                    React Native
+                  </span>
+                  {" "}{text.desc_three}{" "}
+                  <span className="text-red-400">
+                    {text.colored[0].journey}
+                  </span>{" "}
+                </p>
               </div>
             </div>
             <div className="mb-8">
@@ -72,7 +67,7 @@ export default function Home() {
               </div>
               <Link href="/blog">
                 <a>
-                  <p className="basic-text py-1 after:bg-black dark:after:bg-white underline-animation  text-lg font-medium">
+                  <p className="basic-text py-1 after:bg-black dark:after:bg-white underline-animation text-lg font-medium">
                     {text.read_all} &rarr;
                   </p>
                 </a>
