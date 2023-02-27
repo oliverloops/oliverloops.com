@@ -60,70 +60,73 @@ export default function About() {
         .filter((p) => p.locale === locale)
         .map((text) => (
           <div className="flex flex-col justify-center items-start max-w-3xl w-full mx-auto text-left py-8 md:py-4 pb-20">
-            <h1 className="heading font-bold text-3xl md:text-4xl mb-4 text-black dark:text-white">
-              {text.title}
-            </h1>
-            <div className="mb-4 mr-12 text-justify leading-6 text-gray-600 dark:text-gray-400">
-              <p className="text-md">
-                {text.desc[0].p1}{" "}
-                <a
-                  className="text-blue-600 font-semibold underline dark:text-blue-300"
-                  href="https://medizona.com.mx"
-                >
-                  Medizona
-                </a>
-                .
-              </p>
-              <Text>{text.desc[0].p2}</Text>
-              <Text>{text.desc[0].p3}</Text>
-            </div>
-            <h2 className="font-bold text-3xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
-              {text.books}
-            </h2>
-            <h3 className="basic-text font-semibold mb-2 text-2xl dark:text-white">
-              {text.reading}
-            </h3>
-            <div className="flex justify-center py-4">
-              <div className="w-1/2 max-w-1/2">
-                <figure>
-                  <Image
-                    className="rounded-lg"
-                    src={"/static/images/books/learning_typescript.png"}
-                    width={195}
-                    height={285}
-                    alt={"A book"}
-                  />
-                  <figcaption className="py-2 lg:py-4">
-                    <p className="text-md md:text-xl font-semibold">
-                      Learning TypeScript
-                    </p>
-                    <p className="text-sm md:text-lg text-gray-400">
-                      Josh Goldberg
-                    </p>
-                  </figcaption>
-                </figure>
+            <div className="flex justify-between">
+              <div className="flex flex-col w-1/2">
+                <h1 className="heading font-bold text-3xl md:text-4xl mb-4 text-black dark:text-white">
+                  {text.title}
+                </h1>
+                <div className="mb-4 mr-12 text-justify leading-6 text-gray-600 dark:text-gray-400">
+                  <p className="text-md">
+                    {text.desc[0].p1}{" "}
+                    <a
+                      className="text-blue-600 font-semibold underline dark:text-blue-300"
+                      href="https://medizona.com.mx"
+                    >
+                      Medizona
+                    </a>
+                    .
+                  </p>
+                  <Text>{text.desc[0].p2}</Text>
+                  <Text>{text.desc[0].p3}</Text>
+                </div>
               </div>
-              <div className="w-1/2 max-w-1/2 ml-8">
-                <figure>
-                  <Image
-                    className="rounded-lg"
-                    src={"/static/images/books/spotify_cover.jpeg"}
-                    width={190}
-                    height={285}
-                    alt={"A book"}
-                  />
-                  <figcaption className="py-2 lg:py-4">
-                    <p className="text-md md:text-xl font-semibold">
-                      Spotify
-                    </p>
-                    <p className="text-sm md:text-lg text-gray-400">
-                      Jonas Leijonhufvud
-                    </p>
-                    <p className="text-sm md:text-lg text-gray-400">
-                      Sven Carlsson
-                    </p>
-                  </figcaption>
-                </figure>
+              <div className="flex flex-col w-1/2">
+              <h2 className="font-bold text-3xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
+                {text.reading}
+              </h2>
+              <div className="flex justify-center py-4">
+                <div className="w-1/2 max-w-1/2">
+                  <figure>
+                    <Image
+                      className="rounded-lg"
+                      src={"/static/images/books/learning_typescript.png"}
+                      width={150}
+                      height={225}
+                      alt={"A book"}
+                    />
+                    <figcaption className="py-2 lg:py-4">
+                      <p className="text-md md:text-xl font-semibold">
+                        Learning TypeScript
+                      </p>
+                      <p className="text-sm md:text-lg text-gray-400">
+                        Josh Goldberg
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div className="w-1/2 max-w-1/2 ml-8">
+                  <figure>
+                    <Image
+                      className="rounded-lg"
+                      src={"/static/images/books/spotify_cover.jpeg"}
+                      width={150}
+                      height={225}
+                      alt={"A book"}
+                    />
+                    <figcaption className="py-2 lg:py-4">
+                      <p className="text-md md:text-xl font-semibold">
+                        Spotify
+                      </p>
+                      <p className="text-sm md:text-lg text-gray-400">
+                        Jonas Leijonhufvud
+                      </p>
+                      <p className="text-sm md:text-lg text-gray-400">
+                        Sven Carlsson
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
               </div>
             </div>
             <div className="mt-8 mb-4 prose leading-6 text-gray-600 dark:text-gray-400">
@@ -159,7 +162,7 @@ export default function About() {
                 name={"React Native"}
                 desc={text.stack[0].react_native}
               />
-              {/* <AppItem
+              <AppItem
                 url={"https://developer.apple.com/swift/"}
                 image={"/static/images/logos/swift_logo.png"}
                 name={"Swift"}
@@ -170,7 +173,7 @@ export default function About() {
                 image={"/static/images/logos/swiftui_logo.png"}
                 name={"Swift UI"}
                 desc={text.stack[0].swift_ui}
-              /> */}
+              />
               <AppItem
                 url={"https://tailwindcss.com/"}
                 image={"/static/images/logos/tailwind.png"}
@@ -190,34 +193,10 @@ export default function About() {
                 desc={text.stack[0].node}
               />
               <AppItem
-                url={"https://graphql.org/"}
-                image={"/static/images/logos/graphql_logo.png"}
-                name={"GraphQL"}
-                desc={text.stack[0].graphql}
-              />
-              <AppItem
-                url={"https://planetscale.com/"}
-                image={"/static/images/logos/planet_scale_logo.png"}
-                name={"Planetscale"}
-                desc={text.stack[0].planetscale}
-              />
-              <AppItem
                 url={"https://www.mongodb.com/"}
                 image={"/static/images/logos/mongo_db_logo.png"}
                 name={"MongoDB"}
                 desc={text.stack[0].mongodb}
-              />
-              <AppItem
-                url={"https://vercel.com/"}
-                image={"/static/images/logos/vercel_icon.jpeg"}
-                name={"Vercel"}
-                desc={text.stack[0].vercel}
-              />
-              <AppItem
-                url={"https://www.netlify.com/"}
-                image={"/static/images/logos/netlify_icon.png"}
-                name={"Netlify"}
-                desc={text.stack[0].netlify}
               />
             </div>
           </div>

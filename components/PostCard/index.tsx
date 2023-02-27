@@ -26,7 +26,7 @@ const Content = ({ meta }: { meta: any }) => {
   //const shadowCompressedFormula: string = `0.45rem 0.45rem #5EA5F7, 0.45rem 0.45rem 0 4px #000`;
 
   return (
-    <div className="flex flex-col h-40">
+    <div className="flex flex-col">
       <motion.div
         style={{ 
           borderRadius: 22,
@@ -54,17 +54,18 @@ const Content = ({ meta }: { meta: any }) => {
           </p>
         </div>
       </div>
-      <motion.div 
+    </motion.div>
+    <motion.div 
       style={{ 
         width: 360,
         backgroundColor: "#5EA5F7",
         borderRadius: 22,
         borderWidth: 5,
         transform: "translate(18px, -140px)",
+        zIndex: -1,
       }} 
       className="border-black dark:border-white h-40"
     >
-    </motion.div>
     </motion.div>
   </div>
   );

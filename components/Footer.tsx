@@ -10,12 +10,8 @@ export default function Footer() {
           <div className="mb-8 md:mb-0">
             <NowPlaying />
           </div>
-          <p className="flex basic-text text-center dark:text-white">
-            Built with Next.js and hosted on&nbsp;
-            <span role="img" aria-label="triangule">
-              ▲
-            </span>
-            <span className="heading tracking-wide">Vercel</span>
+          <p className="flex basic-text font-bold text-center dark:text-white">
+            oliverloops<span className="text-green-500">.</span>
           </p>
           <div className="flex mt-2 md:mt-0">
             <span className="pr-4">
