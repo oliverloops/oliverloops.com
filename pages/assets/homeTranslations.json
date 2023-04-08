@@ -37,7 +37,8 @@
           "airbnb": "An Airbnb Clone app but for discovering famous Mexican locations."
         }
       ],
-      "textLink": "View project"
+      "textLink": "View project",
+      "open_source_work": "Open Source Work"
     },
     {
       "locale": "ES",
@@ -63,7 +64,8 @@
           "airbnb": "Un clon de Airbnb pero para discubrir ubicaciones mexicanas famosas."
         }
       ],
-      "textLink": "Ver proyecto"
+      "textLink": "Ver proyecto",
+      "open_source_work": "Contribuciones"
     }
   ]
 }

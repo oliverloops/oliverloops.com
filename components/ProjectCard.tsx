@@ -48,12 +48,12 @@ function Content({ image, title }: { image: string; title: string }){
           animate={{ translateY: isHovered ? -50 : 0 }}
           transition={{ type: "spring", stiffness: 100 }}
         >
-          <div className="h-8 p-4 flex items-center bg-gray-50/80 dark:bg-slate-900/80 border-2 border-black dark:border-white absolute rounded-lg">
+          <div className="h-8 p-4 flex items-center bg-gray-50/80 dark:bg-slate-900/80 border-2 border-black dark:border-white absolute rounded-xl">
             <p className="text-sm font-bold">{title}</p>
           </div>
         </motion.div>
       </div>
-  </motion.div>
+    </motion.div>
   );                                                                  
 }
 

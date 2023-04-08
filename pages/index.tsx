@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-//UI components
-import PostCard from "../components/PostCard";
+//* UI components
 import { posts } from "../getAllPosts";
+import PostCard from "../components/PostCard";
 import ProjectCard from "../components/ProjectCard";
-//i18n
+import RepoCard from "../components/RepoCard";
+//* i18n
 import homeTranslations from "./assets/homeTranslations.json";
 
 export default function Home() {
@@ -73,7 +74,7 @@ export default function Home() {
                 </a>
               </Link>
             </div>
-            <div className="w-full">
+            <div className="w-full mb-8">
               <h2 className="heading py-4 font-bold text-2xl md:text-3xl dark:text-white">
                 {text.projects}
               </h2>
@@ -102,6 +103,15 @@ export default function Home() {
                   href={"/showcase/kila"}
                   textLink={text.textLink}
                 />
+              </div>
+            </div>
+            <div className="my-4">
+              <h2 className="heading py-4 font-bold text-2xl md:text-3xl lg:text-4xl dark:text-white">
+                {text.open_source_work}
+              </h2>
+              <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
+                <RepoCard />
+                <RepoCard />
               </div>
             </div>
           </div>
