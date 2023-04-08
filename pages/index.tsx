@@ -73,37 +73,33 @@ export default function Home() {
                 </a>
               </Link>
             </div>
-            <div>
+            <div className="w-full">
               <h2 className="heading py-4 font-bold text-2xl md:text-3xl dark:text-white">
                 {text.projects}
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2">
+              <div className="grid gap-x-4 gap-y-10 grid-cols-1 md:grid-cols-2">
                 <ProjectCard
                   image={"/static/images/showcase/rango_cover.png"}
                   title={"Rango.dev"}
-                  description={text.project_card[0].rango}
                   href={"/showcase/rango"}
                   textLink={text.textLink}
                 />
                 <ProjectCard
                   image={"/static/images/showcase/kluu/kluu_cover.png"}
                   title={"Kluu"}
-                  description={text.project_card[0].kluu}
                   href={"/showcase/kluu"}
-                  textLink={text.textLink}
-                />
-                <ProjectCard
-                  image={"/static/images/showcase/kila/kila_cover.png"}
-                  title={"Kila Environmental Services"}
-                  description={text.project_card[0].kila}
-                  href={"/showcase/kila"}
                   textLink={text.textLink}
                 />
                 <ProjectCard
                   image={"/static/images/showcase/airbnb/airbnb_cover.png"}
                   title={"Airbnb Clone"}
-                  description={text.project_card[0].airbnb}
                   href={"/showcase/airbnb"}
+                  textLink={text.textLink}
+                />
+                <ProjectCard
+                  image={"/static/images/showcase/kila/kila_cover.png"}
+                  title={"Kila Environmental Services"}
+                  href={"/showcase/kila"}
                   textLink={text.textLink}
                 />
               </div>
