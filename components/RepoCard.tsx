@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import image from "../public/static/images/react_logo.png";
 
 function RepoCard(){
     return(
@@ -14,19 +15,29 @@ function RepoCard(){
 
 function Content(){
     return(
-        <motion.div className="transition duration-300 flex flex-col mr-6 rounded-3xl">
-            <div style={{ borderWidth: 5 }} className="transition duration-300 relative h-20 md:h-20 rounded-3xl border-black dark:border-white">
-            {/* <Image
-                className="rounded-3xl"
-                src={image}
-                layout="fill"
-                sizes="100vw"
-                priority
-                alt="project-card"
-            /> */}
-                <div>
-                    <p className="text-lg font-bold">Project title</p>
-                    <p className="text-sm font-bold">Category</p>
+        <motion.div className="transition duration-300 mr-6 rounded-3xl">
+            <div 
+                className="flex p-2 transition duration-300 h-20 md:h-20 rounded-3xl border-4 border-black dark:border-white"
+            >
+               <div className="w-12 h-12 py-2 p-1.5 bg-gray-50/90 dark:bg-slate-900/90 rounded-xl border-2 border-black dark:border-white">
+                <Image
+                    src={image}
+                    priority
+                    alt="repository-logo"
+                />
+               </div>
+               <div
+                style={{ 
+                    backgroundColor: "#5EA5F7",
+                    transform: "translate(-42px, 5px)",
+                    zIndex: -1,
+                }} 
+                className="w-12 h-12 border-2 rounded-xl border-black dark:border-white"
+               >
+               </div>
+                <div style={{ transform: "translateX(-30px)" }} className="w-52 md:w-60 py-1">
+                    <p className="text-lg font-bold text-slate-700">Project title</p>
+                    <p className="text-sm font-bold text-zinc-400">Category</p>
                 </div>
             </div>
         </motion.div>
