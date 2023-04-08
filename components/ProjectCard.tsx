@@ -49,7 +49,7 @@ function Content({ image, title }: { image: string; title: string }){
           transition={{ type: "spring", stiffness: 100 }}
         >
           <div className="h-8 p-4 flex items-center bg-gray-50/80 dark:bg-slate-900/80 border-2 border-black dark:border-white absolute rounded-xl">
-            <p className="text-sm font-bold text-slate-800">{title}</p>
+            <p className="text-sm font-bold text-slate-800 dark:text-slate-100">{title}</p>
           </div>
         </motion.div>
       </div>

@@ -36,8 +36,8 @@ function Content(){
                >
                </div>
                 <div style={{ transform: "translateX(-30px)" }} className="w-52 md:w-60 py-1">
-                    <p className="text-lg font-bold text-slate-700">Project title</p>
-                    <p className="text-sm font-bold text-zinc-400">Category</p>
+                    <p className="text-lg font-bold text-slate-700 dark:text-slate-200">Project title</p>
+                    <p className="text-sm font-bold text-zinc-400 dark:text-zinc-400">Category</p>
                 </div>
             </div>
         </motion.div>

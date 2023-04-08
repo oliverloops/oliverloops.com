@@ -1,4 +1,6 @@
-//UI components
+import { GoMarkGithub } from "react-icons/go";
+import { FaTwitter } from "react-icons/fa";
+//*UI components
 import NowPlaying from "./NowPlaying";
 
 export default function Footer() {
@@ -14,18 +16,14 @@ export default function Footer() {
             oliverloops<span className="text-green-500">.</span>
           </p>
           <div className="flex mt-2 md:mt-0">
-            <span className="pr-4">
+            <span className="mr-2 p-1.5 border-2 border-black dark:border-white rounded-3xl">
               <a href="https://twitter.com/oliverloops">
-                <p className="basic-text py-1 after:bg-black dark:after:bg-white underline-animation font-medium">
-                  twitter
-                </p>
+                <FaTwitter size={18} />
               </a>
             </span>
-            <span className="pl-4">
+            <span className="ml-2 p-1.5 border-2 border-black dark:border-white rounded-3xl">
               <a href="https://github.com/oliverloops">
-                <p className="basic-text py-1 after:bg-black dark:after:bg-white underline-animation font-medium">
-                  github
-                </p>
+                <GoMarkGithub size={18} />
               </a>
             </span>
           </div>
