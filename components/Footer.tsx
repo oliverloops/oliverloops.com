@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="mb-8 md:mb-0">
             <NowPlaying />
           </div>
-          <p className="flex basic-text font-bold text-center dark:text-white">
+          <p className="flex items-center basic-text font-bold text-center dark:text-white">
             oliverloops<span className="text-green-500">.</span>
           </p>
           <div className="flex mt-2 md:mt-0">

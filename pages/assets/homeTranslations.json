@@ -15,7 +15,7 @@
     {
       "locale": "EN",
       "title": "Hi there, I'm Oliver.",
-      "position": "Mobile developer and tech enthusiast",
+      "position": "UI developer and tech enthusiast",
       "desc_one": "Welcome to my",
       "desc_two": "where you will find some of my thoughts and blog posts about",
       "desc_three": "and my",
@@ -28,7 +28,7 @@
       ],
       "recent_posts": "Recent Posts",
       "read_all": "Read all posts",
-      "projects": "Projects",
+      "projects": "Projects & Apps",
       "project_card": [
         {
           "rango": "JAMstack based development agency that improves sites and web apps.",
@@ -42,7 +42,7 @@
     {
       "locale": "ES",
       "title": "Hola, Soy Oliver.",
-      "position": "Desarrollador móvil y entusiasta tech",
+      "position": "Desarrollador UI y entusiasta tech",
       "desc_one": "Bienvenido a mi",
       "desc_two": "donde encontrarás algunas de mis ideas y publicaciones sobre",
       "desc_three": "y mi",
@@ -54,7 +54,7 @@
       ],
       "recent_posts": "Publicaciones recientes",
       "read_all": "Ver todas",
-      "projects": "Proyectos",
+      "projects": "Proyectos & Apps",
       "project_card": [
         {
           "rango": "Agencia de desarollo basada en JAMstack que mejora sitios y aplicaciones web.",

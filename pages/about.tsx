@@ -85,22 +85,22 @@ export default function About() {
                 {text.reading}
               </h2>
               <div className="flex justify-center py-4">
-                <div>
+                <div className="w-1/2 max-w-1/2">
                   <figure>
                     <Image
                       className="rounded-lg"
-                      src={"/static/images/books/learning_typescript.png"}
-                      width={150}
-                      height={210}
+                      src={"/static/images/books/ios_programming_cover.jpeg"}
+                      width={140}
+                      height={190}
                       alt={"A book"}
                     />
                   </figure>
                   <figcaption className="py-2">
                       <p className="text-sm md:text-lg font-semibold">
-                        Learning TypeScript
+                        iOS Programming Fundamentals
                       </p>
                       <p className="text-sm md:text-lg text-gray-400">
-                        Josh Goldberg
+                        Matt Neuburg
                       </p>
                     </figcaption>
                 </div>
@@ -108,20 +108,17 @@ export default function About() {
                   <figure>
                     <Image
                       className="rounded-lg"
-                      src={"/static/images/books/spotify_cover.jpeg"}
-                      width={150}
-                      height={210}
+                      src={"/static/images/books/from_zero_to_one_cover.jpeg"}
+                      width={140}
+                      height={190}
                       alt={"A book"}
                     />
                     <figcaption className="py-2">
                       <p className="text-sm md:text-lg font-semibold">
-                        Spotify
+                        De Cero a Uno
                       </p>
                       <p className="text-sm md:text-lg text-gray-400">
-                        Jonas Leijonhufvud
-                      </p>
-                      <p className="text-sm md:text-lg text-gray-400">
-                        Sven Carlsson
+                        Peter Thiel
                       </p>
                     </figcaption>
                   </figure>

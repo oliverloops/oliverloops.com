@@ -17,8 +17,8 @@ export default function ProjectCard({
 }) {
   return (
     <div className="mb-4 md:mb-8 my-4">
-      <div className="transition  duration-300 flex flex-col pr-6 rounded">
-        <div className="transition duration-300 relative h-44 sm:h-52 md:h-52 rounded-xl border-4 border-black dark:border-white">
+      <div className="transition duration-300 flex flex-col pr-6 rounded-3xl">
+        <div className="transition duration-300 relative h-44 sm:h-52 md:h-52 rounded-2xl border-4 border-black dark:border-white">
           <Image
             className="rounded-lg"
             src={image}

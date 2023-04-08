@@ -67,7 +67,7 @@ export default function Home() {
               </div>
               <Link href="/blog">
                 <a>
-                  <p className="basic-text py-1 after:bg-black dark:after:bg-white underline-animation text-lg font-medium">
+                  <p className="basic-text my-4 lg:my-auto after:bg-black dark:after:bg-white underline-animation text-lg font-medium">
                     {text.read_all} &rarr;
                   </p>
                 </a>
