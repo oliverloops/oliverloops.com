@@ -45,7 +45,7 @@ function Content({ image, title }: { image: string; title: string }){
         />
         <motion.div 
           className="flex justify-center items-end h-40 md:h-44"
-          animate={{ translateY: isHovered ? -50 : 0 }}
+          animate={{ translateY: isHovered ? -60 : 0, scale: isHovered ? 1.2 : 1 }}
           transition={{ type: "spring", stiffness: 100 }}
         >
           <div className="h-8 p-4 flex items-center bg-gray-50/80 dark:bg-slate-900/80 border-2 border-black dark:border-white absolute rounded-xl">

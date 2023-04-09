@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="mb-8 md:mb-0">
             <NowPlaying />
           </div>
-          <p className="flex items-center basic-text text-xl md:text-lg font-bold text-center dark:text-white">
+          <p className="flex w-1/4 items-center basic-text text-xl md:text-lg font-bold text-center dark:text-white">
             oliverloops<span className="text-green-500 text-xl md:text-lg">.</span>
           </p>
           <div className="flex mt-5 md:mt-0">
@@ -19,19 +19,19 @@ export default function Footer() {
               className="mr-2 p-1.5 border-2 border-black dark:border-white rounded-3xl" 
               href="https://twitter.com/oliverloops"
             >
-              <FaTwitter size={20} />
+              <FaTwitter size={22} />
             </a>
             <a
               className="mx-2 p-1.5 border-2 border-black dark:border-white rounded-3xl"
               href="https://github.com/oliverloops"
             >
-              <FaGithub size={20} />
+              <FaGithub size={22} />
             </a>
             <a
               className="ml-2 p-1.5 border-2 border-black dark:border-white rounded-3xl"
               href="https://github.com/oliverloops"
             >
-              <FaLinkedinIn size={20} />
+              <FaLinkedinIn size={22} />
             </a>
           </div>
         </div>
