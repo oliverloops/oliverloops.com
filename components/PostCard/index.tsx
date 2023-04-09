@@ -28,6 +28,9 @@ const Content = ({ meta }: { meta: any }) => {
   return (
     <div className="flex flex-col">
       <motion.div
+        whileTap={{ translateX: 18, translateY: 18 }}
+        whileHover={{ translateX: 18, translateY: 18 }}
+        transition={{ type: 'spring', duration: 0.1 }}
         style={{ 
           borderRadius: 22,
           borderWidth: 5,

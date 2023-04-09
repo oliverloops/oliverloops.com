@@ -75,7 +75,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="w-full mb-8">
-              <h2 className="heading py-4 font-bold text-2xl md:text-3xl dark:text-white">
+              <h2 className="heading py-4 font-bold text-2xl md:text-3xl lg:text-4xl dark:text-white">
                 {text.projects}
               </h2>
               <div className="grid gap-x-4 gap-y-10 grid-cols-1 md:grid-cols-2">
@@ -109,7 +109,7 @@ export default function Home() {
               <h2 className="heading py-4 font-bold text-2xl md:text-3xl lg:text-4xl dark:text-white">
                 {text.open_source_work}
               </h2>
-              <div className="grid gap-4 md:gap-x-2 md:gap-y-4 grid-cols-1 md:grid-cols-2">
+              <div className="grid gap-4 md:gap-x-2 md:gap-y-4 grid-cols-1 md:grid-cols-2 my-1">
                 <RepoCard />
                 <RepoCard />
               </div>

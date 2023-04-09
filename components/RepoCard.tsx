@@ -15,17 +15,19 @@ function RepoCard(){
 
 function Content(){
     return(
-        <motion.div className="transition duration-300 mr-6 rounded-3xl">
+        <div className="transition duration-300 mr-6 rounded-3xl">
             <div 
                 className="flex p-2 transition duration-300 h-20 md:h-20 rounded-3xl border-4 border-black dark:border-white"
             >
-               <div className="w-12 h-12 py-2 p-1.5 bg-gray-50/90 dark:bg-slate-900/90 rounded-xl border-2 border-black dark:border-white">
+               <motion.div
+                    whileHover={{ translateX: 5, translateY: 5 }}
+                    className="w-12 h-12 py-2 p-1.5 bg-gray-50/90 dark:bg-slate-900/90 rounded-xl border-2 border-black dark:border-white">
                 <Image
                     src={image}
                     priority
                     alt="repository-logo"
                 />
-               </div>
+               </motion.div>
                <div
                 style={{ 
                     backgroundColor: "#5EA5F7",
@@ -40,7 +42,7 @@ function Content(){
                     <p className="text-sm font-bold text-zinc-400 dark:text-zinc-400">Category</p>
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 }
 
