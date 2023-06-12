@@ -48,11 +48,11 @@ export default function Header() {
 
   return (
     <div className="flex justify-center parent-sticky-nav">
-      <div className="transition duration-300 flex justify-center items-center w-full md:w-3/4 xl:w-7/12 px-8 py-4 md:px-0 md:py-0 mt-4 bg-neutral-200 rounded-full border-slate-200 dark:bg-gray-700 bg-opacity-40 dark:bg-opacity-60 sticky sticky-nav">
-        <nav className="flex flex-col md:flex-row justify-between items-center w-full relative max-w-3xl md:py-2 md:h-16">
+      <div className="transition duration-300 flex justify-center items-center w-full md:w-3/4 xl:w-7/12 px-8 py-4 md:px-0 md:py-0 mt-4 bg-neutral-200 rounded-full dark:bg-gray-700 bg-opacity-40 dark:bg-opacity-60 sticky sticky-nav">
+        <nav className="flex flex-col md:flex-row justify-between items-center w-full relative mx-4 md:py-2 md:h-16">
           <div className="flex flex-col justify-center">
             <Link href="/">
-              <a className="oliverloops text-xl md:text-2xl dark:text-white">
+              <a className="oliverloops text-xl md:text-2xl ml-2 dark:text-white">
                 oliverloops<span className="text-green-500 dark:text-green-400">.</span>
               </a>
             </Link>
