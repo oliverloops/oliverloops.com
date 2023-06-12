@@ -6,7 +6,7 @@ function App({ Component, pageProps }: { Component: any; pageProps: any }) {
   return (
     <ThemeProvider attribute="class">
       <Layout
-        pageTitle="Oliver Lopez | UI Developer"
+        pageTitle="Oliver Lopez | Mobile Developer"
         description="My personal blog"
       >
         <Component {...pageProps} />

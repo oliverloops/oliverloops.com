@@ -1,9 +1,10 @@
-import { useContext, useRef } from "react";
+import { useState, useContext, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import { IoMdMoon } from "react-icons/io";
-import { HiSun } from "react-icons/hi";
+import { HiSun, HiTranslate } from "react-icons/hi";
+import { BsTranslate } from "react-icons/bs";
 
 //i18n
 import homeTranslations from "../pages/assets/homeTranslations.json";
@@ -18,6 +19,8 @@ export default function Header() {
 
   //Handle i18n routes and trasnlations
   const { locale, locales, asPath } = useRouter();
+  const [localeState, setLocaleState] = useState(locale);
+  
 
   //Function to handle the open/closed nav menu
   const blockStyle = () => {
@@ -62,40 +65,54 @@ export default function Header() {
               .filter((elem) => elem.locale === locale)
               .map((text) => (
                 <div className="flex items-center">
-                  <div className="p-1 sm:p-4">
+                  <motion.div 
+                    whileHover={{ opacity: 0.6 }}
+                    className="flex items-center rounded-full p-1 sm:p-4 bg-gray-200 dark:bg-gray-700 h-10 mx-1 cursor-pointer"
+                  >
                     <Link href="/blog">
-                      <a className="basic-text pt-1 after:bg-black dark:after:bg-white underline-animation text-md dark:text-white">
+                      <a className="basic-text pt-1 text-md dark:text-white cursor-pointer">
                         Blog
                       </a>
                     </Link>
-                  </div>
-                  <div className="p-1 sm:p-4">
+                  </motion.div>
+                  <motion.div 
+                    whileHover={{ opacity: 0.6 }}
+                    className="flex items-center rounded-full p-1 sm:p-4 bg-gray-200 dark:bg-gray-700 h-10 mx-1 cursor-pointer"
+                  >
                     <Link href="/about">
-                      <a className="basic-text pt-1 after:bg-black dark:after:bg-white underline-animation text-md dark:text-white">
+                      <a className="basic-text pt-1 text-md dark:text-white">
                         {text.about}
                       </a>
                     </Link>
-                  </div>
-                  <div className="p-1 sm:p-4">
+                  </motion.div>
+                  <motion.div 
+                    whileHover={{ opacity: 0.6 }}
+                    className="flex items-center rounded-full p-1 sm:p-4 bg-gray-200 dark:bg-gray-700 h-10 mx-1 cursor-pointer"
+                  >
                     <Link href="/portfolio">
-                      <a className="bsic-text pt-1 after:bg-black dark:after:bg-white underline-animation text-md dark:text-white">
+                      <a className="bsic-text pt-1 text-md dark:text-white">
                         {text.experiments}
                       </a>
                     </Link>
+                  </motion.div>
+                  <div className="pl-2 py-4">
+                    <Link href={asPath} locale={localeState}>
+                      <motion.a
+                        whileHover={{ opacity: 0.6 }}
+                        onClick={() => setLocaleState(localeState === "EN" ? "ES" : "EN")}
+                        className="flex justify-center items-center rounded-full bg-gray-200 dark:bg-gray-700 h-10 w-10 cursor-pointer"
+                      >
+                        {darkContext.theme === "dark" ? (
+                          <BsTranslate className="icon dark:text-white" />
+                        ) : (
+                          <BsTranslate className="icon" />
+                        )}
+                      </motion.a>
+                    </Link>
                   </div>
-                  <div className="p-1 sm:p-4">
-                    {locales?.map((l, i) => (
-                      <Link key={i} href={asPath} locale={l}>
-                        <a className="bsic-text pt-1 after:bg-black dark:after:bg-white underline-animation text-md dark:text-white">
-                          {l === "EN" ? l.concat("/") : l}
-                        </a>
-                      </Link>
-                    ))}
-                  </div>
-                  <div className="pl-4 py-4">
+                  <div className="pl-3 py-4">
                     <motion.button
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
+                      whileHover={{ opacity: 0.6 }}
                       onClick={() => switchTheme()}
                       className="flex justify-center items-center rounded-full bg-gray-200 dark:bg-gray-700 h-10 w-10"
                     >
@@ -156,7 +173,7 @@ export default function Header() {
             </button>
           </div>
         </li>
-        <li className="flex items-center">
+        <li className="flex items-center">          
           <div className="p-4 px-6">
             <motion.button
               whileHover={{ scale: 1.1 }}
