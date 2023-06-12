@@ -27,12 +27,12 @@ const AppItem = ({
 }) => (
   <>
     <a
-      className="flex rounded-lg py-2 px-2 md:p-4 hover:bg-gray-100 dark:hover:bg-gray-800"
+      className="flex rounded-2xl py-2 px-2 md:p-4 hover:bg-gray-100 dark:hover:bg-gray-800"
       href={url}
     >
       <div>
         <Image
-          className="rounded-lg"
+          className="rounded-xl"
           src={image}
           width={56}
           height={56}
@@ -135,6 +135,24 @@ export default function About() {
               </Text>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2">
+            <AppItem
+                url={"https://developer.apple.com/swift/"}
+                image={"/static/images/logos/swift_logo.png"}
+                name={"Swift"}
+                desc={text.stack[0].swift}
+            />
+            <AppItem
+                url={"https://developer.apple.com/xcode/swiftui/"}
+                image={"/static/images/logos/swiftui_logo.png"}
+                name={"Swift UI"}
+                desc={text.stack[0].swift_ui}
+              />
+            <AppItem
+                url={"https://www.typescriptlang.org/"}
+                image={"/static/images/logos/typescript_logo.png"}
+                name={"TypeScript"}
+                desc={text.stack[0].typescript}
+              />
               <AppItem
                 url={"http://vanilla-js.com/"}
                 image={"/static/images/logos/javascript_logo.png"}
@@ -142,16 +160,10 @@ export default function About() {
                 desc={text.stack[0].javascript}
               />
               <AppItem
-                url={"https://www.typescriptlang.org/"}
-                image={"/static/images/logos/typescript_logo.png"}
-                name={"TypeScript"}
-                desc={text.stack[0].typescript}
-              />
-              <AppItem
-                url={"https://reactjs.org/"}
-                image={"/static/images/logos/react_icon.png"}
-                name={"React"}
-                desc={text.stack[0].react}
+                url={"https://expo.dev/"}
+                image={"/static/images/logos/expo_logo.png"}
+                name={"Expo"}
+                desc={text.stack[0].expo}
               />
               <AppItem
                 url={"https://reactnative.dev/"}
@@ -160,40 +172,16 @@ export default function About() {
                 desc={text.stack[0].react_native}
               />
               <AppItem
-                url={"https://developer.apple.com/swift/"}
-                image={"/static/images/logos/swift_logo.png"}
-                name={"Swift"}
-                desc={text.stack[0].swift}
-              />
-              <AppItem
-                url={"https://developer.apple.com/xcode/swiftui/"}
-                image={"/static/images/logos/swiftui_logo.png"}
-                name={"Swift UI"}
-                desc={text.stack[0].swift_ui}
-              />
-              <AppItem
-                url={"https://tailwindcss.com/"}
-                image={"/static/images/logos/tailwind.png"}
-                name={"Tailwind CSS"}
-                desc={text.stack[0].tailwind}
-              />
-              <AppItem
-                url={"https://nextjs.org/"}
-                image={"/static/images/logos/nextjs_logo.png"}
-                name={"Next.js"}
-                desc={text.stack[0].next}
+                url={"https://reactjs.org/"}
+                image={"/static/images/logos/react_icon.png"}
+                name={"React"}
+                desc={text.stack[0].react}
               />
               <AppItem
                 url={"https://nodejs.org/"}
                 image={"/static/images/logos/node_icon.png"}
                 name={"Node.js"}
                 desc={text.stack[0].node}
-              />
-              <AppItem
-                url={"https://www.mongodb.com/"}
-                image={"/static/images/logos/mongo_db_logo.png"}
-                name={"MongoDB"}
-                desc={text.stack[0].mongodb}
               />
             </div>
           </div>
