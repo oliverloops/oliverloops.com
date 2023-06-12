@@ -118,7 +118,7 @@ export default function Portfolio() {
         .map((text) => (
           <div className="flex flex-col justify-center max-w-3xl w-full mx-auto space-y-4 py-8 md:py-4 pb-20">
             <span className="mb-8">
-              <h1 className="heading text-3xl md:text-4xl dark:text-white transition-all">
+              <h1 className="heading font-bold text-3xl md:text-4xl dark:text-white transition-all">
                 {text.title}
               </h1>
               <p className="remarkable text-lg mt-2  dark:text-white transition-all">

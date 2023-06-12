@@ -128,6 +128,7 @@ article > p {
   margin-bottom: 1.275rem;
   font-family: "Segoe UI", sans-serif;
   font-size: 1.1rem;
+  line-height: 0.8cm;
 }
 
 article > p > code {
@@ -155,7 +156,7 @@ footer {
   align-items: center;
   margin-left: 1em;
   resize: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Telegraf", sans-serif;
   font-size: 1.1rem;
 
   @media (min-width: 768px) {

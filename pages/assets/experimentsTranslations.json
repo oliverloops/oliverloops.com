@@ -2,12 +2,12 @@
   "experiments": [
     {
       "locale": "EN",
-      "title": "Portfolio",
+      "title": "My Work",
       "desc": "Active and past projects."
     },
     {
       "locale": "ES",
-      "title": "Portafolio",
+      "title": "Mi Trabajo",
       "desc": "Proyectos activos y pasados."
     }
   ]

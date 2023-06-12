@@ -24,32 +24,41 @@ const AppItem = ({
   image: string;
   name: string;
   desc: string;
-}) => (
-  <>
-    <a
-      className="flex rounded-2xl py-2 px-2 md:p-4 hover:bg-gray-100 dark:hover:bg-gray-800"
-      href={url}
+}) => {
+
+  return (
+    <div className="transition duration-300 mr-6 rounded-3xl">
+    <div 
+        className="flex p-2 transition duration-300 rounded-3xl border-4 border-black dark:border-white"
     >
-      <div>
+       <motion.div
+            whileHover={{ translateX: 5, translateY: 5 }}
+            className="w-12 h-12 py-2 p-1.5 bg-gray-50/90 dark:bg-slate-900/90 rounded-xl border-2 border-black dark:border-white">
         <Image
-          className="rounded-xl"
-          src={image}
-          width={56}
-          height={56}
-          alt={"App icon"}
+            src={image}
+            width="48"
+            height="48"
+            priority
+            alt="repository-logo"
         />
-      </div>
-      <div className="flex flex-col flex-1 pl-5">
-        <div className="flex flex-col">
-          <p className="font-semibold text-black dark:text-white">{name}</p>
-          <p className="text-base font-normal text-gray-600 dark:text-gray-400 mr-4">
-            {desc}
-          </p>
+       </motion.div>
+       <div
+        style={{ 
+            backgroundColor: "#5EA5F7",
+            transform: "translate(-42px, 5px)",
+            zIndex: -1,
+        }} 
+        className="w-12 h-12 border-2 rounded-xl border-black dark:border-white"
+       >
+       </div>
+        <div style={{ transform: "translateX(-30px)" }} className="w-52 md:w-60 py-1">
+            <p className="text-lg font-bold text-slate-700 dark:text-slate-200">{name}</p>
+            <p className="text-sm font-bold text-zinc-400 dark:text-zinc-400">{desc}</p>
         </div>
-      </div>
-    </a>
-  </>
-);
+    </div>
+</div>
+  )
+};
 
 export default function About() {
   const { locale } = useRouter();
@@ -134,7 +143,7 @@ export default function About() {
                 {text.techsub}
               </Text>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-8">
             <AppItem
                 url={"https://developer.apple.com/swift/"}
                 image={"/static/images/logos/swift_logo.png"}
@@ -172,7 +181,7 @@ export default function About() {
                 desc={text.stack[0].react_native}
               />
               <AppItem
-                url={"https://reactjs.org/"}
+                url={"https://react.dev/"}
                 image={"/static/images/logos/react_icon.png"}
                 name={"React"}
                 desc={text.stack[0].react}
