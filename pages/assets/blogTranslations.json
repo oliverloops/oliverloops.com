@@ -2,13 +2,13 @@
   "blog": [
     {
       "locale": "EN",
-      "desc": "All about my ideas, tips and other cool stuff 😎",
+      "desc": "Read about career experiences, tips and technical stuff",
       "placeholder": "Search a topic..."
     },
     {
       "locale": "ES",
-      "desc": "Todo sobre mis ideas, tips y otras cosas cool 😎",
-      "placeholder": "Buscar por tema..."
+      "desc": "Lee sobre experiencias profesionales, consejos y cosas técnicas",
+      "placeholder": "Buscar un tema..."
     }
   ]
 }

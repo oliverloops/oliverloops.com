@@ -1,4 +1,4 @@
-import { MdSearch } from "react-icons/md";
+import { IoSearch } from "react-icons/io5";
 
 const Search = ({
   setResult,
@@ -12,16 +12,18 @@ const Search = ({
   }
 
   return (
-    <div className="transition duration-300 search-container flex align-center w-full md:w-10/12 h-11 mb-4 border-2 border-gray-400 rounded-lg bg-white dark:bg-gray-700">
+    <div
+      style={{ border: "3.25px solid #000" }} 
+      className="transition duration-300 search-container flex align-center w-full md:w-10/12 h-11 mb-4 border-black dark:border-white rounded-xl bg-white dark:bg-gray-700">
       <input
         className="transition duration-300 file:bg-white dark:bg-gray-700 dark:text-white"
         type="text"
         placeholder={placeholder}
         onChange={getInput}
       />
-      <MdSearch
+      <IoSearch
         className="transition duration-300 text-gray-300 dark:text-gray-400 mt-1 mr-2.5"
-        size={32}
+        size={28}
       />
     </div>
   );

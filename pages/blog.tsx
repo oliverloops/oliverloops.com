@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 //UI components
 import Search from "../components/Search";
 import { Post } from "../components/Post";
+import PostCard from "../components/PostCard";
 import { posts } from "../getAllPosts";
 
 import blogTranslations from "./assets/blogTranslations.json";
@@ -20,7 +21,7 @@ export default function Blog() {
         .map((text) => (
           <div className="flex flex-col justify-center items-start max-w-3xl w-full mx-auto py-8 md:py-4 pb-20">
             <span className="mb-8">
-              <h1 className="heading text-3xl md:text-4xl dark:text-white">
+              <h1 className="heading font-bold text-3xl md:text-4xl dark:text-white">
                 Blog
               </h1>
               <p className="remarkable text-lg font-light mt-2 dark:text-white">
@@ -28,12 +29,12 @@ export default function Blog() {
               </p>
             </span>
             <Search setResult={setResult} placeholder={text.placeholder} />
-            <main className="grid grid-cols-1 md:grid-cols-2 w-full gap-y-14 py-8">
+            <main className="grid grid-cols-1 md:grid-cols-2 w-full gap-x-4 py-4">
               {result === ""
                 ? postList
                     .slice()
                     .reverse()
-                    .map((post: any) => <Post key={post.link} post={post} />)
+                    .map((post: any) => <PostCard key={post.link} post={post} />)
                 : postList
                     .slice()
                     .reverse()
@@ -42,7 +43,7 @@ export default function Blog() {
                         post.module.meta.title
                           .toLowerCase()
                           .includes(result) && (
-                          <Post key={post.link} post={post} />
+                          <PostCard key={post.link} post={post} />
                         )
                     )}
             </main>
