@@ -60,7 +60,7 @@ const Content = ({ meta }: { meta: any }) => {
     </motion.div>
     <motion.div 
       style={{ 
-        backgroundColor: "#5EA5F7",
+        backgroundColor: meta.color,
         borderRadius: 22,
         borderWidth: 5,
         transform: "translate(18px, -140px)",

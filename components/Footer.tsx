@@ -12,7 +12,7 @@ export default function Footer() {
             <NowPlaying />
           </div>
           <p className="flex w-1/4 items-center basic-text text-xl md:text-lg font-bold text-center dark:text-white">
-            oliverloops<span className="text-green-500 text-xl md:text-lg">.</span>
+            oliverloops<span className="text-green-500 text-xl md:text-lg">.</span>com
           </p>
           <div className="flex mt-5 md:mt-0">
             <a 
@@ -29,7 +29,7 @@ export default function Footer() {
             </a>
             <a
               className="ml-2 p-1.5 border-2 border-black dark:border-white rounded-3xl"
-              href="https://github.com/oliverloops"
+              href="https://www.linkedin.com/in/oliver-lopez-a57a88165/"
             >
               <FaLinkedinIn size={22} />
             </a>
