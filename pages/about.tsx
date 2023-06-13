@@ -19,32 +19,36 @@ const AppItem = ({
   image,
   name,
   desc,
+  color
 }: {
   url: string;
   image: string;
   name: string;
   desc: string;
+  color: string;
 }) => {
 
   return (
     <div className="transition duration-300 mr-6 rounded-3xl">
-    <div 
-        className="flex p-2 transition duration-300 rounded-3xl border-4 border-black dark:border-white"
+    <a 
+      href={url}
+      className="flex p-2 transition duration-300 rounded-3xl border-4 border-black dark:border-white"
     >
        <motion.div
             whileHover={{ translateX: 5, translateY: 5 }}
-            className="w-12 h-12 py-2 p-1.5 bg-gray-50/90 dark:bg-slate-900/90 rounded-xl border-2 border-black dark:border-white">
+            className="w-12 h-12 bg-gray-50/90 dark:bg-slate-900/90 rounded-xl border-2 border-black dark:border-white">
         <Image
             src={image}
-            width="48"
-            height="48"
+            width={48}
+            height={50}
             priority
+            style={{ borderRadius: "10px" }}
             alt="repository-logo"
         />
        </motion.div>
        <div
         style={{ 
-            backgroundColor: "#5EA5F7",
+            backgroundColor: color,
             transform: "translate(-42px, 5px)",
             zIndex: -1,
         }} 
@@ -53,9 +57,9 @@ const AppItem = ({
        </div>
         <div style={{ transform: "translateX(-30px)" }} className="w-52 md:w-60 py-1">
             <p className="text-lg font-bold text-slate-700 dark:text-slate-200">{name}</p>
-            <p className="text-sm font-bold text-zinc-400 dark:text-zinc-400">{desc}</p>
+            <p className="text-sm text-zinc-400 dark:text-zinc-400">{desc}</p>
         </div>
-    </div>
+    </a>
 </div>
   )
 };
@@ -149,48 +153,56 @@ export default function About() {
                 image={"/static/images/logos/swift_logo.png"}
                 name={"Swift"}
                 desc={text.stack[0].swift}
+                color={"#F69032"}
             />
             <AppItem
                 url={"https://developer.apple.com/xcode/swiftui/"}
                 image={"/static/images/logos/swiftui_logo.png"}
                 name={"Swift UI"}
                 desc={text.stack[0].swift_ui}
+                color={"#5EA5F7"}
               />
             <AppItem
                 url={"https://www.typescriptlang.org/"}
                 image={"/static/images/logos/typescript_logo.png"}
                 name={"TypeScript"}
                 desc={text.stack[0].typescript}
+                color={"#5EA5F7"}
               />
               <AppItem
                 url={"http://vanilla-js.com/"}
                 image={"/static/images/logos/javascript_logo.png"}
                 name={"JavaScript"}
                 desc={text.stack[0].javascript}
+                color={"#F3CB56"}
               />
               <AppItem
                 url={"https://expo.dev/"}
                 image={"/static/images/logos/expo_logo.png"}
                 name={"Expo"}
                 desc={text.stack[0].expo}
+                color={"#B177FB"}
               />
               <AppItem
                 url={"https://reactnative.dev/"}
                 image={"/static/images/logos/react_native_logo.png"}
                 name={"React Native"}
                 desc={text.stack[0].react_native}
+                color={"#FC7E7E"}
               />
               <AppItem
                 url={"https://react.dev/"}
                 image={"/static/images/logos/react_icon.png"}
                 name={"React"}
                 desc={text.stack[0].react}
+                color={"#5EA5F7"}
               />
               <AppItem
                 url={"https://nodejs.org/"}
                 image={"/static/images/logos/node_icon.png"}
                 name={"Node.js"}
                 desc={text.stack[0].node}
+                color={"#2DD39C"}
               />
             </div>
           </div>
