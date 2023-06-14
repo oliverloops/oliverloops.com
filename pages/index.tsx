@@ -115,18 +115,21 @@ export default function Home() {
                   image={"/static/images/logos/carousel_horse.png"}
                   title={"Reanimated Carousel"} 
                   category="React Native" 
+                  color="#F69032"
                 />
                 <RepoCard 
                   url={"https://github.com/oliverloops"} 
                   image={"/static/images/logos/surfer.png"}
                   title={"Reanimated Onboarding"} 
                   category="React Native" 
+                  color="#2DD39C"
                 />
                 <RepoCard 
                   url={"https://github.com/oliverloops"}
                   image={"/static/images/react_logo.png"}
                   title={"Coming Soon..."} 
                   category="React" 
+                  color="#5EA5F7"
                 />
               </div>
             </div>

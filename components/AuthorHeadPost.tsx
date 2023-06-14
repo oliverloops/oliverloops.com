@@ -17,7 +17,7 @@ export default function AuthorHeadPost({
         <div className="flex items-center space-x-2 row">
           <Image
             className="rounded-full"
-            src={"/static/images/me_outside.jpg"}
+            src={"/static/images/me_art.jpg"}
             alt={"Oliver Lopez"}
             width={25}
             height={25}

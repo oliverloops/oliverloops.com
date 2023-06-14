@@ -48,7 +48,7 @@ const Content = ({ meta }: { meta: any }) => {
               className="text-black dark:text-white mr-1.5 transition-all"
               size={19}
             />
-            <p className="basic-text transition duration-300 basic-text text-sm text-black dark:text-white font-semibold">
+            <p className="basic-text transition duration-300 basic-text text-sm text-black dark:text-white font-medium">
               343 Views
             </p>
           </div>

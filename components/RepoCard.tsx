@@ -6,21 +6,22 @@ import image from "../public/static/images/react_logo.png";
 interface Props {
     url: string;
     image: string;
+    color: string;
     title: string;
     category: string;
 }
 
-function RepoCard({ url, image, title, category  }: Props){
+function RepoCard({ url, image, title, color, category  }: Props){
     return(
         <Link href={url}>
             <a>
-                <Content image={image} title={title} category={category} />
+                <Content image={image} title={title} color={color} category={category} />
             </a>
         </Link>
     );
 }
 
-function Content({ image, title, category }: { image: string, title: string; category: string }){
+function Content({ image, title, color, category }: { image: string, title: string, color: string, category: string }){
     return(
         <div className="transition duration-300 mr-6 rounded-3xl">
             <div 
@@ -39,7 +40,7 @@ function Content({ image, title, category }: { image: string, title: string; cat
                </motion.div>
                <div
                 style={{ 
-                    backgroundColor: "#5EA5F7",
+                    backgroundColor: color,
                     transform: "translate(-42px, 5px)",
                     zIndex: -1,
                 }} 
