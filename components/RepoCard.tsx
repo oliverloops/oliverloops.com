@@ -3,17 +3,24 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import image from "../public/static/images/react_logo.png";
 
-function RepoCard(){
+interface Props {
+    url: string;
+    image: string;
+    title: string;
+    category: string;
+}
+
+function RepoCard({ url, image, title, category  }: Props){
     return(
-        <Link href={""}>
+        <Link href={url}>
             <a>
-                <Content />
+                <Content image={image} title={title} category={category} />
             </a>
         </Link>
     );
 }
 
-function Content(){
+function Content({ image, title, category }: { image: string, title: string; category: string }){
     return(
         <div className="transition duration-300 mr-6 rounded-3xl">
             <div 
@@ -24,6 +31,8 @@ function Content(){
                     className="w-12 h-12 py-2 p-1.5 bg-gray-50/90 dark:bg-slate-900/90 rounded-xl border-2 border-black dark:border-white">
                 <Image
                     src={image}
+                    width={category === "React" ? 50 : 47}
+                    height={category === "React" ? 45 : 47}
                     priority
                     alt="repository-logo"
                 />
@@ -38,8 +47,8 @@ function Content(){
                >
                </div>
                 <div style={{ transform: "translateX(-30px)" }} className="w-52 md:w-60 py-1">
-                    <p className="text-lg font-bold text-slate-700 dark:text-slate-200">Project title</p>
-                    <p className="text-sm font-bold text-zinc-400 dark:text-zinc-400">Category</p>
+                    <p className="text-lg font-bold text-slate-700 dark:text-slate-200">{title}</p>
+                    <p className="text-sm font-bold text-zinc-400 dark:text-zinc-400">{category}</p>
                 </div>
             </div>
         </div>

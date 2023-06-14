@@ -38,12 +38,12 @@ const AppItem = ({
             whileHover={{ translateX: 5, translateY: 5 }}
             className="w-12 h-12 bg-gray-50/90 dark:bg-slate-900/90 rounded-xl border-2 border-black dark:border-white">
         <Image
+            className="rounded-lg"
             src={image}
             width={48}
-            height={50}
+            height={49}
             priority
-            style={{ borderRadius: "10px" }}
-            alt="repository-logo"
+            alt={`${name} logo`}
         />
        </motion.div>
        <div
