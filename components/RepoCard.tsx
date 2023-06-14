@@ -23,7 +23,7 @@ function RepoCard({ url, image, title, color, category  }: Props){
 
 function Content({ image, title, color, category }: { image: string, title: string, color: string, category: string }){
     return(
-        <div className="transition duration-300 mr-6 rounded-3xl">
+        <div className="transition duration-300 md:mr-6 rounded-3xl">
             <div 
                 className="flex p-2 transition duration-300 h-20 md:h-20 rounded-3xl border-4 border-black dark:border-white"
             >
@@ -47,7 +47,7 @@ function Content({ image, title, color, category }: { image: string, title: stri
                 className="w-12 h-12 border-2 rounded-xl border-black dark:border-white"
                >
                </div>
-                <div style={{ transform: "translateX(-30px)" }} className="w-52 md:w-60 py-1">
+                <div style={{ transform: "translateX(-30px)" }} className="w-56 md:w-60 py-1">
                     <p className="text-lg font-bold text-slate-700 dark:text-slate-200">{title}</p>
                     <p className="text-sm font-bold text-zinc-400 dark:text-zinc-400">{category}</p>
                 </div>
