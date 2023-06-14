@@ -15,35 +15,18 @@ export default function AuthorHeadPost({
       </h1>
       <div className="flex justify-between items-center py-2">
         <div className="flex items-center space-x-2 row">
-          <Image
-            className="rounded-full"
-            src={"/static/images/me_art.jpg"}
-            alt={"Oliver Lopez"}
-            width={25}
-            height={25}
-          />
-          <p
-            className="basic-text text-sm
-         text-gray-700 dark:text-gray-300"
-          >
-            {meta.author}
+          <p className="text-sm py-1 px-3 rounded-full border-black border-2 bg-emerald-300 dark:bg-emerald-400 dark:border-white dark:text-black">
+            {meta.category}
           </p>
+        </div>
+        <div className="flex items-center space-x-2 row">
+          <span className="flex items-center basic-text text-sm text-gray-700 dark:text-gray-300">
+            <FiEye size={16} /> &nbsp; 0 Views
+          </span>
           <span className="text-sm text-gray-700 dark:text-gray-300">-</span>
           <p className="basic-text text-sm text-gray-700 dark:text-gray-300">
             {meta.date}
           </p>
-        </div>
-        <div className="flex space-x-2 row">
-          <p
-            className="basic-text text-sm
-         text-gray-700 dark:text-gray-300"
-          >
-            {meta.readTime} min read
-          </p>
-          {/* <span className="text-sm text-gray-700 dark:text-gray-300">-</span> */}
-          {/* <span className="flex items-center basic-text text-sm text-gray-700 dark:text-gray-300">
-            <FiEye size={16} /> &nbsp; 0 Views
-          </span> */}
         </div>
       </div>
     </div>

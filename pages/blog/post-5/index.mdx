@@ -1,0 +1,15 @@
+import BlogPost from "../../../components/BlogPost";
+import Image from "next/image";
+
+export const meta = {
+  author: "Oliver Lopez",
+  title: "The day twitter got me a react native developer job",
+  description: "Sample Description",
+  date: "Jun 14, 2023",
+  category: "Career",
+  color: "#5EA5F7"
+};
+
+export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
+
+<h2 className="mt-8 mb-4 text-2xl font-bold">Title</h2>

@@ -18,7 +18,7 @@ export default function Home() {
         .map((text) => (
           <div className="flex flex-col justify-center items-start max-w-3xl mx-auto pb-16">
             <div className="sm:flex-row md:py-4 mb-4">
-              <div className="avatar w-26 h-26 md:w-32 md:h-32 relative my-6 rounded-full border-4 border-black dark:border-white">
+              <div className="avatar w-24 h-24 md:w-32 md:h-32 relative my-6 rounded-full border-4 border-black dark:border-white">
                 <Image
                   priority
                   layout="fill"
@@ -35,7 +35,7 @@ export default function Home() {
                 <p style={{ fontFamily: "Telegraf", fontWeight: 600 }} className="remarkable md:text-lg text-gray-700 dark:text-gray-400">
                   {text.position}
                 </p>
-                <p className="remarkable md:text-md text-gray-500 dark:text-gray-400 w-9/12 py-4">
+                <p className="remarkable md:text-md text-gray-500 dark:text-gray-400 md:w-9/12 py-4">
                   {text.desc_one}{" "}
                   <span className="text-green-500 dark:text-green-400">
                     {text.colored[0].digital_garden}
@@ -60,7 +60,7 @@ export default function Home() {
               </h2>
               <div className="flex flex-col md:flex-row">
                 {posts
-                  .slice(2)
+                  .slice(3)
                   .reverse()
                   .map((post: any) => (
                     <PostCard key={post.link} post={post} />

@@ -16,22 +16,22 @@ export default function Footer() {
           </p>
           <div className="flex mt-5 md:mt-0">
             <a 
-              className="mr-2 p-1.5 border-2 border-black dark:border-white rounded-3xl" 
+              className="mr-1.5 p-1.5 border-2 border-black dark:border-white rounded-3xl" 
               href="https://twitter.com/oliverloops"
             >
-              <FaTwitter size={22} />
+              <FaTwitter size={21} />
             </a>
             <a
-              className="mx-2 p-1.5 border-2 border-black dark:border-white rounded-3xl"
+              className="mx-1.5 p-1.5 border-2 border-black dark:border-white rounded-3xl"
               href="https://github.com/oliverloops"
             >
-              <FaGithub size={22} />
+              <FaGithub size={21} />
             </a>
             <a
-              className="ml-2 p-1.5 border-2 border-black dark:border-white rounded-3xl"
+              className="ml-1.5 p-1.5 border-2 border-black dark:border-white rounded-3xl"
               href="https://www.linkedin.com/in/oliver-lopez-a57a88165/"
             >
-              <FaLinkedinIn size={22} />
+              <FaLinkedinIn size={21} />
             </a>
           </div>
         </div>
