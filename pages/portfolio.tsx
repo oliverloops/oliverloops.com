@@ -124,7 +124,7 @@ export default function Portfolio() {
                 {text.desc}
               </p>
             </span>
-            <a href="https://arriba.com">
+            <a href="https://apps.apple.com/mx/app/medizona/id1636705569?l=en">
               <Div className="transition duration-300 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-lg py-2 my-2 md:max-w-4xl md:mx-auto">
                 <div className="p-4">
                   <span className="flex">
@@ -166,9 +166,9 @@ export default function Portfolio() {
                 <PreviewContainer id="preview" className="shadow-xl">
                   <PreviewImage
                     id={"preview-image"}
-                    src={"/static/images/portfolio/arriba_web.png"}
-                    width={445}
-                    height={255}
+                    src={"/static/images/portfolio/medizona_app.png"}
+                    width={455}
+                    height={265}
                     alt={"Desktop View"}
                   />
                 </PreviewContainer>
