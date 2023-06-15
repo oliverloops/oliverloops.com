@@ -9,7 +9,7 @@ export default function NowPlaying() {
   console.log(data);
 
   return (
-    <div className="flex">
+    <div className="flex justify-between md:flex-start">
         <motion.div
           whileTap={{ translateX: 4, translateY: 4 }} 
           whileHover={{ translateX: 4, translateY: 4 }} 
@@ -27,12 +27,15 @@ export default function NowPlaying() {
         <div
           style={{ 
             backgroundColor: "#2DD39C",
-            transform: "translate(-40px, 4px)",
+            // transform: "translate(-40px, 4px)",
           }} 
-          className="w-11 h-11 z-10 border-2 rounded-xl border-black dark:border-white"
+          className="w-11 h-11 z-10 -translate-x-12 translate-y-1 md:-translate-x-10 border-2 rounded-xl border-black dark:border-white"
         >
         </div>
-        <div style={{ transform: "translate(-30px, 4px)" }}  className="flex flex-col justify-center items-start transition-all">
+        <div 
+          // style={{ transform: "translate(-30px, 4px)" }}  
+          className="flex flex-col  justify-center items-start -translate-x-11 translate-y-1 md:-translate-x-7 transition-all"
+        >
           <a
             className="remarkable text-sm text-gray-800 dark:text-gray-200 font-bold w-44 max-w-44 md:w-36 md:max-w-36 truncate transition-all"
             href={data?.songUrl}

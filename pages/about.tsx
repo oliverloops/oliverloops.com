@@ -29,7 +29,7 @@ const AppItem = ({
 }) => {
 
   return (
-    <div className="transition duration-300 mr-6 rounded-3xl">
+    <div className="transition duration-300 md:mr-6 rounded-3xl">
     <a 
       href={url}
       className="flex p-2 transition duration-300 rounded-3xl border-4 border-black dark:border-white"
@@ -72,7 +72,7 @@ export default function About() {
       {aboutTranslations.about
         .filter((p) => p.locale === locale)
         .map((text) => (
-          <div className="flex flex-col justify-center items-start max-w-3xl w-full mx-auto text-left py-8 md:py-4 pb-20">
+          <div className="flex flex-col justify-center items-start max-w-3xl w-full md:mx-auto text-left py-8 md:py-4 pb-20">
             <div className="flex flex-col md:flex-row justify-between">
               <div className="flex flex-col w-full md:w-1/2">
                 <h1 className="heading font-bold text-3xl md:text-4xl mb-4 text-black dark:text-white">
