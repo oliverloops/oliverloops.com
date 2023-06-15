@@ -73,12 +73,12 @@ export default function About() {
         .filter((p) => p.locale === locale)
         .map((text) => (
           <div className="flex flex-col justify-center items-start max-w-3xl w-full mx-auto text-left py-8 md:py-4 pb-20">
-            <div className="flex justify-between">
-              <div className="flex flex-col w-1/2">
+            <div className="flex flex-col md:flex-row justify-between">
+              <div className="flex flex-col w-full md:w-1/2">
                 <h1 className="heading font-bold text-3xl md:text-4xl mb-4 text-black dark:text-white">
                   {text.title}
                 </h1>
-                <div className="mb-4 mr-12 text-justify leading-6 text-gray-600 dark:text-gray-400">
+                <div className="mb-4 md:mr-12 text-justify leading-6 text-gray-600 dark:text-gray-400">
                   <p className="text-md">
                     {text.desc[0].p1}{" "}
                     <a
@@ -93,12 +93,12 @@ export default function About() {
                   <Text>{text.desc[0].p3}</Text>
                 </div>
               </div>
-              <div className="flex flex-col w-1/2">
+              <div className="flex flex-col w-full md:w-1/2">
               <h2 className="font-bold text-3xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
                 {text.reading}
               </h2>
               <div className="flex justify-center py-4">
-                <div className="w-1/2 max-w-1/2">
+                <div className="w-full md:w-1/2 max-w-1/2">
                   <figure>
                     <Image
                       className="rounded-lg"
@@ -117,7 +117,7 @@ export default function About() {
                       </p>
                     </figcaption>
                 </div>
-                <div className="w-1/2 max-w-1/2 ml-8">
+                <div className="w-full md:w-1/2 md:max-w-1/2 ml-8">
                   <figure>
                     <Image
                       className="rounded-lg"
