@@ -49,7 +49,7 @@ const Content = ({ meta }: { meta: any }) => {
               size={19}
             />
             <p className="basic-text transition duration-300 basic-text text-sm text-black dark:text-white font-medium">
-              343 Views
+              0 Views
             </p>
           </div>
           <p style={{ fontFamily: "Telegraf" }} className="transition duration-300 basic-text text-sm text-black dark:text-white font-medium">
