@@ -66,7 +66,7 @@ const Content = ({ meta }: { meta: any }) => {
         // transform: "translate(18px, -140px)",
         zIndex: -1,
       }} 
-      className="translate-x-4 -translate-y-[7.95rem] md:translate-x-[18px] md:-translate-y-[140px] border-black dark:border-white w-80 md:w-auto h-36 md:h-40"
+      className="translate-x-4 -translate-y-[7.95rem] md:translate-x-[18px] md:-translate-y-[140px] border-black dark:border-white w-full md:w-auto h-36 md:h-40"
     >
     </motion.div>
   </div>
