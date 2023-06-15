@@ -34,9 +34,9 @@ function Content({ image, title }: { image: string; title: string }){
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div style={{ borderWidth: 5 }} className="transition duration-300 relative h-44 sm:h-52 md:h-52 rounded-3xl border-black dark:border-white">
+      <div style={{ borderWidth: 6 }} className="transition duration-300 relative h-48 sm:h-48 md:h-52 rounded-3xl border-black dark:border-white">
         <Image
-          className="rounded-3xl"
+          className="rounded-2xl"
           src={image}
           layout="fill"
           sizes="100vw"

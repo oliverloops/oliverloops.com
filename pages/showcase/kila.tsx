@@ -11,7 +11,7 @@ const KilaShowcase = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-auto gap-4 place-self-center w-full">
         <div className="col-start-1 md:col-span-2">
           <h1 className="text-3xl md:text-4xl mb-4">
-            Kila Environmental Services
+            Medizona
           </h1>
           {kilaTranslations.content
             .filter((p) => p.locale === locale)
@@ -28,22 +28,17 @@ const KilaShowcase = () => {
               <ul>
                 <li>
                   <p className="remarkable text-gray-600 dark:text-gray-400">
-                    React
+                    React Native
                   </p>
                 </li>
                 <li>
                   <p className="remarkable text-gray-600 dark:text-gray-400">
-                    Chart.js
+                    TypeScript
                   </p>
                 </li>
                 <li>
                   <p className="remarkable text-gray-600 dark:text-gray-400">
-                    Next.js
-                  </p>
-                </li>
-                <li>
-                  <p className="remarkable text-gray-600 dark:text-gray-400">
-                    Netlify
+                    Expo
                   </p>
                 </li>
               </ul>
@@ -52,9 +47,9 @@ const KilaShowcase = () => {
               <p className="heading text-lg mb-2">Link</p>
               <ul>
                 <li>
-                  <a href="https://kilaenvservices.netlify.app/">
+                  <a href="https://apps.apple.com/mx/app/medizona/id1636705569?l=en">
                     <p className="basic-text py-1 after:bg-black dark:after:bg-white underline-animation  font-semibold">
-                      Visit site
+                      Download
                     </p>
                   </a>
                 </li>
@@ -67,7 +62,7 @@ const KilaShowcase = () => {
           <figure className="mb-8 md:mb-0 md:mr-4 rounded-md shadow-lg md:shadow-xl dark:shadow-none">
             <Image
               className="rounded-md shadow-lg md:shadow-xl dark:shadow-none"
-              src={"/static/images/showcase/kila/kila_showcase_1.png"}
+              src={"/static/images/portfolio/medizona_app.png"}
               width={900}
               height={550}
             />

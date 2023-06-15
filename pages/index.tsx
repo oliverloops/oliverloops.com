@@ -18,13 +18,13 @@ export default function Home() {
         .map((text) => (
           <div className="flex flex-col justify-center items-start max-w-3xl mx-auto pb-16">
             <div className="sm:flex-row md:py-4 mb-4">
-              <div className="avatar w-24 h-24 md:w-32 md:h-32 relative my-6 rounded-full border-4 border-black dark:border-white">
+              <div style={{ transform: 'rotateY(180deg)' }} className="avatar w-24 h-24 md:w-32 md:h-32 relative my-6 rounded-full border-4 border-black dark:border-white">
                 <Image
                   priority
                   layout="fill"
                   sizes="100vw"
                   className="rounded-full"
-                  src={"/static/images/me_art.jpg"}
+                  src={"/static/images/me_outside.jpg"}
                   alt="Oliver Lopez"
                 />
               </div>
@@ -80,6 +80,12 @@ export default function Home() {
               </h2>
               <div className="grid gap-x-4 gap-y-10 grid-cols-1 md:grid-cols-2">
                 <ProjectCard
+                  image={"/static/images/showcase/medizona_cover.png"}
+                  title={"Medizona"}
+                  href={"/showcase/kila"}
+                  textLink={text.textLink}
+                />
+                <ProjectCard
                   image={"/static/images/showcase/rango_cover.png"}
                   title={"Rango.dev"}
                   href={"/showcase/rango"}
@@ -95,12 +101,6 @@ export default function Home() {
                   image={"/static/images/showcase/airbnb/airbnb_cover.png"}
                   title={"Airbnb Clone"}
                   href={"/showcase/airbnb"}
-                  textLink={text.textLink}
-                />
-                <ProjectCard
-                  image={"/static/images/showcase/kila/kila_cover.png"}
-                  title={"Kila Environmental Services"}
-                  href={"/showcase/kila"}
                   textLink={text.textLink}
                 />
               </div>
