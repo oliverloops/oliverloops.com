@@ -12,6 +12,11 @@ module.exports = {
           "0%, 100%": { transform: "rotate(-8deg)" },
           "50%": { transform: "rotate(8deg)" },
         },
+        translate: {
+          '140px': '140px',
+          '18px': '18px',
+          '7.95rem': '7.95rem'
+        }
       },
       animation: {
         handmove: "handmove 1.5s ease-in-out 1s infinite",

@@ -30,7 +30,7 @@ function Content({ image, title }: { image: string; title: string }){
 
   return(
     <motion.div 
-      className="transition duration-300 flex flex-col mr-6 rounded-3xl"
+      className="transition duration-300 flex flex-col md:mr-6 rounded-3xl"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

@@ -120,7 +120,7 @@ export default function Home() {
                 <RepoCard 
                   url={"https://github.com/oliverloops"} 
                   image={"/static/images/logos/surfer.png"}
-                  title={"Reanimated Onboarding"} 
+                  title={"Reanimated Onboard"} 
                   category="React Native" 
                   color="#2DD39C"
                 />

@@ -9,7 +9,7 @@ const PostCard = ({ post }: { post: any }) => {
   } = post;
 
   return (
-    <div className="p-8 pl-0 h-56 lg:h-64">
+    <div className="py-8 px-2 md:px-4 md:py-5 pl-0 h-52 md:h-56 lg:h-64">
       <Link href={"/blog" + link}>
         <a>
           <Content meta={meta} />
@@ -36,7 +36,7 @@ const Content = ({ meta }: { meta: any }) => {
           borderWidth: 5,
           zIndex: 1,
         }}
-        className="h-40 transition duration-300 flex flex-col px-4 py-6 bg-gray-50/90 dark:bg-slate-900/90 border-black dark:border-white rounded-xl"
+        className="h-36 md:h-40 transition duration-300 flex flex-col px-4 py-4 md:py-6 bg-gray-50/90 dark:bg-slate-900/90 border-black dark:border-white rounded-xl"
       >
       <p className="transition duration-300 heading text-lg font-bold text-black dark:text-white ml-2 my-2">
         {meta.title}
@@ -63,10 +63,10 @@ const Content = ({ meta }: { meta: any }) => {
         backgroundColor: meta.color,
         borderRadius: 22,
         borderWidth: 5,
-        transform: "translate(18px, -140px)",
+        // transform: "translate(18px, -140px)",
         zIndex: -1,
       }} 
-      className="border-black dark:border-white w-80 md:w-auto h-40"
+      className="translate-x-4 -translate-y-[7.95rem] md:translate-x-[18px] md:-translate-y-[140px] border-black dark:border-white w-80 md:w-auto h-36 md:h-40"
     >
     </motion.div>
   </div>
