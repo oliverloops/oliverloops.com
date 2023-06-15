@@ -140,7 +140,11 @@ export default function Header() {
         ref={mobileMenu}
         className="flex-col hidden mobile-navbar-menu-closed fixed"
       >
-        <li className="p-4 px-6">
+        {homeTranslations.navbar
+          .filter((elem) => elem.locale === locale)
+          .map((text) => (
+            <>
+                      <li className="p-4 px-6 pt-24">
           <div className="border-b-2 border-gray-200 px-2 py-3">
             <button onClick={blockStyle}>
               <Link href="/blog">
@@ -156,7 +160,7 @@ export default function Header() {
             <button onClick={blockStyle}>
               <Link href="/about">
                 <a className="basic-text text-xl font-semibold dark:text-white">
-                  About
+                  {text.about}
                 </a>
               </Link>
             </button>
@@ -167,13 +171,13 @@ export default function Header() {
             <button onClick={blockStyle}>
               <Link href="/portfolio">
                 <a className="basic-text text-xl font-semibold dark:text-white">
-                  Portfolio
+                  {text.experiments}
                 </a>
               </Link>
             </button>
           </div>
         </li>
-        <li className="flex items-center">          
+        <li className="flex ml-4 items-center">          
         <div className="pl-2 py-4">
           <Link href={asPath} locale={localeState}>
             <motion.a
@@ -203,6 +207,9 @@ export default function Header() {
           </motion.button>
         </div>
         </li>
+            </>  
+          )
+        )}
       </ul>
     </div>
   );

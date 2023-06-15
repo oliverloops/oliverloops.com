@@ -10,7 +10,7 @@ export default function AuthorHeadPost({
 }) {
   return (
     <div className="flex flex-col space-y-2 mb-6">
-      <h1 className="heading tracking-wide mb-4 text-4xl font-extrabold  dark:text-white">
+      <h1 className="heading tracking-wide mb-4 text-2xl md:text-4xl font-extrabold  dark:text-white">
         {meta.title}
       </h1>
       <div className="flex justify-between items-center py-2">
