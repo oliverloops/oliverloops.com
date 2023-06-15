@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="mb-10 md:mb-0">
             <NowPlaying />
           </div>
-          <p className="flex w-full justify-center md:flex-start md:w-1/4 items-center basic-text text-xl md:text-lg font-bold text-center dark:text-white">
+          <p className="flex w-full justify-center md:mr-8 md:flex-start md:w-1/4 items-center basic-text text-xl md:text-lg font-bold text-center dark:text-white">
             oliverloops<span className="text-green-500 text-xl md:text-lg">.</span>com
           </p>
           <div className="flex justify-center md:flex-start mt-5 md:mt-0">

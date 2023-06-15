@@ -9,7 +9,7 @@ const PostCard = ({ post }: { post: any }) => {
   } = post;
 
   return (
-    <div className="py-8 px-2 md:px-4 md:py-5 pl-0 h-52 md:h-56 lg:h-64">
+    <div className="py-8 px-2 md:px-4 md:py-5 pl-0 w-full h-52 md:h-56 lg:h-64">
       <Link href={"/blog" + link}>
         <a>
           <Content meta={meta} />
