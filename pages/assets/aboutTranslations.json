@@ -23,7 +23,10 @@
           "expo": "Go Beyond React Native, smoother and effortless.",
           "swift": "A modern beautifully designed programming language.",
           "swift_ui": "New declarative syntax to build UI's for the Apple ecosystem.",
-          "node": "The JavaScript runtime built on Chrome's V8 engine."
+          "node": "The JavaScript runtime built on Chrome's V8 engine.",
+          "xcode": "The only one super powerfull IDE for Apple development.",
+          "vscode": "A great code editor for JavaScript and any language.",
+          "sketch": "All-in-one design tool for user interface and many more."
         }
       ]
     },
@@ -50,7 +53,10 @@
           "expo": "Ve mas allá de React Native, mas simple y sin esfuerzo.",
           "swift": "Un lenguaje de programación mejor diseñado.",
           "swift_ui": "Nueva sintáxis declarativa para crear UI's en el ecosistema de Apple.",
-          "node": "Entorno de ejecución de JavaScript construido sobre el motor V8 de Google."
+          "node": "Entorno de ejecución de JavaScript construido sobre el motor V8 de Google.",
+          "xcode": "El único IDE con súper poderes para desarrollar en las plataformas Apple.",
+          "vscode": "Un gran editor de código para JavaScript y cualquier lenguaje.",
+          "sketch": "Herramienta todo en uno para diseño de interfaces y mucho mas."
         }
       ]
     }

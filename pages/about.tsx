@@ -19,13 +19,17 @@ const AppItem = ({
   image,
   name,
   desc,
-  color
+  color,
+  width,
+  height,
 }: {
   url: string;
   image: string;
   name: string;
   desc: string;
   color: string;
+  width: number;
+  height: number;
 }) => {
 
   return (
@@ -40,8 +44,8 @@ const AppItem = ({
         <Image
             className="rounded-lg"
             src={image}
-            width={48}
-            height={49}
+            width={width}
+            height={height}
             priority
             alt={`${name} logo`}
         />
@@ -102,7 +106,7 @@ export default function About() {
                   <figure>
                     <Image
                       className="rounded-lg"
-                      src={"/static/images/books/ios_programming_cover.jpeg"}
+                      src={"/static/images/books/swift_programming_book.png"}
                       width={140}
                       height={190}
                       alt={"A book"}
@@ -110,10 +114,10 @@ export default function About() {
                   </figure>
                   <figcaption className="py-2">
                       <p className="text-sm md:text-lg font-semibold">
-                        iOS Programming Fundamentals
+                        Swift Programming
                       </p>
                       <p className="text-sm md:text-lg text-gray-400">
-                        Matt Neuburg
+                        Mikey Ward
                       </p>
                     </figcaption>
                 </div>
@@ -154,6 +158,8 @@ export default function About() {
                 name={"Swift"}
                 desc={text.stack[0].swift}
                 color={"#F69032"}
+                width={48}
+                height={49}
             />
             <AppItem
                 url={"https://developer.apple.com/xcode/swiftui/"}
@@ -161,6 +167,8 @@ export default function About() {
                 name={"Swift UI"}
                 desc={text.stack[0].swift_ui}
                 color={"#5EA5F7"}
+                width={48}
+                height={49}
               />
             <AppItem
                 url={"https://www.typescriptlang.org/"}
@@ -168,6 +176,8 @@ export default function About() {
                 name={"TypeScript"}
                 desc={text.stack[0].typescript}
                 color={"#5EA5F7"}
+                width={48}
+                height={49}
               />
               <AppItem
                 url={"http://vanilla-js.com/"}
@@ -175,6 +185,8 @@ export default function About() {
                 name={"JavaScript"}
                 desc={text.stack[0].javascript}
                 color={"#F3CB56"}
+                width={48}
+                height={49}
               />
               <AppItem
                 url={"https://expo.dev/"}
@@ -182,6 +194,8 @@ export default function About() {
                 name={"Expo"}
                 desc={text.stack[0].expo}
                 color={"#B177FB"}
+                width={48}
+                height={49}
               />
               <AppItem
                 url={"https://reactnative.dev/"}
@@ -189,6 +203,8 @@ export default function About() {
                 name={"React Native"}
                 desc={text.stack[0].react_native}
                 color={"#FC7E7E"}
+                width={48}
+                height={49}
               />
               <AppItem
                 url={"https://react.dev/"}
@@ -196,6 +212,8 @@ export default function About() {
                 name={"React"}
                 desc={text.stack[0].react}
                 color={"#5EA5F7"}
+                width={48}
+                height={49}
               />
               <AppItem
                 url={"https://nodejs.org/"}
@@ -203,6 +221,35 @@ export default function About() {
                 name={"Node.js"}
                 desc={text.stack[0].node}
                 color={"#2DD39C"}
+                width={48}
+                height={49}
+              />
+              <AppItem
+                url={"https://developer.apple.com/xcode/"}
+                image={"/static/images/logos/xcode_logo.png"}
+                name={"Xcode"}
+                desc={text.stack[0].xcode}
+                color={"#5EA5F7"}
+                width={48}
+                height={48}
+              />
+              <AppItem
+                url={"https://code.visualstudio.com/"}
+                image={"/static/images/logos/vscode_logo.png"}
+                name={"VS Code"}
+                desc={text.stack[0].vscode}
+                color={"#5EA5F7"}
+                width={47}
+                height={49}
+              />
+              <AppItem
+                url={"https://www.sketch.com/"}
+                image={"/static/images/logos/sketch_logo.png"}
+                name={"Sketch"}
+                desc={text.stack[0].sketch}
+                color={"#F69032"}
+                width={47}
+                height={47}
               />
             </div>
           </div>
