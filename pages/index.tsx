@@ -122,13 +122,6 @@ export default function Home() {
                   image={"/static/images/logos/surfer.png"}
                   title={"Reanimated Onboard"} 
                   category="React Native" 
-                  color="#2DD39C"
-                />
-                <RepoCard 
-                  url={"https://github.com/oliverloops"}
-                  image={"/static/images/react_logo.png"}
-                  title={"Coming Soon..."} 
-                  category="React" 
                   color="#5EA5F7"
                 />
               </div>

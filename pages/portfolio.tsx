@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import styled from "styled-components";
-import { motion } from "framer-motion";
 
 //i18n
 import experimentsTranslations from "./assets/experimentsTranslations.json";
@@ -130,23 +129,23 @@ export default function Portfolio() {
                 <div className="p-4">
                   <span className="flex">
                     <AppImage
-                      src={"/static/images/portfolio/arriba_logo.png"}
-                      width={58}
-                      height={58}
-                      alt={"Arriba Logo"}
+                      src={"/static/images/portfolio/medizona_logo.png"}
+                      width={54}
+                      height={54}
+                      alt={"Medizona Logo"}
                     />
                     <div className="flex flex-col ">
                       <p className="heading pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
-                        Arriba
+                        Medizona
                       </p>
                       <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
-                        Crypto Exchange for LATAM
+                        Médicos en tu zona
                       </p>
                     </div>
                   </span>
                 </div>
                 <Circle
-                  style={{ backgroundColor: "#000" }}
+                  style={{ backgroundColor: 'rgb(56, 57, 119)' }}
                   id="circle"
                 ></Circle>
                 <ArrowContainer id="arrow" className="text-white">
@@ -175,28 +174,28 @@ export default function Portfolio() {
                 </PreviewContainer>
               </Div>
             </a>
-            <a href="https://rango.dev">
-              <Div className="transition duration-300 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-lg my-2 md:max-w-4xl md:mx-auto">
+            <a href="https://kmatmospheres.com">
+              <Div className="transition duration-300 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-lg py-2 my-2 md:max-w-4xl md:mx-auto">
                 <div className="p-4">
                   <span className="flex">
                     <AppImage
-                      src={"/static/images/portfolio/rango_icon.png"}
+                      src={"/static/images/portfolio/km_logo.png"}
                       width={58}
                       height={58}
-                      alt={"Rango Logo"}
+                      alt={"KM Atmospheres Logo"}
                     />
                     <div className="flex flex-col ">
                       <p className="heading pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
-                        Rango
+                        KM Atmospheres
                       </p>
                       <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
-                        Digital Agency
+                        Construyendo espacios en armonía
                       </p>
                     </div>
                   </span>
                 </div>
                 <Circle
-                  style={{ backgroundColor: "rgb(253, 211, 89)" }}
+                  style={{ backgroundColor: "#000" }}
                   id="circle"
                 ></Circle>
                 <ArrowContainer id="arrow" className="text-white">
@@ -216,9 +215,8 @@ export default function Portfolio() {
                 </ArrowContainer>
                 <PreviewContainer id="preview" className="shadow-xl">
                   <PreviewImage
-                    priority
                     id={"preview-image"}
-                    src={"/static/images/portfolio/rango_web.png"}
+                    src={"/static/images/portfolio/km_web.png"}
                     width={445}
                     height={265}
                     alt={"Desktop View"}
@@ -226,31 +224,28 @@ export default function Portfolio() {
                 </PreviewContainer>
               </Div>
             </a>
-            <a href="https://fullcodetesting.pythonanywhere.com/">
+            <a href="https://github.com/dohooo/react-native-reanimated-carousel">
               <Div className="transition duration-300 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-2 md:max-w-4xl md:mx-auto">
                 <div className="p-4">
                   <span className="flex">
                     <AppImage
-                      src={"/static/images/portfolio/fitcloud.png"}
-                      width={58}
-                      height={58}
-                      alt={"fitcloud.mx"}
+                      src={"/static/images/logos/react_native_logo.png"}
+                      width={54}
+                      height={54}
+                      alt={"React Native Logo"}
                     />
                     <div className="flex flex-col ">
                       <p className="heading pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
-                        Fitcloud.mx
+                        Reanimated Carousel
                       </p>
                       <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
-                        Fitness sessions&nbsp;
-                        <span className="hidden md:inline md:text-black md:dark:text-white">
-                          on demand
-                        </span>
+                        Infinite scroll component
                       </p>
                     </div>
                   </span>
                 </div>
                 <Circle
-                  style={{ backgroundColor: "rgb(255, 150, 81)" }}
+                  style={{ backgroundColor: "#5EA5F7" }}
                   id="circle"
                 ></Circle>
                 <ArrowContainer id="arrow" className="text-white">
@@ -271,9 +266,9 @@ export default function Portfolio() {
                 <PreviewContainer id="preview" className="shadow-xl">
                   <PreviewImage
                     id={"preview-image"}
-                    src={"/static/images/portfolio/fitcloud_web.png"}
+                    src={"/static/images/portfolio/reanimated_carousel.png"}
                     width={445}
-                    height={255}
+                    height={265}
                     alt={"Desktop View"}
                   />
                 </PreviewContainer>
@@ -304,7 +299,7 @@ export default function Portfolio() {
                   </span>
                 </div>
                 <Circle
-                  style={{ backgroundColor: "tomato" }}
+                  style={{ backgroundColor: "#B177FB" }}
                   id="circle"
                 ></Circle>
                 <ArrowContainer id="arrow" className="text-white">
@@ -328,109 +323,6 @@ export default function Portfolio() {
                     src={"/static/images/portfolio/barrio_intercambia_web.png"}
                     width={445}
                     height={260}
-                    alt={"Desktop View"}
-                  />
-                </PreviewContainer>
-              </Div>
-            </a>
-            <a href="https://github.com/oliverloops/react-hider">
-              <Div className="transition duration-300 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-2 md:max-w-4xl md:mx-auto">
-                <div className="p-4">
-                  <span className="flex">
-                    <AppImage
-                      src={"/static/images/portfolio/react_hider.png"}
-                      width={58}
-                      height={58}
-                      alt={"React Hider"}
-                    />
-                    <div className="flex flex-col ">
-                      <p className="heading pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
-                        React Hider
-                      </p>
-                      <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
-                        Conditional Rendering{" "}
-                        <span className="hidden md:inline md:text-black md:dark:text-white">
-                          Made Easy
-                        </span>
-                      </p>
-                    </div>
-                  </span>
-                </div>
-                <Circle
-                  style={{ backgroundColor: "rgb(40, 188, 252)" }}
-                  id="circle"
-                ></Circle>
-                <ArrowContainer id="arrow" className="text-white">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M5 12h13M12 5l7 7-7 7"></path>
-                  </svg>
-                </ArrowContainer>
-                <PreviewContainer id="preview" className="shadow-xl">
-                  <PreviewImage
-                    id={"preview-image"}
-                    src={"/static/images/portfolio/react_hider_web.png"}
-                    width={445}
-                    height={255}
-                    alt={"Desktop View"}
-                  />
-                </PreviewContainer>
-              </Div>
-            </a>
-            <a href="https://kilaenvservices.netlify.app">
-              <Div className="transition duration-300 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg py-2 my-2 md:max-w-4xl md:mx-auto">
-                <div className="p-4">
-                  <span className="flex">
-                    <AppImage
-                      src={"/static/images/portfolio/kila.png"}
-                      width={58}
-                      height={58}
-                      alt={"Kila Logo"}
-                    />
-                    <div className="flex flex-col ">
-                      <p className="heading pt-2 px-3 lg:px-4 text-md lg:text-lg font-semibold dark:text-white">
-                        Kila
-                      </p>
-                      <p className="px-3 lg:px-4 text-xs lg:text-md font-semibold dark:text-white">
-                        Environmental Services
-                      </p>
-                    </div>
-                  </span>
-                </div>
-                <Circle
-                  style={{ backgroundColor: "rgb(49, 206, 135)" }}
-                  id="circle"
-                ></Circle>
-                <ArrowContainer id="arrow" className="text-white">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M5 12h13M12 5l7 7-7 7"></path>
-                  </svg>
-                </ArrowContainer>
-                <PreviewContainer id="preview" className="shadow-xl">
-                  <PreviewImage
-                    id={"preview-image"}
-                    src={"/static/images/portfolio/kila_web.png"}
-                    width={445}
-                    height={255}
                     alt={"Desktop View"}
                   />
                 </PreviewContainer>
