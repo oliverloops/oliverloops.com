@@ -43,7 +43,8 @@ const Content = ({ meta }: { meta: any }) => {
       </p>
       <div className="flex justify-between items-end pt-2">
         <div className="flex w-full mx-2 justify-between text-gray-400">
-          <div className="flex items-center">
+          <div></div>
+          {/* <div className="flex items-center">
             <FiEye
               className="text-black dark:text-white mr-1.5 transition-all"
               size={19}
@@ -51,7 +52,7 @@ const Content = ({ meta }: { meta: any }) => {
             <p className="basic-text transition duration-300 basic-text text-sm text-black dark:text-white font-medium">
               0 Views
             </p>
-          </div>
+          </div> */}
           <p style={{ fontFamily: "Telegraf" }} className="transition duration-300 basic-text text-sm text-black dark:text-white font-medium">
             {meta.date}
           </p>

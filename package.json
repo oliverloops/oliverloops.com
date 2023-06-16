@@ -19,6 +19,7 @@
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.0.4",
+    "@supabase/supabase-js": "^2.25.0",
     "@types/node": "^16.11.10",
     "@types/react": "^17.0.37",
     "@types/styled-components": "^5.1.15",
