@@ -20,10 +20,10 @@ export default function AuthorHeadPost({
           </p>
         </div>
         <div className="flex items-center space-x-2 row">
-          <span className="flex items-center basic-text text-sm text-gray-700 dark:text-gray-300">
+          {/* <span className="flex items-center basic-text text-sm text-gray-700 dark:text-gray-300">
             <FiEye size={16} /> &nbsp; 0 Views
-          </span>
-          <span className="text-sm text-gray-700 dark:text-gray-300">-</span>
+          </span> */}
+          {/* <span className="text-sm text-gray-700 dark:text-gray-300">-</span> */}
           <p className="basic-text text-sm text-gray-700 dark:text-gray-300">
             {meta.date}
           </p>
