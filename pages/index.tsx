@@ -63,7 +63,7 @@ export default function Home() {
               </h2>
               <div className="flex flex-col md:flex-row">
                 {posts
-                  .slice(3)
+                  .slice(4)
                   .reverse()
                   .map((post: any) => (
                     <PostCard key={post.link} post={post} />
