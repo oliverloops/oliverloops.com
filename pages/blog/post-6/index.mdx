@@ -1,0 +1,16 @@
+import BlogPost from "../../../components/BlogPost";
+import Image from "next/image";
+
+export const meta = {
+  slug: "post-6",
+  author: "Oliver Lopez",
+  title: "Million x Legend State. The Fastest React Combo.",
+  description: "Sample Description",
+  date: "Aug 30, 2023",
+  category: "Life",
+  color: "#B177FB",
+};
+
+export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
+
+<h2 className="mt-8 mb-4 text-2xl font-bold">Title</h2>
