@@ -117,6 +117,13 @@ export default function Home() {
               </h2>
               <div className="grid gap-6 md:gap-x-4 md:gap-y-8 grid-cols-1 md:grid-cols-2 my-1">
                 <RepoCard
+                  url={"https://github.com/aidenybai/million"}
+                  image={"/static/images/logos/lion_emoji.png"}
+                  title={"Million.js"}
+                  category="React"
+                  color="#B177FB"
+                />
+                <RepoCard
                   url={
                     "https://github.com/dohooo/react-native-reanimated-carousel"
                   }
@@ -124,13 +131,6 @@ export default function Home() {
                   title={"Reanimated Carousel"}
                   category="React Native"
                   color="#F69032"
-                />
-                <RepoCard
-                  url={"https://github.com/oliverloops"}
-                  image={"/static/images/logos/surfer.png"}
-                  title={"Reanimated Onboard"}
-                  category="React Native"
-                  color="#5EA5F7"
                 />
               </div>
             </div>
