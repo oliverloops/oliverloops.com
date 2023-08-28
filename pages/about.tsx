@@ -110,7 +110,9 @@ export default function About() {
                     <figure>
                       <Image
                         className="rounded-lg"
-                        src={"/static/images/books/swift_programming_book.png"}
+                        src={
+                          "/static/images/books/learning_js_patterns_cover.jpg"
+                        }
                         width={140}
                         height={190}
                         alt={"A book"}
@@ -118,10 +120,10 @@ export default function About() {
                     </figure>
                     <figcaption className="py-2">
                       <p className="text-sm md:text-lg font-semibold">
-                        Swift Programming
+                        Learning JS Design Patterns
                       </p>
                       <p className="text-sm md:text-lg text-gray-400">
-                        Mikey Ward
+                        Addy Osmani
                       </p>
                     </figcaption>
                   </div>
