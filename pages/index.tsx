@@ -18,7 +18,10 @@ export default function Home() {
         .map((text) => (
           <div className="flex flex-col justify-center items-start max-w-3xl mx-auto pb-16">
             <div className="sm:flex-row md:py-4 mb-4">
-              <div style={{ transform: 'rotateY(180deg)' }} className="avatar w-24 h-24 md:w-32 md:h-32 relative my-6 rounded-full border-4 border-black dark:border-white">
+              <div
+                style={{ transform: "rotateY(180deg)" }}
+                className="avatar w-24 h-24 md:w-32 md:h-32 relative my-6 rounded-full border-4 border-black dark:border-white"
+              >
                 <Image
                   priority
                   layout="fill"
@@ -32,7 +35,10 @@ export default function Home() {
                 <h1 className="heading font-bold text-3xl md:text-4xl lg:text-5xl dark:text-white">
                   {text.title}
                 </h1>
-                <p style={{ fontFamily: "Telegraf", fontWeight: 600 }} className="remarkable md:text-lg text-gray-700 dark:text-gray-400">
+                <p
+                  style={{ fontFamily: "Telegraf", fontWeight: 600 }}
+                  className="remarkable md:text-lg text-gray-700 dark:text-gray-400"
+                >
                   {text.position}
                 </p>
                 <p className="remarkable md:text-md text-gray-500 dark:text-gray-400 md:w-9/12 py-4">
@@ -41,14 +47,14 @@ export default function Home() {
                     {text.colored[0].digital_garden}
                   </span>{" "}
                   {text.desc_two}{" "}
-                  <span className="text-orange-500 dark:text-orange-400">
-                    Swift,
+                  <span className="text-yellow-500 dark:text-yellow-400">
+                    JavaScript,
                   </span>{" "}
                   <span className="text-blue-500 dark:text-blue-400">
-                    React Native
-                  </span>
-                  {" "}{text.desc_three}{" "}
-                  <span className="text-red-400">
+                    React
+                  </span>{" "}
+                  {text.desc_three}{" "}
+                  <span className="text-orange-400">
                     {text.colored[0].journey}
                   </span>{" "}
                 </p>
@@ -110,18 +116,20 @@ export default function Home() {
                 {text.open_source_work}
               </h2>
               <div className="grid gap-6 md:gap-x-4 md:gap-y-8 grid-cols-1 md:grid-cols-2 my-1">
-                <RepoCard 
-                  url={"https://github.com/dohooo/react-native-reanimated-carousel"} 
+                <RepoCard
+                  url={
+                    "https://github.com/dohooo/react-native-reanimated-carousel"
+                  }
                   image={"/static/images/logos/carousel_horse.png"}
-                  title={"Reanimated Carousel"} 
-                  category="React Native" 
+                  title={"Reanimated Carousel"}
+                  category="React Native"
                   color="#F69032"
                 />
-                <RepoCard 
-                  url={"https://github.com/oliverloops"} 
+                <RepoCard
+                  url={"https://github.com/oliverloops"}
                   image={"/static/images/logos/surfer.png"}
-                  title={"Reanimated Onboard"} 
-                  category="React Native" 
+                  title={"Reanimated Onboard"}
+                  category="React Native"
                   color="#5EA5F7"
                 />
               </div>

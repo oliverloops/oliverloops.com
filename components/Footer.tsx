@@ -1,4 +1,4 @@
- import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 //*UI components
 import NowPlaying from "./NowPlaying";
 
@@ -12,14 +12,15 @@ export default function Footer() {
             <NowPlaying />
           </div>
           <p className="flex w-full justify-center md:mr-8 md:flex-start md:w-1/4 items-center basic-text text-xl md:text-lg font-bold text-center dark:text-white">
-            oliverloops<span className="text-green-500 text-xl md:text-lg">.</span>com
+            oliverloops
+            <span className="text-green-500 text-xl md:text-lg">.</span>com
           </p>
           <div className="flex justify-center md:flex-start mt-5 md:mt-0">
-            <a 
-              className="mr-1.5 p-1.5 border-2 border-black dark:border-white rounded-3xl" 
-              href="https://twitter.com/oliverloops"
+            <a
+              className="mr-1.5 px-2 py-0 border-2 border-black dark:border-white rounded-3xl"
+              href="https://x.com/oliverloops"
             >
-              <FaTwitter size={21} />
+              <span className="text-2xl dark:text-white">𝕏</span>
             </a>
             <a
               className="mx-1.5 p-1.5 border-2 border-black dark:border-white rounded-3xl"

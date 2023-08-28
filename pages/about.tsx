@@ -31,41 +31,45 @@ const AppItem = ({
   width: number;
   height: number;
 }) => {
-
   return (
     <div className="transition duration-300 md:mr-6 rounded-3xl">
-    <a 
-      href={url}
-      className="flex p-2 transition duration-300 rounded-3xl border-4 border-black dark:border-white"
-    >
-       <motion.div
-            whileHover={{ translateX: 5, translateY: 5 }}
-            className="w-12 h-12 bg-gray-50/90 dark:bg-slate-900/90 rounded-xl border-2 border-black dark:border-white">
-        <Image
+      <a
+        href={url}
+        className="flex p-2 transition duration-300 rounded-3xl border-4 border-black dark:border-white"
+      >
+        <motion.div
+          whileHover={{ translateX: 5, translateY: 5 }}
+          className="w-12 h-12 bg-gray-50/90 dark:bg-slate-900/90 rounded-xl border-2 border-black dark:border-white"
+        >
+          <Image
             className="rounded-lg"
             src={image}
             width={width}
             height={height}
             priority
             alt={`${name} logo`}
-        />
-       </motion.div>
-       <div
-        style={{ 
+          />
+        </motion.div>
+        <div
+          style={{
             backgroundColor: color,
             transform: "translate(-42px, 5px)",
             zIndex: -1,
-        }} 
-        className="w-12 h-12 border-2 rounded-xl border-black dark:border-white"
-       >
-       </div>
-        <div style={{ transform: "translateX(-30px)" }} className="w-52 md:w-60 py-1">
-            <p className="text-lg font-bold text-slate-700 dark:text-slate-200">{name}</p>
-            <p className="text-sm text-zinc-400 dark:text-zinc-400">{desc}</p>
+          }}
+          className="w-12 h-12 border-2 rounded-xl border-black dark:border-white"
+        ></div>
+        <div
+          style={{ transform: "translateX(-30px)" }}
+          className="w-52 md:w-60 py-1"
+        >
+          <p className="text-lg font-bold text-slate-700 dark:text-slate-200">
+            {name}
+          </p>
+          <p className="text-sm text-zinc-400 dark:text-zinc-400">{desc}</p>
         </div>
-    </a>
-</div>
-  )
+      </a>
+    </div>
+  );
 };
 
 export default function About() {
@@ -98,21 +102,21 @@ export default function About() {
                 </div>
               </div>
               <div className="flex flex-col w-full md:w-1/2">
-              <h2 className="font-bold text-3xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
-                {text.reading}
-              </h2>
-              <div className="flex justify-center py-4">
-                <div className="w-full md:w-1/2 max-w-1/2">
-                  <figure>
-                    <Image
-                      className="rounded-lg"
-                      src={"/static/images/books/swift_programming_book.png"}
-                      width={140}
-                      height={190}
-                      alt={"A book"}
-                    />
-                  </figure>
-                  <figcaption className="py-2">
+                <h2 className="font-bold text-3xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
+                  {text.reading}
+                </h2>
+                <div className="flex justify-center py-4">
+                  <div className="w-full md:w-1/2 max-w-1/2">
+                    <figure>
+                      <Image
+                        className="rounded-lg"
+                        src={"/static/images/books/swift_programming_book.png"}
+                        width={140}
+                        height={190}
+                        alt={"A book"}
+                      />
+                    </figure>
+                    <figcaption className="py-2">
                       <p className="text-sm md:text-lg font-semibold">
                         Swift Programming
                       </p>
@@ -120,27 +124,27 @@ export default function About() {
                         Mikey Ward
                       </p>
                     </figcaption>
+                  </div>
+                  <div className="w-full md:w-1/2 md:max-w-1/2 ml-8">
+                    <figure>
+                      <Image
+                        className="rounded-lg"
+                        src={"/static/images/books/from_zero_to_one_cover.jpeg"}
+                        width={140}
+                        height={190}
+                        alt={"A book"}
+                      />
+                      <figcaption className="py-2">
+                        <p className="text-sm md:text-lg font-semibold">
+                          De Cero a Uno
+                        </p>
+                        <p className="text-sm md:text-lg text-gray-400">
+                          Peter Thiel
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
-                <div className="w-full md:w-1/2 md:max-w-1/2 ml-8">
-                  <figure>
-                    <Image
-                      className="rounded-lg"
-                      src={"/static/images/books/from_zero_to_one_cover.jpeg"}
-                      width={140}
-                      height={190}
-                      alt={"A book"}
-                    />
-                    <figcaption className="py-2">
-                      <p className="text-sm md:text-lg font-semibold">
-                        De Cero a Uno
-                      </p>
-                      <p className="text-sm md:text-lg text-gray-400">
-                        Peter Thiel
-                      </p>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
               </div>
             </div>
             <div className="mt-8 mb-4 prose leading-6 text-gray-600 dark:text-gray-400">
@@ -152,7 +156,7 @@ export default function About() {
               </Text>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-8">
-            <AppItem
+              <AppItem
                 url={"https://developer.apple.com/swift/"}
                 image={"/static/images/logos/swift_logo.png"}
                 name={"Swift"}
@@ -160,8 +164,8 @@ export default function About() {
                 color={"#F69032"}
                 width={48}
                 height={49}
-            />
-            <AppItem
+              />
+              <AppItem
                 url={"https://developer.apple.com/xcode/swiftui/"}
                 image={"/static/images/logos/swiftui_logo.png"}
                 name={"Swift UI"}
@@ -170,7 +174,7 @@ export default function About() {
                 width={48}
                 height={49}
               />
-            <AppItem
+              <AppItem
                 url={"https://www.typescriptlang.org/"}
                 image={"/static/images/logos/typescript_logo.png"}
                 name={"TypeScript"}
