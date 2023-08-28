@@ -157,24 +157,6 @@ export default function About() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-8">
               <AppItem
-                url={"https://developer.apple.com/swift/"}
-                image={"/static/images/logos/swift_logo.png"}
-                name={"Swift"}
-                desc={text.stack[0].swift}
-                color={"#F69032"}
-                width={48}
-                height={49}
-              />
-              <AppItem
-                url={"https://developer.apple.com/xcode/swiftui/"}
-                image={"/static/images/logos/swiftui_logo.png"}
-                name={"Swift UI"}
-                desc={text.stack[0].swift_ui}
-                color={"#5EA5F7"}
-                width={48}
-                height={49}
-              />
-              <AppItem
                 url={"https://www.typescriptlang.org/"}
                 image={"/static/images/logos/typescript_logo.png"}
                 name={"TypeScript"}
@@ -193,11 +175,11 @@ export default function About() {
                 height={49}
               />
               <AppItem
-                url={"https://expo.dev/"}
-                image={"/static/images/logos/expo_logo.png"}
-                name={"Expo"}
-                desc={text.stack[0].expo}
-                color={"#B177FB"}
+                url={"https://react.dev/"}
+                image={"/static/images/logos/react_icon.png"}
+                name={"React"}
+                desc={text.stack[0].react}
+                color={"#5EA5F7"}
                 width={48}
                 height={49}
               />
@@ -206,16 +188,16 @@ export default function About() {
                 image={"/static/images/logos/react_native_logo.png"}
                 name={"React Native"}
                 desc={text.stack[0].react_native}
-                color={"#FC7E7E"}
+                color={"#F69032"}
                 width={48}
                 height={49}
               />
               <AppItem
-                url={"https://react.dev/"}
-                image={"/static/images/logos/react_icon.png"}
-                name={"React"}
-                desc={text.stack[0].react}
-                color={"#5EA5F7"}
+                url={"https://expo.dev/"}
+                image={"/static/images/logos/expo_logo.png"}
+                name={"Expo"}
+                desc={text.stack[0].expo}
+                color={"#FC7E7E"}
                 width={48}
                 height={49}
               />
@@ -229,13 +211,13 @@ export default function About() {
                 height={49}
               />
               <AppItem
-                url={"https://developer.apple.com/xcode/"}
-                image={"/static/images/logos/xcode_logo.png"}
-                name={"Xcode"}
-                desc={text.stack[0].xcode}
-                color={"#5EA5F7"}
-                width={48}
-                height={48}
+                url={"https://www.figma.com/"}
+                image={"/static/images/logos/figma_logo.webp"}
+                name={"Figma"}
+                desc={text.stack[0].figma}
+                color={"#B177FB"}
+                width={60}
+                height={60}
               />
               <AppItem
                 url={"https://code.visualstudio.com/"}
@@ -247,13 +229,13 @@ export default function About() {
                 height={49}
               />
               <AppItem
-                url={"https://www.sketch.com/"}
-                image={"/static/images/logos/sketch_logo.png"}
-                name={"Sketch"}
-                desc={text.stack[0].sketch}
-                color={"#F69032"}
-                width={47}
-                height={47}
+                url={"https://vercel.com/"}
+                image={"/static/images/logos/vercel_logo.png"}
+                name={"Vercel"}
+                desc={text.stack[0].vercel}
+                color={"#444"}
+                width={48}
+                height={49}
               />
             </div>
           </div>
