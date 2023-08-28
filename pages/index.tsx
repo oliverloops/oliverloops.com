@@ -18,16 +18,13 @@ export default function Home() {
         .map((text) => (
           <div className="flex flex-col justify-center items-start max-w-3xl mx-auto pb-16">
             <div className="sm:flex-row md:py-4 mb-4">
-              <div
-                style={{ transform: "rotateY(180deg)" }}
-                className="avatar w-24 h-24 md:w-32 md:h-32 relative my-6 rounded-full border-4 border-black dark:border-white"
-              >
+              <div className="avatar w-24 h-24 md:w-32 md:h-32 relative my-6 rounded-full border-4 border-black dark:border-white">
                 <Image
                   priority
                   layout="fill"
                   sizes="100vw"
                   className="rounded-full"
-                  src={"/static/images/me_outside.jpg"}
+                  src={"/static/images/me_outside.png"}
                   alt="Oliver Lopez"
                 />
               </div>
