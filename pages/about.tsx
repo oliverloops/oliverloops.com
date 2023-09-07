@@ -131,17 +131,17 @@ export default function About() {
                     <figure>
                       <Image
                         className="rounded-lg"
-                        src={"/static/images/books/from_zero_to_one_cover.jpeg"}
+                        src={"/static/images/books/wtf_con_el_sat_cover.jpg"}
                         width={140}
                         height={190}
                         alt={"A book"}
                       />
                       <figcaption className="py-2">
                         <p className="text-sm md:text-lg font-semibold">
-                          De Cero a Uno
+                          WTF con el SAT
                         </p>
                         <p className="text-sm md:text-lg text-gray-400">
-                          Peter Thiel
+                          Paulina Casso
                         </p>
                       </figcaption>
                     </figure>
