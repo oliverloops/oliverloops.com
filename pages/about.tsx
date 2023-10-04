@@ -106,12 +106,31 @@ export default function About() {
                   {text.reading}
                 </h2>
                 <div className="flex justify-center py-4">
+                  <div className="w-full md:w-1/2 md:max-w-1/2 ml-8">
+                    <figure>
+                      <Image
+                        className="rounded-lg"
+                        src={"/static/images/books/company_of_one_cover.jpg"}
+                        width={140}
+                        height={200}
+                        alt={"A book"}
+                      />
+                      <figcaption className="py-2">
+                        <p className="text-sm md:text-lg font-semibold">
+                          Company of One
+                        </p>
+                        <p className="text-sm md:text-lg text-gray-400">
+                          Paul Jarvis
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
                   <div className="w-full md:w-1/2 max-w-1/2">
                     <figure>
                       <Image
                         className="rounded-lg"
                         src={
-                          "/static/images/books/learning_js_patterns_cover.jpg"
+                          "/static/images/books/design_for_developers_cover.png"
                         }
                         width={140}
                         height={190}
@@ -120,31 +139,12 @@ export default function About() {
                     </figure>
                     <figcaption className="py-2">
                       <p className="text-sm md:text-lg font-semibold">
-                        Learning JS Design Patterns
+                        Design for Developers
                       </p>
                       <p className="text-sm md:text-lg text-gray-400">
-                        Addy Osmani
+                        Stephanie Stimac
                       </p>
                     </figcaption>
-                  </div>
-                  <div className="w-full md:w-1/2 md:max-w-1/2 ml-8">
-                    <figure>
-                      <Image
-                        className="rounded-lg"
-                        src={"/static/images/books/wtf_con_el_sat_cover.jpg"}
-                        width={140}
-                        height={190}
-                        alt={"A book"}
-                      />
-                      <figcaption className="py-2">
-                        <p className="text-sm md:text-lg font-semibold">
-                          WTF con el SAT
-                        </p>
-                        <p className="text-sm md:text-lg text-gray-400">
-                          Paulina Casso
-                        </p>
-                      </figcaption>
-                    </figure>
                   </div>
                 </div>
               </div>
