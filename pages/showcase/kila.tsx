@@ -10,9 +10,7 @@ const KilaShowcase = () => {
     <div className="flex flex-col justify-center items-start max-w-3xl mx-auto w-full pt-12 md:pt-4 pb-16">
       <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-auto gap-4 place-self-center w-full">
         <div className="col-start-1 md:col-span-2">
-          <h1 className="text-3xl md:text-4xl mb-4">
-            Medizona
-          </h1>
+          <h1 className="text-3xl md:text-4xl mb-4">Medizona</h1>
           {kilaTranslations.content
             .filter((p) => p.locale === locale)
             .map((text) => (
@@ -47,9 +45,16 @@ const KilaShowcase = () => {
               <p className="heading text-lg mb-2">Link</p>
               <ul>
                 <li>
-                  <a href="https://apps.apple.com/mx/app/medizona/id1636705569?l=en">
+                  <a href="https://apps.apple.com/mx/app/medizona/id6470985687?l=en-GB">
+                    <p className="basic-text after:bg-black dark:after:bg-white underline-animation  font-semibold">
+                      App Store &rarr;
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://play.google.com/store/apps/details?id=com.medizona.app">
                     <p className="basic-text py-1 after:bg-black dark:after:bg-white underline-animation  font-semibold">
-                      Download
+                      Play Store &rarr;
                     </p>
                   </a>
                 </li>
@@ -93,7 +98,9 @@ const KilaShowcase = () => {
                   <figure className="mb-8 md:mb-0 md:mr-4 rounded-md shadow-lg md:shadow-xl dark:shadow-none">
                     <Image
                       className="rounded-md"
-                      src={"/static/images/showcase/kila/kila_showcase_3.png"}
+                      src={
+                        "/static/images/showcase/medizona/medizona_showcase_1.png"
+                      }
                       width={2000}
                       height={1100}
                     />
@@ -101,7 +108,9 @@ const KilaShowcase = () => {
                   <figure className="md:ml-4 rounded-md shadow-lg md:shadow-xl dark:shadow-none">
                     <Image
                       className="rounded-md"
-                      src={"/static/images/showcase/kila/kila_showcase_2.png"}
+                      src={
+                        "/static/images/showcase/medizona/medizona_showcase_3.png"
+                      }
                       width={2000}
                       height={1100}
                     />
@@ -120,7 +129,9 @@ const KilaShowcase = () => {
                 <figure className="rounded-md shadow-lg md:shadow-xl dark:shadow-none">
                   <Image
                     className="rounded-md"
-                    src={"/static/images/showcase/kila/kila_showcase_4.png"}
+                    src={
+                      "/static/images/showcase/medizona/medizona_showcase_2.png"
+                    }
                     width={2000}
                     height={1100}
                   />

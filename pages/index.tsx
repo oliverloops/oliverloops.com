@@ -83,7 +83,7 @@ export default function Home() {
               </h2>
               <div className="grid gap-x-4 gap-y-10 grid-cols-1 md:grid-cols-2">
                 <ProjectCard
-                  image={"/static/images/showcase/medizona_cover.png"}
+                  image={"/static/images/showcase/medizona/medizona_cover.png"}
                   title={"Medizona"}
                   href={"/showcase/kila"}
                   textLink={text.textLink}
