@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 //i18n
-import rangoTranslations from "../assets/projects/rangoTranslations.json";
+import uggroupsTranslations from "../assets/projects/uggroupsTranslations.json";
 
 const RangoShowcase = () => {
   const { locale } = useRouter();
@@ -11,7 +11,7 @@ const RangoShowcase = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-auto gap-4 place-self-center w-full">
         <div className="col-start-1 md:col-span-2">
           <h1 className="text-3xl md:text-4xl mb-4">UG groups</h1>
-          {rangoTranslations.content
+          {uggroupsTranslations.content
             .filter((p) => p.locale === locale)
             .map((text) => (
               <p className="remarkable text-gray-500 leading-6 mt-4">
@@ -26,12 +26,12 @@ const RangoShowcase = () => {
               <ul>
                 <li>
                   <p className="remarkable text-gray-600 dark:text-gray-400">
-                    React Native
+                    Expo
                   </p>
                 </li>
                 <li>
                   <p className="remarkable text-gray-600 dark:text-gray-400">
-                    Expo
+                    React Native
                   </p>
                 </li>
                 <li>
@@ -61,7 +61,7 @@ const RangoShowcase = () => {
             <div></div>
           </div>
         </div>
-        {rangoTranslations.content
+        {uggroupsTranslations.content
           .filter((p) => p.locale === locale)
           .map((text: any) => (
             <>

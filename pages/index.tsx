@@ -91,7 +91,7 @@ export default function Home() {
                 <ProjectCard
                   image={"/static/images/showcase/uggroups_cover_1.png"}
                   title={"UG groups"}
-                  href={"/showcase/rango"}
+                  href={"/showcase/uggroups"}
                   textLink={text.textLink}
                 />
                 <ProjectCard
