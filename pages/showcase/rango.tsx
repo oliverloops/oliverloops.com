@@ -10,7 +10,7 @@ const RangoShowcase = () => {
     <div className="flex flex-col justify-center items-start max-w-3xl mx-auto w-full pt-12 md:pt-4 pb-16">
       <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-auto gap-4 place-self-center w-full">
         <div className="col-start-1 md:col-span-2">
-          <h1 className="text-3xl md:text-4xl mb-4">Rango.dev</h1>
+          <h1 className="text-3xl md:text-4xl mb-4">UG groups</h1>
           {rangoTranslations.content
             .filter((p) => p.locale === locale)
             .map((text) => (
@@ -26,22 +26,22 @@ const RangoShowcase = () => {
               <ul>
                 <li>
                   <p className="remarkable text-gray-600 dark:text-gray-400">
-                    React
+                    React Native
                   </p>
                 </li>
                 <li>
                   <p className="remarkable text-gray-600 dark:text-gray-400">
-                    Tailwind CSS
+                    Expo
                   </p>
                 </li>
                 <li>
                   <p className="remarkable text-gray-600 dark:text-gray-400">
-                    Next.js
+                    TypeScript
                   </p>
                 </li>
                 <li>
                   <p className="remarkable text-gray-600 dark:text-gray-400">
-                    Vercel
+                    Nest.js
                   </p>
                 </li>
               </ul>
@@ -50,9 +50,9 @@ const RangoShowcase = () => {
               <p className="heading text-lg mb-2">Link</p>
               <ul>
                 <li>
-                  <a href="https://rango.dev">
+                  <a href="https://uggroups.com">
                     <p className="basic-text py-1 after:bg-black dark:after:bg-white underline-animation  font-semibold">
-                      Visit site
+                      Visit app site
                     </p>
                   </a>
                 </li>
@@ -69,7 +69,7 @@ const RangoShowcase = () => {
                 <figure className="mb-8 md:mb-0 md:mr-4 rounded-md shadow-lg md:shadow-xl dark:shadow-none">
                   <Image
                     className="rounded-md shadow-lg md:shadow-xl dark:shadow-none"
-                    src={"/static/images/showcase/rango_showcase_1.png"}
+                    src={"/static/images/showcase/uggroups_cover_1.png"}
                     width={800}
                     height={500}
                   />
@@ -99,7 +99,7 @@ const RangoShowcase = () => {
                   <figure className="mb-8 md:mb-0 md:mr-4 rounded-md shadow-lg md:shadow-xl dark:shadow-none">
                     <Image
                       className="rounded-md"
-                      src={"/static/images/showcase/rango_showcase_3.png"}
+                      src={"/static/images/showcase/uggroups_cover_2.png"}
                       width={2000}
                       height={1200}
                     />
@@ -107,7 +107,7 @@ const RangoShowcase = () => {
                   <figure className="md:ml-4 rounded-md shadow-lg md:shadow-xl dark:shadow-none">
                     <Image
                       className="rounded-md"
-                      src={"/static/images/showcase/rango_showcase_2.png"}
+                      src={"/static/images/showcase/uggroups_cover_3.png"}
                       width={2000}
                       height={1200}
                     />
@@ -126,7 +126,7 @@ const RangoShowcase = () => {
                 <figure className="rounded-md shadow-lg md:shadow-xl dark:shadow-none">
                   <Image
                     className="rounded-md"
-                    src={"/static/images/showcase/rango_showcase_4.png"}
+                    src={"/static/images/showcase/uggroups_cover_3.png"}
                     width={2000}
                     height={1200}
                   />

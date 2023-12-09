@@ -89,8 +89,8 @@ export default function Home() {
                   textLink={text.textLink}
                 />
                 <ProjectCard
-                  image={"/static/images/showcase/rango_cover.png"}
-                  title={"Rango.dev"}
+                  image={"/static/images/showcase/uggroups_cover_1.png"}
+                  title={"UG groups"}
                   href={"/showcase/rango"}
                   textLink={text.textLink}
                 />
